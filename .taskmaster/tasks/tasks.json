@@ -1,0 +1,471 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Setup Project Structure and Configuration",
+        "description": "Initialize the project structure, create the configuration schema, and implement configuration loading from YAML.",
+        "details": "Create the basic project structure with the following components:\n- `scan_and_curate.py`: Main entry point\n- `config.yaml`: Default configuration file\n- `hector/`: Package directory\n  - `__init__.py`\n  - `scanner.py`: GitHub API scanner\n  - `scorer.py`: Repository scoring logic\n  - `categorizer.py`: Repository categorization\n  - `renderer.py`: Markdown output generator\n  - `vcs.py`: Version control integration\n\nImplement the configuration schema as specified in the PRD, with validation for required fields. Use PyYAML for parsing the configuration file. The configuration should support:\n- Search query and topics\n- Scoring weights for different metrics\n- Output file path and categories\n- Optional parameters for enhancements\n\nExample implementation for config loading:\n```python\nimport yaml\nfrom typing import Dict, Any\n\ndef load_config(config_path: str = \"config.yaml\") -> Dict[str, Any]:\n    \"\"\"Load and validate the configuration from a YAML file.\"\"\"\n    with open(config_path, \"r\") as f:\n        config = yaml.safe_load(f)\n    \n    # Validate required fields\n    required_sections = [\"search\", \"weights\", \"output\"]\n    for section in required_sections:\n        if section not in config:\n            raise ValueError(f\"Missing required section: {section}\")\n    \n    # Validate search configuration\n    if \"query\" not in config[\"search\"]:\n        raise ValueError(\"Missing required field: search.query\")\n    \n    # Validate weights configuration\n    required_weights = [\"stars\", \"forks\", \"open_issues\", \"prs\", \"discussions\", \"license\"]\n    for weight in required_weights:\n        if weight not in config[\"weights\"]:\n            raise ValueError(f\"Missing required weight: {weight}\")\n    \n    # Validate output configuration\n    if \"file\" not in config[\"output\"]:\n        config[\"output\"][\"file\"] = \"healthtech-tools.md\"  # Default value\n    if \"categories\" not in config[\"output\"]:\n        raise ValueError(\"Missing required field: output.categories\")\n    \n    return config\n```",
+        "testStrategy": "Write unit tests to verify:\n1. Configuration loading from a valid YAML file\n2. Error handling for missing required fields\n3. Default values are applied correctly\n4. Validation of configuration schema\n\nUse pytest and mock files to test different configuration scenarios.",
+        "priority": "high",
+        "dependencies": [],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create Basic Project Structure and Files",
+            "description": "Set up the initial directory structure and create all necessary files for the project according to the specified layout.",
+            "dependencies": [],
+            "details": "1. Create the main project directory\n2. Create the main entry point file `scan_and_curate.py`\n3. Create a template `config.yaml` file with the required sections (search, weights, output)\n4. Create the `hector/` package directory\n5. Create all module files within the package:\n   - `__init__.py`\n   - `scanner.py`\n   - `scorer.py`\n   - `categorizer.py`\n   - `renderer.py`\n   - `vcs.py`\n6. Set up a basic README.md file\n7. Create a requirements.txt file with initial dependencies (PyYAML, PyGithub)",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Implement Configuration Schema and Validation",
+            "description": "Create the configuration loading module with schema validation for required fields and default values for optional fields.",
+            "dependencies": [],
+            "details": "1. Implement the `load_config()` function in a new module `hector/config.py`\n2. Define the configuration schema with required sections and fields\n3. Implement validation for required fields (search.query, weights.*, output.categories)\n4. Set default values for optional fields (output.file)\n5. Add type hints and docstrings\n6. Implement error handling for missing or invalid configuration\n7. Add support for environment variable overrides for sensitive values\n8. Create a sample configuration file with comments explaining each option",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Write Unit Tests for Configuration Loading",
+            "description": "Create comprehensive unit tests for the configuration loading and validation functionality.",
+            "dependencies": [],
+            "details": "1. Set up a test directory with pytest configuration\n2. Create test fixtures with sample valid and invalid configuration files\n3. Write tests for successful configuration loading\n4. Write tests for validation of required fields\n5. Write tests for default value application\n6. Write tests for error handling with invalid configurations\n7. Write tests for environment variable overrides\n8. Ensure test coverage for all validation rules and edge cases",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Implement GitHub API Scanner",
+        "description": "Create the scanner module to query GitHub API for repositories based on search criteria, with pagination and rate limit handling.",
+        "details": "Implement the scanner module that will:\n1. Use PyGithub library to interact with GitHub API\n2. Build search queries based on configuration\n3. Handle pagination for large result sets\n4. Implement rate limit awareness with backoff strategy\n5. Collect repository metadata needed for scoring\n\nThe scanner should return a list of repository objects with all the necessary metadata for scoring and categorization.\n\n```python\nfrom github import Github, RateLimitExceededException\nimport time\nfrom typing import List, Dict, Any\n\nclass Scanner:\n    def __init__(self, token: str, config: Dict[str, Any]):\n        self.github = Github(token)\n        self.config = config\n        self.search_query = config[\"search\"][\"query\"]\n        self.search_topics = config[\"search\"].get(\"topics\", [])\n    \n    def scan(self) -> List[Dict[str, Any]]:\n        \"\"\"Scan GitHub for repositories matching the criteria.\"\"\"\n        repositories = []\n        \n        # Build the base query\n        query = self.search_query\n        \n        # Add topics to the query if specified\n        for topic in self.search_topics:\n            query += f\" topic:{topic}\"\n        \n        try:\n            # Execute the search query with pagination\n            repos = self.github.search_repositories(query)\n            \n            for repo in repos:\n                try:\n                    # Get additional data needed for scoring\n                    repo_data = self._extract_repo_data(repo)\n                    repositories.append(repo_data)\n                except RateLimitExceededException:\n                    # Handle rate limit\n                    self._handle_rate_limit()\n                    # Retry after waiting\n                    repo_data = self._extract_repo_data(repo)\n                    repositories.append(repo_data)\n        \n        except RateLimitExceededException:\n            self._handle_rate_limit()\n            # Recursive call after waiting for rate limit reset\n            return self.scan()\n        \n        return repositories\n    \n    def _extract_repo_data(self, repo) -> Dict[str, Any]:\n        \"\"\"Extract relevant data from a repository object.\"\"\"\n        # Get additional data that might require separate API calls\n        try:\n            license_info = repo.get_license()\n            license_key = license_info.license.key if license_info else \"none\"\n        except Exception:\n            license_key = \"none\"\n        \n        # Count open PRs\n        open_prs = repo.get_pulls(state='open').totalCount\n        \n        # Get discussion count if available\n        try:\n            discussions = repo.get_discussions().totalCount\n        except Exception:\n            discussions = 0\n        \n        return {\n            \"name\": repo.name,\n            \"full_name\": repo.full_name,\n            \"url\": repo.html_url,\n            \"description\": repo.description,\n            \"stars\": repo.stargazers_count,\n            \"forks\": repo.forks_count,\n            \"open_issues\": repo.open_issues_count,\n            \"open_prs\": open_prs,\n            \"discussions\": discussions,\n            \"license\": license_key,\n            \"topics\": repo.get_topics(),\n            \"last_commit\": repo.pushed_at,\n            \"contributors\": list(repo.get_contributors())\n        }\n    \n    def _handle_rate_limit(self):\n        \"\"\"Handle GitHub API rate limit by waiting until reset.\"\"\"\n        rate_limit = self.github.get_rate_limit()\n        reset_timestamp = rate_limit.core.reset.timestamp()\n        sleep_time = reset_timestamp - time.time() + 10  # Add 10 seconds buffer\n        \n        if sleep_time > 0:\n            print(f\"Rate limit exceeded. Waiting for {sleep_time:.2f} seconds...\")\n            time.sleep(sleep_time)\n```",
+        "testStrategy": "Write unit tests to verify:\n1. Correct query building from configuration\n2. Pagination handling for large result sets\n3. Rate limit detection and backoff strategy\n4. Error handling for API failures\n5. Proper extraction of repository metadata\n\nUse pytest with mocking of the GitHub API responses to simulate different scenarios including rate limiting.",
+        "priority": "high",
+        "dependencies": [
+          1
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Set up PyGithub client and query building",
+            "description": "Implement the Scanner class initialization and query building functionality based on configuration parameters.",
+            "dependencies": [],
+            "details": "Implement the following components:\n1. Scanner class initialization with GitHub token and configuration\n2. Parse search query parameters from configuration\n3. Build complete search queries with topics and other criteria\n4. Add configuration validation to ensure required parameters are present\n5. Implement basic error handling for initialization issues",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Implement pagination for search results",
+            "description": "Add support for handling large result sets through GitHub API pagination.",
+            "dependencies": [
+              "2.1"
+            ],
+            "details": "Implement the following components:\n1. Add pagination logic to the scan method\n2. Track pagination state during scanning\n3. Handle edge cases like empty result sets\n4. Implement configurable result limits\n5. Add progress tracking for long-running scans",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Add rate limit handling with backoff strategy",
+            "description": "Implement robust rate limit detection and handling with exponential backoff strategy.",
+            "dependencies": [
+              "2.1",
+              "2.2"
+            ],
+            "details": "Implement the following components:\n1. Complete the _handle_rate_limit method with exponential backoff\n2. Add proactive rate limit checking before making API calls\n3. Implement configurable retry attempts and timeouts\n4. Add logging of rate limit information\n5. Create a mechanism to pause/resume scanning across multiple sessions if needed",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "Create repository data extraction and normalization",
+            "description": "Implement the extraction and normalization of repository metadata needed for scoring and categorization.",
+            "dependencies": [
+              "2.1",
+              "2.2",
+              "2.3"
+            ],
+            "details": "Implement the following components:\n1. Complete the _extract_repo_data method to gather all required metadata\n2. Add error handling for individual repository data extraction\n3. Normalize data formats (dates, counts, etc.)\n4. Implement optional fields based on configuration\n5. Add data validation to ensure all required fields are present",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Implement Repository Scoring System",
+        "description": "Create the scoring module to calculate repository scores based on configurable weights for various metrics.",
+        "details": "Implement the scoring system that will:\n1. Calculate a weighted score for each repository based on the configured weights\n2. Apply license bonuses/penalties\n3. Support optional enhancements like recency decay and contributor count\n\n```python\nfrom typing import Dict, Any, List\nfrom datetime import datetime, timezone\n\nclass Scorer:\n    def __init__(self, config: Dict[str, Any]):\n        self.config = config\n        self.weights = config[\"weights\"]\n        self.license_weights = self.weights[\"license\"]\n        \n        # Optional enhancements\n        self.use_recency_decay = config.get(\"enhancements\", {}).get(\"recency_decay\", False)\n        self.use_contributor_factor = config.get(\"enhancements\", {}).get(\"contributor_factor\", False)\n        self.use_topic_boost = config.get(\"enhancements\", {}).get(\"topic_boost\", False)\n    \n    def score_repositories(self, repositories: List[Dict[str, Any]]) -> List[Dict[str, Any]]:\n        \"\"\"Score repositories based on configured weights.\"\"\"\n        scored_repos = []\n        \n        for repo in repositories:\n            score = self._calculate_base_score(repo)\n            \n            # Apply optional enhancements\n            if self.use_recency_decay:\n                score = self._apply_recency_decay(score, repo)\n            \n            if self.use_contributor_factor:\n                score = self._apply_contributor_factor(score, repo)\n            \n            if self.use_topic_boost:\n                score = self._apply_topic_boost(score, repo)\n            \n            # Add score to repository data\n            repo_with_score = repo.copy()\n            repo_with_score[\"score\"] = round(score, 2)\n            scored_repos.append(repo_with_score)\n        \n        # Sort repositories by score (descending)\n        scored_repos.sort(key=lambda x: x[\"score\"], reverse=True)\n        \n        return scored_repos\n    \n    def _calculate_base_score(self, repo: Dict[str, Any]) -> float:\n        \"\"\"Calculate the base score for a repository.\"\"\"\n        score = 0.0\n        \n        # Apply weights to metrics\n        score += self.weights[\"stars\"] * repo[\"stars\"]\n        score += self.weights[\"forks\"] * repo[\"forks\"]\n        score += self.weights[\"open_issues\"] * repo[\"open_issues\"]\n        score += self.weights[\"prs\"] * repo[\"open_prs\"]\n        score += self.weights[\"discussions\"] * repo[\"discussions\"]\n        \n        # Apply license bonus/penalty\n        license_key = repo[\"license\"]\n        license_bonus = self.license_weights.get(license_key, self.license_weights.get(\"none\", 0))\n        score += license_bonus\n        \n        return score\n    \n    def _apply_recency_decay(self, score: float, repo: Dict[str, Any]) -> float:\n        \"\"\"Apply recency decay to favor recently updated repositories.\"\"\"\n        last_commit = repo[\"last_commit\"]\n        if isinstance(last_commit, str):\n            last_commit = datetime.fromisoformat(last_commit.replace('Z', '+00:00'))\n        \n        # Calculate days since last commit\n        now = datetime.now(timezone.utc)\n        days_since_last_commit = (now - last_commit).days\n        \n        # Apply decay factor (example: 1% reduction per day, max 50%)\n        decay_factor = min(0.5, days_since_last_commit * 0.01)\n        \n        return score * (1 - decay_factor)\n    \n    def _apply_contributor_factor(self, score: float, repo: Dict[str, Any]) -> float:\n        \"\"\"Apply contributor factor to favor repositories with more contributors.\"\"\"\n        contributor_count = len(repo[\"contributors\"])\n        \n        # Example: 5% boost per contributor up to 10 contributors\n        contributor_boost = min(0.5, contributor_count * 0.05)\n        \n        return score * (1 + contributor_boost)\n    \n    def _apply_topic_boost(self, score: float, repo: Dict[str, Any]) -> float:\n        \"\"\"Apply topic relevance boost based on matching topics.\"\"\"\n        repo_topics = repo[\"topics\"]\n        relevant_topics = self.config[\"search\"].get(\"topics\", [])\n        \n        # Count matching topics\n        matching_topics = sum(1 for topic in repo_topics if topic in relevant_topics)\n        \n        # Apply boost (example: 10% per matching topic)\n        topic_boost = matching_topics * 0.1\n        \n        return score * (1 + topic_boost)\n```",
+        "testStrategy": "Write unit tests to verify:\n1. Base score calculation with different weight configurations\n2. License bonus/penalty application\n3. Optional enhancements (recency decay, contributor factor, topic boost)\n4. Sorting of repositories by score\n5. Edge cases like repositories with missing data\n\nUse pytest with sample repository data to test different scoring scenarios.",
+        "priority": "high",
+        "dependencies": [
+          1
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Implement Base Scoring Algorithm",
+            "description": "Create the core scoring functionality with configurable weights for different metrics",
+            "dependencies": [],
+            "details": "Implement the _calculate_base_score method that will:\n- Apply weights to stars, forks, issues, PRs, and discussions\n- Handle different weight configurations from the config file\n- Ensure proper normalization of scores\n- Add unit tests for base score calculation with different weight configurations\n- Handle edge cases like repositories with missing metrics",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Implement License Scoring System",
+            "description": "Add functionality to apply license bonuses or penalties based on license type",
+            "dependencies": [
+              "3.1"
+            ],
+            "details": "Implement license scoring that will:\n- Extract license information from repository data\n- Apply appropriate bonus/penalty based on configured license weights\n- Handle unknown or missing license types\n- Add validation to ensure license weights are properly configured\n- Write unit tests to verify license bonus/penalty application\n- Document supported license types and their default weights",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Implement Optional Enhancement Features",
+            "description": "Add the three optional enhancement features: recency decay, contributor factor, and topic boost",
+            "dependencies": [
+              "3.1",
+              "3.2"
+            ],
+            "details": "Implement the three enhancement methods:\n1. _apply_recency_decay: Calculate time-based decay factor for older repositories\n2. _apply_contributor_factor: Boost scores based on number of contributors\n3. _apply_topic_boost: Boost scores based on matching relevant topics\n\nEnsure each enhancement:\n- Can be enabled/disabled via configuration\n- Has appropriate default values\n- Handles edge cases (missing dates, no contributors, etc.)\n- Is properly tested with unit tests",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Implement Repository Categorizer",
+        "description": "Create the categorizer module to assign repositories to configured categories based on keywords and topics.",
+        "details": "Implement the categorizer module that will:\n1. Map repositories to categories based on keywords in name, description, and topics\n2. Support multiple categories per repository if applicable\n3. Ensure all repositories are assigned to at least one category\n\n```python\nfrom typing import Dict, Any, List, Set\nimport re\n\nclass Categorizer:\n    def __init__(self, config: Dict[str, Any]):\n        self.config = config\n        self.categories = config[\"output\"][\"categories\"]\n        \n        # Load category keywords from config or use default mapping\n        self.category_keywords = config.get(\"category_keywords\", self._default_category_keywords())\n        \n        # Ensure all configured categories have keyword mappings\n        for category in self.categories:\n            if category not in self.category_keywords:\n                self.category_keywords[category] = [category.lower()]\n    \n    def categorize_repositories(self, repositories: List[Dict[str, Any]]) -> Dict[str, List[Dict[str, Any]]]:\n        \"\"\"Categorize repositories into configured categories.\"\"\"\n        categorized_repos = {category: [] for category in self.categories}\n        uncategorized = []\n        \n        for repo in repositories:\n            assigned_categories = self._assign_categories(repo)\n            \n            if not assigned_categories:\n                # If no categories match, add to uncategorized\n                uncategorized.append(repo)\n                continue\n            \n            # Add repository to each matching category\n            for category in assigned_categories:\n                categorized_repos[category].append(repo)\n        \n        # Handle uncategorized repositories by assigning to a default category\n        if uncategorized:\n            default_category = self.categories[0]  # Use first category as default\n            categorized_repos[default_category].extend(uncategorized)\n        \n        # Sort repositories in each category by score\n        for category in self.categories:\n            categorized_repos[category].sort(key=lambda x: x[\"score\"], reverse=True)\n        \n        return categorized_repos\n    \n    def _assign_categories(self, repo: Dict[str, Any]) -> Set[str]:\n        \"\"\"Assign categories to a repository based on keywords.\"\"\"\n        assigned_categories = set()\n        \n        # Text to search for keywords\n        search_text = (\n            (repo[\"name\"] or \"\") + \" \" + \n            (repo[\"description\"] or \"\") + \" \" + \n            \" \".join(repo[\"topics\"] or [])\n        ).lower()\n        \n        # Check each category's keywords\n        for category, keywords in self.category_keywords.items():\n            for keyword in keywords:\n                # Use word boundary regex to match whole words\n                if re.search(r'\\b' + re.escape(keyword.lower()) + r'\\b', search_text):\n                    assigned_categories.add(category)\n                    break\n        \n        return assigned_categories\n    \n    def _default_category_keywords(self) -> Dict[str, List[str]]:\n        \"\"\"Default keyword mappings for common HealthTech categories.\"\"\"\n        return {\n            \"AI Diagnostics\": [\"ai\", \"machine learning\", \"deep learning\", \"diagnostic\", \"prediction\", \"neural\"],\n            \"Telemedicine\": [\"telemedicine\", \"telehealth\", \"virtual care\", \"remote patient\", \"video consultation\"],\n            \"Health Data\": [\"data\", \"ehr\", \"emr\", \"fhir\", \"hl7\", \"interoperability\", \"health record\"],\n            \"Medical Imaging\": [\"imaging\", \"radiology\", \"x-ray\", \"mri\", \"ct scan\", \"ultrasound\", \"dicom\"],\n            \"Patient Management\": [\"patient\", \"management\", \"scheduling\", \"appointment\", \"crm\"],\n            \"Clinical Decision Support\": [\"clinical\", \"decision support\", \"cdss\", \"guideline\", \"protocol\"],\n            \"Health Analytics\": [\"analytics\", \"dashboard\", \"visualization\", \"reporting\", \"metrics\"],\n            \"Medical Devices\": [\"device\", \"hardware\", \"sensor\", \"wearable\", \"monitoring\"],\n            \"Health Education\": [\"education\", \"learning\", \"training\", \"course\", \"tutorial\"],\n            \"Public Health\": [\"public health\", \"epidemiology\", \"population health\", \"surveillance\"]\n        }\n```",
+        "testStrategy": "Write unit tests to verify:\n1. Correct assignment of repositories to categories based on keywords\n2. Handling of repositories that match multiple categories\n3. Handling of uncategorized repositories\n4. Custom category keyword mappings from configuration\n5. Sorting of repositories within categories\n\nUse pytest with sample repository data containing various descriptions and topics to test categorization logic.",
+        "priority": "medium",
+        "dependencies": [
+          1,
+          3
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Implement Keyword-Based Category Matching Logic",
+            "description": "Develop the core functionality to match repositories to categories based on keywords in repository name, description, and topics.",
+            "dependencies": [],
+            "details": "Implement the _assign_categories method that:\n- Processes repository metadata (name, description, topics)\n- Performs case-insensitive keyword matching using regex with word boundaries\n- Handles the default category keyword mappings\n- Ensures the category_keywords dictionary is properly initialized from config\n- Returns the set of matching categories for each repository",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Add Multi-Category Assignment and Uncategorized Repository Handling",
+            "description": "Implement logic to support assigning repositories to multiple categories and handle repositories that don't match any category.",
+            "dependencies": [
+              "4.1"
+            ],
+            "details": "Implement the categorize_repositories method that:\n- Processes all repositories and assigns them to appropriate categories\n- Handles repositories that match multiple categories by adding them to each matching category\n- Identifies uncategorized repositories and assigns them to a default category\n- Sorts repositories within each category by score\n- Returns a dictionary mapping categories to lists of repositories",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Create Unit Tests for Categorization Scenarios",
+            "description": "Develop comprehensive unit tests to verify the categorizer functionality across different scenarios.",
+            "dependencies": [
+              "4.1",
+              "4.2"
+            ],
+            "details": "Create unit tests that verify:\n- Basic keyword matching in repository name, description, and topics\n- Multi-category assignment when a repository matches multiple categories\n- Default category assignment for repositories with no matches\n- Custom category keyword mappings from configuration\n- Edge cases like empty repositories, missing fields, or unusual characters\n- Sorting of repositories within categories by score",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Implement Markdown Renderer",
+        "description": "Create the renderer module to generate a formatted Markdown file with categorized and ranked repositories.",
+        "details": "Implement the renderer module that will:\n1. Generate a Markdown file with sections for each category\n2. Include repository details like name, score, license, stars, etc.\n3. Format the output in a consistent, readable way\n4. Include a header with generation timestamp and summary\n\n```python\nfrom typing import Dict, Any, List\nfrom datetime import datetime\nimport os\n\nclass Renderer:\n    def __init__(self, config: Dict[str, Any]):\n        self.config = config\n        self.output_file = config[\"output\"][\"file\"]\n    \n    def render(self, categorized_repos: Dict[str, List[Dict[str, Any]]]) -> str:\n        \"\"\"Render categorized repositories to Markdown format.\"\"\"\n        output = []\n        \n        # Add header\n        output.append(\"# HealthTech Tools Curated List\")\n        output.append(f\"\\n_Generated on {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} by Hector HealthTech Scanner_\\n\")\n        \n        # Add summary\n        total_repos = sum(len(repos) for repos in categorized_repos.values())\n        output.append(f\"## Summary\\n\")\n        output.append(f\"Total repositories: {total_repos}\\n\")\n        output.append(f\"Categories: {', '.join(categorized_repos.keys())}\\n\")\n        \n        # Add each category section\n        for category, repos in categorized_repos.items():\n            if not repos:\n                continue\n                \n            output.append(f\"## {category}\\n\")\n            \n            # Add repositories in this category\n            for repo in repos:\n                output.append(self._format_repository(repo))\n            \n            output.append(\"\\n\")\n        \n        # Add footer\n        output.append(\"---\\n\")\n        output.append(\"_This list is automatically generated and maintained by [Hector HealthTech Scanner](https://github.com/yourusername/hector)._\\n\")\n        \n        return \"\\n\".join(output)\n    \n    def _format_repository(self, repo: Dict[str, Any]) -> str:\n        \"\"\"Format a single repository as Markdown.\"\"\"\n        # Basic info\n        output = [f\"### [{repo['name']}]({repo['url']}) - Score: {repo['score']}\"]\n        \n        # Description\n        if repo[\"description\"]:\n            output.append(f\"{repo['description']}\")\n        \n        # Stats table\n        output.append(\"| Metric | Value |\")\n        output.append(\"| ------ | ----- |\")\n        output.append(f\"| License | {repo['license']} |\")\n        output.append(f\"| Stars | {repo['stars']} |\")\n        output.append(f\"| Forks | {repo['forks']} |\")\n        output.append(f\"| Open Issues | {repo['open_issues']} |\")\n        output.append(f\"| Open PRs | {repo['open_prs']} |\")\n        \n        if repo[\"discussions\"] > 0:\n            output.append(f\"| Discussions | {repo['discussions']} |\")\n        \n        # Topics\n        if repo[\"topics\"]:\n            topics_str = \", \".join([f\"`{topic}`\" for topic in repo[\"topics\"]])\n            output.append(f\"\\n**Topics:** {topics_str}\")\n        \n        return \"\\n\".join(output) + \"\\n\"\n    \n    def write_to_file(self, content: str) -> str:\n        \"\"\"Write rendered content to the output file.\"\"\"\n        # Ensure directory exists\n        os.makedirs(os.path.dirname(os.path.abspath(self.output_file)), exist_ok=True)\n        \n        with open(self.output_file, \"w\", encoding=\"utf-8\") as f:\n            f.write(content)\n        \n        return self.output_file\n```",
+        "testStrategy": "Write unit tests to verify:\n1. Correct rendering of repository information in Markdown format\n2. Proper formatting of category sections\n3. Inclusion of all required repository metrics\n4. Handling of repositories with missing data\n5. File writing functionality\n\nUse pytest with sample categorized repository data to test the rendering output. Compare the generated Markdown against expected templates.",
+        "priority": "medium",
+        "dependencies": [
+          1,
+          4
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Implement Core Markdown Generation Logic",
+            "description": "Develop the core functionality to convert repository data into formatted Markdown content with proper categorization and styling.",
+            "dependencies": [],
+            "details": "This subtask involves:\n1. Implementing the `render()` method to generate the overall Markdown structure\n2. Creating the `_format_repository()` method to properly format individual repository entries\n3. Adding header, summary, and footer sections\n4. Ensuring consistent styling and formatting across all sections\n5. Handling edge cases like empty categories or repositories with missing data\n6. Adding proper documentation and type hints",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Implement File Output Handling",
+            "description": "Create the functionality to write the generated Markdown content to a file with proper error handling and directory management.",
+            "dependencies": [
+              "5.1"
+            ],
+            "details": "This subtask involves:\n1. Implementing the `write_to_file()` method to save content to the configured output location\n2. Adding directory creation logic to ensure the output path exists\n3. Implementing proper error handling for file system operations\n4. Adding validation to ensure the output file is properly formatted and accessible\n5. Creating helper methods for path normalization and validation if needed\n6. Testing file writing with various output configurations",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Implement VCS Integration",
+        "description": "Create the VCS integration module to handle Git operations like committing changes and opening PRs.",
+        "details": "Implement the VCS integration module that will:\n1. Detect changes in the output file\n2. Commit changes to the repository\n3. Optionally open a PR for review\n4. Support running in GitHub Actions environment\n\n```python\nimport os\nimport subprocess\nfrom typing import Dict, Any, Optional\nfrom github import Github\n\nclass VCSIntegrator:\n    def __init__(self, config: Dict[str, Any], token: str):\n        self.config = config\n        self.token = token\n        self.output_file = config[\"output\"][\"file\"]\n        self.github = Github(token)\n        \n        # Get repository info from environment if running in GitHub Actions\n        self.repo_name = os.environ.get(\"GITHUB_REPOSITORY\", \"\")\n        self.branch_name = os.environ.get(\"GITHUB_REF_NAME\", \"main\")\n        \n        # PR configuration\n        self.create_pr = config.get(\"vcs\", {}).get(\"create_pr\", False)\n        self.pr_title = config.get(\"vcs\", {}).get(\"pr_title\", \"Update HealthTech tools list\")\n        self.pr_body = config.get(\"vcs\", {}).get(\"pr_body\", \"Automated update of the curated HealthTech tools list.\")\n    \n    def has_changes(self) -> bool:\n        \"\"\"Check if there are changes to the output file.\"\"\"\n        # Check if file exists first\n        if not os.path.exists(self.output_file):\n            return True\n        \n        # Use git to check if file has changes\n        try:\n            result = subprocess.run(\n                [\"git\", \"diff\", \"--quiet\", self.output_file],\n                check=False,\n                capture_output=True\n            )\n            # Return code 0 means no changes, 1 means changes exist\n            return result.returncode == 1\n        except Exception as e:\n            print(f\"Error checking for changes: {e}\")\n            # Assume changes exist if we can't check\n            return True\n    \n    def commit_changes(self) -> bool:\n        \"\"\"Commit changes to the output file.\"\"\"\n        if not self.has_changes():\n            print(\"No changes to commit.\")\n            return False\n        \n        try:\n            # Add the file\n            subprocess.run([\"git\", \"add\", self.output_file], check=True)\n            \n            # Commit the changes\n            commit_message = f\"Update {os.path.basename(self.output_file)}\"\n            subprocess.run([\"git\", \"commit\", \"-m\", commit_message], check=True)\n            \n            return True\n        except Exception as e:\n            print(f\"Error committing changes: {e}\")\n            return False\n    \n    def push_changes(self) -> bool:\n        \"\"\"Push committed changes to the remote repository.\"\"\"\n        try:\n            # Push to the current branch\n            subprocess.run([\"git\", \"push\"], check=True)\n            return True\n        except Exception as e:\n            print(f\"Error pushing changes: {e}\")\n            return False\n    \n    def create_pull_request(self) -> Optional[str]:\n        \"\"\"Create a pull request for the changes.\"\"\"\n        if not self.create_pr or not self.repo_name:\n            return None\n        \n        try:\n            # Create a new branch for the PR\n            pr_branch = f\"update-healthtech-list-{datetime.now().strftime('%Y%m%d-%H%M%S')}\"\n            \n            # Create and checkout the new branch\n            subprocess.run([\"git\", \"checkout\", \"-b\", pr_branch], check=True)\n            \n            # Add and commit changes to the new branch\n            self.commit_changes()\n            \n            # Push the new branch\n            subprocess.run([\"git\", \"push\", \"--set-upstream\", \"origin\", pr_branch], check=True)\n            \n            # Create the PR using PyGithub\n            repo = self.github.get_repo(self.repo_name)\n            pr = repo.create_pull(\n                title=self.pr_title,\n                body=self.pr_body,\n                head=pr_branch,\n                base=self.branch_name\n            )\n            \n            return pr.html_url\n        except Exception as e:\n            print(f\"Error creating pull request: {e}\")\n            return None\n```",
+        "testStrategy": "Write unit tests to verify:\n1. Detection of changes in the output file\n2. Git operations for committing changes\n3. PR creation functionality\n4. Error handling for Git operations\n5. Integration with GitHub API for PR creation\n\nUse pytest with mocking of subprocess calls and GitHub API to test VCS integration without actual Git operations.",
+        "priority": "medium",
+        "dependencies": [
+          1,
+          5
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Implement Change Detection for Output Files",
+            "description": "Implement and test the functionality to detect changes in output files using Git commands.",
+            "dependencies": [],
+            "details": "Complete the `has_changes()` method in the VCSIntegrator class to:\n- Check if the output file exists\n- Use Git commands to detect if the file has been modified\n- Handle potential errors during the Git command execution\n- Add appropriate logging for debugging purposes\n- Ensure it works in both local and GitHub Actions environments",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Implement Git Operations for Committing and Pushing Changes",
+            "description": "Complete the Git operations functionality for committing and pushing detected changes to the repository.",
+            "dependencies": [
+              "6.1"
+            ],
+            "details": "Implement and test the `commit_changes()` and `push_changes()` methods to:\n- Add modified files to Git staging\n- Create commits with appropriate messages\n- Push changes to the remote repository\n- Handle Git command errors gracefully\n- Add appropriate error reporting\n- Ensure compatibility with GitHub Actions environment",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Implement Pull Request Creation Functionality",
+            "description": "Complete the pull request creation functionality using the GitHub API.",
+            "dependencies": [
+              "6.2"
+            ],
+            "details": "Implement and test the `create_pull_request()` method to:\n- Create a new branch with timestamp-based naming\n- Commit and push changes to the new branch\n- Use PyGithub to create a pull request\n- Configure PR title and body based on user configuration\n- Add error handling for GitHub API interactions\n- Fix the missing datetime import in the current code\n- Ensure proper authentication with GitHub API",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Implement Main CLI Entry Point",
+        "description": "Create the main CLI entry point that orchestrates the scanning, scoring, categorizing, and rendering process.",
+        "details": "Implement the main CLI entry point that will:\n1. Parse command-line arguments\n2. Load configuration\n3. Orchestrate the scanning, scoring, categorizing, and rendering process\n4. Handle errors and provide feedback\n5. Optionally commit changes and create PRs\n\n```python\n#!/usr/bin/env python3\nimport argparse\nimport os\nimport sys\nfrom typing import Dict, Any\n\n# Import modules\nfrom hector.scanner import Scanner\nfrom hector.scorer import Scorer\nfrom hector.categorizer import Categorizer\nfrom hector.renderer import Renderer\nfrom hector.vcs import VCSIntegrator\n\ndef load_config(config_path: str) -> Dict[str, Any]:\n    \"\"\"Load configuration from YAML file.\"\"\"\n    import yaml\n    with open(config_path, \"r\") as f:\n        return yaml.safe_load(f)\n\ndef main():\n    # Parse command-line arguments\n    parser = argparse.ArgumentParser(description=\"Hector HealthTech Tools Scanner\")\n    parser.add_argument(\n        \"-c\", \"--config\", \n        default=\"config.yaml\", \n        help=\"Path to configuration file (default: config.yaml)\"\n    )\n    parser.add_argument(\n        \"--no-commit\", \n        action=\"store_true\", \n        help=\"Don't commit changes to the repository\"\n    )\n    parser.add_argument(\n        \"--create-pr\", \n        action=\"store_true\", \n        help=\"Create a pull request for changes\"\n    )\n    args = parser.parse_args()\n    \n    # Check if config file exists\n    if not os.path.exists(args.config):\n        print(f\"Error: Configuration file '{args.config}' not found.\")\n        sys.exit(1)\n    \n    # Get GitHub token from environment\n    github_token = os.environ.get(\"GITHUB_TOKEN\")\n    if not github_token:\n        print(\"Error: GITHUB_TOKEN environment variable not set.\")\n        sys.exit(1)\n    \n    try:\n        # Load configuration\n        config = load_config(args.config)\n        \n        # Override config with command-line arguments\n        if args.create_pr:\n            if \"vcs\" not in config:\n                config[\"vcs\"] = {}\n            config[\"vcs\"][\"create_pr\"] = True\n        \n        # Initialize components\n        scanner = Scanner(github_token, config)\n        scorer = Scorer(config)\n        categorizer = Categorizer(config)\n        renderer = Renderer(config)\n        vcs = VCSIntegrator(config, github_token)\n        \n        # Run the pipeline\n        print(\"Scanning GitHub repositories...\")\n        repositories = scanner.scan()\n        print(f\"Found {len(repositories)} repositories.\")\n        \n        print(\"Scoring repositories...\")\n        scored_repos = scorer.score_repositories(repositories)\n        \n        print(\"Categorizing repositories...\")\n        categorized_repos = categorizer.categorize_repositories(scored_repos)\n        \n        print(\"Rendering output...\")\n        content = renderer.render(categorized_repos)\n        output_file = renderer.write_to_file(content)\n        print(f\"Output written to {output_file}\")\n        \n        # Handle VCS operations if not disabled\n        if not args.no_commit and vcs.has_changes():\n            print(\"Committing changes...\")\n            if vcs.commit_changes():\n                if args.create_pr:\n                    print(\"Creating pull request...\")\n                    pr_url = vcs.create_pull_request()\n                    if pr_url:\n                        print(f\"Pull request created: {pr_url}\")\n                else:\n                    print(\"Pushing changes...\")\n                    vcs.push_changes()\n        \n        print(\"Done!\")\n        return 0\n    \n    except Exception as e:\n        print(f\"Error: {e}\")\n        return 1\n\nif __name__ == \"__main__\":\n    sys.exit(main())\n```",
+        "testStrategy": "Write integration tests to verify:\n1. End-to-end workflow with mock GitHub API responses\n2. Command-line argument parsing\n3. Configuration loading and validation\n4. Error handling for various failure scenarios\n5. VCS operations based on command-line flags\n\nUse pytest with mocking of component functions to test the orchestration logic without actual API calls.",
+        "priority": "high",
+        "dependencies": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Implement Command-Line Argument Parsing and Validation",
+            "description": "Create the argument parser to handle command-line options and validate inputs, including configuration file existence and environment variables.",
+            "dependencies": [],
+            "details": "Implement the argparse setup to handle:\n- Configuration file path with default value\n- No-commit flag to prevent VCS operations\n- Create-PR flag to generate pull requests\n- Validate that the config file exists\n- Check for required environment variables like GITHUB_TOKEN\n- Add help text and documentation for each option\n- Return a clean error message when validation fails",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Implement Main Orchestration Logic",
+            "description": "Create the core orchestration flow that initializes and coordinates all components (scanner, scorer, categorizer, renderer, VCS) according to the configuration.",
+            "dependencies": [
+              "7.1"
+            ],
+            "details": "Implement the main function to:\n- Load and parse the configuration file\n- Initialize all component classes with proper configuration\n- Execute the pipeline in the correct order (scan → score → categorize → render)\n- Track and display progress information\n- Handle the output file generation\n- Coordinate VCS operations based on command-line flags\n- Return appropriate exit codes",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Implement Error Handling and Result Reporting",
+            "description": "Add comprehensive error handling throughout the main function and implement user-friendly progress and result reporting.",
+            "dependencies": [
+              "7.2"
+            ],
+            "details": "Implement error handling and reporting to:\n- Catch and handle exceptions from all components\n- Provide meaningful error messages for different failure scenarios\n- Display progress information during long-running operations\n- Show summary statistics after completion (repositories found, categorized, etc.)\n- Format output messages consistently\n- Ensure proper exit codes for different error conditions\n- Add graceful termination for keyboard interrupts",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Create GitHub Actions Workflow",
+        "description": "Create the GitHub Actions workflow configuration to run Hector on a schedule and handle the results.",
+        "details": "Create the GitHub Actions workflow configuration that will:\n1. Run on a schedule (daily at 00:00 UTC)\n2. Support manual triggering\n3. Set up the Python environment\n4. Run Hector with appropriate permissions\n5. Commit changes or create PRs based on configuration\n\nCreate a file named `.github/workflows/hector-scan.yml` with the following content:\n\n```yaml\nname: Hector HealthTech Scan\n\non:\n  schedule:\n    - cron: '0 0 * * *'  # Run daily at midnight UTC\n  workflow_dispatch:     # Allow manual triggering\n\njobs:\n  scan:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: write     # Needed for pushing changes\n      pull-requests: write  # Needed for creating PRs\n    \n    steps:\n      - name: Checkout repository\n        uses: actions/checkout@v4\n      \n      - name: Set up Python\n        uses: actions/setup-python@v5\n        with:\n          python-version: '3.10'\n          cache: 'pip'\n      \n      - name: Install dependencies\n        run: |\n          python -m pip install --upgrade pip\n          pip install PyGithub pyyaml\n          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi\n      \n      - name: Configure Git\n        run: |\n          git config --global user.name \"github-actions[bot]\"\n          git config --global user.email \"github-actions[bot]@users.noreply.github.com\"\n      \n      - name: Run Hector\n        env:\n          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}\n        run: python scan_and_curate.py --config config.yaml\n      \n      # Optional: Create a PR instead of direct commit\n      - name: Run Hector with PR\n        if: ${{ github.event_name == 'schedule' }}  # Only create PRs for scheduled runs\n        env:\n          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}\n        run: python scan_and_curate.py --config config.yaml --create-pr\n```\n\nAlso create a basic `.gitignore` file to exclude unnecessary files:\n\n```\n# Python\n__pycache__/\n*.py[cod]\n*$py.class\n*.so\n.Python\nenv/\nbuild/\ndevelop-eggs/\ndist/\ndownloads/\neggs/\n.eggs/\nlib/\nlib64/\nparts/\nsdist/\nvar/\n*.egg-info/\n.installed.cfg\n*.egg\n\n# Virtual environments\nvenv/\nenv/\nENV/\n\n# IDE files\n.idea/\n.vscode/\n*.swp\n*.swo\n\n# Logs\n*.log\n\n# Local configuration\n.env\n```",
+        "testStrategy": "Test the GitHub Actions workflow by:\n1. Creating a test repository with the workflow configuration\n2. Manually triggering the workflow to verify it runs correctly\n3. Checking that the workflow creates the expected output file\n4. Verifying that changes are committed or PRs are created as expected\n5. Testing with different configuration options\n\nUse GitHub Actions' built-in testing capabilities and manual verification of workflow runs.",
+        "priority": "medium",
+        "dependencies": [
+          7
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create basic GitHub Actions workflow configuration",
+            "description": "Set up the GitHub Actions workflow file with scheduling and manual triggers",
+            "dependencies": [],
+            "details": "Create the `.github/workflows/hector-scan.yml` file with the following elements:\n- Workflow name and description\n- Schedule configuration (daily at 00:00 UTC)\n- Manual trigger configuration (workflow_dispatch)\n- Basic job structure with ubuntu-latest runner\n- Checkout repository step\n- Create the directory structure if it doesn't exist",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Configure Python environment and repository permissions",
+            "description": "Set up the Python environment, dependencies, and configure permissions for repository operations",
+            "dependencies": [
+              "8.1"
+            ],
+            "details": "Complete the GitHub Actions workflow with:\n- Python setup with caching\n- Dependency installation steps\n- Git configuration for the bot user\n- Proper permissions configuration for content writing and PR creation\n- Environment variables for GitHub token\n- Commands to run the Hector tool with different options\n- Create the `.gitignore` file with appropriate exclusions for Python projects",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Create Default Configuration and Documentation",
+        "description": "Create the default configuration file and comprehensive documentation for the project.",
+        "details": "Create the default configuration file and documentation that will:\n1. Provide a well-commented default `config.yaml`\n2. Create a comprehensive README.md with usage instructions\n3. Include examples and troubleshooting information\n4. Document the scoring methodology and customization options\n\nDefault `config.yaml`:\n\n```yaml\n# Hector HealthTech Tools Scanner Configuration\n\n# Search parameters for finding repositories\nsearch:\n  # GitHub search query (syntax: https://docs.github.com/en/search-github/searching-on-github/searching-for-repositories)\n  query: \"healthcare technology is:public stars:>50\"\n  # Additional topics to filter by\n  topics: [\"healthtech\", \"medtech\", \"telemedicine\", \"health-tech\", \"healthcare\"]\n\n# Scoring weights for different metrics\nweights:\n  # Weight for repository stars (higher is more important)\n  stars: 0.3\n  # Weight for repository forks\n  forks: 0.2\n  # Weight for open issues (negative value penalizes many open issues)\n  open_issues: -0.1\n  # Weight for open pull requests\n  prs: 0.2\n  # Weight for discussions\n  discussions: 0.15\n  # License bonuses/penalties\n  license: \n    \"MIT\": 50\n    \"Apache-2.0\": 50\n    \"GPL-3.0\": 30\n    \"AGPL-3.0\": 20\n    \"BSD-3-Clause\": 40\n    \"BSD-2-Clause\": 40\n    \"LGPL-3.0\": 30\n    \"MPL-2.0\": 40\n    \"none\": -100\n\n# Optional enhancements\nenhancements:\n  # Apply recency decay to favor recently updated repositories\n  recency_decay: true\n  # Apply contributor factor to favor repositories with more contributors\n  contributor_factor: true\n  # Apply topic boost based on matching topics\n  topic_boost: true\n\n# Output configuration\noutput:\n  # Output file path\n  file: \"healthtech-tools.md\"\n  # Categories to organize repositories\n  categories: [\n    \"AI Diagnostics\", \n    \"Telemedicine\", \n    \"Health Data\", \n    \"Medical Imaging\",\n    \"Patient Management\",\n    \"Clinical Decision Support\",\n    \"Health Analytics\",\n    \"Medical Devices\",\n    \"Health Education\",\n    \"Public Health\"\n  ]\n\n# Category keyword mappings\ncategory_keywords:\n  \"AI Diagnostics\": [\"ai\", \"machine learning\", \"deep learning\", \"diagnostic\", \"prediction\", \"neural\"]\n  \"Telemedicine\": [\"telemedicine\", \"telehealth\", \"virtual care\", \"remote patient\", \"video consultation\"]\n  \"Health Data\": [\"data\", \"ehr\", \"emr\", \"fhir\", \"hl7\", \"interoperability\", \"health record\"]\n  \"Medical Imaging\": [\"imaging\", \"radiology\", \"x-ray\", \"mri\", \"ct scan\", \"ultrasound\", \"dicom\"]\n  \"Patient Management\": [\"patient\", \"management\", \"scheduling\", \"appointment\", \"crm\"]\n  \"Clinical Decision Support\": [\"clinical\", \"decision support\", \"cdss\", \"guideline\", \"protocol\"]\n  \"Health Analytics\": [\"analytics\", \"dashboard\", \"visualization\", \"reporting\", \"metrics\"]\n  \"Medical Devices\": [\"device\", \"hardware\", \"sensor\", \"wearable\", \"monitoring\"]\n  \"Health Education\": [\"education\", \"learning\", \"training\", \"course\", \"tutorial\"]\n  \"Public Health\": [\"public health\", \"epidemiology\", \"population health\", \"surveillance\"]\n\n# Version control integration\nvcs:\n  # Whether to create a pull request for changes\n  create_pr: false\n  # Pull request title\n  pr_title: \"Update HealthTech tools list\"\n  # Pull request body\n  pr_body: \"Automated update of the curated HealthTech tools list by Hector.\\n\\nThis PR was automatically generated by the Hector HealthTech Scanner.\"\n```\n\nCreate a comprehensive `README.md` with sections for:\n1. Project overview and purpose\n2. Installation instructions\n3. Usage examples (CLI, GitHub Actions)\n4. Configuration options\n5. Scoring methodology explanation\n6. Customization guide\n7. Troubleshooting\n8. Contributing guidelines\n9. License information",
+        "testStrategy": "Review the documentation for:\n1. Completeness of installation and usage instructions\n2. Accuracy of configuration options and examples\n3. Clarity of scoring methodology explanation\n4. Coverage of common troubleshooting scenarios\n5. Usability for different user personas (curators, contributors, maintainers)\n\nHave multiple team members review the documentation and provide feedback.",
+        "priority": "medium",
+        "dependencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create well-commented default configuration file",
+            "description": "Finalize the default config.yaml file with comprehensive comments explaining each option and its impact on the tool's behavior.",
+            "dependencies": [],
+            "details": "1. Review the provided config.yaml template\n2. Ensure all configuration options have clear, descriptive comments\n3. Validate the YAML syntax and structure\n4. Add additional comments explaining the relationships between different configuration sections\n5. Include examples of alternative values for key configuration options\n6. Document the default values and their rationale",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Write comprehensive README documentation",
+            "description": "Create a detailed README.md file with complete documentation covering installation, usage, examples, and troubleshooting.",
+            "dependencies": [
+              "9.1"
+            ],
+            "details": "1. Write project overview and purpose section\n2. Create detailed installation instructions for different environments\n3. Develop usage examples for CLI and GitHub Actions integration\n4. Document all configuration options with examples\n5. Create troubleshooting section addressing common issues\n6. Add contributing guidelines and license information\n7. Include screenshots or diagrams where helpful\n8. Format the document with proper Markdown syntax and structure",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Document scoring methodology and customization options",
+            "description": "Create detailed documentation explaining the scoring system, methodology, and how users can customize the tool for their specific needs.",
+            "dependencies": [
+              "9.1",
+              "9.2"
+            ],
+            "details": "1. Explain the scoring algorithm and how different metrics contribute to the final score\n2. Document how license scoring works with examples\n3. Detail the optional enhancements (recency decay, contributor factor, topic boost)\n4. Create examples of how to customize weights for different use cases\n5. Document the category system and how to customize category keywords\n6. Provide examples of extending the tool with custom scoring factors\n7. Include a section on interpreting scores and comparing repositories",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "title": "Implement Error Handling and Logging",
+        "description": "Implement comprehensive error handling and logging throughout the application.",
+        "details": "Implement error handling and logging that will:\n1. Provide structured logging with appropriate log levels\n2. Handle and report errors gracefully\n3. Include rate limit information and API usage statistics\n4. Generate a summary report for each run\n\n```python\nimport logging\nimport sys\nfrom typing import Dict, Any, Optional\nfrom datetime import datetime\n\nclass Logger:\n    def __init__(self, log_level: str = \"INFO\", log_file: Optional[str] = None):\n        # Set up logging\n        self.logger = logging.getLogger(\"hector\")\n        self.logger.setLevel(getattr(logging, log_level))\n        \n        # Create formatter\n        formatter = logging.Formatter(\n            \"%(asctime)s - %(name)s - %(levelname)s - %(message)s\"\n        )\n        \n        # Create console handler\n        console_handler = logging.StreamHandler(sys.stdout)\n        console_handler.setFormatter(formatter)\n        self.logger.addHandler(console_handler)\n        \n        # Create file handler if log file specified\n        if log_file:\n            file_handler = logging.FileHandler(log_file)\n            file_handler.setFormatter(formatter)\n            self.logger.addHandler(file_handler)\n        \n        # Initialize statistics\n        self.stats = {\n            \"start_time\": datetime.now(),\n            \"repos_scanned\": 0,\n            \"repos_scored\": 0,\n            \"repos_categorized\": 0,\n            \"api_calls\": 0,\n            \"rate_limit_hits\": 0,\n            \"errors\": 0\n        }\n    \n    def info(self, message: str) -> None:\n        \"\"\"Log an info message.\"\"\"\n        self.logger.info(message)\n    \n    def warning(self, message: str) -> None:\n        \"\"\"Log a warning message.\"\"\"\n        self.logger.warning(message)\n    \n    def error(self, message: str) -> None:\n        \"\"\"Log an error message and increment error count.\"\"\"\n        self.logger.error(message)\n        self.stats[\"errors\"] += 1\n    \n    def debug(self, message: str) -> None:\n        \"\"\"Log a debug message.\"\"\"\n        self.logger.debug(message)\n    \n    def track_api_call(self) -> None:\n        \"\"\"Track an API call.\"\"\"\n        self.stats[\"api_calls\"] += 1\n    \n    def track_rate_limit_hit(self) -> None:\n        \"\"\"Track a rate limit hit.\"\"\"\n        self.stats[\"rate_limit_hits\"] += 1\n    \n    def track_repo_scanned(self) -> None:\n        \"\"\"Track a repository scanned.\"\"\"\n        self.stats[\"repos_scanned\"] += 1\n    \n    def track_repo_scored(self) -> None:\n        \"\"\"Track a repository scored.\"\"\"\n        self.stats[\"repos_scored\"] += 1\n    \n    def track_repo_categorized(self) -> None:\n        \"\"\"Track a repository categorized.\"\"\"\n        self.stats[\"repos_categorized\"] += 1\n    \n    def get_summary(self) -> Dict[str, Any]:\n        \"\"\"Get a summary of the run statistics.\"\"\"\n        end_time = datetime.now()\n        duration = (end_time - self.stats[\"start_time\"]).total_seconds()\n        \n        return {\n            \"start_time\": self.stats[\"start_time\"].isoformat(),\n            \"end_time\": end_time.isoformat(),\n            \"duration_seconds\": duration,\n            \"repos_scanned\": self.stats[\"repos_scanned\"],\n            \"repos_scored\": self.stats[\"repos_scored\"],\n            \"repos_categorized\": self.stats[\"repos_categorized\"],\n            \"api_calls\": self.stats[\"api_calls\"],\n            \"rate_limit_hits\": self.stats[\"rate_limit_hits\"],\n            \"errors\": self.stats[\"errors\"]\n        }\n    \n    def log_summary(self) -> None:\n        \"\"\"Log a summary of the run statistics.\"\"\"\n        summary = self.get_summary()\n        \n        self.info(\"=== Run Summary ===\")\n        self.info(f\"Duration: {summary['duration_seconds']:.2f} seconds\")\n        self.info(f\"Repositories scanned: {summary['repos_scanned']}\")\n        self.info(f\"Repositories scored: {summary['repos_scored']}\")\n        self.info(f\"Repositories categorized: {summary['repos_categorized']}\")\n        self.info(f\"API calls: {summary['api_calls']}\")\n        self.info(f\"Rate limit hits: {summary['rate_limit_hits']}\")\n        self.info(f\"Errors: {summary['errors']}\")\n```\n\nIntegrate the logger into the main application and all components. Update the main CLI entry point to initialize and use the logger:\n\n```python\n# In scan_and_curate.py\n\ndef main():\n    # Parse command-line arguments\n    parser = argparse.ArgumentParser(description=\"Hector HealthTech Tools Scanner\")\n    # ... existing arguments ...\n    parser.add_argument(\n        \"--log-level\", \n        choices=[\"DEBUG\", \"INFO\", \"WARNING\", \"ERROR\"], \n        default=\"INFO\",\n        help=\"Logging level (default: INFO)\"\n    )\n    parser.add_argument(\n        \"--log-file\", \n        help=\"Log file path (default: log to console only)\"\n    )\n    args = parser.parse_args()\n    \n    # Initialize logger\n    logger = Logger(log_level=args.log_level, log_file=args.log_file)\n    logger.info(\"Starting Hector HealthTech Tools Scanner\")\n    \n    try:\n        # ... existing code ...\n        \n        # Update components to use logger\n        scanner = Scanner(github_token, config, logger)\n        scorer = Scorer(config, logger)\n        categorizer = Categorizer(config, logger)\n        renderer = Renderer(config, logger)\n        vcs = VCSIntegrator(config, github_token, logger)\n        \n        # ... existing code ...\n        \n        # Log summary at the end\n        logger.log_summary()\n        \n        return 0\n    \n    except Exception as e:\n        logger.error(f\"Unhandled exception: {e}\")\n        return 1\n```\n\nUpdate each component to accept and use the logger for tracking operations and reporting errors.",
+        "testStrategy": "Write unit tests to verify:\n1. Correct logging of different message levels\n2. Tracking of statistics (API calls, repositories processed, etc.)\n3. Generation of run summary\n4. Error handling in different components\n5. Integration with the main application\n\nUse pytest with mocking of logging functions to test logging behavior without actual log output.",
+        "priority": "medium",
+        "dependencies": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Implement Structured Logging System",
+            "description": "Integrate the Logger class with all application components to provide structured logging with appropriate log levels.",
+            "dependencies": [],
+            "details": "1. Update all component classes (Scanner, Scorer, Categorizer, Renderer, VCSIntegrator) to accept and use the logger parameter in their constructors\n2. Replace all print statements and ad-hoc error reporting with appropriate logger calls (info, warning, error, debug)\n3. Implement try-except blocks around critical operations with proper error logging\n4. Add context information to log messages (e.g., repository name, operation being performed)\n5. Ensure consistent log message formatting across all components",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Implement Statistics Tracking",
+            "description": "Enhance the Logger class to track and report statistics about application operations and API usage.",
+            "dependencies": [
+              "10.1"
+            ],
+            "details": "1. Add tracking calls in the Scanner component for API calls and rate limit hits\n2. Implement tracking in all components for repository operations (scanned, scored, categorized)\n3. Add error tracking across all components\n4. Create methods to increment counters for different types of operations\n5. Implement proper error handling for rate limits with automatic retries\n6. Add timing information for performance-critical operations",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Implement Summary Reporting",
+            "description": "Create functionality to generate and display summary reports at the end of each application run.",
+            "dependencies": [
+              "10.1",
+              "10.2"
+            ],
+            "details": "1. Finalize the get_summary method to calculate and return comprehensive run statistics\n2. Implement the log_summary method to display formatted summary information\n3. Add summary information to the generated Markdown output\n4. Create a JSON export option for machine-readable summaries\n5. Add command-line arguments to control summary verbosity\n6. Implement error summary section showing most common error types",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "created": "2025-08-20T06:00:57.014Z",
+      "updated": "2025-08-20T06:00:57.014Z",
+      "description": "Tasks for master context"
+    }
+  }
+}

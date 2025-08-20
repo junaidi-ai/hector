@@ -1,0 +1,181 @@
+# Hector — HealthTech Tools Scanner Bot
+# Product Requirements Document (PRD)
+
+## 1. Overview
+Hector is an automated bot that discovers, scores, categorizes, and curates open‑source healthcare technology repositories on GitHub using the GitHub API (no scraping). It produces a ranked, categorized list and keeps it up to date through scheduled runs or a GitHub Actions workflow that can open PRs for review.
+
+Goal: help the community quickly find high‑quality, actively maintained HealthTech tools.
+
+## 2. Problem Statement
+Discovering reliable, actively maintained HealthTech OSS is time‑consuming. Signals like stars, forks, license, and activity are scattered. Hector consolidates these signals, scores repositories with configurable weights, and generates an opinionated, reviewable list.
+
+## 3. Objectives
+- Provide a reproducible, configurable scanning and scoring pipeline.
+- Maintain an up‑to‑date, ranked list by categories (e.g., Telemedicine, AI Diagnostics).
+- Run ethically via GitHub API, respecting rate limits and ToS.
+- Automate updates and reviews via GitHub Actions and PRs.
+
+## 4. Non‑Goals
+- Scraping outside the GitHub API.
+- Automatically merging PRs without review.
+- Deep static analysis of repository codebases (beyond metadata/API signals).
+
+## 5. Target Users
+- OSS maintainers and contributors in HealthTech.
+- Researchers and builders seeking dependable HealthTech components.
+- Curators who want a high‑signal list to review and discuss.
+
+## 6. Key Features
+- Discovery via GitHub Search API and topics.
+- Configurable scoring (weights for stars, forks, issues, PRs, discussions, license, etc.).
+- Categorization by keywords/topics; optional NLP extension later.
+- Output renderer to `healthtech-tools.md` with rankings and sections.
+- Automation with GitHub Actions to run on schedule and open PRs.
+- Ethical design: rate‑limit awareness, ToS compliance, conservative bot actions.
+
+## 7. User Stories
+- As a curator, I can tune weights and categories in `config.yaml` and regenerate the ranked list.
+- As a contributor, I can run the scanner locally and review differences before submitting.
+- As a maintainer, I receive PRs that update the curated list on a schedule for review.
+- As a user, I can browse the list by category with key signals and links.
+
+## 8. Functional Requirements
+FR‑1: Hector SHALL read configuration from `config.yaml` (search query, topics, weights, output file, categories).
+FR‑2: Hector SHALL query the GitHub API for repositories using `search.query` and `search.topics`.
+FR‑3: Hector SHALL handle pagination and rate limits (sleep/backoff) without failing the job.
+FR‑4: Hector SHALL compute a score per repo using weighted metrics:
+  - stars, forks, open_issues, prs, discussions, license bonuses/penalties.
+FR‑5: Hector SHOULD support optional enhancements (recency decay, contributor count, topic boosts).
+FR‑6: Hector SHALL categorize repos into configured categories via keywords/topics and place them under category sections.
+FR‑7: Hector SHALL write a human‑readable ranked list to `output.file` (default `healthtech-tools.md`).
+FR‑8: Hector SHOULD include per‑repo summary stats (license, stars, forks, PRs/discussions, brief description).
+FR‑9: Hector SHALL provide a CLI entry point to run locally, e.g., `python scan_and_curate.py`.
+FR‑10: Hector SHALL integrate with GitHub Actions workflow to run on a schedule and commit changes.
+FR‑11: Hector MAY open a PR for changes and/or start a discussion for community review when configured.
+FR‑12: Hector SHALL fail gracefully with clear logs and actionable error messages.
+
+## 9. Configuration Schema (example)
+```yaml
+search:
+  query: "healthcare technology is:public stars:>50"
+  topics: ["healthtech", "medtech", "telemedicine"]
+
+weights:
+  stars: 0.3
+  forks: 0.2
+  open_issues: -0.1
+  prs: 0.2
+  discussions: 0.15
+  license: { "MIT": 50, "Apache-2.0": 50, "GPL-3.0": 30, "none": -100 }
+
+output:
+  file: "healthtech-tools.md"
+  categories: ["AI Diagnostics", "Telemedicine", "Health Data"]
+```
+
+## 10. Scoring Methodology
+- Base score = Σ(weight_i × metric_i) + license_bonus.
+- Suggested enhancements:
+  - Recency decay on last commit (favor active repos).
+  - Contributor count/bus‑factor signal.
+  - Topic relevance boosts.
+- Scores should be comparable across runs given the same config.
+
+## 11. System Design
+Components:
+- Scanner: builds queries, calls GitHub Search/Repos APIs, paginates, respects rate limits.
+- Scorer: computes weighted score and optional enhancements.
+- Categorizer: maps repos to categories via configured keyword/topic rules.
+- Renderer: outputs `healthtech-tools.md` with sections ordered by category and score.
+- VCS Integrator: (CI) commits changes; optionally opens PR and discussion.
+
+Data Flow:
+Config → Scanner → Scorer → Categorizer → Renderer → Git (commit/PR)
+
+Dependencies:
+- Python 3.8+ (3.10+ recommended), PyGithub, GitHub Actions.
+
+## 12. Security & Ethics
+- Tokens stored in env/Secrets, not committed.
+- Use GitHub API (no scraping); honor rate limits; adhere to ToS.
+- Conservative bot posture: no unsolicited actions on external repos beyond discussion as configured.
+
+## 13. Performance & Reliability
+- Pagination with backoff; retry transient HTTP errors.
+- Optional caching to reduce repeated API calls.
+- Deterministic output ordering for stable diffs.
+
+## 14. Observability
+- Structured logs: rate‑limit usage, request counts, repos processed, failures skipped.
+- Summary report per run (repos scanned, categories filled, changes written).
+
+## 15. Operations (CI/CD)
+- GitHub Actions workflow
+  - Schedule: daily at 00:00 UTC; manual dispatch.
+  - Steps: checkout → setup Python → install deps → run → commit PR.
+- Minimal permissions required for `GITHUB_TOKEN`.
+
+Workflow example:
+```yaml
+name: Hector HealthTech Scan
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Install dependencies
+        run: pip install PyGithub
+      - name: Run Hector
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scan_and_curate.py
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: "Update curated healthtech list"
+```
+
+## 16. Milestones & Deliverables
+MVP (v0.1):
+- Implement Scanner, Scorer, Renderer with config‑driven weights.
+- CLI run, generate `healthtech-tools.md`.
+- Basic categories via keyword matching.
+
+v0.2:
+- CI workflow; commit/PR creation.
+- Recency decay; contributor count signal; deterministic sorting.
+
+v0.3:
+- Optional NLP categorization; caching; richer metrics.
+- Docs: README improvements, examples, troubleshooting.
+
+## 17. Acceptance Criteria
+- Given a valid `config.yaml`, running the tool produces `healthtech-tools.md` with:
+  - At least N results (configurable) ordered by score (descending).
+  - Category sections populated according to configured categories.
+  - Each repo entry shows: name/link, score, license, stars, forks, PRs/discussions (when available), and description.
+- CI job runs on schedule and either commits changes or opens a PR when the output changes.
+- API rate limits are handled without job failure; logs show backoff when applicable.
+
+## 18. Risks & Mitigations
+- API rate limiting → Backoff, caching, and smaller queries.
+- Metric gaming/noise → Use diversified signals; allow maintainers to tune weights.
+- License detection inconsistencies → Fallback handling, explicit penalties for unknown licenses.
+
+## 19. Open Questions
+- Should we include language/runtime filters (e.g., Python, JS) in search?
+- Should we add min contributor thresholds?
+- What is the policy for manual overrides in the curated list?
+
+## 20. References
+- README.md (Quickstart, Configuration, Actions workflow, Output examples)
+- Example output: `healthtech-tools.md` format baked into renderer
+- Config template: `config.yaml` example in README
