@@ -1,0 +1,30 @@
+name: Hector HealthTech Scan
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Daily at midnight UTC
+  workflow_dispatch:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: |
+          python -m venv .venv
+          .venv/bin/python -m pip install -r requirements.txt
+      - name: Run Hector
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: .venv/bin/python scan_and_curate.py --live --limit 100
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: "Update curated healthtech list"
+          add: |
+            healthtech-tools.md

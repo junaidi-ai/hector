@@ -1,0 +1,63 @@
+search:
+  query: "(health OR healthcare OR medical OR medicine) in:name,description,readme is:public stars:>15"
+  topics: []
+  languages:
+    - Python
+    - R
+    - Julia
+    - Java
+    - C#
+    - C
+    - C++
+    - Rust
+    - Go
+    - JavaScript
+    - TypeScript
+    - PHP
+    - Scala
+    - Kotlin
+    - Swift
+    - Objective-C
+    - Ruby
+    - MATLAB
+    - Shell
+    - SQL
+    - Dart
+    - Elixir
+    - Erlang
+    - Jupyter Notebook
+
+weights:
+  stars: 0.3
+  forks: 0.2
+  open_issues: -0.1
+  prs: 0.2
+  discussions: 0.15
+  license:
+    MIT: 50
+    Apache-2.0: 50
+    GPL-3.0: 30
+    none: -100
+  # Optional additional signals
+  contributors: 0.3
+  recency_decay: 2.0
+
+output:
+  file: "healthtech-tools.md"
+  categories:
+    - AI Diagnostics
+    - Telemedicine
+    - EHR & Clinical Systems
+    - Imaging & Radiology
+    - Wearables & Remote Monitoring
+    - Public Health & Epidemiology
+    - Genomics & Precision Medicine
+    - Mental Health
+    - Scheduling & Patient Portals
+    - NLP & Clinical Text
+    - FHIR & Interoperability
+    - Data Platforms & ETL
+
+# Set to true to validate config and skip GitHub API calls
+# Turn off when you're ready to run live
+dry_run: true
