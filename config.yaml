@@ -43,7 +43,8 @@ weights:
   recency_decay: 2.0
 
 output:
-  file: "healthtech-tools.md"
+  file: "healthtech-tools-{date}.md"
+  latest: "healthtech-tools.md"
   categories:
     - AI Diagnostics
     - Telemedicine

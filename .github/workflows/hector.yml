@@ -28,3 +28,4 @@ jobs:
           message: "Update curated healthtech list"
           add: |
             healthtech-tools.md
+            healthtech-tools-*.md

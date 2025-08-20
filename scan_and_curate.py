@@ -2,7 +2,8 @@
 import argparse
 import logging
 import sys
-from typing import Dict, List
+from datetime import datetime
+from typing import Dict, List, Optional, Tuple
 
 from hector.config import load_config
 from hector import scanner
@@ -30,6 +31,24 @@ def setup_logging(level: str) -> None:
         level=level_num,
         format="%(asctime)s hector %(levelname)s %(message)s",
     )
+
+
+def _resolve_output_paths(cfg: Dict, cli_output: Optional[str]) -> Tuple[str, Optional[str]]:
+    """Resolve the output markdown path and optional 'latest' path.
+
+    Supports {date} placeholder in config's output.file. If cli_output is provided,
+    it takes precedence (no templating), but we still honor output.latest if present.
+    """
+    out_cfg = cfg.get("output", {})
+    latest_path = out_cfg.get("latest")
+
+    if cli_output:
+        return cli_output, latest_path
+
+    file_tmpl = out_cfg.get("file", "healthtech-tools.md")
+    today = datetime.utcnow().strftime("%Y-%m-%d")
+    out_file = str(file_tmpl).replace("{date}", today)
+    return out_file, latest_path
 
 
 def main(argv: List[str]) -> int:
@@ -89,14 +108,20 @@ def main(argv: List[str]) -> int:
             log.warning("Skipping repository due to error: %s", e)
             continue
 
-    output_file = cfg.get("output", {}).get("file", "healthtech-tools.md")
+    output_file, latest_file = _resolve_output_paths(cfg, args.output)
     if not items:
         log.info("No repositories processed; writing an empty curated list stub to %s", output_file)
         render_markdown([], output_file, cats_config)
+        if latest_file:
+            log.info("Also updating latest index at %s", latest_file)
+            render_markdown([], latest_file, cats_config)
         return 0
 
     log.info("Rendering results to %s ...", output_file)
     render_markdown(items, output_file, cats_config)
+    if latest_file:
+        log.info("Also updating latest index at %s", latest_file)
+        render_markdown(items, latest_file, cats_config)
     log.info("Done.")
     return 0
 
