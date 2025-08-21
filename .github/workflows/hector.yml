@@ -5,6 +5,10 @@ on:
     - cron: '0 0 * * *'  # Daily at midnight UTC
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   scan:
     runs-on: ubuntu-latest
@@ -21,11 +25,16 @@ jobs:
       - name: Run Hector
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: .venv/bin/python scan_and_curate.py --live --limit 100
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v9
+        run: .venv/bin/python scan_and_curate.py --live --limit 100 --log-level INFO
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
         with:
-          message: "Update curated healthtech list"
-          add: |
+          commit-message: "chore: update curated healthtech list"
+          title: "Update curated healthtech list (scheduled run)"
+          body: |
+            Automated update via Hector. Includes dated output and latest index.
+          branch: hector/update-${{ github.run_id }}
+          delete-branch: true
+          add-paths: |
             healthtech-tools.md
             healthtech-tools-*.md
