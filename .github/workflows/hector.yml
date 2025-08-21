@@ -29,6 +29,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
+          token: ${{ secrets.PR_TOKEN }}
           commit-message: "chore: update curated healthtech list"
           title: "Update curated healthtech list (scheduled run)"
           body: |
