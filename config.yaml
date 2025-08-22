@@ -43,8 +43,8 @@ weights:
   recency_decay: 2.0
 
 output:
-  file: "healthtech-tools-{date}.md"
-  latest: "healthtech-tools.md"
+  file: "result/healthtech-tools-{date}.md"
+  latest: "result/healthtech-tools.md"
   categories:
     - AI Diagnostics
     - Telemedicine
@@ -58,6 +58,21 @@ output:
     - NLP & Clinical Text
     - FHIR & Interoperability
     - Data Platforms & ETL
+  category_keywords:
+    Telemedicine:
+      - telecare
+      - remote visit
+    "Imaging & Radiology":
+      - radiomics
+      - dicomweb
+    "EHR & Clinical Systems":
+      - ehr system
+      - emr system
+      - medical record
+    "NLP & Clinical Text":
+      - clinical nlp
+      - de-id
+      - annotation
 
 # Set to true to validate config and skip GitHub API calls
 # Turn off when you're ready to run live
