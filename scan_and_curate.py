@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import argparse
 import logging
+import os
 import sys
 from datetime import datetime
 from typing import Dict, List, Optional, Tuple
@@ -74,6 +75,7 @@ def main(argv: List[str]) -> int:
 
     weights: Dict = cfg.get("weights", {})
     cats_config: List[str] = cfg.get("output", {}).get("categories", [])
+    cat_keywords: Dict = cfg.get("category_keywords") or cfg.get("output", {}).get("category_keywords", {})
 
     items = []
     for r in repos:
@@ -81,9 +83,18 @@ def main(argv: List[str]) -> int:
             name = getattr(r, "full_name", getattr(r, "name", "unknown"))
             url = getattr(r, "html_url", "")
             desc = getattr(r, "description", "") or ""
+            # Best-effort: include repo topics to improve categorization recall
+            repo_topics: List[str] = []
+            try:
+                get_topics = getattr(r, "get_topics", None)
+                if callable(get_topics):
+                    repo_topics = get_topics() or []
+            except Exception:
+                repo_topics = []
+            desc_for_cat = (desc + " " + " ".join(repo_topics)).strip()
             metrics = scanner.get_repo_metrics(r)
             score = score_repository(r, weights, metrics)
-            cats = categorize_repository(name, desc, cats_config)
+            cats = categorize_repository(name, desc_for_cat, cats_config, cat_keywords)
             lic = getattr(getattr(r, "license", None), "spdx_id", None) or "none"
             stars = int(getattr(r, "stargazers_count", 0) or 0)
             forks = int(getattr(r, "forks_count", 0) or 0)
@@ -109,6 +120,14 @@ def main(argv: List[str]) -> int:
             continue
 
     output_file, latest_file = _resolve_output_paths(cfg, args.output)
+    # Ensure output directories exist
+    paths_to_prepare = [output_file]
+    if latest_file:
+        paths_to_prepare.append(latest_file)
+    for p in paths_to_prepare:
+        d = os.path.dirname(p)
+        if d:
+            os.makedirs(d, exist_ok=True)
     if not items:
         log.info("No repositories processed; writing an empty curated list stub to %s", output_file)
         render_markdown([], output_file, cats_config)

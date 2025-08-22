@@ -6,6 +6,12 @@ Hector is an automated bot that discovers, scores, and curates open‑source hea
 
 ---
 
+## Latest Results
+
+- View the latest curated list here: [result/healthtech-tools.md](result/healthtech-tools.md)
+
+---
+
 ## Table of Contents
 - [Features](#features)
 - [How It Works](#how-it-works)
@@ -103,7 +109,8 @@ weights:
   license: { "MIT": 50, "Apache-2.0": 50, "GPL-3.0": 30, "none": -100 }
 
 output:
-  file: "healthtech-tools.md"
+  file: "result/healthtech-tools-{date}.md"
+  latest: "result/healthtech-tools.md"
   categories: ["AI Diagnostics", "Telemedicine", "Health Data"]
 ```
 
