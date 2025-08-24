@@ -26,6 +26,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: .venv/bin/python scan_and_curate.py --live --limit 100 --log-level INFO
+      - name: Run unit tests
+        run: .venv/bin/python -m pytest -q
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
