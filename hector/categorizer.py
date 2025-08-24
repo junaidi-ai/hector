@@ -169,4 +169,41 @@ def categorize_repository(
                 matched.append(norm_cat)
                 break
 
+    # Fallback: if nothing matched but text is clearly AI-related, map to AI Diagnostics
+    if not matched:
+        ai_indicators = [
+            "ai",
+            "artificial intelligence",
+            "machine learning",
+            "deep learning",
+            "foundation model",
+            "large language model",
+            "llm",
+            "vision-language model",
+            "vlm",
+            "multimodal",
+            "multi-modal",
+            "vqa",
+            "retrieval augmented generation",
+            "retrieval-augmented generation",
+            "rag",
+            "agent",
+            "agentic",
+            "transformer",
+            "attention",
+            "self-attention",
+            "graph neural network",
+            "gnn",
+            "graph-based attention",
+            "gat",
+            "gcn",
+            "graph attention network",
+            "medical reasoning",
+            "clinical decision support",
+        ]
+        if any(ind in text for ind in ai_indicators) and any(
+            _normalize(str(c)) == _normalize("AI Diagnostics") for c in categories
+        ):
+            matched.append("AI Diagnostics")
+
     return matched
