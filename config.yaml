@@ -59,6 +59,38 @@ output:
     - FHIR & Interoperability
     - Data Platforms & ETL
   category_keywords:
+    "AI Diagnostics":
+      - ai
+      - artificial intelligence
+      - machine learning
+      - deep learning
+      - foundation model
+      - large language model
+      - llm
+      - vision-language model
+      - vlm
+      - multimodal
+      - multi-modal
+      - vqa
+      - retrieval augmented generation
+      - retrieval-augmented generation
+      - rag
+      - agent
+      - agentic
+      - medical agent
+      - clinical agent
+      - transformer
+      - attention
+      - self-attention
+      - graph neural network
+      - gnn
+      - graph-based attention
+      - gat
+      - gcn
+      - graph attention network
+      - diagnosis model
+      - medical reasoning
+      - clinical decision support
     Telemedicine:
       - telecare
       - remote visit
