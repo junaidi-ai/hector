@@ -16,6 +16,10 @@ def _phrase_in_text(phrase: str, text: str) -> bool:
     p = _normalize(phrase)
     if not p:
         return False
+    # For short acronyms or tokens without spaces (e.g., nlp, hl7, fhir, dicom),
+    # allow relaxed substring match to catch cases like "smartonfhir" or "mednlp".
+    if " " not in p and len(p) <= 4:
+        return p in text
     # Allow multi-word phrases; respect word boundaries around the whole phrase
     pattern = r"(?:^|\b)" + re.escape(p).replace(r"\ ", r"\s+") + r"(?:\b|$)"
     return re.search(pattern, text) is not None
