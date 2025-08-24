@@ -1,14 +1,235 @@
 # Curated Healthcare Technology Tools
 
 ## AI Diagnostics
+- **[Project-MONAI/MONAI](https://github.com/Project-MONAI/MONAI)** (Score: 2312.28)
+  - License: Apache-2.0 | Stars: 6758 | Forks: 1241
+  - PRs open: 86 | Discussions: Yes | Contributors: 50 | Last push: 1 days ago
+  - Description: AI Toolkit for Healthcare Imaging
+- **[shibing624/MedicalGPT](https://github.com/shibing624/MedicalGPT)** (Score: 1383.77)
+  - License: Apache-2.0 | Stars: 4055 | Forks: 597
+  - PRs open: 1 | Discussions: No | Contributors: 10 | Last push: 5 days ago
+  - Description: MedicalGPT: Training Your Own Medical GPT Model with ChatGPT Training Pipeline. 训练医疗大模型，实现了包括增量预训练(PT)、有监督微调(SFT)、RLHF、DPO、ORPO、GRPO。
+- **[llSourcell/Doctor-Dignity](https://github.com/llSourcell/Doctor-Dignity)** (Score: 1255.83)
+  - License: Apache-2.0 | Stars: 3856 | Forks: 416
+  - PRs open: 0 | Discussions: No | Contributors: 50 | Last push: 703 days ago
+  - Description: Doctor Dignity is an LLM that can pass the US Medical Licensing Exam. It works offline, it's cross-platform, & your health data stays private.
+- **[TorchIO-project/torchio](https://github.com/TorchIO-project/torchio)** (Score: 788.88)
+  - License: Apache-2.0 | Stars: 2253 | Forks: 249
+  - PRs open: 8 | Discussions: Yes | Contributors: 50 | Last push: 4 days ago
+  - Description: Medical imaging processing for AI applications.
+- **[epfLLM/meditron](https://github.com/epfLLM/meditron)** (Score: 679.87)
+  - License: Apache-2.0 | Stars: 2073 | Forks: 199
+  - PRs open: 0 | Discussions: No | Contributors: 10 | Last push: 500 days ago
+  - Description: Meditron is a suite of open-source medical Large Language Models (LLMs).
+- **[rockingdingo/deepnlp](https://github.com/rockingdingo/deepnlp)** (Score: 574.33)
+  - License: MIT | Stars: 1358 | Forks: 709
+  - PRs open: 1 | Discussions: No | Contributors: 1 | Last push: 316 days ago
+  - Description: Deep Learning NLP Pipeline implemented on Tensorflow
+- **[Tencent/MedicalNet](https://github.com/Tencent/MedicalNet)** (Score: 553.27)
+  - License: NOASSERTION | Stars: 2079 | Forks: 437
+  - PRs open: 6 | Discussions: No | Contributors: 1 | Last push: 779 days ago
+  - Description: Many studies have shown that the performance on deep learning is significantly affected by volume of training data. The MedicalNet project provides a series of 3D-ResNet pre-trained models and relative code.
+- **[DCDmllm/HealthGPT](https://github.com/DCDmllm/HealthGPT)** (Score: 537.2)
+  - License: Apache-2.0 | Stars: 1491 | Forks: 232
+  - PRs open: 0 | Discussions: No | Contributors: 5 | Last push: 105 days ago
+  - Description: 【ICML 2025 Spotlight】 Official Repo for Paper ‘’HealthGPT : A Medical Large Vision-Language Model for Unifying Comprehension and Generation via Heterogeneous Knowledge Adaptation‘’
+- **[sunlabuiuc/PyHealth](https://github.com/sunlabuiuc/PyHealth)** (Score: 510.78)
+  - License: MIT | Stars: 1209 | Forks: 428
+  - PRs open: 61 | Discussions: Yes | Contributors: 28 | Last push: 7 days ago
+  - Description: A Deep Learning Python Toolkit for Healthcare Applications.
+- **[NifTK/NiftyNet](https://github.com/NifTK/NiftyNet)** (Score: 416.4)
+  - License: Apache-2.0 | Stars: 1379 | Forks: 402
+  - PRs open: 3 | Discussions: No | Contributors: 40 | Last push: 1950 days ago
+  - Description: [unmaintained] An open-source convolutional neural networks platform for research in medical image analysis and image-guided therapy
+- **[securefederatedai/openfederatedlearning](https://github.com/securefederatedai/openfederatedlearning)** (Score: 349.25)
+  - License: Apache-2.0 | Stars: 802 | Forks: 230
+  - PRs open: 31 | Discussions: Yes | Contributors: 50 | Last push: 12 days ago
+  - Description: An Open Framework for Federated Learning.
+- **[bowang-lab/MedRAX](https://github.com/bowang-lab/MedRAX)** (Score: 275.73)
+  - License: Apache-2.0 | Stars: 660 | Forks: 139
+  - PRs open: 6 | Discussions: No | Contributors: 4 | Last push: 22 days ago
+  - Description: MedRAX: Medical Reasoning Agent for Chest X-ray - ICML 2025
+- **[taokz/BiomedGPT](https://github.com/taokz/BiomedGPT)** (Score: 264.07)
+  - License: Apache-2.0 | Stars: 677 | Forks: 77
+  - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 47 days ago
+  - Description: BiomedGPT: A Generalist Vision-Language Foundation Model for Diverse Biomedical Tasks
+- **[souvikmajumder26/Multi-Agent-Medical-Assistant](https://github.com/souvikmajumder26/Multi-Agent-Medical-Assistant)** (Score: 232.77)
+  - License: Apache-2.0 | Stars: 546 | Forks: 131
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 113 days ago
+  - Description: ⚕️GenAI powered multi-agentic medical diagnostics and healthcare research assistance chatbot. 🏥 Designed for healthcare professionals, researchers and patients.
+- **[kbressem/medAlpaca](https://github.com/kbressem/medAlpaca)** (Score: 157.27)
+  - License: GPL-3.0 | Stars: 536 | Forks: 69
+  - PRs open: 0 | Discussions: No | Contributors: 6 | Last push: 716 days ago
+  - Description: LLM finetuned for medical question answering
+- **[kyegomez/Med-PaLM](https://github.com/kyegomez/Med-PaLM)** (Score: 147.97)
+  - License: MIT | Stars: 415 | Forks: 56
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 554 days ago
+  - Description: Towards Generalist Biomedical AI
+- **[microsoft/hi-ml](https://github.com/microsoft/hi-ml)** (Score: 146.42)
+  - License: MIT | Stars: 295 | Forks: 59
+  - PRs open: 24 | Discussions: Yes | Contributors: 19 | Last push: 47 days ago
+  - Description: HI-ML toolbox for deep learning for medical imaging and Azure integration
+- **[cambridgeltl/visual-med-alpaca](https://github.com/cambridgeltl/visual-med-alpaca)** (Score: 140.17)
+  - License: Apache-2.0 | Stars: 389 | Forks: 44
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 530 days ago
+  - Description: Visual Med-Alpaca is an open-source, multi-modal foundation model designed specifically for the biomedical domain, built on the LLaMa-7B.
+- **[GetSoloTech/solo-server](https://github.com/GetSoloTech/solo-server)** (Score: 127.83)
+  - License: Apache-2.0 | Stars: 239 | Forks: 21
+  - PRs open: 12 | Discussions: No | Contributors: 8 | Last push: 16 days ago
+  - Description: Server for Physical AI Inference
+- **[mlcommons/medperf](https://github.com/mlcommons/medperf)** (Score: 105.72)
+  - License: Apache-2.0 | Stars: 161 | Forks: 36
+  - PRs open: 21 | Discussions: Yes | Contributors: 18 | Last push: 32 days ago
+  - Description: An open benchmarking platform for medical artificial intelligence using Federated Evaluation.
+- **[Omid-Nejati/MedViT](https://github.com/Omid-Nejati/MedViT)** (Score: 102.37)
+  - License: MIT | Stars: 205 | Forks: 30
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 227 days ago
+  - Description: MedViT: A Robust Vision Transformer for Generalized Medical Image Classification (Computers in Biology and Medicine 2023)
+- **[NYUMedML/GNN_for_EHR](https://github.com/NYUMedML/GNN_for_EHR)** (Score: 99.6)
+  - License: GPL-3.0 | Stars: 269 | Forks: 63
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 345 days ago
+  - Description: Code for "Graph Neural Network on Electronic Health Records for Predicting Alzheimer’s Disease"
+- **[Azure-Samples/healthcare-agent-orchestrator](https://github.com/Azure-Samples/healthcare-agent-orchestrator)** (Score: 99.17)
+  - License: MIT | Stars: 123 | Forks: 45
+  - PRs open: 4 | Discussions: No | Contributors: 11 | Last push: 2 days ago
+  - Description: Facilitates creating modular specialized agents that coordinate across diverse data types and tools like M365 and Teams to assist multi-disciplinary healthcare workflows—such as cancer care.
+- **[xliucs/MTTS-CAN](https://github.com/xliucs/MTTS-CAN)** (Score: 93.93)
+  - License: MIT | Stars: 193 | Forks: 54
+  - PRs open: 2 | Discussions: No | Contributors: 1 | Last push: 373 days ago
+  - Description: Multi-Task Temporal Shift Attention Networks for On-Device Contactless Vitals Measurement (NeurIPS 2020)
+- **[FreedomIntelligence/Apollo](https://github.com/FreedomIntelligence/Apollo)** (Score: 89.53)
+  - License: Apache-2.0 | Stars: 194 | Forks: 8
+  - PRs open: 1 | Discussions: No | Contributors: 3 | Last push: 313 days ago
+  - Description: Multilingual Medicine: Model, Dataset, Benchmark, Code
+- **[dotimplement/HealthChain](https://github.com/dotimplement/HealthChain)** (Score: 84.45)
+  - License: Apache-2.0 | Stars: 106 | Forks: 13
+  - PRs open: 1 | Discussions: Yes | Contributors: 7 | Last push: 3 days ago
+  - Description: The missing middleware layer in healthcare AI 💫 🏥
+- **[TAHIR0110/ThereForYou](https://github.com/TAHIR0110/ThereForYou)** (Score: 81.7)
+  - License: MIT | Stars: 90 | Forks: 90
+  - PRs open: 7 | Discussions: No | Contributors: 48 | Last push: 201 days ago
+  - Description: ThereForYou: Your mental health ally. Kai, our AI assistant, offers compassionate support. Track your mood trends, find solace in a secure community, and access crisis resources swiftly. We're here to empower your journey towards improved well-being, leveraging technology for a brighter tomorrow.
 - **[daveshap/Medical_Intake](https://github.com/daveshap/Medical_Intake)** (Score: 70.42)
   - License: MIT | Stars: 176 | Forks: 65
   - PRs open: 0 | Discussions: Yes | Contributors: 2 | Last push: 692 days ago
   - Description: Automated pipeline for medical intake, diagnosis, tests, etc.
+- **[rockingdingo/gym-gomoku](https://github.com/rockingdingo/gym-gomoku)** (Score: 60.83)
+  - License: MIT | Stars: 88 | Forks: 27
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 316 days ago
+  - Description: OpenAI Gym Env for game Gomoku(Five-In-a-Row, 五子棋, 五目並べ, omok, Gobang,...)
+- **[vanderschaarlab/temporai](https://github.com/vanderschaarlab/temporai)** (Score: 47.3)
+  - License: Apache-2.0 | Stars: 119 | Forks: 23
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 618 days ago
+  - Description: TemporAI: ML-centric Toolkit for Medical Time Series
+- **[lrsoenksen/HAIM](https://github.com/lrsoenksen/HAIM)** (Score: 40.47)
+  - License: Apache-2.0 | Stars: 128 | Forks: 29
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 803 days ago
+  - Description: This repository contains the code to replicate the data processing, modeling and reporting of our Holistic AI in Medicine (HAIM) Publication in Nature Machine Intelligence (Soenksen LR, Ma Y, Zeng C et al. 2022).
+- **[paulvangentcom/python_corona_simulation](https://github.com/paulvangentcom/python_corona_simulation)** (Score: 37.4)
+  - License: GPL-3.0 | Stars: 294 | Forks: 77
+  - PRs open: 9 | Discussions: No | Contributors: 4 | Last push: 1464 days ago
+  - Description: An agent-based simulation of corona and other viruses in python
+- **[ThisIs-Developer/Llama-2-GGML-Medical-Chatbot](https://github.com/ThisIs-Developer/Llama-2-GGML-Medical-Chatbot)** (Score: 34.78)
+  - License: MIT | Stars: 42 | Forks: 18
+  - PRs open: 9 | Discussions: Yes | Contributors: 2 | Last push: 496 days ago
+  - Description: Llama2-Medical-Chatbot is a medical chatbot that uses the Llama-2-7B-Chat-GGML model and the pdf The Gale Encyclopedia of Medicine, Volume 1, 2nd Edition. It is still under development, but it has the potential to be a valuable tool for patients, healthcare professionals, and researchers.
+- **[ncbi-nlp/bluebert](https://github.com/ncbi-nlp/bluebert)** (Score: 30.83)
+  - License: NOASSERTION | Stars: 576 | Forks: 82
+  - PRs open: 1 | Discussions: No | Contributors: 3 | Last push: 883 days ago
+  - Description: BlueBERT, pre-trained on PubMed abstracts and clinical notes (MIMIC-III).
+- **[ChiragAgg5k/asclepius](https://github.com/ChiragAgg5k/asclepius)** (Score: 29.58)
+  - License: MIT | Stars: 28 | Forks: 7
+  - PRs open: 0 | Discussions: Yes | Contributors: 5 | Last push: 478 days ago
+  - Description: Healthcare related tracking and ordering software for students of Bennett University
+- **[Teddy-XiongGZ/MedRAG](https://github.com/Teddy-XiongGZ/MedRAG)** (Score: 29.3)
+  - License: NOASSERTION | Stars: 415 | Forks: 58
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 108 days ago
+  - Description: Code for the MedRAG toolkit
+- **[HealthCatalyst/healthcareai-py](https://github.com/HealthCatalyst/healthcareai-py)** (Score: 27.17)
+  - License: MIT | Stars: 324 | Forks: 192
+  - PRs open: 8 | Discussions: No | Contributors: 15 | Last push: 2321 days ago
+  - Description: Python tools for healthcare machine learning
+- **[LifestyleCorp/Medical-AGI](https://github.com/LifestyleCorp/Medical-AGI)** (Score: 26.68)
+  - License: Apache-2.0 | Stars: 22 | Forks: 4
+  - PRs open: 0 | Discussions: Yes | Contributors: 2 | Last push: 472 days ago
+  - Description: LLM powered AI multi agent platform that coordinate global to individual health through scaling each layer of healthcare
+- **[mahmoodlab/CONCH](https://github.com/mahmoodlab/CONCH)** (Score: 17.33)
+  - License: NOASSERTION | Stars: 400 | Forks: 36
+  - PRs open: 2 | Discussions: No | Contributors: 3 | Last push: 151 days ago
+  - Description: Vision-Language Pathology Foundation Model - Nature Medicine
+- **[vanderschaarlab/mlforhealthlabpub](https://github.com/vanderschaarlab/mlforhealthlabpub)** (Score: 11.97)
+  - License: NOASSERTION | Stars: 455 | Forks: 181
+  - PRs open: 1 | Discussions: No | Contributors: 3 | Last push: 908 days ago
+  - Description: Machine Learning and Artificial Intelligence for Medicine.
+- **[FreedomIntelligence/HuatuoGPT-Vision](https://github.com/FreedomIntelligence/HuatuoGPT-Vision)** (Score: -3.43)
+  - License: none | Stars: 335 | Forks: 28
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 122 days ago
+  - Description: Medical Multimodal LLMs
+- **[SNOWTEAM2023/MedRAG](https://github.com/SNOWTEAM2023/MedRAG)** (Score: -35.4)
+  - License: NOASSERTION | Stars: 201 | Forks: 33
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 39 days ago
+- **[gersteinlab/MedAgents](https://github.com/gersteinlab/MedAgents)** (Score: -37.67)
+  - License: none | Stars: 278 | Forks: 43
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 454 days ago
+  - Description: [ACL 2024 Findings] MedAgents: Large Language Models as Collaborators for Zero-shot Medical Reasoning https://arxiv.org/abs/2311.10537
+- **[prasadseemakurthi/Deep-Neural-Networks-HealthCare](https://github.com/prasadseemakurthi/Deep-Neural-Networks-HealthCare)** (Score: -56.77)
+  - License: MIT | Stars: 124 | Forks: 223
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2833 days ago
+  - Description: Tangible and Practical Deep Learning Projects Repository for Healthcare such as Cancer, Drug Discovery, Genomic and More
+- **[BIDS-Xu-Lab/Me-LLaMA](https://github.com/BIDS-Xu-Lab/Me-LLaMA)** (Score: -62.87)
+  - License: none | Stars: 158 | Forks: 18
+  - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 220 days ago
+  - Description: A novel medical large language model family with 13/70B parameters, which have SOTA performances on various medical tasks
+- **[Teddy-XiongGZ/MIRAGE](https://github.com/Teddy-XiongGZ/MIRAGE)** (Score: -65.9)
+  - License: NOASSERTION | Stars: 165 | Forks: 20
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 294 days ago
+  - Description: Official repository of the MIRAGE benchmark
+- **[sinAshish/Multi-Scale-Attention](https://github.com/sinAshish/Multi-Scale-Attention)** (Score: -69.5)
+  - License: none | Stars: 466 | Forks: 96
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1926 days ago
+  - Description: [JBHI] Code for our paper "Multi-scale Guided Attention for Medical Image Segmentation"
+- **[mp2893/gram](https://github.com/mp2893/gram)** (Score: -70.53)
+  - License: BSD-3-Clause | Stars: 244 | Forks: 70
+  - PRs open: 1 | Discussions: No | Contributors: 2 | Last push: 860 days ago
+  - Description: Graph-based Attention Model
+- **[chentao1999/MedicalRelationExtraction](https://github.com/chentao1999/MedicalRelationExtraction)** (Score: -75.7)
+  - License: MIT | Stars: 73 | Forks: 20
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2268 days ago
+  - Description: The depository support training and testing BERT-CNN model on three medical relation extraction corpora: BioCreative V CDR task corpus, traditional Chinese medicine  literature corpus, and i2b2 temporal relation corpus.
+- **[aristoteleo/awesome-bioagent-papers](https://github.com/aristoteleo/awesome-bioagent-papers)** (Score: -78.5)
+  - License: none | Stars: 61 | Forks: 3
+  - PRs open: 21 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: Agent self-driven repository on bio-agent papers, i.e. papers on LLM-based agents in biology and medicine.
+- **[openlifescience-ai/Open-Medical-Reasoning-Tasks](https://github.com/openlifescience-ai/Open-Medical-Reasoning-Tasks)** (Score: -82.23)
+  - License: none | Stars: 126 | Forks: 11
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 341 days ago
+  - Description: A comprehensive repository of reasoning tasks for Medical LLMs (and beyond)
+- **[pdichone/knowledge-graph-rag](https://github.com/pdichone/knowledge-graph-rag)** (Score: -85.3)
+  - License: none | Stars: 38 | Forks: 60
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 138 days ago
+- **[KaiHe-better/LLM-for-Healthcare](https://github.com/KaiHe-better/LLM-for-Healthcare)** (Score: -89.53)
+  - License: none | Stars: 124 | Forks: 14
+  - PRs open: 1 | Discussions: No | Contributors: 1 | Last push: 449 days ago
 - **[ahmadvh/AI-Agents-for-Medical-Diagnostics](https://github.com/ahmadvh/AI-Agents-for-Medical-Diagnostics)** (Score: -91.33)
   - License: none | Stars: 68 | Forks: 45
   - PRs open: 3 | Discussions: No | Contributors: 1 | Last push: 320 days ago
   - Description: A Python project to create specialized LLM-based AI agents that analyze complex medical cases. The system integrates insights from various medical professionals to provide comprehensive assessments and personalized treatment recommendations, showcasing the potential of AI in multidisciplinary medicine.
+- **[ncbi-nlp/NegBio](https://github.com/ncbi-nlp/NegBio)** (Score: -92.87)
+  - License: NOASSERTION | Stars: 163 | Forks: 43
+  - PRs open: 4 | Discussions: No | Contributors: 4 | Last push: 769 days ago
+  - Description: :newspaper: High-performance tool for negation and uncertainty detection in radiology reports
+- **[MohsinRazaKhanSipra/EHR-django](https://github.com/MohsinRazaKhanSipra/EHR-django)** (Score: -95.47)
+  - License: none | Stars: 20 | Forks: 12
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 67 days ago
+  - Description: DjangoEHR is an Electronic Health Records (EHR) system developed using the Django web framework. This project aims to provide healthcare professionals with a robust and secure platform for managing patient records, appointments, and medical information.
+- **[ruiyang-medinfo/KG-Rank](https://github.com/ruiyang-medinfo/KG-Rank)** (Score: -102.1)
+  - License: none | Stars: 44 | Forks: 7
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 258 days ago
+  - Description: KG-Rank: Enhancing Large Language Models for Medical QA with Knowledge Graphs and Ranking Techniques
+- **[williamliujl/Qilin-Med-VL](https://github.com/williamliujl/Qilin-Med-VL)** (Score: -121.87)
+  - License: none | Stars: 61 | Forks: 10
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 631 days ago
+  - Description: The first Chinese medical large vision-language model designed to integrate the analysis of textual and visual data
 - **[vsharathchandra/AI-Healthcare-chatbot](https://github.com/vsharathchandra/AI-Healthcare-chatbot)** (Score: -132.43)
   - License: none | Stars: 87 | Forks: 65
   - PRs open: 1 | Discussions: No | Contributors: 2 | Last push: 1082 days ago
@@ -17,6 +238,22 @@
   - License: none | Stars: 119 | Forks: 20
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1280 days ago
   - Description: 🤖 HealthCare ChatBot Major -1 (4th year - 7th semester)  Health Care Chat-Bot is a Healthcare Domain Chatbot to simulate the predictions of a General Physician.  ChatBot can be described as software that can chat with people using artificial intelligence. These software are used to perform tasks such as quickly responding to users, informing them, helping to purchase products and providing better service to customers. We have made a healthcare based chatbot.  The three main areas where chatbots can be used are diagnostics, patient engagement outside medical facilities, and mental health. In our major we are working on diagnostic.  📃 Brief A chatbot is an artificially intelligent creature which can converse with humans. This could be text-based, or a spoken conversation. In our project we will be using Python as it is currently the most popular language for creating an AI chatbot. In the middle of AI chatbot, architecture is the Natural Language Processing (NLP) layer.  This project aims to build an user-friendly healthcare chatbot which facilitates the job of a healthcare provider and helps improve their performance by interacting with users in a human-like way.  Through chatbots one can communicate with text or voice interface and get reply through artificial intelligence  Typically, a chat bot will communicate with a real person. Chat bots are used in applications such as E-commerce customer service, Call centres, Internet gaming,etc.  Chatbots are programs built to automatically engage with received messages. Chatbots can be programmed to respond the same way each time, to respond differently to messages containing certain keywords and even to use machine learning to adapt their responses to fit the situation.  A developing number of hospitals, nursing homes, and even private centres, presently utilize online Chatbots for human services on their sites. These bots connect with potential patients visiting the site, helping them discover specialists, booking their appointments, and getting them access to the correct treatment.  In any case, the utilization of artificial intelligence in an industry where individuals’ lives could be in question, still starts misgivings in individuals. It brings up issues about whether the task mentioned above ought to be assigned to human staff. This healthcare chatbot system will help hospitals to provide healthcare support online 24 x 7, it answers deep as well as general questions. It also helps to generate leads and automatically delivers the information of leads to sales. By asking the questions in series it helps patients by guiding what exactly he/she is looking for.  📜 Problem Statement During the pandemic, it is more important than ever to get your regular check-ups and to continue to take prescription medications. The healthier you are, the more likely you are to recover quickly from an illness.  In this time patients or health care workers within their practice, providers are deferring elective and preventive visits, such as annual physicals. For some, it is not possible to consult online. In this case, to avoid false information, our project can be of help.  📇 Features Register Screen. Sign-in Screen. Generates database for user login system. Offers you a GUI Based Chatbot for patients for diagnosing. [A pragmatic Approach for Diagnosis] Reccomends an appropriate doctor to you for the following symptom. 📜 Modules Used Our program uses a number of python modules to work properly:  tkinter os webbrowser numpy pandas matplotlib 📃 Algorithm We have used Decision tree for our health care based chat bot.  Decision Tree is a Supervised learning technique that can be used for both classification and Regression problems, but mostly it is preferred for solving Classification problems. It is a tree-structured classifier, where internal nodes represent the features of a dataset, branches represent the decision rules and each leaf node represents the outcome.It usually mimic human thinking ability while making a decision, so it is easy to understand.  :suspect: Project Members Anushka Bansal - 500067844 - R164218014 Shreya Sharma - 500068573 - R164218070 Silvi - 500069092 - R164218072 Ishika Agrawal - 500071154 - R164218097
+- **[aryanveturekar/Health-Care-Chat-Bot](https://github.com/aryanveturekar/Health-Care-Chat-Bot)** (Score: -150.3)
+  - License: none | Stars: 139 | Forks: 65
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1584 days ago
+  - Description: Through chatbots one can communicate with text or voice interface and get reply through artificial intelligence. Typically, a chat bot will communicate with a real person. Chat bots are used in applications such as ecommerce customer service, call centres and Internet gaming. Chatbots are programs built to automatically engage with received messages. Chatbots can be programmed to respond the same way each time, to respond differently to messages containing certain keywords and even to use machine learning to adapt their responses to fit the situation. A developing number of hospitals, nursing homes, and even private centres, presently utilize online Chatbots for human services on their sites. These bots connect with potential patients visiting the site, helping them discover specialists, booking their appointments, and getting them access to the correct treatment. In any case, the utilization of artificial intelligence in an industry where individuals’ lives could be in question, still starts misgivings in individuals. It brings up issues about whether the task mentioned above ought to be assigned to human staff. This healthcare chatbot system will help hospitals to provide healthcare support online 24 x 7, it answers deep as well as general questions. It also helps to generate leads and automatically delivers the information of leads to sales. By asking the questions in series it helps patients by guiding what exactly he/she is looking for.
+- **[DeepHiveMind/Medical-Healthcare-3D-Imaging-AI](https://github.com/DeepHiveMind/Medical-Healthcare-3D-Imaging-AI)** (Score: -199.33)
+  - License: BSD-3-Clause | Stars: 50 | Forks: 18
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1772 days ago
+  - Description: :hospital:  :eye_speech_bubble:  Medical Healthcare AI | Robotic Surgery | Automated Brain Tumour Segmentation | Skin Cancer Lesion Detection & Segmentation (Melonama Recognition) |  Lung Cancer detection (Chest CT Scan) | IMAGE SEGMENTATION TECHNIQUES
+- **[mp2893/retain](https://github.com/mp2893/retain)** (Score: -208.9)
+  - License: BSD-3-Clause | Stars: 217 | Forks: 79
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 2850 days ago
+  - Description: RETAIN: Interpretable Predictive Model in Healthcare using Reverse Time Attention Mechanism
+- **[gyaneshanand/SwasthyaChain-BlockChain-Based-Health-Management-System](https://github.com/gyaneshanand/SwasthyaChain-BlockChain-Based-Health-Management-System)** (Score: -263.87)
+  - License: none | Stars: 23 | Forks: 10
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2596 days ago
+  - Description: The project aims to use blockchain technology to create a user-focused electronic health record whilst maintaining a single true version of the user’s data.Swasthya Mitra is a decentralised platform that enables secure, fast and transparent exchange and usage of medical data.
 
 ## EHR & Clinical Systems
 - **[earthians/marley](https://github.com/earthians/marley)** (Score: 225.88)
@@ -124,9 +361,9 @@
   - License: Apache-2.0 | Stars: 1379 | Forks: 402
   - PRs open: 3 | Discussions: No | Contributors: 40 | Last push: 1950 days ago
   - Description: [unmaintained] An open-source convolutional neural networks platform for research in medical image analysis and image-guided therapy
-- **[uni-medical/SAM-Med3D](https://github.com/uni-medical/SAM-Med3D)** (Score: 284.3)
+- **[uni-medical/SAM-Med3D](https://github.com/uni-medical/SAM-Med3D)** (Score: 284.23)
   - License: Apache-2.0 | Stars: 733 | Forks: 95
-  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 66 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 67 days ago
   - Description: SAM-Med3D: An Efficient General-purpose Promptable Segmentation Model for 3D Volumetric Medical Image
 - **[bowang-lab/MedRAX](https://github.com/bowang-lab/MedRAX)** (Score: 275.73)
   - License: Apache-2.0 | Stars: 660 | Forks: 139
@@ -140,9 +377,9 @@
   - License: Apache-2.0 | Stars: 506 | Forks: 111
   - PRs open: 1 | Discussions: No | Contributors: 27 | Last push: 29 days ago
   - Description: Medical Concept Annotation Tool
-- **[pymedphys/pymedphys](https://github.com/pymedphys/pymedphys)** (Score: 157.95)
+- **[pymedphys/pymedphys](https://github.com/pymedphys/pymedphys)** (Score: 157.88)
   - License: Apache-2.0 | Stars: 336 | Forks: 79
-  - PRs open: 6 | Discussions: Yes | Contributors: 33 | Last push: 84 days ago
+  - PRs open: 6 | Discussions: Yes | Contributors: 33 | Last push: 85 days ago
   - Description: A community effort to develop an open standard library for Medical Physics in Python. Building quality transparent software together via peer review and open source distribution. Open code is better science.
 - **[theislab/ehrapy](https://github.com/theislab/ehrapy)** (Score: 149.32)
   - License: Apache-2.0 | Stars: 302 | Forks: 35
@@ -278,9 +515,9 @@
   - License: MIT | Stars: 1011 | Forks: 355
   - PRs open: 3 | Discussions: No | Contributors: 50 | Last push: 364 days ago
   - Description: Validated, scalable, community developed variant calling, RNA-seq and small RNA analysis
-- **[uni-medical/SAM-Med3D](https://github.com/uni-medical/SAM-Med3D)** (Score: 284.3)
+- **[uni-medical/SAM-Med3D](https://github.com/uni-medical/SAM-Med3D)** (Score: 284.23)
   - License: Apache-2.0 | Stars: 733 | Forks: 95
-  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 66 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 67 days ago
   - Description: SAM-Med3D: An Efficient General-purpose Promptable Segmentation Model for 3D Volumetric Medical Image
 - **[Azure-Samples/healthcare-agent-orchestrator](https://github.com/Azure-Samples/healthcare-agent-orchestrator)** (Score: 99.17)
   - License: MIT | Stars: 123 | Forks: 45
@@ -311,9 +548,9 @@
   - License: Apache-2.0 | Stars: 1379 | Forks: 402
   - PRs open: 3 | Discussions: No | Contributors: 40 | Last push: 1950 days ago
   - Description: [unmaintained] An open-source convolutional neural networks platform for research in medical image analysis and image-guided therapy
-- **[pymedphys/pymedphys](https://github.com/pymedphys/pymedphys)** (Score: 157.95)
+- **[pymedphys/pymedphys](https://github.com/pymedphys/pymedphys)** (Score: 157.88)
   - License: Apache-2.0 | Stars: 336 | Forks: 79
-  - PRs open: 6 | Discussions: Yes | Contributors: 33 | Last push: 84 days ago
+  - PRs open: 6 | Discussions: Yes | Contributors: 33 | Last push: 85 days ago
   - Description: A community effort to develop an open standard library for Medical Physics in Python. Building quality transparent software together via peer review and open source distribution. Open code is better science.
 - **[TAHIR0110/ThereForYou](https://github.com/TAHIR0110/ThereForYou)** (Score: 81.7)
   - License: MIT | Stars: 90 | Forks: 90
@@ -359,9 +596,9 @@
   - License: Apache-2.0 | Stars: 1491 | Forks: 232
   - PRs open: 0 | Discussions: No | Contributors: 5 | Last push: 105 days ago
   - Description: 【ICML 2025 Spotlight】 Official Repo for Paper ‘’HealthGPT : A Medical Large Vision-Language Model for Unifying Comprehension and Generation via Heterogeneous Knowledge Adaptation‘’
-- **[uni-medical/SAM-Med3D](https://github.com/uni-medical/SAM-Med3D)** (Score: 284.3)
+- **[uni-medical/SAM-Med3D](https://github.com/uni-medical/SAM-Med3D)** (Score: 284.23)
   - License: Apache-2.0 | Stars: 733 | Forks: 95
-  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 66 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 67 days ago
   - Description: SAM-Med3D: An Efficient General-purpose Promptable Segmentation Model for 3D Volumetric Medical Image
 - **[taokz/BiomedGPT](https://github.com/taokz/BiomedGPT)** (Score: 264.07)
   - License: Apache-2.0 | Stars: 677 | Forks: 77
@@ -379,9 +616,9 @@
   - License: GPL-3.0 | Stars: 536 | Forks: 69
   - PRs open: 0 | Discussions: No | Contributors: 6 | Last push: 716 days ago
   - Description: LLM finetuned for medical question answering
-- **[kyegomez/Med-PaLM](https://github.com/kyegomez/Med-PaLM)** (Score: 148.03)
+- **[kyegomez/Med-PaLM](https://github.com/kyegomez/Med-PaLM)** (Score: 147.97)
   - License: MIT | Stars: 415 | Forks: 56
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 553 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 554 days ago
   - Description: Towards Generalist Biomedical AI
 - **[GetSoloTech/solo-server](https://github.com/GetSoloTech/solo-server)** (Score: 127.83)
   - License: Apache-2.0 | Stars: 239 | Forks: 21
@@ -499,10 +736,6 @@
   - License: MIT | Stars: 2482 | Forks: 561
   - PRs open: 10 | Discussions: Yes | Contributors: 50 | Last push: 298 days ago
   - Description: Survival analysis in Python
-- **[securefederatedai/openfederatedlearning](https://github.com/securefederatedai/openfederatedlearning)** (Score: 349.25)
-  - License: Apache-2.0 | Stars: 802 | Forks: 230
-  - PRs open: 31 | Discussions: Yes | Contributors: 50 | Last push: 12 days ago
-  - Description: An Open Framework for Federated Learning.
 - **[ohcnetwork/care](https://github.com/ohcnetwork/care)** (Score: 258.23)
   - License: MIT | Stars: 322 | Forks: 464
   - PRs open: 39 | Discussions: No | Contributors: 50 | Last push: 1 days ago
@@ -513,71 +746,21 @@
 - **[Google-Health/medsiglip](https://github.com/Google-Health/medsiglip)** (Score: 106.27)
   - License: Apache-2.0 | Stars: 174 | Forks: 18
   - PRs open: 4 | Discussions: No | Contributors: 4 | Last push: 17 days ago
-- **[mlcommons/medperf](https://github.com/mlcommons/medperf)** (Score: 105.72)
-  - License: Apache-2.0 | Stars: 161 | Forks: 36
-  - PRs open: 21 | Discussions: Yes | Contributors: 18 | Last push: 32 days ago
-  - Description: An open benchmarking platform for medical artificial intelligence using Federated Evaluation.
 - **[chaoyi-wu/PMC-LLaMA](https://github.com/chaoyi-wu/PMC-LLaMA)** (Score: 80.9)
   - License: none | Stars: 660 | Forks: 59
   - PRs open: 1 | Discussions: No | Contributors: 3 | Last push: 411 days ago
   - Description: The official codes for "PMC-LLaMA: Towards Building Open-source Language Models for Medicine"
-- **[rockingdingo/gym-gomoku](https://github.com/rockingdingo/gym-gomoku)** (Score: 60.83)
-  - License: MIT | Stars: 88 | Forks: 27
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 316 days ago
-  - Description: OpenAI Gym Env for game Gomoku(Five-In-a-Row, 五子棋, 五目並べ, omok, Gobang,...)
 - **[mishal23/virtual-clinic](https://github.com/mishal23/virtual-clinic)** (Score: 60.0)
   - License: MIT | Stars: 90 | Forks: 53
   - PRs open: 3 | Discussions: No | Contributors: 2 | Last push: 423 days ago
   - Description: Virtual Clinic - An Integrated Care System
-- **[vanderschaarlab/temporai](https://github.com/vanderschaarlab/temporai)** (Score: 47.3)
-  - License: Apache-2.0 | Stars: 119 | Forks: 23
-  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 618 days ago
-  - Description: TemporAI: ML-centric Toolkit for Medical Time Series
-- **[paulvangentcom/python_corona_simulation](https://github.com/paulvangentcom/python_corona_simulation)** (Score: 37.4)
-  - License: GPL-3.0 | Stars: 294 | Forks: 77
-  - PRs open: 9 | Discussions: No | Contributors: 4 | Last push: 1464 days ago
-  - Description: An agent-based simulation of corona and other viruses in python
-- **[Teddy-XiongGZ/MedRAG](https://github.com/Teddy-XiongGZ/MedRAG)** (Score: 29.3)
-  - License: NOASSERTION | Stars: 415 | Forks: 58
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 108 days ago
-  - Description: Code for the MedRAG toolkit
-- **[HealthCatalyst/healthcareai-py](https://github.com/HealthCatalyst/healthcareai-py)** (Score: 27.17)
-  - License: MIT | Stars: 324 | Forks: 192
-  - PRs open: 8 | Discussions: No | Contributors: 15 | Last push: 2321 days ago
-  - Description: Python tools for healthcare machine learning
 - **[ncbi/GeneGPT](https://github.com/ncbi/GeneGPT)** (Score: 23.5)
   - License: NOASSERTION | Stars: 411 | Forks: 34
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 108 days ago
   - Description: Code and data for GeneGPT.
-- **[vanderschaarlab/mlforhealthlabpub](https://github.com/vanderschaarlab/mlforhealthlabpub)** (Score: 11.97)
-  - License: NOASSERTION | Stars: 455 | Forks: 181
-  - PRs open: 1 | Discussions: No | Contributors: 3 | Last push: 908 days ago
-  - Description: Machine Learning and Artificial Intelligence for Medicine.
-- **[SNOWTEAM2023/MedRAG](https://github.com/SNOWTEAM2023/MedRAG)** (Score: -35.33)
-  - License: NOASSERTION | Stars: 201 | Forks: 33
-  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 38 days ago
-- **[Teddy-XiongGZ/MIRAGE](https://github.com/Teddy-XiongGZ/MIRAGE)** (Score: -65.9)
-  - License: NOASSERTION | Stars: 165 | Forks: 20
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 294 days ago
-  - Description: Official repository of the MIRAGE benchmark
-- **[mp2893/gram](https://github.com/mp2893/gram)** (Score: -70.53)
-  - License: BSD-3-Clause | Stars: 244 | Forks: 70
-  - PRs open: 1 | Discussions: No | Contributors: 2 | Last push: 860 days ago
-  - Description: Graph-based Attention Model
-- **[pdichone/knowledge-graph-rag](https://github.com/pdichone/knowledge-graph-rag)** (Score: -85.3)
-  - License: none | Stars: 38 | Forks: 60
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 138 days ago
-- **[ruiyang-medinfo/KG-Rank](https://github.com/ruiyang-medinfo/KG-Rank)** (Score: -102.1)
-  - License: none | Stars: 44 | Forks: 7
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 258 days ago
-  - Description: KG-Rank: Enhancing Large Language Models for Medical QA with Knowledge Graphs and Ranking Techniques
 - **[BioMistral/BioMistral](https://github.com/BioMistral/BioMistral)** (Score: -115.5)
   - License: none | Stars: 39 | Forks: 6
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 429 days ago
-- **[williamliujl/Qilin-Med-VL](https://github.com/williamliujl/Qilin-Med-VL)** (Score: -121.87)
-  - License: none | Stars: 61 | Forks: 10
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 631 days ago
-  - Description: The first Chinese medical large vision-language model designed to integrate the analysis of textual and visual data
 - **[ielab/health-search-tutorial](https://github.com/ielab/health-search-tutorial)** (Score: -251.3)
   - License: none | Stars: 19 | Forks: 7
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 2385 days ago
