@@ -62,17 +62,140 @@ output:
     Telemedicine:
       - telecare
       - remote visit
+      - teleconsultation
+      - teleconsult
+      - video visit
+      - virtual visit
+      - remote triage
+      - remote patient visit
     "Imaging & Radiology":
       - radiomics
       - dicomweb
+      - radiography
+      - mammography
+      - pet-ct
+      - segmentation
+      - registration
+      - image reconstruction
+      - medical image analysis
     "EHR & Clinical Systems":
       - ehr system
       - emr system
       - medical record
+      - clinical decision support
+      - order entry
+      - cpoe
+      - hl7 v2
+      - cds hooks
+      - liss
+      - ris
+      - his
     "NLP & Clinical Text":
       - clinical nlp
       - de-id
       - annotation
+      - deidentification
+      - entity extraction
+      - concept extraction
+      - text classification
+      - note parsing
+      - LLM
+      - transformer
+      - bert
+      - medspaCy
+      - cTAKES
+      - negation detection
+      - assertion status
+    "FHIR & Interoperability":
+      - fhir server
+      - fhir client
+      - SMART on FHIR
+      - IHE
+      - CDA
+      - CCDA
+      - openEHR
+      - OMOP
+      - interoperability
+      - terminology server
+      - value set
+    "Data Platforms & ETL":
+      - etl
+      - extract transform load
+      - data platform
+      - data pipeline
+      - warehouse
+      - lakehouse
+      - elt
+      - airflow
+      - dagster
+      - prefect
+      - dbt
+      - kafka
+      - spark
+      - delta lake
+    "Wearables & Remote Monitoring":
+      - wearable
+      - wearables
+      - remote monitoring
+      - rpm
+      - smartwatch
+      - fitness tracker
+      - ecg
+      - ppg
+      - heart rate
+      - sleep tracking
+      - glucose monitoring
+      - cgm
+      - blood pressure
+    "Public Health & Epidemiology":
+      - public health
+      - epidemiology
+      - surveillance
+      - outbreak
+      - incidence
+      - prevalence
+      - vaccination
+      - contact tracing
+      - syndromic surveillance
+      - seir
+      - sir model
+    "Genomics & Precision Medicine":
+      - genomic
+      - genomics
+      - precision medicine
+      - vcf
+      - variant
+      - bioinformatics
+      - ngs
+      - bam
+      - sam
+      - fastq
+      - gff
+      - annotation pipeline
+      - variant calling
+      - alignment
+    "Mental Health":
+      - mental health
+      - psychiatry
+      - psychology
+      - therapy
+      - depression
+      - anxiety
+      - cbt
+      - mindfulness
+      - mood tracking
+      - suicide prevention
+    "Scheduling & Patient Portals":
+      - scheduling
+      - appointment
+      - booking
+      - patient portal
+      - portal
+      - calendar
+      - check-in
+      - reminder
+      - waitlist
+      - intake forms
 
 # Set to true to validate config and skip GitHub API calls
 # Turn off when you're ready to run live
