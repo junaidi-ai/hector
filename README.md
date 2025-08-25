@@ -1,6 +1,6 @@
 # Hector — HealthTech Tools Scanner Bot
 
-[![Hector Score](https://img.shields.io/badge/Hector%20Score-beta-lightgrey)](#hector-score-badge)
+[![Hector Score](https://img.shields.io/endpoint?url=https://junaidi-ai.github.io/hector/badge.json)](#hector-score-badge)
 
 Hector is an automated bot that discovers, scores, and curates open‑source healthcare technology repositories on GitHub. It uses the GitHub API (no scraping) to evaluate projects against weighted criteria and keeps a ranked, categorized list up to date via scheduled runs or a GitHub Actions workflow.
 
@@ -242,10 +242,24 @@ Hector is licensed under the MIT License. See `LICENSE` for details.
 
 ## Hector Score Badge (MVP)
 
-This repository will publish a simple Hector Score badge via Shields.io. Until the hosted endpoint is available, please use the placeholder badge at the top of this README. A future endpoint will power badges like:
+This repository publishes Hector Score badges via GitHub Pages + Shields.io.
 
-```
-https://img.shields.io/endpoint?url=https://your-domain.example/api/badge?project=<org>/<repo>
+- Global badge (projects tracked):
+
+```text
+https://img.shields.io/endpoint?url=https://junaidi-ai.github.io/hector/badge.json
 ```
 
-Projects will be able to embed the badge in their README to display their latest Hector Score.
+- Per-project badge (replace org/repo):
+
+```text
+https://img.shields.io/endpoint?url=https://junaidi-ai.github.io/hector/badges/<org>__<repo>.json
+```
+
+Example:
+
+```text
+https://img.shields.io/endpoint?url=https://junaidi-ai.github.io/hector/badges/Project-MONAI__MONAI.json
+```
+
+Projects can embed the badge in their README to display their latest Hector Score.

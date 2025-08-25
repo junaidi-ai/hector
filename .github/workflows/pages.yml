@@ -7,6 +7,8 @@ on:
       - 'result/**'
       - 'scripts/generate_badge_json.py'
       - '.github/workflows/pages.yml'
+  schedule:
+    - cron: '0 2 * * *' # Nightly at 02:00 UTC
   workflow_dispatch:
 
 permissions:
