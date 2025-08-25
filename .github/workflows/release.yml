@@ -92,8 +92,10 @@ jobs:
       - name: Open PR to update CHANGELOG
         uses: peter-evans/create-pull-request@v6
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PR_TOKEN }}
           base: main
+          commit-user-name: github-actions[bot]
+          commit-user-email: 41898282+github-actions[bot]@users.noreply.github.com
           commit-message: "docs(changelog): update for ${{ steps.range.outputs.current }}"
           title: "docs: Update CHANGELOG for ${{ steps.range.outputs.current }}"
           body: |
