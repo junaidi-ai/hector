@@ -93,6 +93,7 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          base: main
           commit-message: "docs(changelog): update for ${{ steps.range.outputs.current }}"
           title: "docs: Update CHANGELOG for ${{ steps.range.outputs.current }}"
           body: |
