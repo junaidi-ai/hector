@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   release:
@@ -48,3 +49,55 @@ jobs:
             dist/healthtech-tools-latest.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Determine tag range
+        id: range
+        run: |
+          CURRENT_TAG="${GITHUB_REF_NAME}"
+          if [ -z "$CURRENT_TAG" ]; then
+            CURRENT_TAG=$(git describe --tags --abbrev=0 || true)
+          fi
+          PREV_TAG=$(git describe --tags --abbrev=0 "${CURRENT_TAG}^" 2>/dev/null || true)
+          echo "current=$CURRENT_TAG" >> $GITHUB_OUTPUT
+          echo "previous=$PREV_TAG" >> $GITHUB_OUTPUT
+
+      - name: Generate/update CHANGELOG.md
+        run: |
+          CURRENT="${{ steps.range.outputs.current }}"
+          PREV="${{ steps.range.outputs.previous }}"
+          DATE=$(date -u +%Y-%m-%d)
+          TMP=CHANGELOG.tmp.md
+          echo "## $CURRENT - $DATE" > "$TMP"
+          echo >> "$TMP"
+          if [ -n "$PREV" ]; then
+            git log --pretty='- %s (%h) by %an' "$PREV..$CURRENT" >> "$TMP"
+          else
+            # First release: include commits reachable from current tag
+            git log --pretty='- %s (%h) by %an' "$CURRENT" >> "$TMP" || true
+          fi
+          echo >> "$TMP"
+          if [ -f CHANGELOG.md ]; then
+            echo "# Changelog" > CHANGELOG.new.md
+            echo >> CHANGELOG.new.md
+            cat "$TMP" >> CHANGELOG.new.md
+            echo >> CHANGELOG.new.md
+            awk 'FNR>2 || NR==1 {print}' CHANGELOG.md >> CHANGELOG.new.md
+            mv CHANGELOG.new.md CHANGELOG.md
+          else
+            echo "# Changelog" > CHANGELOG.md
+            echo >> CHANGELOG.md
+            cat "$TMP" >> CHANGELOG.md
+          fi
+
+      - name: Open PR to update CHANGELOG
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "docs(changelog): update for ${{ steps.range.outputs.current }}"
+          title: "docs: Update CHANGELOG for ${{ steps.range.outputs.current }}"
+          body: |
+            Automated changelog update for ${{ steps.range.outputs.current }}.
+          branch: chore/update-changelog-${{ github.run_id }}
+          delete-branch: true
+          add-paths: |
+            CHANGELOG.md
