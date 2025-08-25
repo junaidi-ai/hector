@@ -1,0 +1,6 @@
+# Code owners for review routing
+# Format: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+* @junaidi-ai
+.github/workflows/* @junaidi-ai
+hector/* @junaidi-ai
+scripts/* @junaidi-ai

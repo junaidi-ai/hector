@@ -1,5 +1,7 @@
 # Hector — HealthTech Tools Scanner Bot
 
+[![Hector Score](https://img.shields.io/badge/Hector%20Score-beta-lightgrey)](#hector-score-badge)
+
 Hector is an automated bot that discovers, scores, and curates open‑source healthcare technology repositories on GitHub. It uses the GitHub API (no scraping) to evaluate projects against weighted criteria and keeps a ranked, categorized list up to date via scheduled runs or a GitHub Actions workflow.
 
 > Goal: help the community quickly find high‑quality, actively maintained HealthTech tools.
@@ -198,6 +200,10 @@ A generated `healthtech-tools.md` might look like:
 - No unsolicited actions against external repositories.
 - Respects repository licenses and community guidelines.
 
+## Medical Disclaimer
+
+Hector provides software analytics and curation of public open‑source repositories. It does not provide medical, diagnostic, or treatment advice. Content and scores are for informational and research purposes only and are not a substitute for professional medical judgment. Always seek the advice of qualified health providers with any questions regarding medical conditions.
+
 ## Limitations
 
 - GitHub API rate limits can restrict large scans.
@@ -231,3 +237,15 @@ Hector is licensed under the MIT License. See `LICENSE` for details.
 - Open a GitHub Issue for bugs and feature requests.
 - Use Discussions for design ideas and feedback.
 - Prefer async support via GitHub; no private data should be shared.
+
+---
+
+## Hector Score Badge (MVP)
+
+This repository will publish a simple Hector Score badge via Shields.io. Until the hosted endpoint is available, please use the placeholder badge at the top of this README. A future endpoint will power badges like:
+
+```
+https://img.shields.io/endpoint?url=https://your-domain.example/api/badge?project=<org>/<repo>
+```
+
+Projects will be able to embed the badge in their README to display their latest Hector Score.
