@@ -92,8 +92,8 @@ jobs:
       - name: Open PR to update CHANGELOG
         uses: peter-evans/create-pull-request@v6
         with:
-          token: ${{ secrets.PR_TOKEN }}
-          git-token: ${{ secrets.PR_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          git-token: ${{ secrets.GITHUB_TOKEN }}
           base: main
           committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
           author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
