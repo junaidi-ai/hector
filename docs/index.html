@@ -58,19 +58,18 @@
       background: linear-gradient(135deg,#0ea5e9 0%, #22c55e 100%);
       color: white;
     }
-    .theme-toggle {
+    .theme-select {
       position: absolute;
       top: 14px;
       right: 14px;
-      background: rgb(255 255 255 / 0.9);
+      background: rgb(255 255 255 / 0.95);
       color: #0f172a;
       border: 1px solid var(--border);
       border-radius: 999px;
-      padding: 8px 12px;
+      padding: 6px 10px;
       font-size: 14px;
-      cursor: pointer;
     }
-    [data-theme="dark"] .theme-toggle { background: rgb(0 0 0 / 0.6); color: #e7e7ea; }
+    [data-theme="dark"] .theme-select { background: rgb(0 0 0 / 0.6); color: #e7e7ea; }
 
     main { max-width: 880px; margin: 24px auto; padding: 0 16px 48px; }
     .card {
@@ -79,7 +78,7 @@
       padding: 20px;
       margin: 16px 0;
       background: var(--card-bg);
-      backdrop-filter: blur(6px);
+      box-shadow: 0 1px 2px rgb(0 0 0 / 0.06);
     }
     a { color: var(--link); text-decoration: none; }
     a:hover { text-decoration: underline; color: var(--link-hover); }
@@ -91,7 +90,12 @@
 </head>
 <body>
   <header>
-    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme">Toggle theme</button>
+    <label style="position:absolute;left:-9999px" for="theme-select">Color theme</label>
+    <select class="theme-select" id="theme-select" aria-label="Color theme">
+      <option value="system">System</option>
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+    </select>
     <h1>Hector</h1>
     <p>Curated Healthtech tools and daily scans</p>
   </header>
@@ -125,30 +129,44 @@
     (function() {
       const STORAGE_KEY = 'hector:theme';
       const root = document.documentElement;
-      const btn = document.getElementById('theme-toggle');
+      const select = document.getElementById('theme-select');
 
       function apply(theme) {
-        if (!theme) { root.removeAttribute('data-theme'); return; }
+        if (theme === 'system' || !theme) {
+          root.removeAttribute('data-theme');
+          return;
+        }
         root.setAttribute('data-theme', theme);
       }
-      function getPreferred() {
-        const saved = localStorage.getItem(STORAGE_KEY);
-        if (saved === 'light' || saved === 'dark') return saved;
+
+      function systemPref() {
         return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
       }
-      function toggle() {
-        const current = root.getAttribute('data-theme') || getPreferred();
-        const next = current === 'dark' ? 'light' : 'dark';
-        apply(next);
-        localStorage.setItem(STORAGE_KEY, next);
-        btn.textContent = next === 'dark' ? 'Light mode' : 'Dark mode';
+
+      function currentTheme() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved === 'light' || saved === 'dark' || saved === 'system') return saved;
+        return 'system';
       }
 
-      // Init
-      const start = localStorage.getItem(STORAGE_KEY);
-      if (start) apply(start);
-      btn.textContent = (root.getAttribute('data-theme') || getPreferred()) === 'dark' ? 'Light mode' : 'Dark mode';
-      btn.addEventListener('click', toggle);
+      function onChange(e) {
+        const value = e.target.value;
+        localStorage.setItem(STORAGE_KEY, value);
+        apply(value);
+      }
+
+      // Init UI and state
+      const saved = currentTheme();
+      select.value = saved;
+      apply(saved);
+
+      // Keep in sync with OS when in system mode
+      const media = window.matchMedia('(prefers-color-scheme: dark)');
+      media.addEventListener('change', () => {
+        if (currentTheme() === 'system') apply('system');
+      });
+
+      select.addEventListener('change', onChange);
     })();
   </script>
 </body>
