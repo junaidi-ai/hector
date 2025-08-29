@@ -14,6 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Log UTC time
+        run: date -u "+%Y-%m-%d %H:%M:%S UTC"
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -31,7 +33,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PR_TOKEN || secrets.GITHUB_TOKEN }}
           commit-message: "chore: update curated healthtech list"
           title: "Update curated healthtech list (scheduled run)"
           body: |
