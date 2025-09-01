@@ -1,6 +1,28 @@
 search:
   query: "(health OR healthcare OR medical OR medicine) in:name,description,readme is:public stars:>15"
-  topics: []
+  topics:
+    - robotics
+    - robot
+    - surgical-robot
+    - teleoperation
+    - ros
+    - manipulation
+    - exoskeleton
+    - digital-therapeutics
+    - tinyml
+    - on-device
+    - edge-ai
+    - federated-learning
+    - privacy
+    - synthetic-data
+    - pocus
+    - handheld-ultrasound
+    - clinical-scribe
+    - digital-twin
+    - nextflow
+    - wdl
+    - vr
+    - ar
   languages:
     - Python
     - R
@@ -26,6 +48,32 @@ search:
     - Elixir
     - Erlang
     - Jupyter Notebook
+
+  # New optional settings to diversify discovery (all are backward compatible)
+  # Global defaults applied unless overridden per-strategy
+  sort: updated          # one of: stars | forks | help-wanted-issues | updated | created
+  order: desc            # asc | desc
+  pushed_within_days: 30 # include only repos pushed in the last N days when used
+  created_within_days: 14
+  exclude_forks: true
+  exclude_archived: true
+  orgs: []               # e.g., ["HL7", "OHDSI", "Project-MONAI"]
+  users: []              # e.g., ["some-user"]
+
+  # When provided, each strategy runs and results are merged (with de-dup)
+  strategies:
+    - name: recent_updates
+      use: pushed_within_days
+      sort: updated
+      order: desc
+    - name: newly_created
+      use: created_within_days
+      sort: created
+      order: desc
+    - name: high_stars
+      query_extra: "stars:>100"
+      sort: stars
+      order: desc
 
 weights:
   stars: 0.3
@@ -54,10 +102,16 @@ output:
     - Public Health & Epidemiology
     - Genomics & Precision Medicine
     - Mental Health
-    - Scheduling & Patient Portals
+    - Patient Engagement & Scheduling
     - NLP & Clinical Text
     - FHIR & Interoperability
     - Data Platforms & ETL
+    - Robotics & Surgical Systems
+    - Digital Therapeutics
+    - Privacy & Synthetic Data
+    - Digital Twins & Simulation
+    - Edge & Mobile Health AI
+    - AR/VR & Training
   category_keywords:
     "AI Diagnostics":
       - ai
@@ -165,6 +219,56 @@ output:
       - kafka
       - spark
       - delta lake
+    "Robotics & Surgical Systems":
+      - robotics
+      - robot
+      - surgical robot
+      - teleoperation
+      - tele-operated
+      - teleoperated
+      - ros
+      - manipulation
+      - exoskeleton
+      - surgical navigation
+      - robotic surgery
+    "Digital Therapeutics":
+      - digital therapeutics
+      - pdt
+      - prescription digital therapeutics
+      - samd
+      - software as a medical device
+      - cbt
+      - behavior change
+      - protocolized treatment
+    "Privacy & Synthetic Data":
+      - de-identification
+      - deid
+      - synthetic data
+      - federated
+      - federated learning
+      - differential privacy
+      - privacy-preserving
+    "Digital Twins & Simulation":
+      - digital twin
+      - simulation
+      - virtual trial
+      - synthetic control arm
+      - agent-based model
+      - abm
+    "Edge & Mobile Health AI":
+      - on-device
+      - edge ai
+      - tinyml
+      - tflite
+      - coreml
+      - mobile inference
+      - on device
+    "AR/VR & Training":
+      - ar
+      - vr
+      - xr
+      - simulator
+      - haptics
     "Wearables & Remote Monitoring":
       - wearable
       - wearables
@@ -217,7 +321,7 @@ output:
       - mindfulness
       - mood tracking
       - suicide prevention
-    "Scheduling & Patient Portals":
+    "Patient Engagement & Scheduling":
       - scheduling
       - appointment
       - booking

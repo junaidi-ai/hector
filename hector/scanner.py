@@ -1,6 +1,6 @@
 import os
-from datetime import datetime, timezone
-from typing import Any, Dict, List
+from datetime import datetime, timezone, timedelta
+from typing import Any, Dict, List, Optional
 import logging
 
 try:  # Optional dependency guard for dry-run mode
@@ -10,14 +10,72 @@ except Exception:  # pragma: no cover - import-time guard
 
 
 def _build_query(search_cfg: Dict[str, Any]) -> str:
+    """Build the base search query with topics and common exclusions."""
     q = (search_cfg.get("query") or "").strip()
     topics = [str(t).strip() for t in (search_cfg.get("topics") or []) if str(t).strip()]
     if topics:
         # Use OR to broaden matches across topics instead of requiring all of them
         topics_clause = " OR ".join([f"topic:{t}" for t in topics])
         q = f"{q} ({topics_clause})".strip()
-    logging.getLogger("hector").debug("GitHub search query: %s", q)
+
+    # Exclusions
+    if bool(search_cfg.get("exclude_forks", False)) and "fork:" not in q:
+        q = f"{q} fork:false".strip()
+    if bool(search_cfg.get("exclude_archived", False)) and "archived:" not in q:
+        q = f"{q} archived:false".strip()
+
+    logging.getLogger("hector").debug("GitHub base query: %s", q)
     return q.strip()
+
+
+def _apply_date_bounds(q: str, use: Optional[str], search_cfg: Dict[str, Any]) -> str:
+    """Append created:/pushed: qualifiers based on window settings."""
+    now = datetime.utcnow()
+    if use == "pushed_within_days":
+        days = int(search_cfg.get("pushed_within_days", 0) or 0)
+        if days > 0:
+            since = (now - timedelta(days=days)).strftime("%Y-%m-%d")
+            q = f"{q} pushed:>={since}"
+    elif use == "created_within_days":
+        days = int(search_cfg.get("created_within_days", 0) or 0)
+        if days > 0:
+            since = (now - timedelta(days=days)).strftime("%Y-%m-%d")
+            q = f"{q} created:>={since}"
+    return q
+
+
+def _iter_strategies(search_cfg: Dict[str, Any]) -> List[Dict[str, Any]]:
+    """Yield effective search strategies. Backward compatible.
+
+    If search_cfg["strategies"] exists, use it. Otherwise, synthesize a single
+    strategy from top-level sort/order/use settings.
+    """
+    strategies = search_cfg.get("strategies") or []
+    if strategies:
+        # Normalize each entry with defaults from top-level
+        norm: List[Dict[str, Any]] = []
+        for s in strategies:
+            s = dict(s or {})
+            s.setdefault("sort", search_cfg.get("sort"))
+            s.setdefault("order", search_cfg.get("order"))
+            norm.append(s)
+        return norm
+
+    # Fallback single strategy
+    return [
+        {
+            "name": "default",
+            "sort": search_cfg.get("sort"),
+            "order": search_cfg.get("order"),
+            # If either window is set, prefer pushed window unless explicitly specified
+            "use": (
+                "pushed_within_days"
+                if int(search_cfg.get("pushed_within_days", 0) or 0) > 0
+                else ("created_within_days" if int(search_cfg.get("created_within_days", 0) or 0) > 0 else None)
+            ),
+            "query_extra": search_cfg.get("query_extra", ""),
+        }
+    ]
 
 
 def _fetch_pagewise(results, remaining: int) -> List[Any]:
@@ -57,36 +115,113 @@ def search_repositories(cfg: Dict[str, Any], limit: int = 50):
     search_cfg = cfg.get("search", {})
     base_q = _build_query(search_cfg)
     languages = search_cfg.get("languages") or []
+    orgs = [str(x).strip() for x in (search_cfg.get("orgs") or []) if str(x).strip()]
+    users = [str(x).strip() for x in (search_cfg.get("users") or []) if str(x).strip()]
 
     remaining = max(1, int(limit))
     all_repos: List[Any] = []
     seen_ids = set()
+    log = logging.getLogger("hector")
 
-    if languages:
-        for lang in languages:
-            if remaining <= 0:
-                break
-            lang = str(lang).strip()
-            if not lang:
-                continue
-            q = f"{base_q} language:{lang}".strip()
-            logging.getLogger("hector").debug("GitHub search (lang=%s): %s", lang, q)
-            results = gh.search_repositories(q)
-            fetched = _fetch_pagewise(results, remaining)
-            for r in fetched:
-                rid = getattr(r, "id", None) or getattr(r, "full_name", None)
-                if rid in seen_ids:
-                    continue
-                seen_ids.add(rid)
-                all_repos.append(r)
-                remaining -= 1
+    def _add_repo(r: Any) -> bool:
+        nonlocal remaining
+        rid = getattr(r, "id", None) or getattr(r, "full_name", None)
+        if rid in seen_ids:
+            return False
+        seen_ids.add(rid)
+        all_repos.append(r)
+        remaining -= 1
+        return remaining > 0
+
+    # 1) Multi-strategy search
+    for strat in _iter_strategies(search_cfg):
+        if remaining <= 0:
+            break
+        sort = strat.get("sort") or None
+        order = strat.get("order") or None
+        q = base_q
+        q_extra = (strat.get("query_extra") or "").strip()
+        if q_extra:
+            q = f"{q} {q_extra}".strip()
+        q = _apply_date_bounds(q, strat.get("use"), search_cfg)
+
+        if languages:
+            for lang in languages:
                 if remaining <= 0:
                     break
-    else:
-        logging.getLogger("hector").debug("GitHub search (single): %s", base_q)
-        results = gh.search_repositories(base_q)
-        fetched = _fetch_pagewise(results, remaining)
-        all_repos.extend(fetched)
+                lang = str(lang).strip()
+                if not lang:
+                    continue
+                q_lang = f"{q} language:{lang}".strip()
+                log.debug("GitHub search (strategy=%s, lang=%s): %s", strat.get("name", "default"), lang, q_lang)
+                try:
+                    results = gh.search_repositories(q_lang, sort=sort, order=order)
+                except Exception:
+                    continue
+                for r in _fetch_pagewise(results, remaining):
+                    if not _add_repo(r):
+                        break
+        else:
+            log.debug("GitHub search (strategy=%s): %s", strat.get("name", "default"), q)
+            try:
+                results = gh.search_repositories(q, sort=sort, order=order)
+            except Exception:
+                results = None
+            if results is not None:
+                for r in _fetch_pagewise(results, remaining):
+                    if not _add_repo(r):
+                        break
+
+    # 2) Explicit orgs/users enumeration (best-effort)
+    def _iter_repos_from_org(org_name: str):
+        try:
+            org = gh.get_organization(org_name)
+            return org.get_repos(type="public")
+        except Exception:
+            return []
+
+    def _iter_repos_from_user(user_name: str):
+        try:
+            usr = gh.get_user(user_name)
+            return usr.get_repos(type="public")
+        except Exception:
+            return []
+
+    for org in orgs:
+        if remaining <= 0:
+            break
+        log.debug("Enumerating org repos: %s", org)
+        repos_iter = _iter_repos_from_org(org)
+        try:
+            page = 0
+            while remaining > 0:
+                page_items = repos_iter.get_page(page) if hasattr(repos_iter, "get_page") else []
+                if not page_items:
+                    break
+                for r in page_items:
+                    if not _add_repo(r):
+                        break
+                page += 1
+        except Exception:
+            continue
+
+    for user in users:
+        if remaining <= 0:
+            break
+        log.debug("Enumerating user repos: %s", user)
+        repos_iter = _iter_repos_from_user(user)
+        try:
+            page = 0
+            while remaining > 0:
+                page_items = repos_iter.get_page(page) if hasattr(repos_iter, "get_page") else []
+                if not page_items:
+                    break
+                for r in page_items:
+                    if not _add_repo(r):
+                        break
+                page += 1
+        except Exception:
+            continue
 
     return all_repos
 
