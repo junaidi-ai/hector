@@ -1,767 +1,1020 @@
 # Curated Healthcare Technology Tools
-# Curated Healthcare Technology Tools
 
 ## AI Diagnostics
-- **[Project-MONAI/MONAI](https://github.com/Project-MONAI/MONAI)** (Score: 2318.08)
-  - License: Apache-2.0 | Stars: 6775 | Forks: 1245
-  - PRs open: 88 | Discussions: Yes | Contributors: 50 | Last push: 4 days ago
-  - Description: AI Toolkit for Healthcare Imaging
-- **[shibing624/MedicalGPT](https://github.com/shibing624/MedicalGPT)** (Score: 1385.93)
-  - License: Apache-2.0 | Stars: 4060 | Forks: 598
-  - PRs open: 0 | Discussions: No | Contributors: 11 | Last push: 1 days ago
-  - Description: MedicalGPT: Training Your Own Medical GPT Model with ChatGPT Training Pipeline. 训练医疗大模型，实现了包括增量预训练(PT)、有监督微调(SFT)、RLHF、DPO、ORPO、GRPO。
-- **[llSourcell/Doctor-Dignity](https://github.com/llSourcell/Doctor-Dignity)** (Score: 1255.7)
-  - License: Apache-2.0 | Stars: 3858 | Forks: 415
-  - PRs open: 0 | Discussions: No | Contributors: 50 | Last push: 711 days ago
-  - Description: Doctor Dignity is an LLM that can pass the US Medical Licensing Exam. It works offline, it's cross-platform, & your health data stays private.
-- **[TorchIO-project/torchio](https://github.com/TorchIO-project/torchio)** (Score: 790.15)
-  - License: Apache-2.0 | Stars: 2259 | Forks: 249
-  - PRs open: 8 | Discussions: Yes | Contributors: 50 | Last push: 12 days ago
-  - Description: Medical imaging processing for AI applications.
-- **[epfLLM/meditron](https://github.com/epfLLM/meditron)** (Score: 679.73)
-  - License: Apache-2.0 | Stars: 2075 | Forks: 198
-  - PRs open: 0 | Discussions: No | Contributors: 10 | Last push: 508 days ago
-  - Description: Meditron is a suite of open-source medical Large Language Models (LLMs).
-- **[rockingdingo/deepnlp](https://github.com/rockingdingo/deepnlp)** (Score: 573.8)
-  - License: MIT | Stars: 1358 | Forks: 709
-  - PRs open: 1 | Discussions: No | Contributors: 1 | Last push: 324 days ago
-  - Description: Deep Learning NLP Pipeline implemented on Tensorflow
-- **[Tencent/MedicalNet](https://github.com/Tencent/MedicalNet)** (Score: 555.23)
-  - License: NOASSERTION | Stars: 2087 | Forks: 438
-  - PRs open: 6 | Discussions: No | Contributors: 1 | Last push: 787 days ago
-  - Description: Many studies have shown that the performance on deep learning is significantly affected by volume of training data. The MedicalNet project provides a series of 3D-ResNet pre-trained models and relative code.
-- **[DCDmllm/HealthGPT](https://github.com/DCDmllm/HealthGPT)** (Score: 538.27)
-  - License: Apache-2.0 | Stars: 1496 | Forks: 233
-  - PRs open: 0 | Discussions: No | Contributors: 5 | Last push: 113 days ago
-  - Description: 【ICML 2025 Spotlight】 Official Repo for Paper ‘’HealthGPT : A Medical Large Vision-Language Model for Unifying Comprehension and Generation via Heterogeneous Knowledge Adaptation‘’
-- **[sunlabuiuc/PyHealth](https://github.com/sunlabuiuc/PyHealth)** (Score: 512.25)
-  - License: MIT | Stars: 1214 | Forks: 430
-  - PRs open: 62 | Discussions: Yes | Contributors: 28 | Last push: 15 days ago
-  - Description: A Deep Learning Python Toolkit for Healthcare Applications.
-- **[NifTK/NiftyNet](https://github.com/NifTK/NiftyNet)** (Score: 416.17)
-  - License: Apache-2.0 | Stars: 1380 | Forks: 402
-  - PRs open: 3 | Discussions: No | Contributors: 40 | Last push: 1958 days ago
-  - Description: [unmaintained] An open-source convolutional neural networks platform for research in medical image analysis and image-guided therapy
-- **[securefederatedai/openfederatedlearning](https://github.com/securefederatedai/openfederatedlearning)** (Score: 349.82)
-  - License: Apache-2.0 | Stars: 802 | Forks: 231
-  - PRs open: 30 | Discussions: Yes | Contributors: 50 | Last push: 5 days ago
-  - Description: An Open Framework for Federated Learning.
-- **[bowang-lab/MedRAX](https://github.com/bowang-lab/MedRAX)** (Score: 275.2)
-  - License: Apache-2.0 | Stars: 663 | Forks: 137
-  - PRs open: 1 | Discussions: No | Contributors: 4 | Last push: 30 days ago
-  - Description: MedRAX: Medical Reasoning Agent for Chest X-ray - ICML 2025
-- **[taokz/BiomedGPT](https://github.com/taokz/BiomedGPT)** (Score: 264.5)
-  - License: Apache-2.0 | Stars: 680 | Forks: 77
-  - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 54 days ago
-  - Description: BiomedGPT: A Generalist Vision-Language Foundation Model for Diverse Biomedical Tasks
-- **[souvikmajumder26/Multi-Agent-Medical-Assistant](https://github.com/souvikmajumder26/Multi-Agent-Medical-Assistant)** (Score: 234.2)
-  - License: Apache-2.0 | Stars: 551 | Forks: 133
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 120 days ago
-  - Description: ⚕️GenAI powered multi-agentic medical diagnostics and healthcare research assistance chatbot. 🏥 Designed for healthcare professionals, researchers and patients.
-- **[kbressem/medAlpaca](https://github.com/kbressem/medAlpaca)** (Score: 157.33)
-  - License: GPL-3.0 | Stars: 538 | Forks: 69
-  - PRs open: 0 | Discussions: No | Contributors: 6 | Last push: 724 days ago
-  - Description: LLM finetuned for medical question answering
-- **[kyegomez/Med-PaLM](https://github.com/kyegomez/Med-PaLM)** (Score: 147.5)
-  - License: MIT | Stars: 415 | Forks: 56
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 561 days ago
-  - Description: Towards Generalist Biomedical AI
-- **[microsoft/hi-ml](https://github.com/microsoft/hi-ml)** (Score: 146.08)
-  - License: MIT | Stars: 295 | Forks: 60
-  - PRs open: 24 | Discussions: Yes | Contributors: 19 | Last push: 55 days ago
-  - Description: HI-ML toolbox for deep learning for medical imaging and Azure integration
-- **[cambridgeltl/visual-med-alpaca](https://github.com/cambridgeltl/visual-med-alpaca)** (Score: 139.63)
-  - License: Apache-2.0 | Stars: 389 | Forks: 44
-  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 538 days ago
-  - Description: Visual Med-Alpaca is an open-source, multi-modal foundation model designed specifically for the biomedical domain, built on the LLaMa-7B.
-- **[GetSoloTech/solo-server](https://github.com/GetSoloTech/solo-server)** (Score: 129.0)
-  - License: Apache-2.0 | Stars: 240 | Forks: 22
-  - PRs open: 12 | Discussions: No | Contributors: 8 | Last push: 6 days ago
-  - Description: Server for Physical AI Inference
-- **[Omid-Nejati/MedViT](https://github.com/Omid-Nejati/MedViT)** (Score: 118.7)
-  - License: MIT | Stars: 209 | Forks: 31
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 3 days ago
-  - Description: MedViT: A Robust Vision Transformer for Generalized Medical Image Classification (Computers in Biology and Medicine 2023)
-- **[mlcommons/medperf](https://github.com/mlcommons/medperf)** (Score: 105.25)
-  - License: Apache-2.0 | Stars: 161 | Forks: 36
-  - PRs open: 21 | Discussions: Yes | Contributors: 18 | Last push: 39 days ago
-  - Description: An open benchmarking platform for medical artificial intelligence using Federated Evaluation.
-- **[Azure-Samples/healthcare-agent-orchestrator](https://github.com/Azure-Samples/healthcare-agent-orchestrator)** (Score: 100.47)
-  - License: MIT | Stars: 126 | Forks: 47
-  - PRs open: 4 | Discussions: No | Contributors: 11 | Last push: 2 days ago
-  - Description: Facilitates creating modular specialized agents that coordinate across diverse data types and tools like M365 and Teams to assist multi-disciplinary healthcare workflows—such as cancer care.
-- **[NYUMedML/GNN_for_EHR](https://github.com/NYUMedML/GNN_for_EHR)** (Score: 99.13)
-  - License: GPL-3.0 | Stars: 269 | Forks: 63
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 352 days ago
-  - Description: Code for "Graph Neural Network on Electronic Health Records for Predicting Alzheimer’s Disease"
-- **[lrsoenksen/HAIM](https://github.com/lrsoenksen/HAIM)** (Score: 94.23)
-  - License: Apache-2.0 | Stars: 128 | Forks: 29
+- **[josephmisiti/awesome-machine-learning](https://github.com/josephmisiti/awesome-machine-learning)** (Score: 23785.8)
+  - License: NOASSERTION | Stars: 69528 | Forks: 15065
+  - PRs open: 6 | Discussions: No | Contributors: 50 | Last push: 18 days ago
+  - Description: A curated list of awesome Machine Learning frameworks, libraries and software.
+- **[aliasrobotics/cai](https://github.com/aliasrobotics/cai)** (Score: 1022.97)
+  - License: NOASSERTION | Stars: 3394 | Forks: 465
+  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 2 days ago
+  - Description: Cybersecurity AI (CAI), the framework for AI Security
+- **[RoboTwin-Platform/RoboTwin](https://github.com/RoboTwin-Platform/RoboTwin)** (Score: 515.87)
+  - License: MIT | Stars: 1438 | Forks: 172
+  - PRs open: 0 | Discussions: No | Contributors: 9 | Last push: 2 days ago
+  - Description: RoboTwin 2.0 Offical Repo
+- **[youngfish42/Awesome-FL](https://github.com/youngfish42/Awesome-FL)** (Score: 485.02)
+  - License: CC-BY-SA-4.0 | Stars: 1801 | Forks: 202
+  - PRs open: 0 | Discussions: Yes | Contributors: 15 | Last push: 5 days ago
+  - Description: Comprehensive and timely academic information on federated learning (papers, frameworks, datasets, tutorials, workshops)
+- **[freeCodeCamp/awesome-quincy-larson-emails](https://github.com/freeCodeCamp/awesome-quincy-larson-emails)** (Score: 430.4)
+  - License: MIT | Stars: 1165 | Forks: 153
+  - PRs open: 0 | Discussions: No | Contributors: 8 | Last push: 27 days ago
+  - Description: This repository is an archive of emails that are sent by the awesome Quincy Larson every week.
+- **[ros-controls/ros2_control_demos](https://github.com/ros-controls/ros2_control_demos)** (Score: 296.1)
+  - License: Apache-2.0 | Stars: 611 | Forks: 240
+  - PRs open: 8 | Discussions: No | Contributors: 50 | Last push: 0 days ago
+  - Description: This repository aims at providing examples to illustrate ros2_control and ros2_controllers
+- **[acados/acados](https://github.com/acados/acados)** (Score: 291.57)
+  - License: NOASSERTION | Stars: 1073 | Forks: 289
+  - PRs open: 12 | Discussions: No | Contributors: 50 | Last push: 5 days ago
+  - Description: Fast and embedded solvers for nonlinear optimal control and nonlinear model predictive control
+- **[hanruihua/NeuPAN](https://github.com/hanruihua/NeuPAN)** (Score: 232.27)
+  - License: GPL-3.0 | Stars: 637 | Forks: 60
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2 days ago
+  - Description: [TRO 2025] NeuPAN: Direct Point Robot Navigation with End-to-End Model-based Learning.
+- **[halsay/ASR-TTS-paper-daily](https://github.com/halsay/ASR-TTS-paper-daily)** (Score: 144.5)
+  - License: Apache-2.0 | Stars: 303 | Forks: 17
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: Update ASR paper everyday
+- **[hongbo-miao/hongbomiao.com](https://github.com/hongbo-miao/hongbomiao.com)** (Score: 135.05)
+  - License: MIT | Stars: 245 | Forks: 42
+  - PRs open: 6 | Discussions: Yes | Contributors: 11 | Last push: 0 days ago
+  - Description: A personal research and development (R&D) lab that facilitates the sharing of knowledge.
+- **[Extelligence-ai/bagel](https://github.com/Extelligence-ai/bagel)** (Score: 130.37)
+  - License: Apache-2.0 | Stars: 257 | Forks: 18
+  - PRs open: 2 | Discussions: No | Contributors: 3 | Last push: 2 days ago
+  - Description: ChatGPT for Physical AI. Troubleshoot your robots and drones with natural language. No fuss.
+- **[abizovnuralem/go2_ros2_sdk](https://github.com/abizovnuralem/go2_ros2_sdk)** (Score: 120.52)
+  - License: BSD-2-Clause | Stars: 634 | Forks: 135
+  - PRs open: 0 | Discussions: Yes | Contributors: 19 | Last push: 29 days ago
+  - Description: Unofficial ROS2 SDK support for Unitree GO2 AIR/PRO/EDU
+- **[gabrielchua/daily-ai-papers](https://github.com/gabrielchua/daily-ai-papers)** (Score: 110.87)
+  - License: MIT | Stars: 194 | Forks: 12
+  - PRs open: 1 | Discussions: No | Contributors: 2 | Last push: 2 days ago
+  - Description: All credits go to HuggingFace's Daily AI papers (https://huggingface.co/papers) and the research community. 🔉Audio summaries here (https://t.me/daily_ai_papers).
+- **[Seeed-Projects/reComputer-Jetson-for-Beginners](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners)** (Score: 87.47)
+  - License: MIT | Stars: 111 | Forks: 19
+  - PRs open: 2 | Discussions: No | Contributors: 5 | Last push: 20 days ago
+  - Description: Beginner's Guide to reComputer Jetson
+- **[isLinXu/paper-list](https://github.com/isLinXu/paper-list)** (Score: 80.3)
+  - License: Apache-2.0 | Stars: 93 | Forks: 11
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: autoupdate paper list
+- **[i2Nav-WHU/LE-VINS](https://github.com/i2Nav-WHU/LE-VINS)** (Score: 79.4)
+  - License: GPL-3.0 | Stars: 159 | Forks: 13
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 15 days ago
+  - Description: INS-Centric Visual-Inertial Navigation System With LiDAR Enhancement
+- **[robotics-upo/hunav_sim](https://github.com/robotics-upo/hunav_sim)** (Score: 79.27)
+  - License: MIT | Stars: 83 | Forks: 15
+  - PRs open: 0 | Discussions: No | Contributors: 5 | Last push: 2 days ago
+  - Description: A simulator of human navigation behaviors for Robotics based on ROS2
+- **[AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization](https://github.com/AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization)** (Score: 78.83)
+  - License: Apache-2.0 | Stars: 86 | Forks: 17
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 10 days ago
+  - Description: Autonomous Mobile Robot developed and programmed in the online course named "Self-Driving and ROS 2 - Learn By Doing! Map & Localization"
+- **[joylarkin/Awesome-AI-Market-Maps](https://github.com/joylarkin/Awesome-AI-Market-Maps)** (Score: 67.1)
+  - License: MIT | Stars: 53 | Forks: 3
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: An Awesome List of 275+ AI Market Maps from 2025 and 2024.
+- **[paragon-intelligence/agentle](https://github.com/paragon-intelligence/agentle)** (Score: 66.05)
+  - License: MIT | Stars: 46 | Forks: 9
+  - PRs open: 0 | Discussions: Yes | Contributors: 1 | Last push: 0 days ago
+  - Description: Build production-ready AI agents in days, not months. Python 3.13+. Save development time with minimal code, deploy anywhere with confidence, and scale from simple assistants to complex multi-agent systems without the headaches.
+- **[SciML/ModelingToolkitCourse](https://github.com/SciML/ModelingToolkitCourse)** (Score: 65.43)
+  - License: MIT | Stars: 45 | Forks: 6
+  - PRs open: 2 | Discussions: No | Contributors: 6 | Last push: 19 days ago
+  - Description: A course on composable system modeling, differential-algebraic equations, acausal modeling, compilers for simulation, and building digital twins of real-world devices
+- **[harpreetsahota204/gui_agent_research_landscape](https://github.com/harpreetsahota204/gui_agent_research_landscape)** (Score: 62.83)
+  - License: Apache-2.0 | Stars: 41 | Forks: 4
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 13 days ago
+  - Description: An awesome repository that maps the current landscape of GUI/OS Agent research
+- **[blueraai/universal-intelligence](https://github.com/blueraai/universal-intelligence)** (Score: 61.62)
+  - License: Apache-2.0 | Stars: 44 | Forks: 4
+  - PRs open: 0 | Discussions: Yes | Contributors: 2 | Last push: 26 days ago
+  - Description: ◉ Universal Intelligence: AI made simple.
+- **[hoangsonww/Agentic-AI-Pipeline](https://github.com/hoangsonww/Agentic-AI-Pipeline)** (Score: 60.98)
+  - License: Apache-2.0 | Stars: 23 | Forks: 19
+  - PRs open: 0 | Discussions: Yes | Contributors: 1 | Last push: 1 days ago
+  - Description: 🦾 A production‑ready research outreach AI agent that plans, discovers, reasons, uses tools, auto‑builds cited briefings, and drafts tailored emails with tool‑chaining, memory, tests, and turnkey Docker, AWS, Ansible & Terraform deploys. Bonus: Agentic RAG system (FAISS + Google CSE) with multistep planning, self-critique, and autonomous agents.
+- **[AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Plan-Navigation](https://github.com/AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Plan-Navigation)** (Score: 60.73)
+  - License: Apache-2.0 | Stars: 29 | Forks: 12
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 10 days ago
+  - Description: Autonomous Mobile Robot developed and programmed in the online course named "Self-Driving and ROS 2 - Learn By Doing! Plan & Navigation"
+- **[automatika-robotics/embodied-agents](https://github.com/automatika-robotics/embodied-agents)** (Score: 60.05)
+  - License: MIT | Stars: 31 | Forks: 3
+  - PRs open: 0 | Discussions: Yes | Contributors: 2 | Last push: 9 days ago
+  - Description: EmbodiedAgents is a fully-loaded framework, written in pure ROS2, for creating interactive physical agents that can understand, remember, and act upon contextual information from their environment.
+- **[automatika-robotics/kompass](https://github.com/automatika-robotics/kompass)** (Score: 58.37)
+  - License: MIT | Stars: 26 | Forks: 0
+  - PRs open: 1 | Discussions: No | Contributors: 2 | Last push: 2 days ago
+  - Description: Kompass is an event-driven navigation stack designed with an easy-to-use Python API. It implements highly optimized, GPU powered, versions of the most cutting edge algorithms for all parts of the navigation stack.
+- **[RainbowRobotics/rbpodo](https://github.com/RainbowRobotics/rbpodo)** (Score: 56.93)
+  - License: Apache-2.0 | Stars: 16 | Forks: 10
+  - PRs open: 1 | Discussions: No | Contributors: 3 | Last push: 10 days ago
+  - Description: A client library for Rainbow Robotics' cobots
+- **[airas-org/airas](https://github.com/airas-org/airas)** (Score: 56.85)
+  - License: MIT | Stars: 16 | Forks: 0
+  - PRs open: 9 | Discussions: Yes | Contributors: 7 | Last push: 0 days ago
+  - Description: AIRAS - an open-source project for research automation
+- **[Lyz103/LLM-Agent-Paper-daily](https://github.com/Lyz103/LLM-Agent-Paper-daily)** (Score: 55.9)
+  - License: Apache-2.0 | Stars: 18 | Forks: 1
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: Automatically Update LLM-Agent Papers Daily using Github Actions (Update Every 12th hours)
+- **[kimtth/awesome-azure-openai-llm](https://github.com/kimtth/awesome-azure-openai-llm)** (Score: 22.87)
+  - License: CC0-1.0 | Stars: 377 | Forks: 47
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 5 days ago
+  - Description: A curated list of 🌌 Azure OpenAI, 🦙 Large Language Models (incl. RAG, Agent), and references. [code] https://github.com/kimtth/azure-openai-llm-cookbook
+- **[bdaiinstitute/spot_ros2](https://github.com/bdaiinstitute/spot_ros2)** (Score: 4.05)
+  - License: NOASSERTION | Stars: 236 | Forks: 95
+  - PRs open: 10 | Discussions: Yes | Contributors: 50 | Last push: 9 days ago
+  - Description: ROS 2 driver package for Boston Dynamics' Spot
+- **[TheNoobInventor/lidarbot](https://github.com/TheNoobInventor/lidarbot)** (Score: -43.97)
+  - License: BSD-3-Clause | Stars: 166 | Forks: 32
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 7 days ago
+  - Description: A differential drive robot is controlled using ROS2 Humble running on a Raspberry Pi 4 (running Ubuntu server 22.04). The vehicle is equipped with a raspberry pi camera for visual feedback and an RPlidar A1 sensor used for Simultaneous Localization and Mapping (SLAM), autonomous navigation and obstacle avoidance.
+- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -59.9)
+  - License: none | Stars: 122 | Forks: 15
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: This repository tracks the latest advancements in 3D Gaussian Splatting from Arxiv, with daily automated updates. Stay up-to-date with cutting-edge research in this exciting field!
+- **[inorbit-ai/ros_amr_interop](https://github.com/inorbit-ai/ros_amr_interop)** (Score: -64.0)
+  - License: BSD-3-Clause | Stars: 92 | Forks: 32
+  - PRs open: 2 | Discussions: No | Contributors: 12 | Last push: 9 days ago
+- **[monologg/nlp-arxiv-daily](https://github.com/monologg/nlp-arxiv-daily)** (Score: -65.7)
+  - License: none | Stars: 100 | Forks: 20
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: Automatically Update NLP Papers Daily using Github Actions (ref: https://github.com/Vincentqyw/cv-arxiv-daily)
+- **[Xuchen-Li/llm-arxiv-daily](https://github.com/Xuchen-Li/llm-arxiv-daily)** (Score: -66.47)
+  - License: none | Stars: 106 | Forks: 6
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
-  - Description: This repository contains the code to replicate the data processing, modeling and reporting of our Holistic AI in Medicine (HAIM) Publication in Nature Machine Intelligence (Soenksen LR, Ma Y, Zeng C et al. 2022).
-- **[xliucs/MTTS-CAN](https://github.com/xliucs/MTTS-CAN)** (Score: 93.4)
-  - License: MIT | Stars: 193 | Forks: 54
-  - PRs open: 2 | Discussions: No | Contributors: 1 | Last push: 381 days ago
-  - Description: Multi-Task Temporal Shift Attention Networks for On-Device Contactless Vitals Measurement (NeurIPS 2020)
-- **[dotimplement/HealthChain](https://github.com/dotimplement/HealthChain)** (Score: 91.92)
-  - License: Apache-2.0 | Stars: 132 | Forks: 14
-  - PRs open: 1 | Discussions: Yes | Contributors: 7 | Last push: 11 days ago
-  - Description: The missing middleware layer in healthcare AI 💫 🏥
-- **[FreedomIntelligence/Apollo](https://github.com/FreedomIntelligence/Apollo)** (Score: 89.07)
-  - License: Apache-2.0 | Stars: 194 | Forks: 8
-  - PRs open: 1 | Discussions: No | Contributors: 3 | Last push: 320 days ago
-  - Description: Multilingual Medicine: Model, Dataset, Benchmark, Code
-- **[TAHIR0110/ThereForYou](https://github.com/TAHIR0110/ThereForYou)** (Score: 81.17)
-  - License: MIT | Stars: 90 | Forks: 90
-  - PRs open: 7 | Discussions: No | Contributors: 48 | Last push: 209 days ago
-  - Description: ThereForYou: Your mental health ally. Kai, our AI assistant, offers compassionate support. Track your mood trends, find solace in a secure community, and access crisis resources swiftly. We're here to empower your journey towards improved well-being, leveraging technology for a brighter tomorrow.
-- **[daveshap/Medical_Intake](https://github.com/daveshap/Medical_Intake)** (Score: 69.58)
-  - License: MIT | Stars: 175 | Forks: 65
-  - PRs open: 0 | Discussions: Yes | Contributors: 2 | Last push: 700 days ago
-  - Description: Automated pipeline for medical intake, diagnosis, tests, etc.
-- **[rockingdingo/gym-gomoku](https://github.com/rockingdingo/gym-gomoku)** (Score: 60.3)
-  - License: MIT | Stars: 88 | Forks: 27
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 324 days ago
-  - Description: OpenAI Gym Env for game Gomoku(Five-In-a-Row, 五子棋, 五目並べ, omok, Gobang,...)
-- **[vanderschaarlab/temporai](https://github.com/vanderschaarlab/temporai)** (Score: 46.77)
-  - License: Apache-2.0 | Stars: 119 | Forks: 23
-  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 626 days ago
-  - Description: TemporAI: ML-centric Toolkit for Medical Time Series
-- **[paulvangentcom/python_corona_simulation](https://github.com/paulvangentcom/python_corona_simulation)** (Score: 36.87)
-  - License: GPL-3.0 | Stars: 294 | Forks: 77
-  - PRs open: 9 | Discussions: No | Contributors: 4 | Last push: 1472 days ago
-  - Description: An agent-based simulation of corona and other viruses in python
-- **[ThisIs-Developer/Llama-2-GGML-Medical-Chatbot](https://github.com/ThisIs-Developer/Llama-2-GGML-Medical-Chatbot)** (Score: 34.32)
-  - License: MIT | Stars: 42 | Forks: 18
-  - PRs open: 9 | Discussions: Yes | Contributors: 2 | Last push: 503 days ago
-  - Description: Llama2-Medical-Chatbot is a medical chatbot that uses the Llama-2-7B-Chat-GGML model and the pdf The Gale Encyclopedia of Medicine, Volume 1, 2nd Edition. It is still under development, but it has the potential to be a valuable tool for patients, healthcare professionals, and researchers.
-- **[ncbi-nlp/bluebert](https://github.com/ncbi-nlp/bluebert)** (Score: 30.47)
-  - License: NOASSERTION | Stars: 577 | Forks: 81
-  - PRs open: 1 | Discussions: No | Contributors: 3 | Last push: 890 days ago
-  - Description: BlueBERT, pre-trained on PubMed abstracts and clinical notes (MIMIC-III).
-- **[Teddy-XiongGZ/MedRAG](https://github.com/Teddy-XiongGZ/MedRAG)** (Score: 29.97)
-  - License: NOASSERTION | Stars: 419 | Forks: 58
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 116 days ago
-  - Description: Code for the MedRAG toolkit
-- **[ChiragAgg5k/asclepius](https://github.com/ChiragAgg5k/asclepius)** (Score: 29.05)
-  - License: MIT | Stars: 28 | Forks: 7
-  - PRs open: 0 | Discussions: Yes | Contributors: 5 | Last push: 486 days ago
-  - Description: Healthcare related tracking and ordering software for students of Bennett University
-- **[HealthCatalyst/healthcareai-py](https://github.com/HealthCatalyst/healthcareai-py)** (Score: 26.63)
-  - License: MIT | Stars: 324 | Forks: 192
-  - PRs open: 8 | Discussions: No | Contributors: 15 | Last push: 2329 days ago
-  - Description: Python tools for healthcare machine learning
-- **[LifestyleCorp/Medical-AGI](https://github.com/LifestyleCorp/Medical-AGI)** (Score: 26.15)
-  - License: Apache-2.0 | Stars: 22 | Forks: 4
-  - PRs open: 0 | Discussions: Yes | Contributors: 2 | Last push: 480 days ago
-  - Description: LLM powered AI multi agent platform that coordinate global to individual health through scaling each layer of healthcare
-- **[mahmoodlab/CONCH](https://github.com/mahmoodlab/CONCH)** (Score: 17.67)
-  - License: NOASSERTION | Stars: 402 | Forks: 37
-  - PRs open: 2 | Discussions: No | Contributors: 3 | Last push: 158 days ago
-  - Description: Vision-Language Pathology Foundation Model - Nature Medicine
-- **[vanderschaarlab/mlforhealthlabpub](https://github.com/vanderschaarlab/mlforhealthlabpub)** (Score: 10.93)
-  - License: NOASSERTION | Stars: 454 | Forks: 180
-  - PRs open: 1 | Discussions: No | Contributors: 3 | Last push: 916 days ago
-  - Description: Machine Learning and Artificial Intelligence for Medicine.
-- **[FreedomIntelligence/HuatuoGPT-Vision](https://github.com/FreedomIntelligence/HuatuoGPT-Vision)** (Score: -3.77)
-  - License: none | Stars: 336 | Forks: 28
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 130 days ago
-  - Description: Medical Multimodal LLMs
-- **[SNOWTEAM2023/MedRAG](https://github.com/SNOWTEAM2023/MedRAG)** (Score: -31.53)
-  - License: NOASSERTION | Stars: 205 | Forks: 34
-  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 2 days ago
-- **[gersteinlab/MedAgents](https://github.com/gersteinlab/MedAgents)** (Score: -37.53)
-  - License: none | Stars: 280 | Forks: 43
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 461 days ago
-  - Description: [ACL 2024 Findings] MedAgents: Large Language Models as Collaborators for Zero-shot Medical Reasoning https://arxiv.org/abs/2311.10537
-- **[prasadseemakurthi/Deep-Neural-Networks-HealthCare](https://github.com/prasadseemakurthi/Deep-Neural-Networks-HealthCare)** (Score: -57.23)
-  - License: MIT | Stars: 124 | Forks: 223
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2840 days ago
-  - Description: Tangible and Practical Deep Learning Projects Repository for Healthcare such as Cancer, Drug Discovery, Genomic and More
-- **[BIDS-Xu-Lab/Me-LLaMA](https://github.com/BIDS-Xu-Lab/Me-LLaMA)** (Score: -63.1)
-  - License: none | Stars: 159 | Forks: 18
-  - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 228 days ago
-  - Description: A novel medical large language model family with 13/70B parameters, which have SOTA performances on various medical tasks
-- **[Teddy-XiongGZ/MIRAGE](https://github.com/Teddy-XiongGZ/MIRAGE)** (Score: -66.23)
-  - License: NOASSERTION | Stars: 165 | Forks: 21
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 302 days ago
-  - Description: Official repository of the MIRAGE benchmark
-- **[sinAshish/Multi-Scale-Attention](https://github.com/sinAshish/Multi-Scale-Attention)** (Score: -69.67)
-  - License: none | Stars: 467 | Forks: 96
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1933 days ago
-  - Description: [JBHI] Code for our paper "Multi-scale Guided Attention for Medical Image Segmentation"
-- **[mp2893/gram](https://github.com/mp2893/gram)** (Score: -70.7)
-  - License: BSD-3-Clause | Stars: 245 | Forks: 70
-  - PRs open: 1 | Discussions: No | Contributors: 2 | Last push: 867 days ago
-  - Description: Graph-based Attention Model
-- **[chentao1999/MedicalRelationExtraction](https://github.com/chentao1999/MedicalRelationExtraction)** (Score: -75.87)
-  - License: MIT | Stars: 74 | Forks: 20
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2275 days ago
-  - Description: The depository support training and testing BERT-CNN model on three medical relation extraction corpora: BioCreative V CDR task corpus, traditional Chinese medicine  literature corpus, and i2b2 temporal relation corpus.
-- **[aristoteleo/awesome-bioagent-papers](https://github.com/aristoteleo/awesome-bioagent-papers)** (Score: -77.37)
-  - License: none | Stars: 65 | Forks: 3
-  - PRs open: 22 | Discussions: No | Contributors: 2 | Last push: 1 days ago
-  - Description: Agent self-driven repository on bio-agent papers, i.e. papers on LLM-based agents in biology and medicine.
-- **[openlifescience-ai/Open-Medical-Reasoning-Tasks](https://github.com/openlifescience-ai/Open-Medical-Reasoning-Tasks)** (Score: -82.47)
-  - License: none | Stars: 127 | Forks: 11
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 349 days ago
-  - Description: A comprehensive repository of reasoning tasks for Medical LLMs (and beyond)
-- **[pdichone/knowledge-graph-rag](https://github.com/pdichone/knowledge-graph-rag)** (Score: -85.53)
-  - License: none | Stars: 39 | Forks: 60
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 146 days ago
-- **[KaiHe-better/LLM-for-Healthcare](https://github.com/KaiHe-better/LLM-for-Healthcare)** (Score: -90.07)
-  - License: none | Stars: 124 | Forks: 14
-  - PRs open: 1 | Discussions: No | Contributors: 1 | Last push: 457 days ago
-- **[ahmadvh/AI-Agents-for-Medical-Diagnostics](https://github.com/ahmadvh/AI-Agents-for-Medical-Diagnostics)** (Score: -90.47)
-  - License: none | Stars: 72 | Forks: 46
-  - PRs open: 3 | Discussions: No | Contributors: 1 | Last push: 328 days ago
-  - Description: A Python project to create specialized LLM-based AI agents that analyze complex medical cases. The system integrates insights from various medical professionals to provide comprehensive assessments and personalized treatment recommendations, showcasing the potential of AI in multidisciplinary medicine.
-- **[ncbi-nlp/NegBio](https://github.com/ncbi-nlp/NegBio)** (Score: -93.4)
-  - License: NOASSERTION | Stars: 163 | Forks: 43
-  - PRs open: 4 | Discussions: No | Contributors: 4 | Last push: 777 days ago
-  - Description: :newspaper: High-performance tool for negation and uncertainty detection in radiology reports
-- **[MohsinRazaKhanSipra/EHR-django](https://github.com/MohsinRazaKhanSipra/EHR-django)** (Score: -95.93)
-  - License: none | Stars: 20 | Forks: 12
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 74 days ago
-  - Description: DjangoEHR is an Electronic Health Records (EHR) system developed using the Django web framework. This project aims to provide healthcare professionals with a robust and secure platform for managing patient records, appointments, and medical information.
-- **[ruiyang-medinfo/KG-Rank](https://github.com/ruiyang-medinfo/KG-Rank)** (Score: -102.57)
-  - License: none | Stars: 44 | Forks: 7
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 265 days ago
-  - Description: KG-Rank: Enhancing Large Language Models for Medical QA with Knowledge Graphs and Ranking Techniques
-- **[williamliujl/Qilin-Med-VL](https://github.com/williamliujl/Qilin-Med-VL)** (Score: -122.1)
-  - License: none | Stars: 62 | Forks: 10
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 639 days ago
-  - Description: The first Chinese medical large vision-language model designed to integrate the analysis of textual and visual data
-- **[vsharathchandra/AI-Healthcare-chatbot](https://github.com/vsharathchandra/AI-Healthcare-chatbot)** (Score: -132.97)
-  - License: none | Stars: 87 | Forks: 65
-  - PRs open: 1 | Discussions: No | Contributors: 2 | Last push: 1090 days ago
-  - Description: Through a series of questions about symptoms it diagnosis the health condition of patient.
-- **[shreyasharma04/HealthChatbot](https://github.com/shreyasharma04/HealthChatbot)** (Score: -145.8)
-  - License: none | Stars: 119 | Forks: 20
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1287 days ago
-  - Description: 🤖 HealthCare ChatBot Major -1 (4th year - 7th semester)  Health Care Chat-Bot is a Healthcare Domain Chatbot to simulate the predictions of a General Physician.  ChatBot can be described as software that can chat with people using artificial intelligence. These software are used to perform tasks such as quickly responding to users, informing them, helping to purchase products and providing better service to customers. We have made a healthcare based chatbot.  The three main areas where chatbots can be used are diagnostics, patient engagement outside medical facilities, and mental health. In our major we are working on diagnostic.  📃 Brief A chatbot is an artificially intelligent creature which can converse with humans. This could be text-based, or a spoken conversation. In our project we will be using Python as it is currently the most popular language for creating an AI chatbot. In the middle of AI chatbot, architecture is the Natural Language Processing (NLP) layer.  This project aims to build an user-friendly healthcare chatbot which facilitates the job of a healthcare provider and helps improve their performance by interacting with users in a human-like way.  Through chatbots one can communicate with text or voice interface and get reply through artificial intelligence  Typically, a chat bot will communicate with a real person. Chat bots are used in applications such as E-commerce customer service, Call centres, Internet gaming,etc.  Chatbots are programs built to automatically engage with received messages. Chatbots can be programmed to respond the same way each time, to respond differently to messages containing certain keywords and even to use machine learning to adapt their responses to fit the situation.  A developing number of hospitals, nursing homes, and even private centres, presently utilize online Chatbots for human services on their sites. These bots connect with potential patients visiting the site, helping them discover specialists, booking their appointments, and getting them access to the correct treatment.  In any case, the utilization of artificial intelligence in an industry where individuals’ lives could be in question, still starts misgivings in individuals. It brings up issues about whether the task mentioned above ought to be assigned to human staff. This healthcare chatbot system will help hospitals to provide healthcare support online 24 x 7, it answers deep as well as general questions. It also helps to generate leads and automatically delivers the information of leads to sales. By asking the questions in series it helps patients by guiding what exactly he/she is looking for.  📜 Problem Statement During the pandemic, it is more important than ever to get your regular check-ups and to continue to take prescription medications. The healthier you are, the more likely you are to recover quickly from an illness.  In this time patients or health care workers within their practice, providers are deferring elective and preventive visits, such as annual physicals. For some, it is not possible to consult online. In this case, to avoid false information, our project can be of help.  📇 Features Register Screen. Sign-in Screen. Generates database for user login system. Offers you a GUI Based Chatbot for patients for diagnosing. [A pragmatic Approach for Diagnosis] Reccomends an appropriate doctor to you for the following symptom. 📜 Modules Used Our program uses a number of python modules to work properly:  tkinter os webbrowser numpy pandas matplotlib 📃 Algorithm We have used Decision tree for our health care based chat bot.  Decision Tree is a Supervised learning technique that can be used for both classification and Regression problems, but mostly it is preferred for solving Classification problems. It is a tree-structured classifier, where internal nodes represent the features of a dataset, branches represent the decision rules and each leaf node represents the outcome.It usually mimic human thinking ability while making a decision, so it is easy to understand.  :suspect: Project Members Anushka Bansal - 500067844 - R164218014 Shreya Sharma - 500068573 - R164218070 Silvi - 500069092 - R164218072 Ishika Agrawal - 500071154 - R164218097
-- **[aryanveturekar/Health-Care-Chat-Bot](https://github.com/aryanveturekar/Health-Care-Chat-Bot)** (Score: -150.83)
-  - License: none | Stars: 139 | Forks: 65
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1592 days ago
-  - Description: Through chatbots one can communicate with text or voice interface and get reply through artificial intelligence. Typically, a chat bot will communicate with a real person. Chat bots are used in applications such as ecommerce customer service, call centres and Internet gaming. Chatbots are programs built to automatically engage with received messages. Chatbots can be programmed to respond the same way each time, to respond differently to messages containing certain keywords and even to use machine learning to adapt their responses to fit the situation. A developing number of hospitals, nursing homes, and even private centres, presently utilize online Chatbots for human services on their sites. These bots connect with potential patients visiting the site, helping them discover specialists, booking their appointments, and getting them access to the correct treatment. In any case, the utilization of artificial intelligence in an industry where individuals’ lives could be in question, still starts misgivings in individuals. It brings up issues about whether the task mentioned above ought to be assigned to human staff. This healthcare chatbot system will help hospitals to provide healthcare support online 24 x 7, it answers deep as well as general questions. It also helps to generate leads and automatically delivers the information of leads to sales. By asking the questions in series it helps patients by guiding what exactly he/she is looking for.
-- **[DeepHiveMind/Medical-Healthcare-3D-Imaging-AI](https://github.com/DeepHiveMind/Medical-Healthcare-3D-Imaging-AI)** (Score: -199.8)
-  - License: BSD-3-Clause | Stars: 50 | Forks: 18
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1779 days ago
-  - Description: :hospital:  :eye_speech_bubble:  Medical Healthcare AI | Robotic Surgery | Automated Brain Tumour Segmentation | Skin Cancer Lesion Detection & Segmentation (Melonama Recognition) |  Lung Cancer detection (Chest CT Scan) | IMAGE SEGMENTATION TECHNIQUES
-- **[mp2893/retain](https://github.com/mp2893/retain)** (Score: -209.13)
-  - License: BSD-3-Clause | Stars: 218 | Forks: 79
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 2858 days ago
-  - Description: RETAIN: Interpretable Predictive Model in Healthcare using Reverse Time Attention Mechanism
-- **[gyaneshanand/SwasthyaChain-BlockChain-Based-Health-Management-System](https://github.com/gyaneshanand/SwasthyaChain-BlockChain-Based-Health-Management-System)** (Score: -264.6)
-  - License: none | Stars: 23 | Forks: 9
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2604 days ago
-  - Description: The project aims to use blockchain technology to create a user-focused electronic health record whilst maintaining a single true version of the user’s data.Swasthya Mitra is a decentralised platform that enables secure, fast and transparent exchange and usage of medical data.
+  - Description: Automatically update arXiv papers about LLM Reasoning, LLM Evaluation, LLM & MLLM and Video Understanding using Github Actions.
+- **[DWCTOD/cv-arxiv-daily](https://github.com/DWCTOD/cv-arxiv-daily)** (Score: -75.4)
+  - License: none | Stars: 65 | Forks: 24
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+- **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.7)
+  - License: NOASSERTION | Stars: 16 | Forks: 2
+  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 0 days ago
+  - Description: A curated list of awesome Machine Learning frameworks, libraries and software. With repository stars⭐ and forks🍴
+- **[Xuchen-Li/cv-arxiv-daily](https://github.com/Xuchen-Li/cv-arxiv-daily)** (Score: -88.4)
+  - License: none | Stars: 35 | Forks: 4
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: Automatically update arXiv papers about SOT & VLT,  Multi-modal Learning, LLM and Video Understanding using Github Actions.
+- **[KirillMouraviev/PRISM-TopoMap](https://github.com/KirillMouraviev/PRISM-TopoMap)** (Score: -88.97)
+  - License: none | Stars: 38 | Forks: 1
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 13 days ago
+  - Description: The PRISM-TopoMap - online topological mapping method with place recognition and scan matching
+- **[roboto-ai/roboto-python-sdk](https://github.com/roboto-ai/roboto-python-sdk)** (Score: -89.97)
+  - License: MPL-2.0 | Stars: 31 | Forks: 1
+  - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 10 days ago
+  - Description: Roboto Python SDK and CLI
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
+  - License: none | Stars: 29 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
+- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.2)
+  - License: CC0-1.0 | Stars: 26 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: This is a curated list of my GitHub stars but converted into an Awesome List! Updated automagically ever 12 hours! :D
+- **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -91.3)
+  - License: NOASSERTION | Stars: 27 | Forks: 0
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: 🚀 Daily AI Research Digest: Tracking breakthroughs in AI/NLP/CV/Robotics with dynamic updates and paper navigation.
+- **[danielrosehill/System-Prompt-Library](https://github.com/danielrosehill/System-Prompt-Library)** (Score: -93.2)
+  - License: none | Stars: 21 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 3 days ago
+  - Description: System prompts for AI agents and assistants (automatically populated); periodic point in time exports are releases
+- **[tangwen-qian/DailyArXiv](https://github.com/tangwen-qian/DailyArXiv)** (Score: -123.6)
+  - License: none | Stars: 34 | Forks: 7
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
 
 ## EHR & Clinical Systems
-- **[earthians/marley](https://github.com/earthians/marley)** (Score: 228.05)
-  - License: GPL-3.0 | Stars: 410 | Forks: 336
-  - PRs open: 5 | Discussions: Yes | Contributors: 50 | Last push: 6 days ago
-  - Description: Open Source, Enterprise and Modern Health Information System
-- **[theislab/ehrapy](https://github.com/theislab/ehrapy)** (Score: 149.62)
-  - License: Apache-2.0 | Stars: 303 | Forks: 35
-  - PRs open: 3 | Discussions: Yes | Contributors: 19 | Last push: 5 days ago
-  - Description: Electronic Health Record Analysis with Python.
-- **[som-shahlab/femr](https://github.com/som-shahlab/femr)** (Score: 105.35)
-  - License: Apache-2.0 | Stars: 155 | Forks: 27
-  - PRs open: 3 | Discussions: Yes | Contributors: 11 | Last push: 0 days ago
-  - Description: FEMR (Framework for Electronic Medical Records) provides tooling for large-scale, self-supervised learning using electronic health records
-- **[NYUMedML/GNN_for_EHR](https://github.com/NYUMedML/GNN_for_EHR)** (Score: 99.13)
-  - License: GPL-3.0 | Stars: 269 | Forks: 63
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 352 days ago
-  - Description: Code for "Graph Neural Network on Electronic Health Records for Predicting Alzheimer’s Disease"
-- **[lrsoenksen/HAIM](https://github.com/lrsoenksen/HAIM)** (Score: 94.23)
-  - License: Apache-2.0 | Stars: 128 | Forks: 29
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
-  - Description: This repository contains the code to replicate the data processing, modeling and reporting of our Holistic AI in Medicine (HAIM) Publication in Nature Machine Intelligence (Soenksen LR, Ma Y, Zeng C et al. 2022).
-- **[dotimplement/HealthChain](https://github.com/dotimplement/HealthChain)** (Score: 91.92)
-  - License: Apache-2.0 | Stars: 132 | Forks: 14
-  - PRs open: 1 | Discussions: Yes | Contributors: 7 | Last push: 11 days ago
-  - Description: The missing middleware layer in healthcare AI 💫 🏥
-- **[TAHIR0110/ThereForYou](https://github.com/TAHIR0110/ThereForYou)** (Score: 81.17)
-  - License: MIT | Stars: 90 | Forks: 90
-  - PRs open: 7 | Discussions: No | Contributors: 48 | Last push: 209 days ago
-  - Description: ThereForYou: Your mental health ally. Kai, our AI assistant, offers compassionate support. Track your mood trends, find solace in a secure community, and access crisis resources swiftly. We're here to empower your journey towards improved well-being, leveraging technology for a brighter tomorrow.
-- **[ThisIs-Developer/Llama-2-GGML-Medical-Chatbot](https://github.com/ThisIs-Developer/Llama-2-GGML-Medical-Chatbot)** (Score: 34.32)
-  - License: MIT | Stars: 42 | Forks: 18
-  - PRs open: 9 | Discussions: Yes | Contributors: 2 | Last push: 503 days ago
-  - Description: Llama2-Medical-Chatbot is a medical chatbot that uses the Llama-2-7B-Chat-GGML model and the pdf The Gale Encyclopedia of Medicine, Volume 1, 2nd Edition. It is still under development, but it has the potential to be a valuable tool for patients, healthcare professionals, and researchers.
-- **[YubiaoYue/MedMamba](https://github.com/YubiaoYue/MedMamba)** (Score: 33.43)
-  - License: none | Stars: 502 | Forks: 55
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 355 days ago
-  - Description: This is the official code repository for "MedMamba: Vision Mamba for Medical Image Classification"
-- **[mahmoodlab/CONCH](https://github.com/mahmoodlab/CONCH)** (Score: 17.67)
-  - License: NOASSERTION | Stars: 402 | Forks: 37
-  - PRs open: 2 | Discussions: No | Contributors: 3 | Last push: 158 days ago
-  - Description: Vision-Language Pathology Foundation Model - Nature Medicine
-- **[sinAshish/Multi-Scale-Attention](https://github.com/sinAshish/Multi-Scale-Attention)** (Score: -69.67)
-  - License: none | Stars: 467 | Forks: 96
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1933 days ago
-  - Description: [JBHI] Code for our paper "Multi-scale Guided Attention for Medical Image Segmentation"
-- **[aristoteleo/awesome-bioagent-papers](https://github.com/aristoteleo/awesome-bioagent-papers)** (Score: -77.37)
-  - License: none | Stars: 65 | Forks: 3
-  - PRs open: 22 | Discussions: No | Contributors: 2 | Last push: 1 days ago
-  - Description: Agent self-driven repository on bio-agent papers, i.e. papers on LLM-based agents in biology and medicine.
-- **[MohsinRazaKhanSipra/EHR-django](https://github.com/MohsinRazaKhanSipra/EHR-django)** (Score: -95.93)
-  - License: none | Stars: 20 | Forks: 12
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 74 days ago
-  - Description: DjangoEHR is an Electronic Health Records (EHR) system developed using the Django web framework. This project aims to provide healthcare professionals with a robust and secure platform for managing patient records, appointments, and medical information.
-- **[shreyasharma04/HealthChatbot](https://github.com/shreyasharma04/HealthChatbot)** (Score: -145.8)
-  - License: none | Stars: 119 | Forks: 20
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1287 days ago
-  - Description: 🤖 HealthCare ChatBot Major -1 (4th year - 7th semester)  Health Care Chat-Bot is a Healthcare Domain Chatbot to simulate the predictions of a General Physician.  ChatBot can be described as software that can chat with people using artificial intelligence. These software are used to perform tasks such as quickly responding to users, informing them, helping to purchase products and providing better service to customers. We have made a healthcare based chatbot.  The three main areas where chatbots can be used are diagnostics, patient engagement outside medical facilities, and mental health. In our major we are working on diagnostic.  📃 Brief A chatbot is an artificially intelligent creature which can converse with humans. This could be text-based, or a spoken conversation. In our project we will be using Python as it is currently the most popular language for creating an AI chatbot. In the middle of AI chatbot, architecture is the Natural Language Processing (NLP) layer.  This project aims to build an user-friendly healthcare chatbot which facilitates the job of a healthcare provider and helps improve their performance by interacting with users in a human-like way.  Through chatbots one can communicate with text or voice interface and get reply through artificial intelligence  Typically, a chat bot will communicate with a real person. Chat bots are used in applications such as E-commerce customer service, Call centres, Internet gaming,etc.  Chatbots are programs built to automatically engage with received messages. Chatbots can be programmed to respond the same way each time, to respond differently to messages containing certain keywords and even to use machine learning to adapt their responses to fit the situation.  A developing number of hospitals, nursing homes, and even private centres, presently utilize online Chatbots for human services on their sites. These bots connect with potential patients visiting the site, helping them discover specialists, booking their appointments, and getting them access to the correct treatment.  In any case, the utilization of artificial intelligence in an industry where individuals’ lives could be in question, still starts misgivings in individuals. It brings up issues about whether the task mentioned above ought to be assigned to human staff. This healthcare chatbot system will help hospitals to provide healthcare support online 24 x 7, it answers deep as well as general questions. It also helps to generate leads and automatically delivers the information of leads to sales. By asking the questions in series it helps patients by guiding what exactly he/she is looking for.  📜 Problem Statement During the pandemic, it is more important than ever to get your regular check-ups and to continue to take prescription medications. The healthier you are, the more likely you are to recover quickly from an illness.  In this time patients or health care workers within their practice, providers are deferring elective and preventive visits, such as annual physicals. For some, it is not possible to consult online. In this case, to avoid false information, our project can be of help.  📇 Features Register Screen. Sign-in Screen. Generates database for user login system. Offers you a GUI Based Chatbot for patients for diagnosing. [A pragmatic Approach for Diagnosis] Reccomends an appropriate doctor to you for the following symptom. 📜 Modules Used Our program uses a number of python modules to work properly:  tkinter os webbrowser numpy pandas matplotlib 📃 Algorithm We have used Decision tree for our health care based chat bot.  Decision Tree is a Supervised learning technique that can be used for both classification and Regression problems, but mostly it is preferred for solving Classification problems. It is a tree-structured classifier, where internal nodes represent the features of a dataset, branches represent the decision rules and each leaf node represents the outcome.It usually mimic human thinking ability while making a decision, so it is easy to understand.  :suspect: Project Members Anushka Bansal - 500067844 - R164218014 Shreya Sharma - 500068573 - R164218070 Silvi - 500069092 - R164218072 Ishika Agrawal - 500071154 - R164218097
-- **[aryanveturekar/Health-Care-Chat-Bot](https://github.com/aryanveturekar/Health-Care-Chat-Bot)** (Score: -150.83)
-  - License: none | Stars: 139 | Forks: 65
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1592 days ago
-  - Description: Through chatbots one can communicate with text or voice interface and get reply through artificial intelligence. Typically, a chat bot will communicate with a real person. Chat bots are used in applications such as ecommerce customer service, call centres and Internet gaming. Chatbots are programs built to automatically engage with received messages. Chatbots can be programmed to respond the same way each time, to respond differently to messages containing certain keywords and even to use machine learning to adapt their responses to fit the situation. A developing number of hospitals, nursing homes, and even private centres, presently utilize online Chatbots for human services on their sites. These bots connect with potential patients visiting the site, helping them discover specialists, booking their appointments, and getting them access to the correct treatment. In any case, the utilization of artificial intelligence in an industry where individuals’ lives could be in question, still starts misgivings in individuals. It brings up issues about whether the task mentioned above ought to be assigned to human staff. This healthcare chatbot system will help hospitals to provide healthcare support online 24 x 7, it answers deep as well as general questions. It also helps to generate leads and automatically delivers the information of leads to sales. By asking the questions in series it helps patients by guiding what exactly he/she is looking for.
-- **[gyaneshanand/SwasthyaChain-BlockChain-Based-Health-Management-System](https://github.com/gyaneshanand/SwasthyaChain-BlockChain-Based-Health-Management-System)** (Score: -264.6)
-  - License: none | Stars: 23 | Forks: 9
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2604 days ago
-  - Description: The project aims to use blockchain technology to create a user-focused electronic health record whilst maintaining a single true version of the user’s data.Swasthya Mitra is a decentralised platform that enables secure, fast and transparent exchange and usage of medical data.
+- **[freeCodeCamp/awesome-quincy-larson-emails](https://github.com/freeCodeCamp/awesome-quincy-larson-emails)** (Score: 430.4)
+  - License: MIT | Stars: 1165 | Forks: 153
+  - PRs open: 0 | Discussions: No | Contributors: 8 | Last push: 27 days ago
+  - Description: This repository is an archive of emails that are sent by the awesome Quincy Larson every week.
+- **[ros-controls/ros2_control_demos](https://github.com/ros-controls/ros2_control_demos)** (Score: 296.1)
+  - License: Apache-2.0 | Stars: 611 | Forks: 240
+  - PRs open: 8 | Discussions: No | Contributors: 50 | Last push: 0 days ago
+  - Description: This repository aims at providing examples to illustrate ros2_control and ros2_controllers
+- **[hongbo-miao/hongbomiao.com](https://github.com/hongbo-miao/hongbomiao.com)** (Score: 135.05)
+  - License: MIT | Stars: 245 | Forks: 42
+  - PRs open: 6 | Discussions: Yes | Contributors: 11 | Last push: 0 days ago
+  - Description: A personal research and development (R&D) lab that facilitates the sharing of knowledge.
+- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -59.9)
+  - License: none | Stars: 122 | Forks: 15
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: This repository tracks the latest advancements in 3D Gaussian Splatting from Arxiv, with daily automated updates. Stay up-to-date with cutting-edge research in this exciting field!
+- **[yangsc4063/rino](https://github.com/yangsc4063/rino)** (Score: -78.4)
+  - License: none | Stars: 67 | Forks: 9
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 6 days ago
+  - Description: [T-ASE 2025] This is the official implementation of RINO: Accurate, Robust Radar-Inertial Odometry with Non-Iterative Estimation.
+- **[KirillMouraviev/PRISM-TopoMap](https://github.com/KirillMouraviev/PRISM-TopoMap)** (Score: -88.97)
+  - License: none | Stars: 38 | Forks: 1
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 13 days ago
+  - Description: The PRISM-TopoMap - online topological mapping method with place recognition and scan matching
+- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.2)
+  - License: CC0-1.0 | Stars: 26 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: This is a curated list of my GitHub stars but converted into an Awesome List! Updated automagically ever 12 hours! :D
 
 ## Imaging & Radiology
-- **[Project-MONAI/MONAI](https://github.com/Project-MONAI/MONAI)** (Score: 2318.08)
-  - License: Apache-2.0 | Stars: 6775 | Forks: 1245
-  - PRs open: 88 | Discussions: Yes | Contributors: 50 | Last push: 4 days ago
-  - Description: AI Toolkit for Healthcare Imaging
-- **[JunMa11/SegLossOdyssey](https://github.com/JunMa11/SegLossOdyssey)** (Score: 1311.7)
-  - License: Apache-2.0 | Stars: 3945 | Forks: 611
-  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 669 days ago
-  - Description: A collection of loss functions for medical image segmentation
-- **[llSourcell/Doctor-Dignity](https://github.com/llSourcell/Doctor-Dignity)** (Score: 1255.7)
-  - License: Apache-2.0 | Stars: 3858 | Forks: 415
-  - PRs open: 0 | Discussions: No | Contributors: 50 | Last push: 711 days ago
-  - Description: Doctor Dignity is an LLM that can pass the US Medical Licensing Exam. It works offline, it's cross-platform, & your health data stays private.
-- **[Kent0n-Li/ChatDoctor](https://github.com/Kent0n-Li/ChatDoctor)** (Score: 1190.6)
-  - License: Apache-2.0 | Stars: 3632 | Forks: 431
-  - PRs open: 2 | Discussions: No | Contributors: 2 | Last push: 471 days ago
-- **[HiLab-git/SSL4MIS](https://github.com/HiLab-git/SSL4MIS)** (Score: 869.53)
-  - License: MIT | Stars: 2484 | Forks: 410
-  - PRs open: 0 | Discussions: No | Contributors: 5 | Last push: 85 days ago
-  - Description: Semi Supervised Learning for Medical Image Segmentation, a collection of literature reviews and code implementations.
-- **[TorchIO-project/torchio](https://github.com/TorchIO-project/torchio)** (Score: 790.15)
-  - License: Apache-2.0 | Stars: 2259 | Forks: 249
-  - PRs open: 8 | Discussions: Yes | Contributors: 50 | Last push: 12 days ago
-  - Description: Medical imaging processing for AI applications.
-- **[GlasgowEmbedded/glasgow](https://github.com/GlasgowEmbedded/glasgow)** (Score: 568.05)
-  - License: 0BSD | Stars: 2030 | Forks: 221
-  - PRs open: 35 | Discussions: Yes | Contributors: 50 | Last push: 3 days ago
-  - Description: Scots Army Knife for electronics
-- **[Tencent/MedicalNet](https://github.com/Tencent/MedicalNet)** (Score: 555.23)
-  - License: NOASSERTION | Stars: 2087 | Forks: 438
-  - PRs open: 6 | Discussions: No | Contributors: 1 | Last push: 787 days ago
-  - Description: Many studies have shown that the performance on deep learning is significantly affected by volume of training data. The MedicalNet project provides a series of 3D-ResNet pre-trained models and relative code.
-- **[sunlabuiuc/PyHealth](https://github.com/sunlabuiuc/PyHealth)** (Score: 512.25)
-  - License: MIT | Stars: 1214 | Forks: 430
-  - PRs open: 62 | Discussions: Yes | Contributors: 28 | Last push: 15 days ago
-  - Description: A Deep Learning Python Toolkit for Healthcare Applications.
-- **[NifTK/NiftyNet](https://github.com/NifTK/NiftyNet)** (Score: 416.17)
-  - License: Apache-2.0 | Stars: 1380 | Forks: 402
-  - PRs open: 3 | Discussions: No | Contributors: 40 | Last push: 1958 days ago
-  - Description: [unmaintained] An open-source convolutional neural networks platform for research in medical image analysis and image-guided therapy
-- **[uni-medical/SAM-Med3D](https://github.com/uni-medical/SAM-Med3D)** (Score: 286.67)
-  - License: Apache-2.0 | Stars: 739 | Forks: 97
-  - PRs open: 1 | Discussions: No | Contributors: 3 | Last push: 74 days ago
-  - Description: SAM-Med3D: An Efficient General-purpose Promptable Segmentation Model for 3D Volumetric Medical Image
-- **[bowang-lab/MedRAX](https://github.com/bowang-lab/MedRAX)** (Score: 275.2)
-  - License: Apache-2.0 | Stars: 663 | Forks: 137
-  - PRs open: 1 | Discussions: No | Contributors: 4 | Last push: 30 days ago
-  - Description: MedRAX: Medical Reasoning Agent for Chest X-ray - ICML 2025
-- **[souvikmajumder26/Multi-Agent-Medical-Assistant](https://github.com/souvikmajumder26/Multi-Agent-Medical-Assistant)** (Score: 234.2)
-  - License: Apache-2.0 | Stars: 551 | Forks: 133
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 120 days ago
-  - Description: ⚕️GenAI powered multi-agentic medical diagnostics and healthcare research assistance chatbot. 🏥 Designed for healthcare professionals, researchers and patients.
-- **[CogStack/MedCAT](https://github.com/CogStack/MedCAT)** (Score: 230.33)
-  - License: Apache-2.0 | Stars: 508 | Forks: 111
-  - PRs open: 1 | Discussions: No | Contributors: 27 | Last push: 37 days ago
-  - Description: Medical Concept Annotation Tool
-- **[pymedphys/pymedphys](https://github.com/pymedphys/pymedphys)** (Score: 157.82)
-  - License: Apache-2.0 | Stars: 338 | Forks: 79
-  - PRs open: 6 | Discussions: Yes | Contributors: 33 | Last push: 92 days ago
-  - Description: A community effort to develop an open standard library for Medical Physics in Python. Building quality transparent software together via peer review and open source distribution. Open code is better science.
-- **[theislab/ehrapy](https://github.com/theislab/ehrapy)** (Score: 149.62)
-  - License: Apache-2.0 | Stars: 303 | Forks: 35
-  - PRs open: 3 | Discussions: Yes | Contributors: 19 | Last push: 5 days ago
-  - Description: Electronic Health Record Analysis with Python.
-- **[microsoft/hi-ml](https://github.com/microsoft/hi-ml)** (Score: 146.08)
-  - License: MIT | Stars: 295 | Forks: 60
-  - PRs open: 24 | Discussions: Yes | Contributors: 19 | Last push: 55 days ago
-  - Description: HI-ML toolbox for deep learning for medical imaging and Azure integration
-- **[Omid-Nejati/MedViT](https://github.com/Omid-Nejati/MedViT)** (Score: 118.7)
-  - License: MIT | Stars: 209 | Forks: 31
+- **[eProsima/Fast-DDS](https://github.com/eProsima/Fast-DDS)** (Score: 998.12)
+  - License: Apache-2.0 | Stars: 2545 | Forks: 854
+  - PRs open: 34 | Discussions: Yes | Contributors: 50 | Last push: 2 days ago
+  - Description: The most complete DDS - Proven: Plenty of success cases. Looking for commercial support? Contact info@eprosima.com
+- **[mustbeperfect/definitive-opensource](https://github.com/mustbeperfect/definitive-opensource)** (Score: 419.45)
+  - License: MIT | Stars: 1202 | Forks: 35
+  - PRs open: 0 | Discussions: Yes | Contributors: 6 | Last push: 0 days ago
+  - Description: The definitive list of open source.
+- **[acados/acados](https://github.com/acados/acados)** (Score: 291.57)
+  - License: NOASSERTION | Stars: 1073 | Forks: 289
+  - PRs open: 12 | Discussions: No | Contributors: 50 | Last push: 5 days ago
+  - Description: Fast and embedded solvers for nonlinear optimal control and nonlinear model predictive control
+- **[eclipse-cyclonedds/cyclonedds](https://github.com/eclipse-cyclonedds/cyclonedds)** (Score: 284.43)
+  - License: NOASSERTION | Stars: 1039 | Forks: 400
+  - PRs open: 31 | Discussions: No | Contributors: 50 | Last push: 4 days ago
+  - Description: Eclipse Cyclone DDS project
+- **[hanruihua/NeuPAN](https://github.com/hanruihua/NeuPAN)** (Score: 232.27)
+  - License: GPL-3.0 | Stars: 637 | Forks: 60
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2 days ago
+  - Description: [TRO 2025] NeuPAN: Direct Point Robot Navigation with End-to-End Model-based Learning.
+- **[ika-rwth-aachen/mqtt_client](https://github.com/ika-rwth-aachen/mqtt_client)** (Score: 136.78)
+  - License: MIT | Stars: 247 | Forks: 58
+  - PRs open: 1 | Discussions: Yes | Contributors: 10 | Last push: 13 days ago
+  - Description: ROS 2 C++ Node for bi-directionally bridging messages between ROS and MQTT
+- **[hongbo-miao/hongbomiao.com](https://github.com/hongbo-miao/hongbomiao.com)** (Score: 135.05)
+  - License: MIT | Stars: 245 | Forks: 42
+  - PRs open: 6 | Discussions: Yes | Contributors: 11 | Last push: 0 days ago
+  - Description: A personal research and development (R&D) lab that facilitates the sharing of knowledge.
+- **[uleroboticsgroup/yasmin](https://github.com/uleroboticsgroup/yasmin)** (Score: 102.0)
+  - License: GPL-3.0 | Stars: 198 | Forks: 40
+  - PRs open: 0 | Discussions: No | Contributors: 17 | Last push: 6 days ago
+  - Description: YASMIN (Yet Another State MachINe)
+- **[Robotics-STAR-Lab/SOAR](https://github.com/Robotics-STAR-Lab/SOAR)** (Score: 89.77)
+  - License: GPL-3.0 | Stars: 191 | Forks: 11
+  - PRs open: 0 | Discussions: No | Contributors: 5 | Last push: 14 days ago
+  - Description: [IROS'24 Oral] A Heterogeneous Multi-UAV Planner for Fast Autonomous Reconstruction
+- **[Seeed-Projects/reComputer-Jetson-for-Beginners](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners)** (Score: 87.47)
+  - License: MIT | Stars: 111 | Forks: 19
+  - PRs open: 2 | Discussions: No | Contributors: 5 | Last push: 20 days ago
+  - Description: Beginner's Guide to reComputer Jetson
+- **[ika-rwth-aachen/ros2_calib](https://github.com/ika-rwth-aachen/ros2_calib)** (Score: 80.37)
+  - License: MIT | Stars: 94 | Forks: 10
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2 days ago
+  - Description: LiDAR-Camera Calibration using ROS2 mcap recordings. A vibe coding project.
+- **[isLinXu/paper-list](https://github.com/isLinXu/paper-list)** (Score: 80.3)
+  - License: Apache-2.0 | Stars: 93 | Forks: 11
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: autoupdate paper list
+- **[kimtth/software-architect-mindmap](https://github.com/kimtth/software-architect-mindmap)** (Score: 80.17)
+  - License: MIT | Stars: 87 | Forks: 24
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 20 days ago
+  - Description: 🧠Mindmap of 🗺️Software Architecture, Software engineering: An Overview of Software Terminologies and Concepts.
+- **[olympus-robotics/hephaestus](https://github.com/olympus-robotics/hephaestus)** (Score: 66.67)
+  - License: MIT | Stars: 46 | Forks: 11
+  - PRs open: 5 | Discussions: No | Contributors: 13 | Last push: 2 days ago
+  - Description: Hephaestus is a C++ framework designed to facilitate robotics development by providing commonly needed functionality and abstractions.
+- **[paragon-intelligence/agentle](https://github.com/paragon-intelligence/agentle)** (Score: 66.05)
+  - License: MIT | Stars: 46 | Forks: 9
+  - PRs open: 0 | Discussions: Yes | Contributors: 1 | Last push: 0 days ago
+  - Description: Build production-ready AI agents in days, not months. Python 3.13+. Save development time with minimal code, deploy anywhere with confidence, and scale from simple assistants to complex multi-agent systems without the headaches.
+- **[hoangsonww/Agentic-AI-Pipeline](https://github.com/hoangsonww/Agentic-AI-Pipeline)** (Score: 60.98)
+  - License: Apache-2.0 | Stars: 23 | Forks: 19
+  - PRs open: 0 | Discussions: Yes | Contributors: 1 | Last push: 1 days ago
+  - Description: 🦾 A production‑ready research outreach AI agent that plans, discovers, reasons, uses tools, auto‑builds cited briefings, and drafts tailored emails with tool‑chaining, memory, tests, and turnkey Docker, AWS, Ansible & Terraform deploys. Bonus: Agentic RAG system (FAISS + Google CSE) with multistep planning, self-critique, and autonomous agents.
+- **[automatika-robotics/embodied-agents](https://github.com/automatika-robotics/embodied-agents)** (Score: 60.05)
+  - License: MIT | Stars: 31 | Forks: 3
+  - PRs open: 0 | Discussions: Yes | Contributors: 2 | Last push: 9 days ago
+  - Description: EmbodiedAgents is a fully-loaded framework, written in pure ROS2, for creating interactive physical agents that can understand, remember, and act upon contextual information from their environment.
+- **[robotics-upo/marsupial_simulator_ros2](https://github.com/robotics-upo/marsupial_simulator_ros2)** (Score: 57.83)
+  - License: Apache-2.0 | Stars: 27 | Forks: 5
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 28 days ago
+  - Description: Physical simulation of Marsupial UAV-UGV Systems Connected by a Variable-Length Hanging Tether
+- **[airas-org/airas](https://github.com/airas-org/airas)** (Score: 56.85)
+  - License: MIT | Stars: 16 | Forks: 0
+  - PRs open: 9 | Discussions: Yes | Contributors: 7 | Last push: 0 days ago
+  - Description: AIRAS - an open-source project for research automation
+- **[Lyz103/LLM-Agent-Paper-daily](https://github.com/Lyz103/LLM-Agent-Paper-daily)** (Score: 55.9)
+  - License: Apache-2.0 | Stars: 18 | Forks: 1
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: Automatically Update LLM-Agent Papers Daily using Github Actions (Update Every 12th hours)
+- **[superxslam/SuperOdom](https://github.com/superxslam/SuperOdom)** (Score: 28.87)
+  - License: none | Stars: 398 | Forks: 42
+  - PRs open: 4 | Discussions: No | Contributors: 4 | Last push: 2 days ago
+  - Description: A highly robust and accurate LiDAR-inertial odometry  package
+- **[xArm-Developer/xarm_ros](https://github.com/xArm-Developer/xarm_ros)** (Score: 9.03)
+  - License: BSD-3-Clause | Stars: 263 | Forks: 172
+  - PRs open: 6 | Discussions: No | Contributors: 15 | Last push: 13 days ago
+  - Description: ROS packages for robotic products from UFACTORY
+- **[xArm-Developer/xarm_ros2](https://github.com/xArm-Developer/xarm_ros2)** (Score: -27.97)
+  - License: BSD-3-Clause | Stars: 174 | Forks: 123
+  - PRs open: 7 | Discussions: No | Contributors: 6 | Last push: 13 days ago
+  - Description: ROS2 developer packages for robotic products from UFACTORY
+- **[ACFR-RPG/DynOSAM](https://github.com/ACFR-RPG/DynOSAM)** (Score: -50.9)
+  - License: BSD-3-Clause | Stars: 155 | Forks: 13
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 3 days ago
-  - Description: MedViT: A Robust Vision Transformer for Generalized Medical Image Classification (Computers in Biology and Medicine 2023)
-- **[som-shahlab/femr](https://github.com/som-shahlab/femr)** (Score: 105.35)
-  - License: Apache-2.0 | Stars: 155 | Forks: 27
-  - PRs open: 3 | Discussions: Yes | Contributors: 11 | Last push: 0 days ago
-  - Description: FEMR (Framework for Electronic Medical Records) provides tooling for large-scale, self-supervised learning using electronic health records
-- **[NYUMedML/GNN_for_EHR](https://github.com/NYUMedML/GNN_for_EHR)** (Score: 99.13)
-  - License: GPL-3.0 | Stars: 269 | Forks: 63
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 352 days ago
-  - Description: Code for "Graph Neural Network on Electronic Health Records for Predicting Alzheimer’s Disease"
-- **[CodeForPhilly/chime](https://github.com/CodeForPhilly/chime)** (Score: 95.27)
-  - License: MIT | Stars: 211 | Forks: 152
-  - PRs open: 19 | Discussions: No | Contributors: 43 | Last push: 911 days ago
-  - Description: COVID-19 Hospital Impact Model for Epidemics
-- **[xliucs/MTTS-CAN](https://github.com/xliucs/MTTS-CAN)** (Score: 93.4)
-  - License: MIT | Stars: 193 | Forks: 54
-  - PRs open: 2 | Discussions: No | Contributors: 1 | Last push: 381 days ago
-  - Description: Multi-Task Temporal Shift Attention Networks for On-Device Contactless Vitals Measurement (NeurIPS 2020)
-- **[ncbi-nlp/bluebert](https://github.com/ncbi-nlp/bluebert)** (Score: 30.47)
-  - License: NOASSERTION | Stars: 577 | Forks: 81
-  - PRs open: 1 | Discussions: No | Contributors: 3 | Last push: 890 days ago
-  - Description: BlueBERT, pre-trained on PubMed abstracts and clinical notes (MIMIC-III).
-- **[ChiragAgg5k/asclepius](https://github.com/ChiragAgg5k/asclepius)** (Score: 29.05)
-  - License: MIT | Stars: 28 | Forks: 7
-  - PRs open: 0 | Discussions: Yes | Contributors: 5 | Last push: 486 days ago
-  - Description: Healthcare related tracking and ordering software for students of Bennett University
-- **[mahmoodlab/CONCH](https://github.com/mahmoodlab/CONCH)** (Score: 17.67)
-  - License: NOASSERTION | Stars: 402 | Forks: 37
-  - PRs open: 2 | Discussions: No | Contributors: 3 | Last push: 158 days ago
-  - Description: Vision-Language Pathology Foundation Model - Nature Medicine
-- **[iurteaga/menstrual_cycle_analysis](https://github.com/iurteaga/menstrual_cycle_analysis)** (Score: 9.0)
-  - License: MIT | Stars: 29 | Forks: 12
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 786 days ago
-  - Description: Work on the characterization and analysis of menstrual cycles using self-tracked mobile health data
-- **[OpenAPC/openapc-de](https://github.com/OpenAPC/openapc-de)** (Score: -24.03)
-  - License: none | Stars: 126 | Forks: 121
-  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 2 days ago
-  - Description: Collect and disseminate information on fee-based Open Access publishing
-- **[prasadseemakurthi/Deep-Neural-Networks-HealthCare](https://github.com/prasadseemakurthi/Deep-Neural-Networks-HealthCare)** (Score: -57.23)
-  - License: MIT | Stars: 124 | Forks: 223
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2840 days ago
-  - Description: Tangible and Practical Deep Learning Projects Repository for Healthcare such as Cancer, Drug Discovery, Genomic and More
-- **[shaochuhan/medical-image-segmentation](https://github.com/shaochuhan/medical-image-segmentation)** (Score: -57.43)
-  - License: none | Stars: 123 | Forks: 75
-  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 152 days ago
-  - Description: A method for medical image segmentation and privacy protection based on the Unet model
-- **[sinAshish/Multi-Scale-Attention](https://github.com/sinAshish/Multi-Scale-Attention)** (Score: -69.67)
-  - License: none | Stars: 467 | Forks: 96
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1933 days ago
-  - Description: [JBHI] Code for our paper "Multi-scale Guided Attention for Medical Image Segmentation"
-- **[chentao1999/MedicalRelationExtraction](https://github.com/chentao1999/MedicalRelationExtraction)** (Score: -75.87)
-  - License: MIT | Stars: 74 | Forks: 20
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2275 days ago
-  - Description: The depository support training and testing BERT-CNN model on three medical relation extraction corpora: BioCreative V CDR task corpus, traditional Chinese medicine  literature corpus, and i2b2 temporal relation corpus.
-- **[ahmadvh/AI-Agents-for-Medical-Diagnostics](https://github.com/ahmadvh/AI-Agents-for-Medical-Diagnostics)** (Score: -90.47)
-  - License: none | Stars: 72 | Forks: 46
-  - PRs open: 3 | Discussions: No | Contributors: 1 | Last push: 328 days ago
-  - Description: A Python project to create specialized LLM-based AI agents that analyze complex medical cases. The system integrates insights from various medical professionals to provide comprehensive assessments and personalized treatment recommendations, showcasing the potential of AI in multidisciplinary medicine.
-- **[ncbi-nlp/NegBio](https://github.com/ncbi-nlp/NegBio)** (Score: -93.4)
-  - License: NOASSERTION | Stars: 163 | Forks: 43
-  - PRs open: 4 | Discussions: No | Contributors: 4 | Last push: 777 days ago
-  - Description: :newspaper: High-performance tool for negation and uncertainty detection in radiology reports
-- **[MohsinRazaKhanSipra/EHR-django](https://github.com/MohsinRazaKhanSipra/EHR-django)** (Score: -95.93)
-  - License: none | Stars: 20 | Forks: 12
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 74 days ago
-  - Description: DjangoEHR is an Electronic Health Records (EHR) system developed using the Django web framework. This project aims to provide healthcare professionals with a robust and secure platform for managing patient records, appointments, and medical information.
-- **[M-ballabio1/MeHEDI-app](https://github.com/M-ballabio1/MeHEDI-app)** (Score: -112.57)
-  - License: none | Stars: 28 | Forks: 14
-  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 370 days ago
-  - Description: Web application for the data-driven management of a small healthcare facility. Proof of Concept of a wider platform project in the Patient Satisfaction area
-- **[ChiZhang-bit/Knowledge-Graph-KG-Augmented-Disease-Prediction](https://github.com/ChiZhang-bit/Knowledge-Graph-KG-Augmented-Disease-Prediction)** (Score: -125.4)
-  - License: none | Stars: 42 | Forks: 9
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 600 days ago
-  - Description: DASFAA 2024 - Knowledge Graph (KG) Augmented Disease Prediction Code
-- **[mp2893/medgan](https://github.com/mp2893/medgan)** (Score: -144.73)
-  - License: BSD-3-Clause | Stars: 278 | Forks: 94
-  - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 2204 days ago
-  - Description: Generative adversarial network for generating electronic health records.
-- **[shreyasharma04/HealthChatbot](https://github.com/shreyasharma04/HealthChatbot)** (Score: -145.8)
-  - License: none | Stars: 119 | Forks: 20
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1287 days ago
-  - Description: 🤖 HealthCare ChatBot Major -1 (4th year - 7th semester)  Health Care Chat-Bot is a Healthcare Domain Chatbot to simulate the predictions of a General Physician.  ChatBot can be described as software that can chat with people using artificial intelligence. These software are used to perform tasks such as quickly responding to users, informing them, helping to purchase products and providing better service to customers. We have made a healthcare based chatbot.  The three main areas where chatbots can be used are diagnostics, patient engagement outside medical facilities, and mental health. In our major we are working on diagnostic.  📃 Brief A chatbot is an artificially intelligent creature which can converse with humans. This could be text-based, or a spoken conversation. In our project we will be using Python as it is currently the most popular language for creating an AI chatbot. In the middle of AI chatbot, architecture is the Natural Language Processing (NLP) layer.  This project aims to build an user-friendly healthcare chatbot which facilitates the job of a healthcare provider and helps improve their performance by interacting with users in a human-like way.  Through chatbots one can communicate with text or voice interface and get reply through artificial intelligence  Typically, a chat bot will communicate with a real person. Chat bots are used in applications such as E-commerce customer service, Call centres, Internet gaming,etc.  Chatbots are programs built to automatically engage with received messages. Chatbots can be programmed to respond the same way each time, to respond differently to messages containing certain keywords and even to use machine learning to adapt their responses to fit the situation.  A developing number of hospitals, nursing homes, and even private centres, presently utilize online Chatbots for human services on their sites. These bots connect with potential patients visiting the site, helping them discover specialists, booking their appointments, and getting them access to the correct treatment.  In any case, the utilization of artificial intelligence in an industry where individuals’ lives could be in question, still starts misgivings in individuals. It brings up issues about whether the task mentioned above ought to be assigned to human staff. This healthcare chatbot system will help hospitals to provide healthcare support online 24 x 7, it answers deep as well as general questions. It also helps to generate leads and automatically delivers the information of leads to sales. By asking the questions in series it helps patients by guiding what exactly he/she is looking for.  📜 Problem Statement During the pandemic, it is more important than ever to get your regular check-ups and to continue to take prescription medications. The healthier you are, the more likely you are to recover quickly from an illness.  In this time patients or health care workers within their practice, providers are deferring elective and preventive visits, such as annual physicals. For some, it is not possible to consult online. In this case, to avoid false information, our project can be of help.  📇 Features Register Screen. Sign-in Screen. Generates database for user login system. Offers you a GUI Based Chatbot for patients for diagnosing. [A pragmatic Approach for Diagnosis] Reccomends an appropriate doctor to you for the following symptom. 📜 Modules Used Our program uses a number of python modules to work properly:  tkinter os webbrowser numpy pandas matplotlib 📃 Algorithm We have used Decision tree for our health care based chat bot.  Decision Tree is a Supervised learning technique that can be used for both classification and Regression problems, but mostly it is preferred for solving Classification problems. It is a tree-structured classifier, where internal nodes represent the features of a dataset, branches represent the decision rules and each leaf node represents the outcome.It usually mimic human thinking ability while making a decision, so it is easy to understand.  :suspect: Project Members Anushka Bansal - 500067844 - R164218014 Shreya Sharma - 500068573 - R164218070 Silvi - 500069092 - R164218072 Ishika Agrawal - 500071154 - R164218097
-- **[aryanveturekar/Health-Care-Chat-Bot](https://github.com/aryanveturekar/Health-Care-Chat-Bot)** (Score: -150.83)
-  - License: none | Stars: 139 | Forks: 65
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1592 days ago
-  - Description: Through chatbots one can communicate with text or voice interface and get reply through artificial intelligence. Typically, a chat bot will communicate with a real person. Chat bots are used in applications such as ecommerce customer service, call centres and Internet gaming. Chatbots are programs built to automatically engage with received messages. Chatbots can be programmed to respond the same way each time, to respond differently to messages containing certain keywords and even to use machine learning to adapt their responses to fit the situation. A developing number of hospitals, nursing homes, and even private centres, presently utilize online Chatbots for human services on their sites. These bots connect with potential patients visiting the site, helping them discover specialists, booking their appointments, and getting them access to the correct treatment. In any case, the utilization of artificial intelligence in an industry where individuals’ lives could be in question, still starts misgivings in individuals. It brings up issues about whether the task mentioned above ought to be assigned to human staff. This healthcare chatbot system will help hospitals to provide healthcare support online 24 x 7, it answers deep as well as general questions. It also helps to generate leads and automatically delivers the information of leads to sales. By asking the questions in series it helps patients by guiding what exactly he/she is looking for.
-- **[mp2893/med2vec](https://github.com/mp2893/med2vec)** (Score: -199.37)
-  - License: BSD-3-Clause | Stars: 221 | Forks: 73
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2689 days ago
-  - Description: Repository for Med2Vec project
-- **[DeepHiveMind/Medical-Healthcare-3D-Imaging-AI](https://github.com/DeepHiveMind/Medical-Healthcare-3D-Imaging-AI)** (Score: -199.8)
-  - License: BSD-3-Clause | Stars: 50 | Forks: 18
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1779 days ago
-  - Description: :hospital:  :eye_speech_bubble:  Medical Healthcare AI | Robotic Surgery | Automated Brain Tumour Segmentation | Skin Cancer Lesion Detection & Segmentation (Melonama Recognition) |  Lung Cancer detection (Chest CT Scan) | IMAGE SEGMENTATION TECHNIQUES
-- **[mp2893/retain](https://github.com/mp2893/retain)** (Score: -209.13)
-  - License: BSD-3-Clause | Stars: 218 | Forks: 79
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 2858 days ago
-  - Description: RETAIN: Interpretable Predictive Model in Healthcare using Reverse Time Attention Mechanism
-- **[gyaneshanand/SwasthyaChain-BlockChain-Based-Health-Management-System](https://github.com/gyaneshanand/SwasthyaChain-BlockChain-Based-Health-Management-System)** (Score: -264.6)
-  - License: none | Stars: 23 | Forks: 9
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2604 days ago
-  - Description: The project aims to use blockchain technology to create a user-focused electronic health record whilst maintaining a single true version of the user’s data.Swasthya Mitra is a decentralised platform that enables secure, fast and transparent exchange and usage of medical data.
-
-## Wearables & Remote Monitoring
-- **[xliucs/MTTS-CAN](https://github.com/xliucs/MTTS-CAN)** (Score: 93.4)
-  - License: MIT | Stars: 193 | Forks: 54
-  - PRs open: 2 | Discussions: No | Contributors: 1 | Last push: 381 days ago
-  - Description: Multi-Task Temporal Shift Attention Networks for On-Device Contactless Vitals Measurement (NeurIPS 2020)
-
-## Public Health & Epidemiology
-- **[CodeForPhilly/chime](https://github.com/CodeForPhilly/chime)** (Score: 95.27)
-  - License: MIT | Stars: 211 | Forks: 152
-  - PRs open: 19 | Discussions: No | Contributors: 43 | Last push: 911 days ago
-  - Description: COVID-19 Hospital Impact Model for Epidemics
+  - Description: Offical code release for DynoSAM: Dynamic Object Smoothing And Mapping [Submitted TRO Visual SLAM SI]. A visual SLAM framework and pipeline for Dynamic environements, estimating for the motion/pose of objects and their structure, as well as the camera odometry and static map.
+- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -59.9)
+  - License: none | Stars: 122 | Forks: 15
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: This repository tracks the latest advancements in 3D Gaussian Splatting from Arxiv, with daily automated updates. Stay up-to-date with cutting-edge research in this exciting field!
+- **[monologg/nlp-arxiv-daily](https://github.com/monologg/nlp-arxiv-daily)** (Score: -65.7)
+  - License: none | Stars: 100 | Forks: 20
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: Automatically Update NLP Papers Daily using Github Actions (ref: https://github.com/Vincentqyw/cv-arxiv-daily)
+- **[Xuchen-Li/llm-arxiv-daily](https://github.com/Xuchen-Li/llm-arxiv-daily)** (Score: -66.47)
+  - License: none | Stars: 106 | Forks: 6
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - Description: Automatically update arXiv papers about LLM Reasoning, LLM Evaluation, LLM & MLLM and Video Understanding using Github Actions.
+- **[vybhav-ibr/genesis_ros](https://github.com/vybhav-ibr/genesis_ros)** (Score: -73.27)
+  - License: none | Stars: 87 | Forks: 4
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 7 days ago
+  - Description: A light-weight, pythhonic ros2 package to connect the genesis simulator and ROS2
+- **[DWCTOD/cv-arxiv-daily](https://github.com/DWCTOD/cv-arxiv-daily)** (Score: -75.4)
+  - License: none | Stars: 65 | Forks: 24
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+- **[Xuchen-Li/cv-arxiv-daily](https://github.com/Xuchen-Li/cv-arxiv-daily)** (Score: -88.4)
+  - License: none | Stars: 35 | Forks: 4
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: Automatically update arXiv papers about SOT & VLT,  Multi-modal Learning, LLM and Video Understanding using Github Actions.
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
+  - License: none | Stars: 29 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
+- **[chanmuzi/NLP-Paper-News](https://github.com/chanmuzi/NLP-Paper-News)** (Score: -90.4)
+  - License: none | Stars: 31 | Forks: 0
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: The list of NLP paper and news I've checked. There might be short description of them (abstract) in Korean.
+- **[ctu-vras/ros-utils](https://github.com/ctu-vras/ros-utils)** (Score: -92.9)
+  - License: none | Stars: 19 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 3 days ago
+  - Description: Useful utilities for working with ROS
+- **[Keio-CSG/slamspoof](https://github.com/Keio-CSG/slamspoof)** (Score: -93.1)
+  - License: none | Stars: 25 | Forks: 3
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 24 days ago
+  - Description: (ICRA'25) "SLAMSpoof: Practical LiDAR Spoofing Attacks on Localization Systems Guided by Scan Matching Vulnerability Analysis"
+- **[luohongk/Awesome-Localization-And-3D-Reconstruction-From-Arxiv](https://github.com/luohongk/Awesome-Localization-And-3D-Reconstruction-From-Arxiv)** (Score: -104.4)
+  - License: none | Stars: 80 | Forks: 5
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: 📚这个仓库是在arxiv上收集的有关VLN，VLA, SLAM，Gaussian Splatting,非线性优化等相关论文。每天都会自动更新！issue区域是最新10篇论文
 
 ## Genomics & Precision Medicine
-- **[microsoft/promptbase](https://github.com/microsoft/promptbase)** (Score: 1785.9)
-  - License: MIT | Stars: 5670 | Forks: 322
-  - PRs open: 2 | Discussions: No | Contributors: 7 | Last push: 453 days ago
-  - Description: All things prompt engineering
-- **[bcbio/bcbio-nextgen](https://github.com/bcbio/bcbio-nextgen)** (Score: 401.9)
-  - License: MIT | Stars: 1011 | Forks: 355
-  - PRs open: 3 | Discussions: No | Contributors: 50 | Last push: 372 days ago
-  - Description: Validated, scalable, community developed variant calling, RNA-seq and small RNA analysis
-- **[uni-medical/SAM-Med3D](https://github.com/uni-medical/SAM-Med3D)** (Score: 286.67)
-  - License: Apache-2.0 | Stars: 739 | Forks: 97
-  - PRs open: 1 | Discussions: No | Contributors: 3 | Last push: 74 days ago
-  - Description: SAM-Med3D: An Efficient General-purpose Promptable Segmentation Model for 3D Volumetric Medical Image
-- **[Azure-Samples/healthcare-agent-orchestrator](https://github.com/Azure-Samples/healthcare-agent-orchestrator)** (Score: 100.47)
-  - License: MIT | Stars: 126 | Forks: 47
-  - PRs open: 4 | Discussions: No | Contributors: 11 | Last push: 2 days ago
-  - Description: Facilitates creating modular specialized agents that coordinate across diverse data types and tools like M365 and Teams to assist multi-disciplinary healthcare workflows—such as cancer care.
-- **[aws-samples/amazon-bedrock-agents-healthcare-lifesciences](https://github.com/aws-samples/amazon-bedrock-agents-healthcare-lifesciences)** (Score: -28.97)
-  - License: MIT-0 | Stars: 172 | Forks: 69
-  - PRs open: 12 | Discussions: No | Contributors: 21 | Last push: 4 days ago
-- **[gersteinlab/MedAgents](https://github.com/gersteinlab/MedAgents)** (Score: -37.53)
-  - License: none | Stars: 280 | Forks: 43
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 461 days ago
-  - Description: [ACL 2024 Findings] MedAgents: Large Language Models as Collaborators for Zero-shot Medical Reasoning https://arxiv.org/abs/2311.10537
-- **[prasadseemakurthi/Deep-Neural-Networks-HealthCare](https://github.com/prasadseemakurthi/Deep-Neural-Networks-HealthCare)** (Score: -57.23)
-  - License: MIT | Stars: 124 | Forks: 223
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2840 days ago
-  - Description: Tangible and Practical Deep Learning Projects Repository for Healthcare such as Cancer, Drug Discovery, Genomic and More
-- **[shreyasharma04/HealthChatbot](https://github.com/shreyasharma04/HealthChatbot)** (Score: -145.8)
-  - License: none | Stars: 119 | Forks: 20
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1287 days ago
-  - Description: 🤖 HealthCare ChatBot Major -1 (4th year - 7th semester)  Health Care Chat-Bot is a Healthcare Domain Chatbot to simulate the predictions of a General Physician.  ChatBot can be described as software that can chat with people using artificial intelligence. These software are used to perform tasks such as quickly responding to users, informing them, helping to purchase products and providing better service to customers. We have made a healthcare based chatbot.  The three main areas where chatbots can be used are diagnostics, patient engagement outside medical facilities, and mental health. In our major we are working on diagnostic.  📃 Brief A chatbot is an artificially intelligent creature which can converse with humans. This could be text-based, or a spoken conversation. In our project we will be using Python as it is currently the most popular language for creating an AI chatbot. In the middle of AI chatbot, architecture is the Natural Language Processing (NLP) layer.  This project aims to build an user-friendly healthcare chatbot which facilitates the job of a healthcare provider and helps improve their performance by interacting with users in a human-like way.  Through chatbots one can communicate with text or voice interface and get reply through artificial intelligence  Typically, a chat bot will communicate with a real person. Chat bots are used in applications such as E-commerce customer service, Call centres, Internet gaming,etc.  Chatbots are programs built to automatically engage with received messages. Chatbots can be programmed to respond the same way each time, to respond differently to messages containing certain keywords and even to use machine learning to adapt their responses to fit the situation.  A developing number of hospitals, nursing homes, and even private centres, presently utilize online Chatbots for human services on their sites. These bots connect with potential patients visiting the site, helping them discover specialists, booking their appointments, and getting them access to the correct treatment.  In any case, the utilization of artificial intelligence in an industry where individuals’ lives could be in question, still starts misgivings in individuals. It brings up issues about whether the task mentioned above ought to be assigned to human staff. This healthcare chatbot system will help hospitals to provide healthcare support online 24 x 7, it answers deep as well as general questions. It also helps to generate leads and automatically delivers the information of leads to sales. By asking the questions in series it helps patients by guiding what exactly he/she is looking for.  📜 Problem Statement During the pandemic, it is more important than ever to get your regular check-ups and to continue to take prescription medications. The healthier you are, the more likely you are to recover quickly from an illness.  In this time patients or health care workers within their practice, providers are deferring elective and preventive visits, such as annual physicals. For some, it is not possible to consult online. In this case, to avoid false information, our project can be of help.  📇 Features Register Screen. Sign-in Screen. Generates database for user login system. Offers you a GUI Based Chatbot for patients for diagnosing. [A pragmatic Approach for Diagnosis] Reccomends an appropriate doctor to you for the following symptom. 📜 Modules Used Our program uses a number of python modules to work properly:  tkinter os webbrowser numpy pandas matplotlib 📃 Algorithm We have used Decision tree for our health care based chat bot.  Decision Tree is a Supervised learning technique that can be used for both classification and Regression problems, but mostly it is preferred for solving Classification problems. It is a tree-structured classifier, where internal nodes represent the features of a dataset, branches represent the decision rules and each leaf node represents the outcome.It usually mimic human thinking ability while making a decision, so it is easy to understand.  :suspect: Project Members Anushka Bansal - 500067844 - R164218014 Shreya Sharma - 500068573 - R164218070 Silvi - 500069092 - R164218072 Ishika Agrawal - 500071154 - R164218097
-- **[aryanveturekar/Health-Care-Chat-Bot](https://github.com/aryanveturekar/Health-Care-Chat-Bot)** (Score: -150.83)
-  - License: none | Stars: 139 | Forks: 65
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1592 days ago
-  - Description: Through chatbots one can communicate with text or voice interface and get reply through artificial intelligence. Typically, a chat bot will communicate with a real person. Chat bots are used in applications such as ecommerce customer service, call centres and Internet gaming. Chatbots are programs built to automatically engage with received messages. Chatbots can be programmed to respond the same way each time, to respond differently to messages containing certain keywords and even to use machine learning to adapt their responses to fit the situation. A developing number of hospitals, nursing homes, and even private centres, presently utilize online Chatbots for human services on their sites. These bots connect with potential patients visiting the site, helping them discover specialists, booking their appointments, and getting them access to the correct treatment. In any case, the utilization of artificial intelligence in an industry where individuals’ lives could be in question, still starts misgivings in individuals. It brings up issues about whether the task mentioned above ought to be assigned to human staff. This healthcare chatbot system will help hospitals to provide healthcare support online 24 x 7, it answers deep as well as general questions. It also helps to generate leads and automatically delivers the information of leads to sales. By asking the questions in series it helps patients by guiding what exactly he/she is looking for.
-
-## Mental Health
-- **[NifTK/NiftyNet](https://github.com/NifTK/NiftyNet)** (Score: 416.17)
-  - License: Apache-2.0 | Stars: 1380 | Forks: 402
-  - PRs open: 3 | Discussions: No | Contributors: 40 | Last push: 1958 days ago
-  - Description: [unmaintained] An open-source convolutional neural networks platform for research in medical image analysis and image-guided therapy
-- **[pymedphys/pymedphys](https://github.com/pymedphys/pymedphys)** (Score: 157.82)
-  - License: Apache-2.0 | Stars: 338 | Forks: 79
-  - PRs open: 6 | Discussions: Yes | Contributors: 33 | Last push: 92 days ago
-  - Description: A community effort to develop an open standard library for Medical Physics in Python. Building quality transparent software together via peer review and open source distribution. Open code is better science.
-- **[TAHIR0110/ThereForYou](https://github.com/TAHIR0110/ThereForYou)** (Score: 81.17)
-  - License: MIT | Stars: 90 | Forks: 90
-  - PRs open: 7 | Discussions: No | Contributors: 48 | Last push: 209 days ago
-  - Description: ThereForYou: Your mental health ally. Kai, our AI assistant, offers compassionate support. Track your mood trends, find solace in a secure community, and access crisis resources swiftly. We're here to empower your journey towards improved well-being, leveraging technology for a brighter tomorrow.
-- **[shreyasharma04/HealthChatbot](https://github.com/shreyasharma04/HealthChatbot)** (Score: -145.8)
-  - License: none | Stars: 119 | Forks: 20
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1287 days ago
-  - Description: 🤖 HealthCare ChatBot Major -1 (4th year - 7th semester)  Health Care Chat-Bot is a Healthcare Domain Chatbot to simulate the predictions of a General Physician.  ChatBot can be described as software that can chat with people using artificial intelligence. These software are used to perform tasks such as quickly responding to users, informing them, helping to purchase products and providing better service to customers. We have made a healthcare based chatbot.  The three main areas where chatbots can be used are diagnostics, patient engagement outside medical facilities, and mental health. In our major we are working on diagnostic.  📃 Brief A chatbot is an artificially intelligent creature which can converse with humans. This could be text-based, or a spoken conversation. In our project we will be using Python as it is currently the most popular language for creating an AI chatbot. In the middle of AI chatbot, architecture is the Natural Language Processing (NLP) layer.  This project aims to build an user-friendly healthcare chatbot which facilitates the job of a healthcare provider and helps improve their performance by interacting with users in a human-like way.  Through chatbots one can communicate with text or voice interface and get reply through artificial intelligence  Typically, a chat bot will communicate with a real person. Chat bots are used in applications such as E-commerce customer service, Call centres, Internet gaming,etc.  Chatbots are programs built to automatically engage with received messages. Chatbots can be programmed to respond the same way each time, to respond differently to messages containing certain keywords and even to use machine learning to adapt their responses to fit the situation.  A developing number of hospitals, nursing homes, and even private centres, presently utilize online Chatbots for human services on their sites. These bots connect with potential patients visiting the site, helping them discover specialists, booking their appointments, and getting them access to the correct treatment.  In any case, the utilization of artificial intelligence in an industry where individuals’ lives could be in question, still starts misgivings in individuals. It brings up issues about whether the task mentioned above ought to be assigned to human staff. This healthcare chatbot system will help hospitals to provide healthcare support online 24 x 7, it answers deep as well as general questions. It also helps to generate leads and automatically delivers the information of leads to sales. By asking the questions in series it helps patients by guiding what exactly he/she is looking for.  📜 Problem Statement During the pandemic, it is more important than ever to get your regular check-ups and to continue to take prescription medications. The healthier you are, the more likely you are to recover quickly from an illness.  In this time patients or health care workers within their practice, providers are deferring elective and preventive visits, such as annual physicals. For some, it is not possible to consult online. In this case, to avoid false information, our project can be of help.  📇 Features Register Screen. Sign-in Screen. Generates database for user login system. Offers you a GUI Based Chatbot for patients for diagnosing. [A pragmatic Approach for Diagnosis] Reccomends an appropriate doctor to you for the following symptom. 📜 Modules Used Our program uses a number of python modules to work properly:  tkinter os webbrowser numpy pandas matplotlib 📃 Algorithm We have used Decision tree for our health care based chat bot.  Decision Tree is a Supervised learning technique that can be used for both classification and Regression problems, but mostly it is preferred for solving Classification problems. It is a tree-structured classifier, where internal nodes represent the features of a dataset, branches represent the decision rules and each leaf node represents the outcome.It usually mimic human thinking ability while making a decision, so it is easy to understand.  :suspect: Project Members Anushka Bansal - 500067844 - R164218014 Shreya Sharma - 500068573 - R164218070 Silvi - 500069092 - R164218072 Ishika Agrawal - 500071154 - R164218097
-
-## Scheduling & Patient Portals
-- **[MohsinRazaKhanSipra/EHR-django](https://github.com/MohsinRazaKhanSipra/EHR-django)** (Score: -95.93)
-  - License: none | Stars: 20 | Forks: 12
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 74 days ago
-  - Description: DjangoEHR is an Electronic Health Records (EHR) system developed using the Django web framework. This project aims to provide healthcare professionals with a robust and secure platform for managing patient records, appointments, and medical information.
-- **[shreyasharma04/HealthChatbot](https://github.com/shreyasharma04/HealthChatbot)** (Score: -145.8)
-  - License: none | Stars: 119 | Forks: 20
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1287 days ago
-  - Description: 🤖 HealthCare ChatBot Major -1 (4th year - 7th semester)  Health Care Chat-Bot is a Healthcare Domain Chatbot to simulate the predictions of a General Physician.  ChatBot can be described as software that can chat with people using artificial intelligence. These software are used to perform tasks such as quickly responding to users, informing them, helping to purchase products and providing better service to customers. We have made a healthcare based chatbot.  The three main areas where chatbots can be used are diagnostics, patient engagement outside medical facilities, and mental health. In our major we are working on diagnostic.  📃 Brief A chatbot is an artificially intelligent creature which can converse with humans. This could be text-based, or a spoken conversation. In our project we will be using Python as it is currently the most popular language for creating an AI chatbot. In the middle of AI chatbot, architecture is the Natural Language Processing (NLP) layer.  This project aims to build an user-friendly healthcare chatbot which facilitates the job of a healthcare provider and helps improve their performance by interacting with users in a human-like way.  Through chatbots one can communicate with text or voice interface and get reply through artificial intelligence  Typically, a chat bot will communicate with a real person. Chat bots are used in applications such as E-commerce customer service, Call centres, Internet gaming,etc.  Chatbots are programs built to automatically engage with received messages. Chatbots can be programmed to respond the same way each time, to respond differently to messages containing certain keywords and even to use machine learning to adapt their responses to fit the situation.  A developing number of hospitals, nursing homes, and even private centres, presently utilize online Chatbots for human services on their sites. These bots connect with potential patients visiting the site, helping them discover specialists, booking their appointments, and getting them access to the correct treatment.  In any case, the utilization of artificial intelligence in an industry where individuals’ lives could be in question, still starts misgivings in individuals. It brings up issues about whether the task mentioned above ought to be assigned to human staff. This healthcare chatbot system will help hospitals to provide healthcare support online 24 x 7, it answers deep as well as general questions. It also helps to generate leads and automatically delivers the information of leads to sales. By asking the questions in series it helps patients by guiding what exactly he/she is looking for.  📜 Problem Statement During the pandemic, it is more important than ever to get your regular check-ups and to continue to take prescription medications. The healthier you are, the more likely you are to recover quickly from an illness.  In this time patients or health care workers within their practice, providers are deferring elective and preventive visits, such as annual physicals. For some, it is not possible to consult online. In this case, to avoid false information, our project can be of help.  📇 Features Register Screen. Sign-in Screen. Generates database for user login system. Offers you a GUI Based Chatbot for patients for diagnosing. [A pragmatic Approach for Diagnosis] Reccomends an appropriate doctor to you for the following symptom. 📜 Modules Used Our program uses a number of python modules to work properly:  tkinter os webbrowser numpy pandas matplotlib 📃 Algorithm We have used Decision tree for our health care based chat bot.  Decision Tree is a Supervised learning technique that can be used for both classification and Regression problems, but mostly it is preferred for solving Classification problems. It is a tree-structured classifier, where internal nodes represent the features of a dataset, branches represent the decision rules and each leaf node represents the outcome.It usually mimic human thinking ability while making a decision, so it is easy to understand.  :suspect: Project Members Anushka Bansal - 500067844 - R164218014 Shreya Sharma - 500068573 - R164218070 Silvi - 500069092 - R164218072 Ishika Agrawal - 500071154 - R164218097
-- **[aryanveturekar/Health-Care-Chat-Bot](https://github.com/aryanveturekar/Health-Care-Chat-Bot)** (Score: -150.83)
-  - License: none | Stars: 139 | Forks: 65
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1592 days ago
-  - Description: Through chatbots one can communicate with text or voice interface and get reply through artificial intelligence. Typically, a chat bot will communicate with a real person. Chat bots are used in applications such as ecommerce customer service, call centres and Internet gaming. Chatbots are programs built to automatically engage with received messages. Chatbots can be programmed to respond the same way each time, to respond differently to messages containing certain keywords and even to use machine learning to adapt their responses to fit the situation. A developing number of hospitals, nursing homes, and even private centres, presently utilize online Chatbots for human services on their sites. These bots connect with potential patients visiting the site, helping them discover specialists, booking their appointments, and getting them access to the correct treatment. In any case, the utilization of artificial intelligence in an industry where individuals’ lives could be in question, still starts misgivings in individuals. It brings up issues about whether the task mentioned above ought to be assigned to human staff. This healthcare chatbot system will help hospitals to provide healthcare support online 24 x 7, it answers deep as well as general questions. It also helps to generate leads and automatically delivers the information of leads to sales. By asking the questions in series it helps patients by guiding what exactly he/she is looking for.
+- **[ika-rwth-aachen/ros2_calib](https://github.com/ika-rwth-aachen/ros2_calib)** (Score: 80.37)
+  - License: MIT | Stars: 94 | Forks: 10
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2 days ago
+  - Description: LiDAR-Camera Calibration using ROS2 mcap recordings. A vibe coding project.
+- **[robotraconteur/robotraconteur](https://github.com/robotraconteur/robotraconteur)** (Score: 73.95)
+  - License: Apache-2.0 | Stars: 72 | Forks: 11
+  - PRs open: 3 | Discussions: Yes | Contributors: 3 | Last push: 0 days ago
+  - Description: A communication framework for robotics and the Internet of Things, developed by Wason Technology, LLC
+- **[zhao62/Deep-Residual-Shrinkage-Networks](https://github.com/zhao62/Deep-Residual-Shrinkage-Networks)** (Score: 66.23)
+  - License: none | Stars: 482 | Forks: 107
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1 days ago
+  - Description: The deep residual shrinkage network is a variant of deep residual networks.
+- **[hoangsonww/Agentic-AI-Pipeline](https://github.com/hoangsonww/Agentic-AI-Pipeline)** (Score: 60.98)
+  - License: Apache-2.0 | Stars: 23 | Forks: 19
+  - PRs open: 0 | Discussions: Yes | Contributors: 1 | Last push: 1 days ago
+  - Description: 🦾 A production‑ready research outreach AI agent that plans, discovers, reasons, uses tools, auto‑builds cited briefings, and drafts tailored emails with tool‑chaining, memory, tests, and turnkey Docker, AWS, Ansible & Terraform deploys. Bonus: Agentic RAG system (FAISS + Google CSE) with multistep planning, self-critique, and autonomous agents.
+- **[ACFR-RPG/DynOSAM](https://github.com/ACFR-RPG/DynOSAM)** (Score: -50.9)
+  - License: BSD-3-Clause | Stars: 155 | Forks: 13
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 3 days ago
+  - Description: Offical code release for DynoSAM: Dynamic Object Smoothing And Mapping [Submitted TRO Visual SLAM SI]. A visual SLAM framework and pipeline for Dynamic environements, estimating for the motion/pose of objects and their structure, as well as the camera odometry and static map.
+- **[yangsc4063/rino](https://github.com/yangsc4063/rino)** (Score: -78.4)
+  - License: none | Stars: 67 | Forks: 9
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 6 days ago
+  - Description: [T-ASE 2025] This is the official implementation of RINO: Accurate, Robust Radar-Inertial Odometry with Non-Iterative Estimation.
 
 ## NLP & Clinical Text
-- **[shibing624/MedicalGPT](https://github.com/shibing624/MedicalGPT)** (Score: 1385.93)
-  - License: Apache-2.0 | Stars: 4060 | Forks: 598
-  - PRs open: 0 | Discussions: No | Contributors: 11 | Last push: 1 days ago
-  - Description: MedicalGPT: Training Your Own Medical GPT Model with ChatGPT Training Pipeline. 训练医疗大模型，实现了包括增量预训练(PT)、有监督微调(SFT)、RLHF、DPO、ORPO、GRPO。
-- **[llSourcell/Doctor-Dignity](https://github.com/llSourcell/Doctor-Dignity)** (Score: 1255.7)
-  - License: Apache-2.0 | Stars: 3858 | Forks: 415
-  - PRs open: 0 | Discussions: No | Contributors: 50 | Last push: 711 days ago
-  - Description: Doctor Dignity is an LLM that can pass the US Medical Licensing Exam. It works offline, it's cross-platform, & your health data stays private.
-- **[epfLLM/meditron](https://github.com/epfLLM/meditron)** (Score: 679.73)
-  - License: Apache-2.0 | Stars: 2075 | Forks: 198
-  - PRs open: 0 | Discussions: No | Contributors: 10 | Last push: 508 days ago
-  - Description: Meditron is a suite of open-source medical Large Language Models (LLMs).
-- **[rockingdingo/deepnlp](https://github.com/rockingdingo/deepnlp)** (Score: 573.8)
-  - License: MIT | Stars: 1358 | Forks: 709
-  - PRs open: 1 | Discussions: No | Contributors: 1 | Last push: 324 days ago
-  - Description: Deep Learning NLP Pipeline implemented on Tensorflow
-- **[DCDmllm/HealthGPT](https://github.com/DCDmllm/HealthGPT)** (Score: 538.27)
-  - License: Apache-2.0 | Stars: 1496 | Forks: 233
-  - PRs open: 0 | Discussions: No | Contributors: 5 | Last push: 113 days ago
-  - Description: 【ICML 2025 Spotlight】 Official Repo for Paper ‘’HealthGPT : A Medical Large Vision-Language Model for Unifying Comprehension and Generation via Heterogeneous Knowledge Adaptation‘’
-- **[uni-medical/SAM-Med3D](https://github.com/uni-medical/SAM-Med3D)** (Score: 286.67)
-  - License: Apache-2.0 | Stars: 739 | Forks: 97
-  - PRs open: 1 | Discussions: No | Contributors: 3 | Last push: 74 days ago
-  - Description: SAM-Med3D: An Efficient General-purpose Promptable Segmentation Model for 3D Volumetric Medical Image
-- **[taokz/BiomedGPT](https://github.com/taokz/BiomedGPT)** (Score: 264.5)
-  - License: Apache-2.0 | Stars: 680 | Forks: 77
-  - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 54 days ago
-  - Description: BiomedGPT: A Generalist Vision-Language Foundation Model for Diverse Biomedical Tasks
-- **[souvikmajumder26/Multi-Agent-Medical-Assistant](https://github.com/souvikmajumder26/Multi-Agent-Medical-Assistant)** (Score: 234.2)
-  - License: Apache-2.0 | Stars: 551 | Forks: 133
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 120 days ago
-  - Description: ⚕️GenAI powered multi-agentic medical diagnostics and healthcare research assistance chatbot. 🏥 Designed for healthcare professionals, researchers and patients.
-- **[CogStack/MedCAT](https://github.com/CogStack/MedCAT)** (Score: 230.33)
-  - License: Apache-2.0 | Stars: 508 | Forks: 111
-  - PRs open: 1 | Discussions: No | Contributors: 27 | Last push: 37 days ago
-  - Description: Medical Concept Annotation Tool
-- **[kbressem/medAlpaca](https://github.com/kbressem/medAlpaca)** (Score: 157.33)
-  - License: GPL-3.0 | Stars: 538 | Forks: 69
-  - PRs open: 0 | Discussions: No | Contributors: 6 | Last push: 724 days ago
-  - Description: LLM finetuned for medical question answering
-- **[kyegomez/Med-PaLM](https://github.com/kyegomez/Med-PaLM)** (Score: 147.5)
-  - License: MIT | Stars: 415 | Forks: 56
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 561 days ago
-  - Description: Towards Generalist Biomedical AI
-- **[GetSoloTech/solo-server](https://github.com/GetSoloTech/solo-server)** (Score: 129.0)
-  - License: Apache-2.0 | Stars: 240 | Forks: 22
-  - PRs open: 12 | Discussions: No | Contributors: 8 | Last push: 6 days ago
-  - Description: Server for Physical AI Inference
-- **[Omid-Nejati/MedViT](https://github.com/Omid-Nejati/MedViT)** (Score: 118.7)
-  - License: MIT | Stars: 209 | Forks: 31
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 3 days ago
-  - Description: MedViT: A Robust Vision Transformer for Generalized Medical Image Classification (Computers in Biology and Medicine 2023)
-- **[ratschlab/RGAN](https://github.com/ratschlab/RGAN)** (Score: 112.8)
-  - License: MIT | Stars: 652 | Forks: 180
-  - PRs open: 1 | Discussions: No | Contributors: 4 | Last push: 2520 days ago
-  - Description: Recurrent (conditional) generative adversarial networks for generating real-valued time series data.
-- **[dotimplement/HealthChain](https://github.com/dotimplement/HealthChain)** (Score: 91.92)
-  - License: Apache-2.0 | Stars: 132 | Forks: 14
-  - PRs open: 1 | Discussions: Yes | Contributors: 7 | Last push: 11 days ago
-  - Description: The missing middleware layer in healthcare AI 💫 🏥
-- **[FreedomIntelligence/Apollo](https://github.com/FreedomIntelligence/Apollo)** (Score: 89.07)
-  - License: Apache-2.0 | Stars: 194 | Forks: 8
-  - PRs open: 1 | Discussions: No | Contributors: 3 | Last push: 320 days ago
-  - Description: Multilingual Medicine: Model, Dataset, Benchmark, Code
-- **[ncbi-nlp/bluebert](https://github.com/ncbi-nlp/bluebert)** (Score: 30.47)
-  - License: NOASSERTION | Stars: 577 | Forks: 81
-  - PRs open: 1 | Discussions: No | Contributors: 3 | Last push: 890 days ago
-  - Description: BlueBERT, pre-trained on PubMed abstracts and clinical notes (MIMIC-III).
-- **[LifestyleCorp/Medical-AGI](https://github.com/LifestyleCorp/Medical-AGI)** (Score: 26.15)
-  - License: Apache-2.0 | Stars: 22 | Forks: 4
-  - PRs open: 0 | Discussions: Yes | Contributors: 2 | Last push: 480 days ago
-  - Description: LLM powered AI multi agent platform that coordinate global to individual health through scaling each layer of healthcare
-- **[mahmoodlab/CONCH](https://github.com/mahmoodlab/CONCH)** (Score: 17.67)
-  - License: NOASSERTION | Stars: 402 | Forks: 37
-  - PRs open: 2 | Discussions: No | Contributors: 3 | Last push: 158 days ago
-  - Description: Vision-Language Pathology Foundation Model - Nature Medicine
-- **[som-shahlab/trove](https://github.com/som-shahlab/trove)** (Score: 11.23)
-  - License: Apache-2.0 | Stars: 73 | Forks: 21
-  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 982 days ago
-  - Description: Weakly supervised medical named entity classification
-- **[FreedomIntelligence/HuatuoGPT-Vision](https://github.com/FreedomIntelligence/HuatuoGPT-Vision)** (Score: -3.77)
-  - License: none | Stars: 336 | Forks: 28
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 130 days ago
-  - Description: Medical Multimodal LLMs
-- **[gersteinlab/MedAgents](https://github.com/gersteinlab/MedAgents)** (Score: -37.53)
-  - License: none | Stars: 280 | Forks: 43
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 461 days ago
-  - Description: [ACL 2024 Findings] MedAgents: Large Language Models as Collaborators for Zero-shot Medical Reasoning https://arxiv.org/abs/2311.10537
-- **[BIDS-Xu-Lab/Me-LLaMA](https://github.com/BIDS-Xu-Lab/Me-LLaMA)** (Score: -63.1)
-  - License: none | Stars: 159 | Forks: 18
-  - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 228 days ago
-  - Description: A novel medical large language model family with 13/70B parameters, which have SOTA performances on various medical tasks
-- **[StanfordMIMI/clin-summ](https://github.com/StanfordMIMI/clin-summ)** (Score: -75.5)
-  - License: NOASSERTION | Stars: 149 | Forks: 31
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 396 days ago
-  - Description: Clinical text summarization by adapting large language models
-- **[chentao1999/MedicalRelationExtraction](https://github.com/chentao1999/MedicalRelationExtraction)** (Score: -75.87)
-  - License: MIT | Stars: 74 | Forks: 20
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2275 days ago
-  - Description: The depository support training and testing BERT-CNN model on three medical relation extraction corpora: BioCreative V CDR task corpus, traditional Chinese medicine  literature corpus, and i2b2 temporal relation corpus.
-- **[aristoteleo/awesome-bioagent-papers](https://github.com/aristoteleo/awesome-bioagent-papers)** (Score: -77.37)
-  - License: none | Stars: 65 | Forks: 3
-  - PRs open: 22 | Discussions: No | Contributors: 2 | Last push: 1 days ago
-  - Description: Agent self-driven repository on bio-agent papers, i.e. papers on LLM-based agents in biology and medicine.
-- **[ncbi-nlp/MedCalc-Bench](https://github.com/ncbi-nlp/MedCalc-Bench)** (Score: -79.07)
-  - License: NOASSERTION | Stars: 70 | Forks: 13
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 49 days ago
-  - Description: [NeurIPS 2024 Datasets and Benchmark Track Oral] MedCalc-Bench: Evaluating Large Language Models for Medical Calculations
-- **[openlifescience-ai/Open-Medical-Reasoning-Tasks](https://github.com/openlifescience-ai/Open-Medical-Reasoning-Tasks)** (Score: -82.47)
-  - License: none | Stars: 127 | Forks: 11
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 349 days ago
-  - Description: A comprehensive repository of reasoning tasks for Medical LLMs (and beyond)
-- **[KaiHe-better/LLM-for-Healthcare](https://github.com/KaiHe-better/LLM-for-Healthcare)** (Score: -90.07)
-  - License: none | Stars: 124 | Forks: 14
-  - PRs open: 1 | Discussions: No | Contributors: 1 | Last push: 457 days ago
-- **[ahmadvh/AI-Agents-for-Medical-Diagnostics](https://github.com/ahmadvh/AI-Agents-for-Medical-Diagnostics)** (Score: -90.47)
-  - License: none | Stars: 72 | Forks: 46
-  - PRs open: 3 | Discussions: No | Contributors: 1 | Last push: 328 days ago
-  - Description: A Python project to create specialized LLM-based AI agents that analyze complex medical cases. The system integrates insights from various medical professionals to provide comprehensive assessments and personalized treatment recommendations, showcasing the potential of AI in multidisciplinary medicine.
-- **[ncbi-nlp/BLUE_Benchmark](https://github.com/ncbi-nlp/BLUE_Benchmark)** (Score: -90.57)
-  - License: NOASSERTION | Stars: 297 | Forks: 41
-  - PRs open: 2 | Discussions: No | Contributors: 2 | Last push: 1327 days ago
-  - Description: BLUE benchmark consists of five different biomedicine text-mining tasks with ten corpora.
-- **[ncbi-nlp/NegBio](https://github.com/ncbi-nlp/NegBio)** (Score: -93.4)
-  - License: NOASSERTION | Stars: 163 | Forks: 43
-  - PRs open: 4 | Discussions: No | Contributors: 4 | Last push: 777 days ago
-  - Description: :newspaper: High-performance tool for negation and uncertainty detection in radiology reports
-- **[mp2893/medgan](https://github.com/mp2893/medgan)** (Score: -144.73)
-  - License: BSD-3-Clause | Stars: 278 | Forks: 94
-  - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 2204 days ago
-  - Description: Generative adversarial network for generating electronic health records.
-- **[shreyasharma04/HealthChatbot](https://github.com/shreyasharma04/HealthChatbot)** (Score: -145.8)
-  - License: none | Stars: 119 | Forks: 20
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1287 days ago
-  - Description: 🤖 HealthCare ChatBot Major -1 (4th year - 7th semester)  Health Care Chat-Bot is a Healthcare Domain Chatbot to simulate the predictions of a General Physician.  ChatBot can be described as software that can chat with people using artificial intelligence. These software are used to perform tasks such as quickly responding to users, informing them, helping to purchase products and providing better service to customers. We have made a healthcare based chatbot.  The three main areas where chatbots can be used are diagnostics, patient engagement outside medical facilities, and mental health. In our major we are working on diagnostic.  📃 Brief A chatbot is an artificially intelligent creature which can converse with humans. This could be text-based, or a spoken conversation. In our project we will be using Python as it is currently the most popular language for creating an AI chatbot. In the middle of AI chatbot, architecture is the Natural Language Processing (NLP) layer.  This project aims to build an user-friendly healthcare chatbot which facilitates the job of a healthcare provider and helps improve their performance by interacting with users in a human-like way.  Through chatbots one can communicate with text or voice interface and get reply through artificial intelligence  Typically, a chat bot will communicate with a real person. Chat bots are used in applications such as E-commerce customer service, Call centres, Internet gaming,etc.  Chatbots are programs built to automatically engage with received messages. Chatbots can be programmed to respond the same way each time, to respond differently to messages containing certain keywords and even to use machine learning to adapt their responses to fit the situation.  A developing number of hospitals, nursing homes, and even private centres, presently utilize online Chatbots for human services on their sites. These bots connect with potential patients visiting the site, helping them discover specialists, booking their appointments, and getting them access to the correct treatment.  In any case, the utilization of artificial intelligence in an industry where individuals’ lives could be in question, still starts misgivings in individuals. It brings up issues about whether the task mentioned above ought to be assigned to human staff. This healthcare chatbot system will help hospitals to provide healthcare support online 24 x 7, it answers deep as well as general questions. It also helps to generate leads and automatically delivers the information of leads to sales. By asking the questions in series it helps patients by guiding what exactly he/she is looking for.  📜 Problem Statement During the pandemic, it is more important than ever to get your regular check-ups and to continue to take prescription medications. The healthier you are, the more likely you are to recover quickly from an illness.  In this time patients or health care workers within their practice, providers are deferring elective and preventive visits, such as annual physicals. For some, it is not possible to consult online. In this case, to avoid false information, our project can be of help.  📇 Features Register Screen. Sign-in Screen. Generates database for user login system. Offers you a GUI Based Chatbot for patients for diagnosing. [A pragmatic Approach for Diagnosis] Reccomends an appropriate doctor to you for the following symptom. 📜 Modules Used Our program uses a number of python modules to work properly:  tkinter os webbrowser numpy pandas matplotlib 📃 Algorithm We have used Decision tree for our health care based chat bot.  Decision Tree is a Supervised learning technique that can be used for both classification and Regression problems, but mostly it is preferred for solving Classification problems. It is a tree-structured classifier, where internal nodes represent the features of a dataset, branches represent the decision rules and each leaf node represents the outcome.It usually mimic human thinking ability while making a decision, so it is easy to understand.  :suspect: Project Members Anushka Bansal - 500067844 - R164218014 Shreya Sharma - 500068573 - R164218070 Silvi - 500069092 - R164218072 Ishika Agrawal - 500071154 - R164218097
-- **[aryanveturekar/Health-Care-Chat-Bot](https://github.com/aryanveturekar/Health-Care-Chat-Bot)** (Score: -150.83)
-  - License: none | Stars: 139 | Forks: 65
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1592 days ago
-  - Description: Through chatbots one can communicate with text or voice interface and get reply through artificial intelligence. Typically, a chat bot will communicate with a real person. Chat bots are used in applications such as ecommerce customer service, call centres and Internet gaming. Chatbots are programs built to automatically engage with received messages. Chatbots can be programmed to respond the same way each time, to respond differently to messages containing certain keywords and even to use machine learning to adapt their responses to fit the situation. A developing number of hospitals, nursing homes, and even private centres, presently utilize online Chatbots for human services on their sites. These bots connect with potential patients visiting the site, helping them discover specialists, booking their appointments, and getting them access to the correct treatment. In any case, the utilization of artificial intelligence in an industry where individuals’ lives could be in question, still starts misgivings in individuals. It brings up issues about whether the task mentioned above ought to be assigned to human staff. This healthcare chatbot system will help hospitals to provide healthcare support online 24 x 7, it answers deep as well as general questions. It also helps to generate leads and automatically delivers the information of leads to sales. By asking the questions in series it helps patients by guiding what exactly he/she is looking for.
+- **[aliasrobotics/cai](https://github.com/aliasrobotics/cai)** (Score: 1022.97)
+  - License: NOASSERTION | Stars: 3394 | Forks: 465
+  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 2 days ago
+  - Description: Cybersecurity AI (CAI), the framework for AI Security
+- **[RoboTwin-Platform/RoboTwin](https://github.com/RoboTwin-Platform/RoboTwin)** (Score: 515.87)
+  - License: MIT | Stars: 1438 | Forks: 172
+  - PRs open: 0 | Discussions: No | Contributors: 9 | Last push: 2 days ago
+  - Description: RoboTwin 2.0 Offical Repo
+- **[hongbo-miao/hongbomiao.com](https://github.com/hongbo-miao/hongbomiao.com)** (Score: 135.05)
+  - License: MIT | Stars: 245 | Forks: 42
+  - PRs open: 6 | Discussions: Yes | Contributors: 11 | Last push: 0 days ago
+  - Description: A personal research and development (R&D) lab that facilitates the sharing of knowledge.
+- **[Extelligence-ai/bagel](https://github.com/Extelligence-ai/bagel)** (Score: 130.37)
+  - License: Apache-2.0 | Stars: 257 | Forks: 18
+  - PRs open: 2 | Discussions: No | Contributors: 3 | Last push: 2 days ago
+  - Description: ChatGPT for Physical AI. Troubleshoot your robots and drones with natural language. No fuss.
+- **[TJU-Aerial-Robotics/YOPO](https://github.com/TJU-Aerial-Robotics/YOPO)** (Score: 91.2)
+  - License: NOASSERTION | Stars: 597 | Forks: 68
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 3 days ago
+  - Description: You Only Plan Once: A Learning Based Quadrotor Planner
+- **[i2Nav-WHU/FF-LINS](https://github.com/i2Nav-WHU/FF-LINS)** (Score: 90.5)
+  - License: GPL-3.0 | Stars: 186 | Forks: 28
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 15 days ago
+  - Description: A Consistent Frame-to-Frame Solid-State-LiDAR-Inertial State Estimator
+- **[Robotics-STAR-Lab/SOAR](https://github.com/Robotics-STAR-Lab/SOAR)** (Score: 89.77)
+  - License: GPL-3.0 | Stars: 191 | Forks: 11
+  - PRs open: 0 | Discussions: No | Contributors: 5 | Last push: 14 days ago
+  - Description: [IROS'24 Oral] A Heterogeneous Multi-UAV Planner for Fast Autonomous Reconstruction
+- **[Seeed-Projects/reComputer-Jetson-for-Beginners](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners)** (Score: 87.47)
+  - License: MIT | Stars: 111 | Forks: 19
+  - PRs open: 2 | Discussions: No | Contributors: 5 | Last push: 20 days ago
+  - Description: Beginner's Guide to reComputer Jetson
+- **[isLinXu/paper-list](https://github.com/isLinXu/paper-list)** (Score: 80.3)
+  - License: Apache-2.0 | Stars: 93 | Forks: 11
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: autoupdate paper list
+- **[i2Nav-WHU/LE-VINS](https://github.com/i2Nav-WHU/LE-VINS)** (Score: 79.4)
+  - License: GPL-3.0 | Stars: 159 | Forks: 13
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 15 days ago
+  - Description: INS-Centric Visual-Inertial Navigation System With LiDAR Enhancement
+- **[AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization](https://github.com/AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization)** (Score: 78.83)
+  - License: Apache-2.0 | Stars: 86 | Forks: 17
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 10 days ago
+  - Description: Autonomous Mobile Robot developed and programmed in the online course named "Self-Driving and ROS 2 - Learn By Doing! Map & Localization"
+- **[blueraai/universal-intelligence](https://github.com/blueraai/universal-intelligence)** (Score: 61.62)
+  - License: Apache-2.0 | Stars: 44 | Forks: 4
+  - PRs open: 0 | Discussions: Yes | Contributors: 2 | Last push: 26 days ago
+  - Description: ◉ Universal Intelligence: AI made simple.
+- **[agtonomy/trellis](https://github.com/agtonomy/trellis)** (Score: 61.0)
+  - License: Apache-2.0 | Stars: 26 | Forks: 5
+  - PRs open: 1 | Discussions: No | Contributors: 9 | Last push: 9 days ago
+  - Description: General purpose middleware framework for distributed applications
+- **[automatika-robotics/embodied-agents](https://github.com/automatika-robotics/embodied-agents)** (Score: 60.05)
+  - License: MIT | Stars: 31 | Forks: 3
+  - PRs open: 0 | Discussions: Yes | Contributors: 2 | Last push: 9 days ago
+  - Description: EmbodiedAgents is a fully-loaded framework, written in pure ROS2, for creating interactive physical agents that can understand, remember, and act upon contextual information from their environment.
+- **[hanruihua/neupan_ros](https://github.com/hanruihua/neupan_ros)** (Score: 57.4)
+  - License: GPL-3.0 | Stars: 88 | Forks: 15
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 24 days ago
+  - Description: ROS Wrapper of NeuPAN planner
+- **[Lyz103/LLM-Agent-Paper-daily](https://github.com/Lyz103/LLM-Agent-Paper-daily)** (Score: 55.9)
+  - License: Apache-2.0 | Stars: 18 | Forks: 1
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: Automatically Update LLM-Agent Papers Daily using Github Actions (Update Every 12th hours)
+- **[OSU-NLP-Group/GUI-Agents-Paper-List](https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List)** (Score: 52.57)
+  - License: none | Stars: 480 | Forks: 28
+  - PRs open: 0 | Discussions: No | Contributors: 12 | Last push: 5 days ago
+  - Description: Building a comprehensive and handy list of papers for GUI agents
+- **[superxslam/SuperOdom](https://github.com/superxslam/SuperOdom)** (Score: 28.87)
+  - License: none | Stars: 398 | Forks: 42
+  - PRs open: 4 | Discussions: No | Contributors: 4 | Last push: 2 days ago
+  - Description: A highly robust and accurate LiDAR-inertial odometry  package
+- **[kimtth/awesome-azure-openai-llm](https://github.com/kimtth/awesome-azure-openai-llm)** (Score: 22.87)
+  - License: CC0-1.0 | Stars: 377 | Forks: 47
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 5 days ago
+  - Description: A curated list of 🌌 Azure OpenAI, 🦙 Large Language Models (incl. RAG, Agent), and references. [code] https://github.com/kimtth/azure-openai-llm-cookbook
+- **[monologg/nlp-arxiv-daily](https://github.com/monologg/nlp-arxiv-daily)** (Score: -65.7)
+  - License: none | Stars: 100 | Forks: 20
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: Automatically Update NLP Papers Daily using Github Actions (ref: https://github.com/Vincentqyw/cv-arxiv-daily)
+- **[Xuchen-Li/llm-arxiv-daily](https://github.com/Xuchen-Li/llm-arxiv-daily)** (Score: -66.47)
+  - License: none | Stars: 106 | Forks: 6
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - Description: Automatically update arXiv papers about LLM Reasoning, LLM Evaluation, LLM & MLLM and Video Understanding using Github Actions.
+- **[yangsc4063/rino](https://github.com/yangsc4063/rino)** (Score: -78.4)
+  - License: none | Stars: 67 | Forks: 9
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 6 days ago
+  - Description: [T-ASE 2025] This is the official implementation of RINO: Accurate, Robust Radar-Inertial Odometry with Non-Iterative Estimation.
+- **[Xuchen-Li/cv-arxiv-daily](https://github.com/Xuchen-Li/cv-arxiv-daily)** (Score: -88.4)
+  - License: none | Stars: 35 | Forks: 4
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: Automatically update arXiv papers about SOT & VLT,  Multi-modal Learning, LLM and Video Understanding using Github Actions.
+- **[KirillMouraviev/PRISM-TopoMap](https://github.com/KirillMouraviev/PRISM-TopoMap)** (Score: -88.97)
+  - License: none | Stars: 38 | Forks: 1
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 13 days ago
+  - Description: The PRISM-TopoMap - online topological mapping method with place recognition and scan matching
+- **[KumarRobotics/kr_param_map](https://github.com/KumarRobotics/kr_param_map)** (Score: -90.03)
+  - License: BSD-3-Clause | Stars: 28 | Forks: 6
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 8 days ago
+  - Description: A parameterized map generator for planning evaluations and benchmarking (ROS1 & ROS2 compatible)
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
+  - License: none | Stars: 29 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
+- **[chanmuzi/NLP-Paper-News](https://github.com/chanmuzi/NLP-Paper-News)** (Score: -90.4)
+  - License: none | Stars: 31 | Forks: 0
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: The list of NLP paper and news I've checked. There might be short description of them (abstract) in Korean.
+- **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -91.3)
+  - License: NOASSERTION | Stars: 27 | Forks: 0
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: 🚀 Daily AI Research Digest: Tracking breakthroughs in AI/NLP/CV/Robotics with dynamic updates and paper navigation.
+- **[Keio-CSG/slamspoof](https://github.com/Keio-CSG/slamspoof)** (Score: -93.1)
+  - License: none | Stars: 25 | Forks: 3
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 24 days ago
+  - Description: (ICRA'25) "SLAMSpoof: Practical LiDAR Spoofing Attacks on Localization Systems Guided by Scan Matching Vulnerability Analysis"
 
 ## FHIR & Interoperability
-- **[dotimplement/HealthChain](https://github.com/dotimplement/HealthChain)** (Score: 91.92)
-  - License: Apache-2.0 | Stars: 132 | Forks: 14
-  - PRs open: 1 | Discussions: Yes | Contributors: 7 | Last push: 11 days ago
-  - Description: The missing middleware layer in healthcare AI 💫 🏥
-- **[KaiHe-better/LLM-for-Healthcare](https://github.com/KaiHe-better/LLM-for-Healthcare)** (Score: -90.07)
-  - License: none | Stars: 124 | Forks: 14
-  - PRs open: 1 | Discussions: No | Contributors: 1 | Last push: 457 days ago
+- **[inorbit-ai/ros_amr_interop](https://github.com/inorbit-ai/ros_amr_interop)** (Score: -64.0)
+  - License: BSD-3-Clause | Stars: 92 | Forks: 32
+  - PRs open: 2 | Discussions: No | Contributors: 12 | Last push: 9 days ago
 
 ## Data Platforms & ETL
-- **[cambridgeltl/visual-med-alpaca](https://github.com/cambridgeltl/visual-med-alpaca)** (Score: 139.63)
-  - License: Apache-2.0 | Stars: 389 | Forks: 44
-  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 538 days ago
-  - Description: Visual Med-Alpaca is an open-source, multi-modal foundation model designed specifically for the biomedical domain, built on the LLaMa-7B.
+- **[MIT-SPARK/Khronos](https://github.com/MIT-SPARK/Khronos)** (Score: 31.23)
+  - License: BSD-3-Clause | Stars: 424 | Forks: 24
+  - PRs open: 1 | Discussions: No | Contributors: 3 | Last push: 13 days ago
+  - Description: Spatio-Temporal Metric-Semantic SLAM
+- **[MIT-SPARK/Hydra-ROS](https://github.com/MIT-SPARK/Hydra-ROS)** (Score: -76.03)
+  - License: BSD-2-Clause | Stars: 59 | Forks: 25
+  - PRs open: 0 | Discussions: No | Contributors: 7 | Last push: 8 days ago
+  - Description: Hydra ROS Interface
+- **[Temasek-Dynamics/gestelt](https://github.com/Temasek-Dynamics/gestelt)** (Score: -93.13)
+  - License: none | Stars: 21 | Forks: 4
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 11 days ago
+  - Description: A simple path planning framework for swarm robots
+
+## Robotics & Surgical Systems
+- **[eProsima/Fast-DDS](https://github.com/eProsima/Fast-DDS)** (Score: 998.12)
+  - License: Apache-2.0 | Stars: 2545 | Forks: 854
+  - PRs open: 34 | Discussions: Yes | Contributors: 50 | Last push: 2 days ago
+  - Description: The most complete DDS - Proven: Plenty of success cases. Looking for commercial support? Contact info@eprosima.com
+- **[RoboTwin-Platform/RoboTwin](https://github.com/RoboTwin-Platform/RoboTwin)** (Score: 515.87)
+  - License: MIT | Stars: 1438 | Forks: 172
+  - PRs open: 0 | Discussions: No | Contributors: 9 | Last push: 2 days ago
+  - Description: RoboTwin 2.0 Offical Repo
+- **[ros-controls/ros2_control_demos](https://github.com/ros-controls/ros2_control_demos)** (Score: 296.1)
+  - License: Apache-2.0 | Stars: 611 | Forks: 240
+  - PRs open: 8 | Discussions: No | Contributors: 50 | Last push: 0 days ago
+  - Description: This repository aims at providing examples to illustrate ros2_control and ros2_controllers
+- **[hanruihua/NeuPAN](https://github.com/hanruihua/NeuPAN)** (Score: 232.27)
+  - License: GPL-3.0 | Stars: 637 | Forks: 60
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2 days ago
+  - Description: [TRO 2025] NeuPAN: Direct Point Robot Navigation with End-to-End Model-based Learning.
+- **[PRBonn/PIN_SLAM](https://github.com/PRBonn/PIN_SLAM)** (Score: 222.93)
+  - License: MIT | Stars: 532 | Forks: 65
+  - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 13 days ago
+  - Description: 📍PIN-SLAM: LiDAR SLAM Using a Point-Based Implicit Neural Representation for Achieving Global Map Consistency [TRO' 24]
+- **[ika-rwth-aachen/mqtt_client](https://github.com/ika-rwth-aachen/mqtt_client)** (Score: 136.78)
+  - License: MIT | Stars: 247 | Forks: 58
+  - PRs open: 1 | Discussions: Yes | Contributors: 10 | Last push: 13 days ago
+  - Description: ROS 2 C++ Node for bi-directionally bridging messages between ROS and MQTT
+- **[hongbo-miao/hongbomiao.com](https://github.com/hongbo-miao/hongbomiao.com)** (Score: 135.05)
+  - License: MIT | Stars: 245 | Forks: 42
+  - PRs open: 6 | Discussions: Yes | Contributors: 11 | Last push: 0 days ago
+  - Description: A personal research and development (R&D) lab that facilitates the sharing of knowledge.
+- **[Extelligence-ai/bagel](https://github.com/Extelligence-ai/bagel)** (Score: 130.37)
+  - License: Apache-2.0 | Stars: 257 | Forks: 18
+  - PRs open: 2 | Discussions: No | Contributors: 3 | Last push: 2 days ago
+  - Description: ChatGPT for Physical AI. Troubleshoot your robots and drones with natural language. No fuss.
+- **[abizovnuralem/go2_ros2_sdk](https://github.com/abizovnuralem/go2_ros2_sdk)** (Score: 120.52)
+  - License: BSD-2-Clause | Stars: 634 | Forks: 135
+  - PRs open: 0 | Discussions: Yes | Contributors: 19 | Last push: 29 days ago
+  - Description: Unofficial ROS2 SDK support for Unitree GO2 AIR/PRO/EDU
+- **[dfki-ric/better_launch](https://github.com/dfki-ric/better_launch)** (Score: 106.17)
+  - License: MIT | Stars: 183 | Forks: 3
+  - PRs open: 0 | Discussions: No | Contributors: 5 | Last push: 11 days ago
+  - Description: A better replacement for the ROS2 launch system: intuitive, simple, memorable.
+- **[uleroboticsgroup/yasmin](https://github.com/uleroboticsgroup/yasmin)** (Score: 102.0)
+  - License: GPL-3.0 | Stars: 198 | Forks: 40
+  - PRs open: 0 | Discussions: No | Contributors: 17 | Last push: 6 days ago
+  - Description: YASMIN (Yet Another State MachINe)
+- **[TJU-Aerial-Robotics/YOPO](https://github.com/TJU-Aerial-Robotics/YOPO)** (Score: 91.2)
+  - License: NOASSERTION | Stars: 597 | Forks: 68
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 3 days ago
+  - Description: You Only Plan Once: A Learning Based Quadrotor Planner
+- **[Robotics-STAR-Lab/SOAR](https://github.com/Robotics-STAR-Lab/SOAR)** (Score: 89.77)
+  - License: GPL-3.0 | Stars: 191 | Forks: 11
+  - PRs open: 0 | Discussions: No | Contributors: 5 | Last push: 14 days ago
+  - Description: [IROS'24 Oral] A Heterogeneous Multi-UAV Planner for Fast Autonomous Reconstruction
+- **[Seeed-Projects/reComputer-Jetson-for-Beginners](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners)** (Score: 87.47)
+  - License: MIT | Stars: 111 | Forks: 19
+  - PRs open: 2 | Discussions: No | Contributors: 5 | Last push: 20 days ago
+  - Description: Beginner's Guide to reComputer Jetson
+- **[ika-rwth-aachen/ros2_calib](https://github.com/ika-rwth-aachen/ros2_calib)** (Score: 80.37)
+  - License: MIT | Stars: 94 | Forks: 10
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2 days ago
+  - Description: LiDAR-Camera Calibration using ROS2 mcap recordings. A vibe coding project.
+- **[kimtth/software-architect-mindmap](https://github.com/kimtth/software-architect-mindmap)** (Score: 80.17)
+  - License: MIT | Stars: 87 | Forks: 24
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 20 days ago
+  - Description: 🧠Mindmap of 🗺️Software Architecture, Software engineering: An Overview of Software Terminologies and Concepts.
+- **[robotics-upo/hunav_sim](https://github.com/robotics-upo/hunav_sim)** (Score: 79.27)
+  - License: MIT | Stars: 83 | Forks: 15
+  - PRs open: 0 | Discussions: No | Contributors: 5 | Last push: 2 days ago
+  - Description: A simulator of human navigation behaviors for Robotics based on ROS2
+- **[AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization](https://github.com/AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization)** (Score: 78.83)
+  - License: Apache-2.0 | Stars: 86 | Forks: 17
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 10 days ago
+  - Description: Autonomous Mobile Robot developed and programmed in the online course named "Self-Driving and ROS 2 - Learn By Doing! Map & Localization"
+- **[robotraconteur/robotraconteur](https://github.com/robotraconteur/robotraconteur)** (Score: 73.95)
+  - License: Apache-2.0 | Stars: 72 | Forks: 11
+  - PRs open: 3 | Discussions: Yes | Contributors: 3 | Last push: 0 days ago
+  - Description: A communication framework for robotics and the Internet of Things, developed by Wason Technology, LLC
+- **[ika-rwth-aachen/ros2_unbag](https://github.com/ika-rwth-aachen/ros2_unbag)** (Score: 73.07)
+  - License: MIT | Stars: 76 | Forks: 4
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 17 days ago
+  - Description: A ROS 2 tool for exporting bags to human readable files. Supports pluggable export routines to handle any message type.
+- **[olympus-robotics/hephaestus](https://github.com/olympus-robotics/hephaestus)** (Score: 66.67)
+  - License: MIT | Stars: 46 | Forks: 11
+  - PRs open: 5 | Discussions: No | Contributors: 13 | Last push: 2 days ago
+  - Description: Hephaestus is a C++ framework designed to facilitate robotics development by providing commonly needed functionality and abstractions.
+- **[SciML/ModelingToolkitCourse](https://github.com/SciML/ModelingToolkitCourse)** (Score: 65.43)
+  - License: MIT | Stars: 45 | Forks: 6
+  - PRs open: 2 | Discussions: No | Contributors: 6 | Last push: 19 days ago
+  - Description: A course on composable system modeling, differential-algebraic equations, acausal modeling, compilers for simulation, and building digital twins of real-world devices
+- **[AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Plan-Navigation](https://github.com/AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Plan-Navigation)** (Score: 60.73)
+  - License: Apache-2.0 | Stars: 29 | Forks: 12
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 10 days ago
+  - Description: Autonomous Mobile Robot developed and programmed in the online course named "Self-Driving and ROS 2 - Learn By Doing! Plan & Navigation"
+- **[automatika-robotics/embodied-agents](https://github.com/automatika-robotics/embodied-agents)** (Score: 60.05)
+  - License: MIT | Stars: 31 | Forks: 3
+  - PRs open: 0 | Discussions: Yes | Contributors: 2 | Last push: 9 days ago
+  - Description: EmbodiedAgents is a fully-loaded framework, written in pure ROS2, for creating interactive physical agents that can understand, remember, and act upon contextual information from their environment.
+- **[automatika-robotics/kompass](https://github.com/automatika-robotics/kompass)** (Score: 58.37)
+  - License: MIT | Stars: 26 | Forks: 0
+  - PRs open: 1 | Discussions: No | Contributors: 2 | Last push: 2 days ago
+  - Description: Kompass is an event-driven navigation stack designed with an easy-to-use Python API. It implements highly optimized, GPU powered, versions of the most cutting edge algorithms for all parts of the navigation stack.
+- **[sd-robotics/int-ball2_isaac_sim](https://github.com/sd-robotics/int-ball2_isaac_sim)** (Score: 58.13)
+  - License: Apache-2.0 | Stars: 21 | Forks: 5
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 1 days ago
+  - Description: Int-Ball2 Simulator (Isaac Sim)
+- **[robotics-upo/marsupial_simulator_ros2](https://github.com/robotics-upo/marsupial_simulator_ros2)** (Score: 57.83)
+  - License: Apache-2.0 | Stars: 27 | Forks: 5
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 28 days ago
+  - Description: Physical simulation of Marsupial UAV-UGV Systems Connected by a Variable-Length Hanging Tether
+- **[hanruihua/neupan_ros](https://github.com/hanruihua/neupan_ros)** (Score: 57.4)
+  - License: GPL-3.0 | Stars: 88 | Forks: 15
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 24 days ago
+  - Description: ROS Wrapper of NeuPAN planner
+- **[RainbowRobotics/rbpodo](https://github.com/RainbowRobotics/rbpodo)** (Score: 56.93)
+  - License: Apache-2.0 | Stars: 16 | Forks: 10
+  - PRs open: 1 | Discussions: No | Contributors: 3 | Last push: 10 days ago
+  - Description: A client library for Rainbow Robotics' cobots
+- **[eigendude/OASIS](https://github.com/eigendude/OASIS)** (Score: 56.17)
+  - License: Apache-2.0 | Stars: 21 | Forks: 2
+  - PRs open: 2 | Discussions: No | Contributors: 1 | Last push: 14 days ago
+  - Description: OASIS, a smart home operating system based on ROS 2
+- **[kimtth/awesome-azure-openai-llm](https://github.com/kimtth/awesome-azure-openai-llm)** (Score: 22.87)
+  - License: CC0-1.0 | Stars: 377 | Forks: 47
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 5 days ago
+  - Description: A curated list of 🌌 Azure OpenAI, 🦙 Large Language Models (incl. RAG, Agent), and references. [code] https://github.com/kimtth/azure-openai-llm-cookbook
+- **[xArm-Developer/xarm_ros](https://github.com/xArm-Developer/xarm_ros)** (Score: 9.03)
+  - License: BSD-3-Clause | Stars: 263 | Forks: 172
+  - PRs open: 6 | Discussions: No | Contributors: 15 | Last push: 13 days ago
+  - Description: ROS packages for robotic products from UFACTORY
+- **[bdaiinstitute/spot_ros2](https://github.com/bdaiinstitute/spot_ros2)** (Score: 4.05)
+  - License: NOASSERTION | Stars: 236 | Forks: 95
+  - PRs open: 10 | Discussions: Yes | Contributors: 50 | Last push: 9 days ago
+  - Description: ROS 2 driver package for Boston Dynamics' Spot
+- **[xArm-Developer/xarm_ros2](https://github.com/xArm-Developer/xarm_ros2)** (Score: -27.97)
+  - License: BSD-3-Clause | Stars: 174 | Forks: 123
+  - PRs open: 7 | Discussions: No | Contributors: 6 | Last push: 13 days ago
+  - Description: ROS2 developer packages for robotic products from UFACTORY
+- **[robotology/idyntree](https://github.com/robotology/idyntree)** (Score: -29.83)
+  - License: BSD-3-Clause | Stars: 207 | Forks: 70
+  - PRs open: 4 | Discussions: No | Contributors: 45 | Last push: 2 days ago
+  - Description: Multibody Dynamics Library designed for Free Floating Robots
+- **[TheNoobInventor/lidarbot](https://github.com/TheNoobInventor/lidarbot)** (Score: -43.97)
+  - License: BSD-3-Clause | Stars: 166 | Forks: 32
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 7 days ago
+  - Description: A differential drive robot is controlled using ROS2 Humble running on a Raspberry Pi 4 (running Ubuntu server 22.04). The vehicle is equipped with a raspberry pi camera for visual feedback and an RPlidar A1 sensor used for Simultaneous Localization and Mapping (SLAM), autonomous navigation and obstacle avoidance.
+- **[inorbit-ai/ros_amr_interop](https://github.com/inorbit-ai/ros_amr_interop)** (Score: -64.0)
+  - License: BSD-3-Clause | Stars: 92 | Forks: 32
+  - PRs open: 2 | Discussions: No | Contributors: 12 | Last push: 9 days ago
+- **[vybhav-ibr/genesis_ros](https://github.com/vybhav-ibr/genesis_ros)** (Score: -73.27)
+  - License: none | Stars: 87 | Forks: 4
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 7 days ago
+  - Description: A light-weight, pythhonic ros2 package to connect the genesis simulator and ROS2
+- **[MIT-SPARK/Hydra-ROS](https://github.com/MIT-SPARK/Hydra-ROS)** (Score: -76.03)
+  - License: BSD-2-Clause | Stars: 59 | Forks: 25
+  - PRs open: 0 | Discussions: No | Contributors: 7 | Last push: 8 days ago
+  - Description: Hydra ROS Interface
+- **[D-Robotics/hobot_stereonet](https://github.com/D-Robotics/hobot_stereonet)** (Score: -89.7)
+  - License: none | Stars: 24 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 9 | Last push: 0 days ago
+- **[KumarRobotics/kr_param_map](https://github.com/KumarRobotics/kr_param_map)** (Score: -90.03)
+  - License: BSD-3-Clause | Stars: 28 | Forks: 6
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 8 days ago
+  - Description: A parameterized map generator for planning evaluations and benchmarking (ROS1 & ROS2 compatible)
+- **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -91.3)
+  - License: NOASSERTION | Stars: 27 | Forks: 0
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: 🚀 Daily AI Research Digest: Tracking breakthroughs in AI/NLP/CV/Robotics with dynamic updates and paper navigation.
+- **[ctu-vras/ros-utils](https://github.com/ctu-vras/ros-utils)** (Score: -92.9)
+  - License: none | Stars: 19 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 3 days ago
+  - Description: Useful utilities for working with ROS
+- **[danielrosehill/System-Prompt-Library](https://github.com/danielrosehill/System-Prompt-Library)** (Score: -93.2)
+  - License: none | Stars: 21 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 3 days ago
+  - Description: System prompts for AI agents and assistants (automatically populated); periodic point in time exports are releases
+
+## Privacy & Synthetic Data
+- **[youngfish42/Awesome-FL](https://github.com/youngfish42/Awesome-FL)** (Score: 485.02)
+  - License: CC-BY-SA-4.0 | Stars: 1801 | Forks: 202
+  - PRs open: 0 | Discussions: Yes | Contributors: 15 | Last push: 5 days ago
+  - Description: Comprehensive and timely academic information on federated learning (papers, frameworks, datasets, tutorials, workshops)
+
+## Digital Twins & Simulation
+- **[acados/acados](https://github.com/acados/acados)** (Score: 291.57)
+  - License: NOASSERTION | Stars: 1073 | Forks: 289
+  - PRs open: 12 | Discussions: No | Contributors: 50 | Last push: 5 days ago
+  - Description: Fast and embedded solvers for nonlinear optimal control and nonlinear model predictive control
+- **[SciML/ModelingToolkitCourse](https://github.com/SciML/ModelingToolkitCourse)** (Score: 65.43)
+  - License: MIT | Stars: 45 | Forks: 6
+  - PRs open: 2 | Discussions: No | Contributors: 6 | Last push: 19 days ago
+  - Description: A course on composable system modeling, differential-algebraic equations, acausal modeling, compilers for simulation, and building digital twins of real-world devices
+- **[robotics-upo/marsupial_simulator_ros2](https://github.com/robotics-upo/marsupial_simulator_ros2)** (Score: 57.83)
+  - License: Apache-2.0 | Stars: 27 | Forks: 5
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 28 days ago
+  - Description: Physical simulation of Marsupial UAV-UGV Systems Connected by a Variable-Length Hanging Tether
+- **[unitreerobotics/unitree_sim_isaaclab](https://github.com/unitreerobotics/unitree_sim_isaaclab)** (Score: -63.8)
+  - License: NOASSERTION | Stars: 112 | Forks: 14
+  - PRs open: 1 | Discussions: No | Contributors: 0 | Last push: 3 days ago
+  - Description: The Unitree simulation environment built based on Isaac Lab
+
+## AR/VR & Training
+- **[josephmisiti/awesome-machine-learning](https://github.com/josephmisiti/awesome-machine-learning)** (Score: 23785.8)
+  - License: NOASSERTION | Stars: 69528 | Forks: 15065
+  - PRs open: 6 | Discussions: No | Contributors: 50 | Last push: 18 days ago
+  - Description: A curated list of awesome Machine Learning frameworks, libraries and software.
+- **[aliasrobotics/cai](https://github.com/aliasrobotics/cai)** (Score: 1022.97)
+  - License: NOASSERTION | Stars: 3394 | Forks: 465
+  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 2 days ago
+  - Description: Cybersecurity AI (CAI), the framework for AI Security
+- **[eProsima/Fast-DDS](https://github.com/eProsima/Fast-DDS)** (Score: 998.12)
+  - License: Apache-2.0 | Stars: 2545 | Forks: 854
+  - PRs open: 34 | Discussions: Yes | Contributors: 50 | Last push: 2 days ago
+  - Description: The most complete DDS - Proven: Plenty of success cases. Looking for commercial support? Contact info@eprosima.com
+- **[RoboTwin-Platform/RoboTwin](https://github.com/RoboTwin-Platform/RoboTwin)** (Score: 515.87)
+  - License: MIT | Stars: 1438 | Forks: 172
+  - PRs open: 0 | Discussions: No | Contributors: 9 | Last push: 2 days ago
+  - Description: RoboTwin 2.0 Offical Repo
+- **[castorini/anserini](https://github.com/castorini/anserini)** (Score: 487.45)
+  - License: Apache-2.0 | Stars: 1071 | Forks: 512
+  - PRs open: 11 | Discussions: Yes | Contributors: 50 | Last push: 0 days ago
+  - Description: Anserini is a Lucene toolkit for reproducible information retrieval research
+- **[youngfish42/Awesome-FL](https://github.com/youngfish42/Awesome-FL)** (Score: 485.02)
+  - License: CC-BY-SA-4.0 | Stars: 1801 | Forks: 202
+  - PRs open: 0 | Discussions: Yes | Contributors: 15 | Last push: 5 days ago
+  - Description: Comprehensive and timely academic information on federated learning (papers, frameworks, datasets, tutorials, workshops)
+- **[freeCodeCamp/awesome-quincy-larson-emails](https://github.com/freeCodeCamp/awesome-quincy-larson-emails)** (Score: 430.4)
+  - License: MIT | Stars: 1165 | Forks: 153
+  - PRs open: 0 | Discussions: No | Contributors: 8 | Last push: 27 days ago
+  - Description: This repository is an archive of emails that are sent by the awesome Quincy Larson every week.
+- **[acados/acados](https://github.com/acados/acados)** (Score: 291.57)
+  - License: NOASSERTION | Stars: 1073 | Forks: 289
+  - PRs open: 12 | Discussions: No | Contributors: 50 | Last push: 5 days ago
+  - Description: Fast and embedded solvers for nonlinear optimal control and nonlinear model predictive control
+- **[hanruihua/NeuPAN](https://github.com/hanruihua/NeuPAN)** (Score: 232.27)
+  - License: GPL-3.0 | Stars: 637 | Forks: 60
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2 days ago
+  - Description: [TRO 2025] NeuPAN: Direct Point Robot Navigation with End-to-End Model-based Learning.
+- **[PRBonn/PIN_SLAM](https://github.com/PRBonn/PIN_SLAM)** (Score: 222.93)
+  - License: MIT | Stars: 532 | Forks: 65
+  - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 13 days ago
+  - Description: 📍PIN-SLAM: LiDAR SLAM Using a Point-Based Implicit Neural Representation for Achieving Global Map Consistency [TRO' 24]
+- **[hongbo-miao/hongbomiao.com](https://github.com/hongbo-miao/hongbomiao.com)** (Score: 135.05)
+  - License: MIT | Stars: 245 | Forks: 42
+  - PRs open: 6 | Discussions: Yes | Contributors: 11 | Last push: 0 days ago
+  - Description: A personal research and development (R&D) lab that facilitates the sharing of knowledge.
+- **[gabrielchua/daily-ai-papers](https://github.com/gabrielchua/daily-ai-papers)** (Score: 110.87)
+  - License: MIT | Stars: 194 | Forks: 12
+  - PRs open: 1 | Discussions: No | Contributors: 2 | Last push: 2 days ago
+  - Description: All credits go to HuggingFace's Daily AI papers (https://huggingface.co/papers) and the research community. 🔉Audio summaries here (https://t.me/daily_ai_papers).
+- **[TJU-Aerial-Robotics/YOPO](https://github.com/TJU-Aerial-Robotics/YOPO)** (Score: 91.2)
+  - License: NOASSERTION | Stars: 597 | Forks: 68
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 3 days ago
+  - Description: You Only Plan Once: A Learning Based Quadrotor Planner
+- **[i2Nav-WHU/FF-LINS](https://github.com/i2Nav-WHU/FF-LINS)** (Score: 90.5)
+  - License: GPL-3.0 | Stars: 186 | Forks: 28
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 15 days ago
+  - Description: A Consistent Frame-to-Frame Solid-State-LiDAR-Inertial State Estimator
+- **[Robotics-STAR-Lab/SOAR](https://github.com/Robotics-STAR-Lab/SOAR)** (Score: 89.77)
+  - License: GPL-3.0 | Stars: 191 | Forks: 11
+  - PRs open: 0 | Discussions: No | Contributors: 5 | Last push: 14 days ago
+  - Description: [IROS'24 Oral] A Heterogeneous Multi-UAV Planner for Fast Autonomous Reconstruction
+- **[ika-rwth-aachen/ros2_calib](https://github.com/ika-rwth-aachen/ros2_calib)** (Score: 80.37)
+  - License: MIT | Stars: 94 | Forks: 10
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2 days ago
+  - Description: LiDAR-Camera Calibration using ROS2 mcap recordings. A vibe coding project.
+- **[isLinXu/paper-list](https://github.com/isLinXu/paper-list)** (Score: 80.3)
+  - License: Apache-2.0 | Stars: 93 | Forks: 11
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: autoupdate paper list
+- **[kimtth/software-architect-mindmap](https://github.com/kimtth/software-architect-mindmap)** (Score: 80.17)
+  - License: MIT | Stars: 87 | Forks: 24
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 20 days ago
+  - Description: 🧠Mindmap of 🗺️Software Architecture, Software engineering: An Overview of Software Terminologies and Concepts.
+- **[i2Nav-WHU/LE-VINS](https://github.com/i2Nav-WHU/LE-VINS)** (Score: 79.4)
+  - License: GPL-3.0 | Stars: 159 | Forks: 13
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 15 days ago
+  - Description: INS-Centric Visual-Inertial Navigation System With LiDAR Enhancement
+- **[robotics-upo/hunav_sim](https://github.com/robotics-upo/hunav_sim)** (Score: 79.27)
+  - License: MIT | Stars: 83 | Forks: 15
+  - PRs open: 0 | Discussions: No | Contributors: 5 | Last push: 2 days ago
+  - Description: A simulator of human navigation behaviors for Robotics based on ROS2
+- **[AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization](https://github.com/AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization)** (Score: 78.83)
+  - License: Apache-2.0 | Stars: 86 | Forks: 17
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 10 days ago
+  - Description: Autonomous Mobile Robot developed and programmed in the online course named "Self-Driving and ROS 2 - Learn By Doing! Map & Localization"
+- **[joylarkin/Awesome-AI-Market-Maps](https://github.com/joylarkin/Awesome-AI-Market-Maps)** (Score: 67.1)
+  - License: MIT | Stars: 53 | Forks: 3
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: An Awesome List of 275+ AI Market Maps from 2025 and 2024.
+- **[zhao62/Deep-Residual-Shrinkage-Networks](https://github.com/zhao62/Deep-Residual-Shrinkage-Networks)** (Score: 66.23)
+  - License: none | Stars: 482 | Forks: 107
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1 days ago
+  - Description: The deep residual shrinkage network is a variant of deep residual networks.
+- **[paragon-intelligence/agentle](https://github.com/paragon-intelligence/agentle)** (Score: 66.05)
+  - License: MIT | Stars: 46 | Forks: 9
+  - PRs open: 0 | Discussions: Yes | Contributors: 1 | Last push: 0 days ago
+  - Description: Build production-ready AI agents in days, not months. Python 3.13+. Save development time with minimal code, deploy anywhere with confidence, and scale from simple assistants to complex multi-agent systems without the headaches.
+- **[harpreetsahota204/gui_agent_research_landscape](https://github.com/harpreetsahota204/gui_agent_research_landscape)** (Score: 62.83)
+  - License: Apache-2.0 | Stars: 41 | Forks: 4
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 13 days ago
+  - Description: An awesome repository that maps the current landscape of GUI/OS Agent research
+- **[blueraai/universal-intelligence](https://github.com/blueraai/universal-intelligence)** (Score: 61.62)
+  - License: Apache-2.0 | Stars: 44 | Forks: 4
+  - PRs open: 0 | Discussions: Yes | Contributors: 2 | Last push: 26 days ago
+  - Description: ◉ Universal Intelligence: AI made simple.
+- **[agtonomy/trellis](https://github.com/agtonomy/trellis)** (Score: 61.0)
+  - License: Apache-2.0 | Stars: 26 | Forks: 5
+  - PRs open: 1 | Discussions: No | Contributors: 9 | Last push: 9 days ago
+  - Description: General purpose middleware framework for distributed applications
+- **[hoangsonww/Agentic-AI-Pipeline](https://github.com/hoangsonww/Agentic-AI-Pipeline)** (Score: 60.98)
+  - License: Apache-2.0 | Stars: 23 | Forks: 19
+  - PRs open: 0 | Discussions: Yes | Contributors: 1 | Last push: 1 days ago
+  - Description: 🦾 A production‑ready research outreach AI agent that plans, discovers, reasons, uses tools, auto‑builds cited briefings, and drafts tailored emails with tool‑chaining, memory, tests, and turnkey Docker, AWS, Ansible & Terraform deploys. Bonus: Agentic RAG system (FAISS + Google CSE) with multistep planning, self-critique, and autonomous agents.
+- **[AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Plan-Navigation](https://github.com/AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Plan-Navigation)** (Score: 60.73)
+  - License: Apache-2.0 | Stars: 29 | Forks: 12
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 10 days ago
+  - Description: Autonomous Mobile Robot developed and programmed in the online course named "Self-Driving and ROS 2 - Learn By Doing! Plan & Navigation"
+- **[automatika-robotics/embodied-agents](https://github.com/automatika-robotics/embodied-agents)** (Score: 60.05)
+  - License: MIT | Stars: 31 | Forks: 3
+  - PRs open: 0 | Discussions: Yes | Contributors: 2 | Last push: 9 days ago
+  - Description: EmbodiedAgents is a fully-loaded framework, written in pure ROS2, for creating interactive physical agents that can understand, remember, and act upon contextual information from their environment.
+- **[Jiu-xiao/libxr](https://github.com/Jiu-xiao/libxr)** (Score: 58.4)
+  - License: Apache-2.0 | Stars: 20 | Forks: 3
+  - PRs open: 0 | Discussions: No | Contributors: 6 | Last push: 0 days ago
+  - Description: Standardized compatibility layer for operating systems and peripheral devices written in C++.
+- **[automatika-robotics/kompass](https://github.com/automatika-robotics/kompass)** (Score: 58.37)
+  - License: MIT | Stars: 26 | Forks: 0
+  - PRs open: 1 | Discussions: No | Contributors: 2 | Last push: 2 days ago
+  - Description: Kompass is an event-driven navigation stack designed with an easy-to-use Python API. It implements highly optimized, GPU powered, versions of the most cutting edge algorithms for all parts of the navigation stack.
+- **[sd-robotics/int-ball2_isaac_sim](https://github.com/sd-robotics/int-ball2_isaac_sim)** (Score: 58.13)
+  - License: Apache-2.0 | Stars: 21 | Forks: 5
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 1 days ago
+  - Description: Int-Ball2 Simulator (Isaac Sim)
+- **[robotics-upo/marsupial_simulator_ros2](https://github.com/robotics-upo/marsupial_simulator_ros2)** (Score: 57.83)
+  - License: Apache-2.0 | Stars: 27 | Forks: 5
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 28 days ago
+  - Description: Physical simulation of Marsupial UAV-UGV Systems Connected by a Variable-Length Hanging Tether
+- **[RainbowRobotics/rbpodo](https://github.com/RainbowRobotics/rbpodo)** (Score: 56.93)
+  - License: Apache-2.0 | Stars: 16 | Forks: 10
+  - PRs open: 1 | Discussions: No | Contributors: 3 | Last push: 10 days ago
+  - Description: A client library for Rainbow Robotics' cobots
+- **[airas-org/airas](https://github.com/airas-org/airas)** (Score: 56.85)
+  - License: MIT | Stars: 16 | Forks: 0
+  - PRs open: 9 | Discussions: Yes | Contributors: 7 | Last push: 0 days ago
+  - Description: AIRAS - an open-source project for research automation
+- **[eigendude/OASIS](https://github.com/eigendude/OASIS)** (Score: 56.17)
+  - License: Apache-2.0 | Stars: 21 | Forks: 2
+  - PRs open: 2 | Discussions: No | Contributors: 1 | Last push: 14 days ago
+  - Description: OASIS, a smart home operating system based on ROS 2
+- **[MIT-SPARK/Khronos](https://github.com/MIT-SPARK/Khronos)** (Score: 31.23)
+  - License: BSD-3-Clause | Stars: 424 | Forks: 24
+  - PRs open: 1 | Discussions: No | Contributors: 3 | Last push: 13 days ago
+  - Description: Spatio-Temporal Metric-Semantic SLAM
+- **[superxslam/SuperOdom](https://github.com/superxslam/SuperOdom)** (Score: 28.87)
+  - License: none | Stars: 398 | Forks: 42
+  - PRs open: 4 | Discussions: No | Contributors: 4 | Last push: 2 days ago
+  - Description: A highly robust and accurate LiDAR-inertial odometry  package
+- **[kimtth/awesome-azure-openai-llm](https://github.com/kimtth/awesome-azure-openai-llm)** (Score: 22.87)
+  - License: CC0-1.0 | Stars: 377 | Forks: 47
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 5 days ago
+  - Description: A curated list of 🌌 Azure OpenAI, 🦙 Large Language Models (incl. RAG, Agent), and references. [code] https://github.com/kimtth/azure-openai-llm-cookbook
+- **[xArm-Developer/xarm_ros](https://github.com/xArm-Developer/xarm_ros)** (Score: 9.03)
+  - License: BSD-3-Clause | Stars: 263 | Forks: 172
+  - PRs open: 6 | Discussions: No | Contributors: 15 | Last push: 13 days ago
+  - Description: ROS packages for robotic products from UFACTORY
+- **[xArm-Developer/xarm_ros2](https://github.com/xArm-Developer/xarm_ros2)** (Score: -27.97)
+  - License: BSD-3-Clause | Stars: 174 | Forks: 123
+  - PRs open: 7 | Discussions: No | Contributors: 6 | Last push: 13 days ago
+  - Description: ROS2 developer packages for robotic products from UFACTORY
+- **[robotology/idyntree](https://github.com/robotology/idyntree)** (Score: -29.83)
+  - License: BSD-3-Clause | Stars: 207 | Forks: 70
+  - PRs open: 4 | Discussions: No | Contributors: 45 | Last push: 2 days ago
+  - Description: Multibody Dynamics Library designed for Free Floating Robots
+- **[leggedrobotics/fdm](https://github.com/leggedrobotics/fdm)** (Score: -39.03)
+  - License: NOASSERTION | Stars: 202 | Forks: 7
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 20 days ago
+  - Description: Learned Perceptive Forward Dynamics Model
+- **[TheNoobInventor/lidarbot](https://github.com/TheNoobInventor/lidarbot)** (Score: -43.97)
+  - License: BSD-3-Clause | Stars: 166 | Forks: 32
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 7 days ago
+  - Description: A differential drive robot is controlled using ROS2 Humble running on a Raspberry Pi 4 (running Ubuntu server 22.04). The vehicle is equipped with a raspberry pi camera for visual feedback and an RPlidar A1 sensor used for Simultaneous Localization and Mapping (SLAM), autonomous navigation and obstacle avoidance.
+- **[qhduan/cn-chat-arxiv](https://github.com/qhduan/cn-chat-arxiv)** (Score: -46.2)
+  - License: none | Stars: 168 | Forks: 16
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -59.9)
+  - License: none | Stars: 122 | Forks: 15
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: This repository tracks the latest advancements in 3D Gaussian Splatting from Arxiv, with daily automated updates. Stay up-to-date with cutting-edge research in this exciting field!
+- **[monologg/nlp-arxiv-daily](https://github.com/monologg/nlp-arxiv-daily)** (Score: -65.7)
+  - License: none | Stars: 100 | Forks: 20
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: Automatically Update NLP Papers Daily using Github Actions (ref: https://github.com/Vincentqyw/cv-arxiv-daily)
+- **[Xuchen-Li/llm-arxiv-daily](https://github.com/Xuchen-Li/llm-arxiv-daily)** (Score: -66.47)
+  - License: none | Stars: 106 | Forks: 6
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - Description: Automatically update arXiv papers about LLM Reasoning, LLM Evaluation, LLM & MLLM and Video Understanding using Github Actions.
+- **[vybhav-ibr/genesis_ros](https://github.com/vybhav-ibr/genesis_ros)** (Score: -73.27)
+  - License: none | Stars: 87 | Forks: 4
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 7 days ago
+  - Description: A light-weight, pythhonic ros2 package to connect the genesis simulator and ROS2
+- **[DWCTOD/cv-arxiv-daily](https://github.com/DWCTOD/cv-arxiv-daily)** (Score: -75.4)
+  - License: none | Stars: 65 | Forks: 24
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+- **[MIT-SPARK/Hydra-ROS](https://github.com/MIT-SPARK/Hydra-ROS)** (Score: -76.03)
+  - License: BSD-2-Clause | Stars: 59 | Forks: 25
+  - PRs open: 0 | Discussions: No | Contributors: 7 | Last push: 8 days ago
+  - Description: Hydra ROS Interface
+- **[yangsc4063/rino](https://github.com/yangsc4063/rino)** (Score: -78.4)
+  - License: none | Stars: 67 | Forks: 9
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 6 days ago
+  - Description: [T-ASE 2025] This is the official implementation of RINO: Accurate, Robust Radar-Inertial Odometry with Non-Iterative Estimation.
+- **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.7)
+  - License: NOASSERTION | Stars: 16 | Forks: 2
+  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 0 days ago
+  - Description: A curated list of awesome Machine Learning frameworks, libraries and software. With repository stars⭐ and forks🍴
+- **[Xuchen-Li/cv-arxiv-daily](https://github.com/Xuchen-Li/cv-arxiv-daily)** (Score: -88.4)
+  - License: none | Stars: 35 | Forks: 4
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: Automatically update arXiv papers about SOT & VLT,  Multi-modal Learning, LLM and Video Understanding using Github Actions.
+- **[KumarRobotics/kr_param_map](https://github.com/KumarRobotics/kr_param_map)** (Score: -90.03)
+  - License: BSD-3-Clause | Stars: 28 | Forks: 6
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 8 days ago
+  - Description: A parameterized map generator for planning evaluations and benchmarking (ROS1 & ROS2 compatible)
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
+  - License: none | Stars: 29 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
+- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.2)
+  - License: CC0-1.0 | Stars: 26 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: This is a curated list of my GitHub stars but converted into an Awesome List! Updated automagically ever 12 hours! :D
+- **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -91.3)
+  - License: NOASSERTION | Stars: 27 | Forks: 0
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: 🚀 Daily AI Research Digest: Tracking breakthroughs in AI/NLP/CV/Robotics with dynamic updates and paper navigation.
+- **[ctu-vras/ros-utils](https://github.com/ctu-vras/ros-utils)** (Score: -92.9)
+  - License: none | Stars: 19 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 3 days ago
+  - Description: Useful utilities for working with ROS
+- **[Keio-CSG/slamspoof](https://github.com/Keio-CSG/slamspoof)** (Score: -93.1)
+  - License: none | Stars: 25 | Forks: 3
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 24 days ago
+  - Description: (ICRA'25) "SLAMSpoof: Practical LiDAR Spoofing Attacks on Localization Systems Guided by Scan Matching Vulnerability Analysis"
+- **[Temasek-Dynamics/gestelt](https://github.com/Temasek-Dynamics/gestelt)** (Score: -93.13)
+  - License: none | Stars: 21 | Forks: 4
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 11 days ago
+  - Description: A simple path planning framework for swarm robots
+- **[danielrosehill/System-Prompt-Library](https://github.com/danielrosehill/System-Prompt-Library)** (Score: -93.2)
+  - License: none | Stars: 21 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 3 days ago
+  - Description: System prompts for AI agents and assistants (automatically populated); periodic point in time exports are releases
+- **[aben1188/my-star-repos](https://github.com/aben1188/my-star-repos)** (Score: -94.33)
+  - License: none | Stars: 17 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2 days ago
+- **[luohongk/Awesome-Localization-And-3D-Reconstruction-From-Arxiv](https://github.com/luohongk/Awesome-Localization-And-3D-Reconstruction-From-Arxiv)** (Score: -104.4)
+  - License: none | Stars: 80 | Forks: 5
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: 📚这个仓库是在arxiv上收集的有关VLN，VLA, SLAM，Gaussian Splatting,非线性优化等相关论文。每天都会自动更新！issue区域是最新10篇论文
+- **[tangwen-qian/DailyArXiv](https://github.com/tangwen-qian/DailyArXiv)** (Score: -123.6)
+  - License: none | Stars: 34 | Forks: 7
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
 
 ## Uncategorized
-- **[CamDavidsonPilon/lifelines](https://github.com/CamDavidsonPilon/lifelines)** (Score: 876.75)
-  - License: MIT | Stars: 2485 | Forks: 561
-  - PRs open: 10 | Discussions: Yes | Contributors: 50 | Last push: 306 days ago
-  - Description: Survival analysis in Python
-- **[ohcnetwork/care](https://github.com/ohcnetwork/care)** (Score: 258.9)
-  - License: MIT | Stars: 322 | Forks: 465
-  - PRs open: 43 | Discussions: No | Contributors: 50 | Last push: 0 days ago
-  - Description: Care is a Digital Public Good enabling TeleICU & Decentralised Administration of Healthcare Capacity across States.
-- **[GoogleCloudPlatform/healthcare](https://github.com/GoogleCloudPlatform/healthcare)** (Score: 207.55)
-  - License: Apache-2.0 | Stars: 383 | Forks: 173
-  - PRs open: 41 | Discussions: Yes | Contributors: 27 | Last push: 45 days ago
-- **[Google-Health/medsiglip](https://github.com/Google-Health/medsiglip)** (Score: 108.43)
-  - License: Apache-2.0 | Stars: 183 | Forks: 18
-  - PRs open: 4 | Discussions: No | Contributors: 4 | Last push: 25 days ago
-- **[chaoyi-wu/PMC-LLaMA](https://github.com/chaoyi-wu/PMC-LLaMA)** (Score: 80.97)
-  - License: none | Stars: 662 | Forks: 59
-  - PRs open: 1 | Discussions: No | Contributors: 3 | Last push: 419 days ago
-  - Description: The official codes for "PMC-LLaMA: Towards Building Open-source Language Models for Medicine"
-- **[mishal23/virtual-clinic](https://github.com/mishal23/virtual-clinic)** (Score: 59.47)
-  - License: MIT | Stars: 90 | Forks: 53
-  - PRs open: 3 | Discussions: No | Contributors: 2 | Last push: 431 days ago
-  - Description: Virtual Clinic - An Integrated Care System
-- **[ncbi/GeneGPT](https://github.com/ncbi/GeneGPT)** (Score: 22.97)
-  - License: NOASSERTION | Stars: 411 | Forks: 34
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 116 days ago
-  - Description: Code and data for GeneGPT.
-- **[BioMistral/BioMistral](https://github.com/BioMistral/BioMistral)** (Score: -115.43)
-  - License: none | Stars: 41 | Forks: 6
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 437 days ago
-- **[ielab/health-search-tutorial](https://github.com/ielab/health-search-tutorial)** (Score: -251.83)
-  - License: none | Stars: 19 | Forks: 7
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 2393 days ago
+- **[aws/aws-sdk-net](https://github.com/aws/aws-sdk-net)** (Score: 236.02)
+  - License: Apache-2.0 | Stars: 20 | Forks: 867
+  - PRs open: 8 | Discussions: Yes | Contributors: 50 | Last push: 2 days ago
+  - Description: The official AWS SDK for .NET. For more information on the AWS SDK for .NET, see our web site:
+- **[open-rmf/rmf_demos](https://github.com/open-rmf/rmf_demos)** (Score: 207.48)
+  - License: Apache-2.0 | Stars: 418 | Forks: 128
+  - PRs open: 9 | Discussions: Yes | Contributors: 30 | Last push: 4 days ago
+  - Description: Demonstrations of Open-RMF
+- **[unitreerobotics/unitree_mujoco](https://github.com/unitreerobotics/unitree_mujoco)** (Score: 89.43)
+  - License: BSD-3-Clause | Stars: 548 | Forks: 144
+  - PRs open: 7 | Discussions: No | Contributors: 5 | Last push: 7 days ago
+- **[TongjiSuperPower/sp_vision_25](https://github.com/TongjiSuperPower/sp_vision_25)** (Score: 71.47)
+  - License: MIT | Stars: 61 | Forks: 9
+  - PRs open: 0 | Discussions: No | Contributors: 7 | Last push: 11 days ago
+  - Description: 同济大学SuperPower战队25赛季视觉框架
+- **[osrf/nexus](https://github.com/osrf/nexus)** (Score: 70.55)
+  - License: Apache-2.0 | Stars: 52 | Forks: 15
+  - PRs open: 8 | Discussions: Yes | Contributors: 10 | Last push: 0 days ago
+  - Description: A framework for orchestration
+- **[johe123qwe/github-trending](https://github.com/johe123qwe/github-trending)** (Score: 64.8)
+  - License: MIT | Stars: 42 | Forks: 8
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: 定时抓取 Github Trending
+- **[eclipse-cyclonedds/cyclonedds-cxx](https://github.com/eclipse-cyclonedds/cyclonedds-cxx)** (Score: -46.4)
+  - License: NOASSERTION | Stars: 116 | Forks: 80
+  - PRs open: 14 | Discussions: No | Contributors: 38 | Last push: 12 days ago
+- **[emqx/blog](https://github.com/emqx/blog)** (Score: -67.13)
+  - License: none | Stars: 39 | Forks: 73
+  - PRs open: 0 | Discussions: No | Contributors: 27 | Last push: 2 days ago
+  - Description: EMQ Blog
+- **[lolo8304/coding-challenge](https://github.com/lolo8304/coding-challenge)** (Score: -82.8)
+  - License: none | Stars: 54 | Forks: 10
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 18 days ago
+  - Description: my coding challenge implementations from the official https://codingchallenges.fyi/
