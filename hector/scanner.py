@@ -117,6 +117,12 @@ def search_repositories(cfg: Dict[str, Any], limit: int = 50):
     languages = search_cfg.get("languages") or []
     orgs = [str(x).strip() for x in (search_cfg.get("orgs") or []) if str(x).strip()]
     users = [str(x).strip() for x in (search_cfg.get("users") or []) if str(x).strip()]
+    topics: List[str] = [str(t).strip() for t in (search_cfg.get("topics") or []) if str(t).strip()]
+    # Build a base query that excludes topics to enable per-topic batching when needed
+    search_cfg_no_topics = dict(search_cfg)
+    if "topics" in search_cfg_no_topics:
+        search_cfg_no_topics["topics"] = []
+    base_q_no_topics = _build_query(search_cfg_no_topics)
 
     remaining = max(1, int(limit))
     all_repos: List[Any] = []
@@ -133,7 +139,7 @@ def search_repositories(cfg: Dict[str, Any], limit: int = 50):
         remaining -= 1
         return remaining > 0
 
-    # 1) Multi-strategy search
+    # 1) Multi-strategy search (with topic batching to avoid overly long queries)
     for strat in _iter_strategies(search_cfg):
         if remaining <= 0:
             break
@@ -145,32 +151,66 @@ def search_repositories(cfg: Dict[str, Any], limit: int = 50):
             q = f"{q} {q_extra}".strip()
         q = _apply_date_bounds(q, strat.get("use"), search_cfg)
 
-        if languages:
-            for lang in languages:
-                if remaining <= 0:
-                    break
-                lang = str(lang).strip()
-                if not lang:
-                    continue
-                q_lang = f"{q} language:{lang}".strip()
-                log.debug("GitHub search (strategy=%s, lang=%s): %s", strat.get("name", "default"), lang, q_lang)
-                try:
-                    results = gh.search_repositories(q_lang, sort=sort, order=order)
-                except Exception:
-                    continue
-                for r in _fetch_pagewise(results, remaining):
-                    if not _add_repo(r):
-                        break
+        # Decide whether to batch topics
+        use_topic_batching = len(topics) > 8  # threshold to avoid long OR clauses
+        topic_iter: List[List[str]]
+        if use_topic_batching and topics:
+            # Per-topic batches (size=1) to keep queries small and robust
+            topic_iter = [[t] for t in topics]
         else:
-            log.debug("GitHub search (strategy=%s): %s", strat.get("name", "default"), q)
-            try:
-                results = gh.search_repositories(q, sort=sort, order=order)
-            except Exception:
-                results = None
-            if results is not None:
-                for r in _fetch_pagewise(results, remaining):
-                    if not _add_repo(r):
+            # Single batch containing all topics (handled by _build_query already)
+            topic_iter = [topics] if topics else [[]]
+
+        for t_batch in topic_iter:
+            if remaining <= 0:
+                break
+            if t_batch:
+                # Build query without the giant OR clause, and add a small topic batch
+                topics_clause = " OR ".join([f"topic:{t}" for t in t_batch])
+                q_effective = f"{base_q_no_topics} ({topics_clause}) {q_extra}".strip()
+                q_effective = _apply_date_bounds(q_effective, strat.get("use"), search_cfg)
+            else:
+                q_effective = q
+
+            if languages:
+                for lang in languages:
+                    if remaining <= 0:
                         break
+                    lang = str(lang).strip()
+                    if not lang:
+                        continue
+                    q_lang = f"{q_effective} language:{lang}".strip()
+                    log.debug(
+                        "GitHub search (strategy=%s, topics=%s, lang=%s): %s",
+                        strat.get("name", "default"),
+                        ",".join(t_batch) if t_batch else "-",
+                        lang,
+                        q_lang,
+                    )
+                    try:
+                        results = gh.search_repositories(q_lang, sort=sort, order=order)
+                    except Exception as e:
+                        log.info("Search failed (lang batch). strategy=%s topics=%s error=%s", strat.get("name", "default"), ",".join(t_batch) if t_batch else "-", e)
+                        continue
+                    for r in _fetch_pagewise(results, remaining):
+                        if not _add_repo(r):
+                            break
+            else:
+                log.debug(
+                    "GitHub search (strategy=%s, topics=%s): %s",
+                    strat.get("name", "default"),
+                    ",".join(t_batch) if t_batch else "-",
+                    q_effective,
+                )
+                try:
+                    results = gh.search_repositories(q_effective, sort=sort, order=order)
+                except Exception as e:
+                    log.info("Search failed (no-lang). strategy=%s topics=%s error=%s", strat.get("name", "default"), ",".join(t_batch) if t_batch else "-", e)
+                    results = None
+                if results is not None:
+                    for r in _fetch_pagewise(results, remaining):
+                        if not _add_repo(r):
+                            break
 
     # 2) Explicit orgs/users enumeration (best-effort)
     def _iter_repos_from_org(org_name: str):

@@ -27,7 +27,7 @@ jobs:
       - name: Run Hector
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: .venv/bin/python scan_and_curate.py --live --limit 100 --log-level INFO
+        run: .venv/bin/python scan_and_curate.py --live --limit 100 --log-level DEBUG
       - name: Run unit tests
         run: .venv/bin/python -m pytest -q
       - name: Create Pull Request
