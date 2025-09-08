@@ -1,0 +1,983 @@
+# Curated Healthcare Technology Tools
+
+## AI Diagnostics
+- **[josephmisiti/awesome-machine-learning](https://github.com/josephmisiti/awesome-machine-learning)** (Score: 23809.43)
+  - License: NOASSERTION | Stars: 69600 | Forks: 15077
+  - PRs open: 7 | Discussions: No | Contributors: 50 | Last push: 25 days ago
+  - Description: A curated list of awesome Machine Learning frameworks, libraries and software.
+- **[aliasrobotics/cai](https://github.com/aliasrobotics/cai)** (Score: 1096.43)
+  - License: NOASSERTION | Stars: 3617 | Forks: 494
+  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - Description: Cybersecurity AI (CAI), the framework for AI Security
+- **[RoboTwin-Platform/RoboTwin](https://github.com/RoboTwin-Platform/RoboTwin)** (Score: 521.8)
+  - License: MIT | Stars: 1455 | Forks: 176
+  - PRs open: 0 | Discussions: No | Contributors: 10 | Last push: 0 days ago
+  - Description: RoboTwin 2.0 Offical Repo
+- **[youngfish42/Awesome-FL](https://github.com/youngfish42/Awesome-FL)** (Score: 487.45)
+  - License: CC-BY-SA-4.0 | Stars: 1810 | Forks: 203
+  - PRs open: 0 | Discussions: Yes | Contributors: 15 | Last push: 12 days ago
+  - Description: Comprehensive and timely academic information on federated learning (papers, frameworks, datasets, tutorials, workshops)
+- **[ros-controls/ros2_control_demos](https://github.com/ros-controls/ros2_control_demos)** (Score: 297.6)
+  - License: Apache-2.0 | Stars: 617 | Forks: 241
+  - PRs open: 8 | Discussions: No | Contributors: 50 | Last push: 6 days ago
+  - Description: This repository aims at providing examples to illustrate ros2_control and ros2_controllers
+- **[acados/acados](https://github.com/acados/acados)** (Score: 295.17)
+  - License: NOASSERTION | Stars: 1083 | Forks: 291
+  - PRs open: 12 | Discussions: No | Contributors: 50 | Last push: 2 days ago
+  - Description: Fast and embedded solvers for nonlinear optimal control and nonlinear model predictive control
+- **[hanruihua/NeuPAN](https://github.com/hanruihua/NeuPAN)** (Score: 234.2)
+  - License: GPL-3.0 | Stars: 645 | Forks: 60
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 9 days ago
+  - Description: [TRO 2025] NeuPAN: Direct Point Robot Navigation with End-to-End Model-based Learning.
+- **[halsay/ASR-TTS-paper-daily](https://github.com/halsay/ASR-TTS-paper-daily)** (Score: 149.0)
+  - License: Apache-2.0 | Stars: 318 | Forks: 17
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: Update ASR paper everyday
+- **[hongbo-miao/hongbomiao.com](https://github.com/hongbo-miao/hongbomiao.com)** (Score: 135.55)
+  - License: MIT | Stars: 247 | Forks: 42
+  - PRs open: 4 | Discussions: Yes | Contributors: 11 | Last push: 0 days ago
+  - Description: A personal research and development (R&D) lab that facilitates the sharing of knowledge.
+- **[Extelligence-ai/bagel](https://github.com/Extelligence-ai/bagel)** (Score: 135.0)
+  - License: Apache-2.0 | Stars: 269 | Forks: 20
+  - PRs open: 0 | Discussions: No | Contributors: 5 | Last push: 3 days ago
+  - Description: ChatGPT for Physical AI. Troubleshoot your robots and drones with natural language. No fuss.
+- **[open-navigation/opennav_coverage](https://github.com/open-navigation/opennav_coverage)** (Score: 124.4)
+  - License: Apache-2.0 | Stars: 209 | Forks: 58
+  - PRs open: 2 | Discussions: No | Contributors: 5 | Last push: 3 days ago
+  - Description: Nav2 Compatible Complete Cover Task Server, Navigator, & BT Utils
+- **[gabrielchua/daily-ai-papers](https://github.com/gabrielchua/daily-ai-papers)** (Score: 111.47)
+  - License: MIT | Stars: 196 | Forks: 12
+  - PRs open: 1 | Discussions: No | Contributors: 2 | Last push: 2 days ago
+  - Description: All credits go to HuggingFace's Daily AI papers (https://huggingface.co/papers) and the research community. 🔉Audio summaries here (https://t.me/daily_ai_papers).
+- **[Seeed-Projects/reComputer-Jetson-for-Beginners](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners)** (Score: 87.0)
+  - License: MIT | Stars: 111 | Forks: 19
+  - PRs open: 2 | Discussions: No | Contributors: 5 | Last push: 27 days ago
+  - Description: Beginner's Guide to reComputer Jetson
+- **[isLinXu/paper-list](https://github.com/isLinXu/paper-list)** (Score: 80.3)
+  - License: Apache-2.0 | Stars: 93 | Forks: 11
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: autoupdate paper list
+- **[AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization](https://github.com/AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization)** (Score: 79.13)
+  - License: Apache-2.0 | Stars: 87 | Forks: 19
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 16 days ago
+  - Description: Autonomous Mobile Robot developed and programmed in the online course named "Self-Driving and ROS 2 - Learn By Doing! Map & Localization"
+- **[joylarkin/Awesome-AI-Market-Maps](https://github.com/joylarkin/Awesome-AI-Market-Maps)** (Score: 67.7)
+  - License: MIT | Stars: 55 | Forks: 3
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: An Awesome List of 275+ AI Market Maps from 2025 and 2024.
+- **[paragon-intelligence/agentle](https://github.com/paragon-intelligence/agentle)** (Score: 66.05)
+  - License: MIT | Stars: 46 | Forks: 9
+  - PRs open: 0 | Discussions: Yes | Contributors: 1 | Last push: 0 days ago
+  - Description: Build production-ready AI agents in days, not months. Python 3.13+. Save development time with minimal code, deploy anywhere with confidence, and scale from simple assistants to complex multi-agent systems without the headaches.
+- **[SciML/ModelingToolkitCourse](https://github.com/SciML/ModelingToolkitCourse)** (Score: 64.97)
+  - License: MIT | Stars: 45 | Forks: 6
+  - PRs open: 2 | Discussions: No | Contributors: 6 | Last push: 26 days ago
+  - Description: A course on composable system modeling, differential-algebraic equations, acausal modeling, compilers for simulation, and building digital twins of real-world devices
+- **[harpreetsahota204/gui_agent_research_landscape](https://github.com/harpreetsahota204/gui_agent_research_landscape)** (Score: 62.37)
+  - License: Apache-2.0 | Stars: 41 | Forks: 4
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 20 days ago
+  - Description: An awesome repository that maps the current landscape of GUI/OS Agent research
+- **[hoangsonww/Agentic-AI-Pipeline](https://github.com/hoangsonww/Agentic-AI-Pipeline)** (Score: 61.18)
+  - License: Apache-2.0 | Stars: 23 | Forks: 20
+  - PRs open: 0 | Discussions: Yes | Contributors: 1 | Last push: 1 days ago
+  - Description: 🦾 A production‑ready research outreach AI agent that plans, discovers, reasons, uses tools, auto‑builds cited briefings, and drafts tailored emails with tool‑chaining, memory, tests, and turnkey Docker, AWS, Ansible & Terraform deploys. Bonus: An Agentic RAG system (FAISS + Google CSE) with multistep planning, self-critique, and autonomous agents.
+- **[AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Plan-Navigation](https://github.com/AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Plan-Navigation)** (Score: 60.83)
+  - License: Apache-2.0 | Stars: 30 | Forks: 13
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 16 days ago
+  - Description: Autonomous Mobile Robot developed and programmed in the online course named "Self-Driving and ROS 2 - Learn By Doing! Plan & Navigation"
+- **[automatika-robotics/embodied-agents](https://github.com/automatika-robotics/embodied-agents)** (Score: 60.45)
+  - License: MIT | Stars: 31 | Forks: 3
+  - PRs open: 0 | Discussions: Yes | Contributors: 2 | Last push: 3 days ago
+  - Description: EmbodiedAgents is a fully-loaded ROS2 based framework for creating interactive physical agents that can understand, remember, and act upon contextual information from their environment.
+- **[automatika-robotics/kompass](https://github.com/automatika-robotics/kompass)** (Score: 58.07)
+  - License: MIT | Stars: 26 | Forks: 0
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 5 days ago
+  - Description: Kompass is an event-driven navigation stack designed with an easy-to-use Python API. It implements highly optimized, GPU powered, versions of the most cutting edge algorithms for all parts of the navigation stack.
+- **[airas-org/airas](https://github.com/airas-org/airas)** (Score: 57.35)
+  - License: MIT | Stars: 18 | Forks: 0
+  - PRs open: 10 | Discussions: Yes | Contributors: 7 | Last push: 0 days ago
+  - Description: AIRAS - an open-source project for research automation
+- **[Lyz103/LLM-Agent-Paper-daily](https://github.com/Lyz103/LLM-Agent-Paper-daily)** (Score: 55.9)
+  - License: Apache-2.0 | Stars: 18 | Forks: 1
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: Automatically Update LLM-Agent Papers Daily using Github Actions (Update Every 12th hours)
+- **[kimtth/awesome-azure-openai-llm](https://github.com/kimtth/awesome-azure-openai-llm)** (Score: 23.07)
+  - License: none | Stars: 377 | Forks: 47
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 2 days ago
+  - Description: A curated list of 🌌 Azure OpenAI, 🦙 Large Language Models (incl. RAG, Agent), and references. [code] https://github.com/kimtth/azure-openai-llm-cookbook
+- **[bdaiinstitute/spot_ros2](https://github.com/bdaiinstitute/spot_ros2)** (Score: 4.42)
+  - License: NOASSERTION | Stars: 236 | Forks: 94
+  - PRs open: 12 | Discussions: Yes | Contributors: 50 | Last push: 2 days ago
+  - Description: ROS 2 driver package for Boston Dynamics' Spot
+- **[zezhishao/DailyArXiv](https://github.com/zezhishao/DailyArXiv)** (Score: -20.05)
+  - License: none | Stars: 341 | Forks: 72
+  - PRs open: 0 | Discussions: Yes | Contributors: 1 | Last push: 0 days ago
+  - Description: Daily ArXiv Papers.
+- **[TheNoobInventor/lidarbot](https://github.com/TheNoobInventor/lidarbot)** (Score: -44.13)
+  - License: BSD-3-Clause | Stars: 167 | Forks: 32
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 14 days ago
+  - Description: A differential drive robot is controlled using ROS2 Humble running on a Raspberry Pi 4 (running Ubuntu server 22.04). The vehicle is equipped with a raspberry pi camera for visual feedback and an RPlidar A1 sensor used for Simultaneous Localization and Mapping (SLAM), autonomous navigation and obstacle avoidance.
+- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -58.5)
+  - License: none | Stars: 126 | Forks: 16
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: This repository tracks the latest advancements in 3D Gaussian Splatting from Arxiv, with daily automated updates. Stay up-to-date with cutting-edge research in this exciting field!
+- **[inorbit-ai/ros_amr_interop](https://github.com/inorbit-ai/ros_amr_interop)** (Score: -63.57)
+  - License: BSD-3-Clause | Stars: 95 | Forks: 32
+  - PRs open: 2 | Discussions: No | Contributors: 12 | Last push: 16 days ago
+- **[Xuchen-Li/llm-arxiv-daily](https://github.com/Xuchen-Li/llm-arxiv-daily)** (Score: -65.5)
+  - License: none | Stars: 109 | Forks: 6
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: Automatically update arXiv papers about LLM Reasoning, LLM Evaluation, LLM & MLLM and Video Understanding using Github Actions.
+- **[monologg/nlp-arxiv-daily](https://github.com/monologg/nlp-arxiv-daily)** (Score: -65.7)
+  - License: none | Stars: 100 | Forks: 20
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: Automatically Update NLP Papers Daily using Github Actions (ref: https://github.com/Vincentqyw/cv-arxiv-daily)
+- **[DWCTOD/cv-arxiv-daily](https://github.com/DWCTOD/cv-arxiv-daily)** (Score: -75.2)
+  - License: none | Stars: 65 | Forks: 25
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+- **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.77)
+  - License: NOASSERTION | Stars: 16 | Forks: 2
+  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - Description: A curated list of awesome Machine Learning frameworks, libraries and software. With repository stars⭐ and forks🍴
+- **[KirillMouraviev/PRISM-TopoMap](https://github.com/KirillMouraviev/PRISM-TopoMap)** (Score: -88.17)
+  - License: none | Stars: 38 | Forks: 1
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - Description: The PRISM-TopoMap - online topological mapping method with place recognition and scan matching
+- **[Xuchen-Li/cv-arxiv-daily](https://github.com/Xuchen-Li/cv-arxiv-daily)** (Score: -88.4)
+  - License: none | Stars: 35 | Forks: 4
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: Automatically update arXiv papers about SOT & VLT,  Multi-modal Learning, LLM and Video Understanding using Github Actions.
+- **[roboto-ai/roboto-python-sdk](https://github.com/roboto-ai/roboto-python-sdk)** (Score: -89.43)
+  - License: MPL-2.0 | Stars: 31 | Forks: 1
+  - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 2 days ago
+  - Description: Roboto Python SDK and CLI
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
+  - License: none | Stars: 29 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
+- **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -91.0)
+  - License: NOASSERTION | Stars: 28 | Forks: 0
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: 🚀 Daily AI Research Digest: Tracking breakthroughs in AI/NLP/CV/Robotics with dynamic updates and paper navigation.
+- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.2)
+  - License: CC0-1.0 | Stars: 26 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: This is a curated list of my GitHub stars but converted into an Awesome List! Updated automagically ever 12 hours! :D
+- **[danielrosehill/System-Prompt-Library](https://github.com/danielrosehill/System-Prompt-Library)** (Score: -93.67)
+  - License: none | Stars: 21 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 10 days ago
+  - Description: System prompts for AI agents and assistants (automatically populated); periodic point in time exports are releases
+- **[THA-Embedded-Systems-Lab/soar_ros](https://github.com/THA-Embedded-Systems-Lab/soar_ros)** (Score: -94.03)
+  - License: NOASSERTION | Stars: 16 | Forks: 4
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 2 days ago
+  - Description: A ROS 2 package integrating the Soar cognitive architecture into the ROS ecosystem.
+- **[luohongk/Embodied-AI-Daily](https://github.com/luohongk/Embodied-AI-Daily)** (Score: -104.9)
+  - License: none | Stars: 84 | Forks: 5
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: 📚这个仓库是在arxiv上收集的有关VLN，VLA, SLAM，Gaussian Splatting,非线性优化等相关论文。每天都会自动更新！issue区域是最新10篇论文
+- **[tangwen-qian/DailyArXiv](https://github.com/tangwen-qian/DailyArXiv)** (Score: -124.1)
+  - License: none | Stars: 34 | Forks: 7
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+
+## EHR & Clinical Systems
+- **[ros-controls/ros2_control_demos](https://github.com/ros-controls/ros2_control_demos)** (Score: 297.6)
+  - License: Apache-2.0 | Stars: 617 | Forks: 241
+  - PRs open: 8 | Discussions: No | Contributors: 50 | Last push: 6 days ago
+  - Description: This repository aims at providing examples to illustrate ros2_control and ros2_controllers
+- **[hongbo-miao/hongbomiao.com](https://github.com/hongbo-miao/hongbomiao.com)** (Score: 135.55)
+  - License: MIT | Stars: 247 | Forks: 42
+  - PRs open: 4 | Discussions: Yes | Contributors: 11 | Last push: 0 days ago
+  - Description: A personal research and development (R&D) lab that facilitates the sharing of knowledge.
+- **[ROBOTIS-GIT/dynamixel_hardware_interface](https://github.com/ROBOTIS-GIT/dynamixel_hardware_interface)** (Score: 58.8)
+  - License: Apache-2.0 | Stars: 19 | Forks: 9
+  - PRs open: 0 | Discussions: No | Contributors: 6 | Last push: 3 days ago
+  - Description: ROS 2 package providing a hardware interface for controlling Dynamixel motors via the ros2_control framework. This repository includes the dynamixel_hardware_interface plugin for seamless integration with ROS 2.
+- **[zezhishao/DailyArXiv](https://github.com/zezhishao/DailyArXiv)** (Score: -20.05)
+  - License: none | Stars: 341 | Forks: 72
+  - PRs open: 0 | Discussions: Yes | Contributors: 1 | Last push: 0 days ago
+  - Description: Daily ArXiv Papers.
+- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -58.5)
+  - License: none | Stars: 126 | Forks: 16
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: This repository tracks the latest advancements in 3D Gaussian Splatting from Arxiv, with daily automated updates. Stay up-to-date with cutting-edge research in this exciting field!
+- **[yangsc4063/rino](https://github.com/yangsc4063/rino)** (Score: -78.87)
+  - License: none | Stars: 67 | Forks: 9
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 13 days ago
+  - Description: [T-ASE 2025] This is the official implementation of RINO: Accurate, Robust Radar-Inertial Odometry with Non-Iterative Estimation.
+- **[KirillMouraviev/PRISM-TopoMap](https://github.com/KirillMouraviev/PRISM-TopoMap)** (Score: -88.17)
+  - License: none | Stars: 38 | Forks: 1
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - Description: The PRISM-TopoMap - online topological mapping method with place recognition and scan matching
+- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.2)
+  - License: CC0-1.0 | Stars: 26 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: This is a curated list of my GitHub stars but converted into an Awesome List! Updated automagically ever 12 hours! :D
+
+## Imaging & Radiology
+- **[eProsima/Fast-DDS](https://github.com/eProsima/Fast-DDS)** (Score: 1002.02)
+  - License: Apache-2.0 | Stars: 2552 | Forks: 857
+  - PRs open: 47 | Discussions: Yes | Contributors: 50 | Last push: 2 days ago
+  - Description: The most complete DDS - Proven: Plenty of success cases. Looking for commercial support? Contact info@eprosima.com
+- **[mustbeperfect/definitive-opensource](https://github.com/mustbeperfect/definitive-opensource)** (Score: 423.35)
+  - License: MIT | Stars: 1215 | Forks: 35
+  - PRs open: 0 | Discussions: Yes | Contributors: 6 | Last push: 0 days ago
+  - Description: The definitive list of open source.
+- **[acados/acados](https://github.com/acados/acados)** (Score: 295.17)
+  - License: NOASSERTION | Stars: 1083 | Forks: 291
+  - PRs open: 12 | Discussions: No | Contributors: 50 | Last push: 2 days ago
+  - Description: Fast and embedded solvers for nonlinear optimal control and nonlinear model predictive control
+- **[eclipse-cyclonedds/cyclonedds](https://github.com/eclipse-cyclonedds/cyclonedds)** (Score: 286.87)
+  - License: NOASSERTION | Stars: 1045 | Forks: 401
+  - PRs open: 36 | Discussions: No | Contributors: 50 | Last push: 5 days ago
+  - Description: Eclipse Cyclone DDS project
+- **[hanruihua/NeuPAN](https://github.com/hanruihua/NeuPAN)** (Score: 234.2)
+  - License: GPL-3.0 | Stars: 645 | Forks: 60
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 9 days ago
+  - Description: [TRO 2025] NeuPAN: Direct Point Robot Navigation with End-to-End Model-based Learning.
+- **[locusrobotics/fuse](https://github.com/locusrobotics/fuse)** (Score: 173.5)
+  - License: NOASSERTION | Stars: 815 | Forks: 129
+  - PRs open: 19 | Discussions: No | Contributors: 15 | Last push: 9 days ago
+  - Description: The fuse stack provides a general architecture for performing sensor fusion live on a robot. Some possible applications include state estimation, localization, mapping, and calibration.
+- **[hongbo-miao/hongbomiao.com](https://github.com/hongbo-miao/hongbomiao.com)** (Score: 135.55)
+  - License: MIT | Stars: 247 | Forks: 42
+  - PRs open: 4 | Discussions: Yes | Contributors: 11 | Last push: 0 days ago
+  - Description: A personal research and development (R&D) lab that facilitates the sharing of knowledge.
+- **[uleroboticsgroup/yasmin](https://github.com/uleroboticsgroup/yasmin)** (Score: 102.7)
+  - License: GPL-3.0 | Stars: 199 | Forks: 40
+  - PRs open: 0 | Discussions: No | Contributors: 18 | Last push: 3 days ago
+  - Description: YASMIN (Yet Another State MachINe)
+- **[ika-rwth-aachen/ros2_calib](https://github.com/ika-rwth-aachen/ros2_calib)** (Score: 87.4)
+  - License: MIT | Stars: 115 | Forks: 13
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: LiDAR-Camera Calibration using ROS2 mcap recordings. A vibe coding project.
+- **[Seeed-Projects/reComputer-Jetson-for-Beginners](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners)** (Score: 87.0)
+  - License: MIT | Stars: 111 | Forks: 19
+  - PRs open: 2 | Discussions: No | Contributors: 5 | Last push: 27 days ago
+  - Description: Beginner's Guide to reComputer Jetson
+- **[isLinXu/paper-list](https://github.com/isLinXu/paper-list)** (Score: 80.3)
+  - License: Apache-2.0 | Stars: 93 | Forks: 11
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: autoupdate paper list
+- **[kimtth/software-architect-mindmap](https://github.com/kimtth/software-architect-mindmap)** (Score: 79.97)
+  - License: MIT | Stars: 87 | Forks: 25
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 26 days ago
+  - Description: 🧠Mindmap of 🗺️Software Architecture, Software engineering: An Overview of Software Terminologies and Concepts.
+- **[olympus-robotics/hephaestus](https://github.com/olympus-robotics/hephaestus)** (Score: 66.57)
+  - License: MIT | Stars: 46 | Forks: 11
+  - PRs open: 4 | Discussions: No | Contributors: 13 | Last push: 2 days ago
+  - Description: Hephaestus is a C++ framework designed to facilitate robotics development by providing commonly needed functionality and abstractions.
+- **[paragon-intelligence/agentle](https://github.com/paragon-intelligence/agentle)** (Score: 66.05)
+  - License: MIT | Stars: 46 | Forks: 9
+  - PRs open: 0 | Discussions: Yes | Contributors: 1 | Last push: 0 days ago
+  - Description: Build production-ready AI agents in days, not months. Python 3.13+. Save development time with minimal code, deploy anywhere with confidence, and scale from simple assistants to complex multi-agent systems without the headaches.
+- **[hoangsonww/Agentic-AI-Pipeline](https://github.com/hoangsonww/Agentic-AI-Pipeline)** (Score: 61.18)
+  - License: Apache-2.0 | Stars: 23 | Forks: 20
+  - PRs open: 0 | Discussions: Yes | Contributors: 1 | Last push: 1 days ago
+  - Description: 🦾 A production‑ready research outreach AI agent that plans, discovers, reasons, uses tools, auto‑builds cited briefings, and drafts tailored emails with tool‑chaining, memory, tests, and turnkey Docker, AWS, Ansible & Terraform deploys. Bonus: An Agentic RAG system (FAISS + Google CSE) with multistep planning, self-critique, and autonomous agents.
+- **[automatika-robotics/embodied-agents](https://github.com/automatika-robotics/embodied-agents)** (Score: 60.45)
+  - License: MIT | Stars: 31 | Forks: 3
+  - PRs open: 0 | Discussions: Yes | Contributors: 2 | Last push: 3 days ago
+  - Description: EmbodiedAgents is a fully-loaded ROS2 based framework for creating interactive physical agents that can understand, remember, and act upon contextual information from their environment.
+- **[airas-org/airas](https://github.com/airas-org/airas)** (Score: 57.35)
+  - License: MIT | Stars: 18 | Forks: 0
+  - PRs open: 10 | Discussions: Yes | Contributors: 7 | Last push: 0 days ago
+  - Description: AIRAS - an open-source project for research automation
+- **[Lyz103/LLM-Agent-Paper-daily](https://github.com/Lyz103/LLM-Agent-Paper-daily)** (Score: 55.9)
+  - License: Apache-2.0 | Stars: 18 | Forks: 1
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: Automatically Update LLM-Agent Papers Daily using Github Actions (Update Every 12th hours)
+- **[superxslam/SuperOdom](https://github.com/superxslam/SuperOdom)** (Score: 29.57)
+  - License: none | Stars: 402 | Forks: 42
+  - PRs open: 4 | Discussions: No | Contributors: 4 | Last push: 8 days ago
+  - Description: A highly robust and accurate LiDAR-inertial odometry  package
+- **[xArm-Developer/xarm_ros2](https://github.com/xArm-Developer/xarm_ros2)** (Score: -27.13)
+  - License: BSD-3-Clause | Stars: 176 | Forks: 127
+  - PRs open: 7 | Discussions: No | Contributors: 6 | Last push: 20 days ago
+  - Description: ROS2 developer packages for robotic products from UFACTORY
+- **[ACFR-RPG/DynOSAM](https://github.com/ACFR-RPG/DynOSAM)** (Score: -51.0)
+  - License: BSD-3-Clause | Stars: 155 | Forks: 13
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 3 days ago
+  - Description: Offical code release for DynoSAM: Dynamic Object Smoothing And Mapping [Submitted TRO Visual SLAM SI]. A visual SLAM framework and pipeline for Dynamic environements, estimating for the motion/pose of objects and their structure, as well as the camera odometry and static map.
+- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -58.5)
+  - License: none | Stars: 126 | Forks: 16
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: This repository tracks the latest advancements in 3D Gaussian Splatting from Arxiv, with daily automated updates. Stay up-to-date with cutting-edge research in this exciting field!
+- **[vybhav-ibr/genesis_ros](https://github.com/vybhav-ibr/genesis_ros)** (Score: -64.53)
+  - License: none | Stars: 115 | Forks: 8
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 14 days ago
+  - Description: A light-weight, pythhonic ros2 package to connect the genesis simulator and ROS2
+- **[Xuchen-Li/llm-arxiv-daily](https://github.com/Xuchen-Li/llm-arxiv-daily)** (Score: -65.5)
+  - License: none | Stars: 109 | Forks: 6
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: Automatically update arXiv papers about LLM Reasoning, LLM Evaluation, LLM & MLLM and Video Understanding using Github Actions.
+- **[monologg/nlp-arxiv-daily](https://github.com/monologg/nlp-arxiv-daily)** (Score: -65.7)
+  - License: none | Stars: 100 | Forks: 20
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: Automatically Update NLP Papers Daily using Github Actions (ref: https://github.com/Vincentqyw/cv-arxiv-daily)
+- **[DWCTOD/cv-arxiv-daily](https://github.com/DWCTOD/cv-arxiv-daily)** (Score: -75.2)
+  - License: none | Stars: 65 | Forks: 25
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+- **[LongchaoDa/AwesomeSim2Real](https://github.com/LongchaoDa/AwesomeSim2Real)** (Score: -78.43)
+  - License: none | Stars: 69 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 2 days ago
+  - Description: AwesomeSim2Real - An update-to-date Sim-to-Real repo of "Survey of Sim-to-Real Methods in RL: Progress, Prospects and Challenges with Foundation Models"
+- **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.47)
+  - License: NOASSERTION | Stars: 16 | Forks: 3
+  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - Description: A curated list of awesome Python frameworks, libraries, software and resources.  With repository stars⭐ and forks🍴
+- **[Xuchen-Li/cv-arxiv-daily](https://github.com/Xuchen-Li/cv-arxiv-daily)** (Score: -88.4)
+  - License: none | Stars: 35 | Forks: 4
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: Automatically update arXiv papers about SOT & VLT,  Multi-modal Learning, LLM and Video Understanding using Github Actions.
+- **[chanmuzi/NLP-Paper-News](https://github.com/chanmuzi/NLP-Paper-News)** (Score: -89.8)
+  - License: none | Stars: 31 | Forks: 0
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 0 days ago
+  - Description: The list of NLP paper and news I've checked. There might be short description of them (abstract) in Korean.
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
+  - License: none | Stars: 29 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
+- **[ctu-vras/ros-utils](https://github.com/ctu-vras/ros-utils)** (Score: -93.03)
+  - License: none | Stars: 19 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 5 days ago
+  - Description: Useful utilities for working with ROS
+- **[THA-Embedded-Systems-Lab/soar_ros](https://github.com/THA-Embedded-Systems-Lab/soar_ros)** (Score: -94.03)
+  - License: NOASSERTION | Stars: 16 | Forks: 4
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 2 days ago
+  - Description: A ROS 2 package integrating the Soar cognitive architecture into the ROS ecosystem.
+
+## Genomics & Precision Medicine
+- **[ika-rwth-aachen/ros2_calib](https://github.com/ika-rwth-aachen/ros2_calib)** (Score: 87.4)
+  - License: MIT | Stars: 115 | Forks: 13
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: LiDAR-Camera Calibration using ROS2 mcap recordings. A vibe coding project.
+- **[robotraconteur/robotraconteur](https://github.com/robotraconteur/robotraconteur)** (Score: 73.55)
+  - License: Apache-2.0 | Stars: 72 | Forks: 11
+  - PRs open: 3 | Discussions: Yes | Contributors: 3 | Last push: 6 days ago
+  - Description: A communication framework for robotics and the Internet of Things, developed by Wason Technology, LLC
+- **[zhao62/Deep-Residual-Shrinkage-Networks](https://github.com/zhao62/Deep-Residual-Shrinkage-Networks)** (Score: 66.13)
+  - License: none | Stars: 483 | Forks: 107
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 7 days ago
+  - Description: The deep residual shrinkage network is a variant of deep residual networks.
+- **[hoangsonww/Agentic-AI-Pipeline](https://github.com/hoangsonww/Agentic-AI-Pipeline)** (Score: 61.18)
+  - License: Apache-2.0 | Stars: 23 | Forks: 20
+  - PRs open: 0 | Discussions: Yes | Contributors: 1 | Last push: 1 days ago
+  - Description: 🦾 A production‑ready research outreach AI agent that plans, discovers, reasons, uses tools, auto‑builds cited briefings, and drafts tailored emails with tool‑chaining, memory, tests, and turnkey Docker, AWS, Ansible & Terraform deploys. Bonus: An Agentic RAG system (FAISS + Google CSE) with multistep planning, self-critique, and autonomous agents.
+- **[ACFR-RPG/DynOSAM](https://github.com/ACFR-RPG/DynOSAM)** (Score: -51.0)
+  - License: BSD-3-Clause | Stars: 155 | Forks: 13
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 3 days ago
+  - Description: Offical code release for DynoSAM: Dynamic Object Smoothing And Mapping [Submitted TRO Visual SLAM SI]. A visual SLAM framework and pipeline for Dynamic environements, estimating for the motion/pose of objects and their structure, as well as the camera odometry and static map.
+- **[yangsc4063/rino](https://github.com/yangsc4063/rino)** (Score: -78.87)
+  - License: none | Stars: 67 | Forks: 9
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 13 days ago
+  - Description: [T-ASE 2025] This is the official implementation of RINO: Accurate, Robust Radar-Inertial Odometry with Non-Iterative Estimation.
+
+## NLP & Clinical Text
+- **[aliasrobotics/cai](https://github.com/aliasrobotics/cai)** (Score: 1096.43)
+  - License: NOASSERTION | Stars: 3617 | Forks: 494
+  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - Description: Cybersecurity AI (CAI), the framework for AI Security
+- **[RoboTwin-Platform/RoboTwin](https://github.com/RoboTwin-Platform/RoboTwin)** (Score: 521.8)
+  - License: MIT | Stars: 1455 | Forks: 176
+  - PRs open: 0 | Discussions: No | Contributors: 10 | Last push: 0 days ago
+  - Description: RoboTwin 2.0 Offical Repo
+- **[locusrobotics/fuse](https://github.com/locusrobotics/fuse)** (Score: 173.5)
+  - License: NOASSERTION | Stars: 815 | Forks: 129
+  - PRs open: 19 | Discussions: No | Contributors: 15 | Last push: 9 days ago
+  - Description: The fuse stack provides a general architecture for performing sensor fusion live on a robot. Some possible applications include state estimation, localization, mapping, and calibration.
+- **[hongbo-miao/hongbomiao.com](https://github.com/hongbo-miao/hongbomiao.com)** (Score: 135.55)
+  - License: MIT | Stars: 247 | Forks: 42
+  - PRs open: 4 | Discussions: Yes | Contributors: 11 | Last push: 0 days ago
+  - Description: A personal research and development (R&D) lab that facilitates the sharing of knowledge.
+- **[Extelligence-ai/bagel](https://github.com/Extelligence-ai/bagel)** (Score: 135.0)
+  - License: Apache-2.0 | Stars: 269 | Forks: 20
+  - PRs open: 0 | Discussions: No | Contributors: 5 | Last push: 3 days ago
+  - Description: ChatGPT for Physical AI. Troubleshoot your robots and drones with natural language. No fuss.
+- **[TJU-Aerial-Robotics/YOPO](https://github.com/TJU-Aerial-Robotics/YOPO)** (Score: 95.4)
+  - License: NOASSERTION | Stars: 612 | Forks: 69
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 9 days ago
+  - Description: You Only Plan Once: A Learning Based Quadrotor Planner
+- **[Seeed-Projects/reComputer-Jetson-for-Beginners](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners)** (Score: 87.0)
+  - License: MIT | Stars: 111 | Forks: 19
+  - PRs open: 2 | Discussions: No | Contributors: 5 | Last push: 27 days ago
+  - Description: Beginner's Guide to reComputer Jetson
+- **[isLinXu/paper-list](https://github.com/isLinXu/paper-list)** (Score: 80.3)
+  - License: Apache-2.0 | Stars: 93 | Forks: 11
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: autoupdate paper list
+- **[AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization](https://github.com/AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization)** (Score: 79.13)
+  - License: Apache-2.0 | Stars: 87 | Forks: 19
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 16 days ago
+  - Description: Autonomous Mobile Robot developed and programmed in the online course named "Self-Driving and ROS 2 - Learn By Doing! Map & Localization"
+- **[agtonomy/trellis](https://github.com/agtonomy/trellis)** (Score: 61.47)
+  - License: Apache-2.0 | Stars: 26 | Forks: 5
+  - PRs open: 1 | Discussions: No | Contributors: 9 | Last push: 2 days ago
+  - Description: General purpose middleware framework for distributed applications
+- **[automatika-robotics/embodied-agents](https://github.com/automatika-robotics/embodied-agents)** (Score: 60.45)
+  - License: MIT | Stars: 31 | Forks: 3
+  - PRs open: 0 | Discussions: Yes | Contributors: 2 | Last push: 3 days ago
+  - Description: EmbodiedAgents is a fully-loaded ROS2 based framework for creating interactive physical agents that can understand, remember, and act upon contextual information from their environment.
+- **[Lyz103/LLM-Agent-Paper-daily](https://github.com/Lyz103/LLM-Agent-Paper-daily)** (Score: 55.9)
+  - License: Apache-2.0 | Stars: 18 | Forks: 1
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: Automatically Update LLM-Agent Papers Daily using Github Actions (Update Every 12th hours)
+- **[OSU-NLP-Group/GUI-Agents-Paper-List](https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List)** (Score: 54.17)
+  - License: none | Stars: 484 | Forks: 28
+  - PRs open: 0 | Discussions: No | Contributors: 12 | Last push: 2 days ago
+  - Description: Building a comprehensive and handy list of papers for GUI agents
+- **[superxslam/SuperOdom](https://github.com/superxslam/SuperOdom)** (Score: 29.57)
+  - License: none | Stars: 402 | Forks: 42
+  - PRs open: 4 | Discussions: No | Contributors: 4 | Last push: 8 days ago
+  - Description: A highly robust and accurate LiDAR-inertial odometry  package
+- **[kimtth/awesome-azure-openai-llm](https://github.com/kimtth/awesome-azure-openai-llm)** (Score: 23.07)
+  - License: none | Stars: 377 | Forks: 47
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 2 days ago
+  - Description: A curated list of 🌌 Azure OpenAI, 🦙 Large Language Models (incl. RAG, Agent), and references. [code] https://github.com/kimtth/azure-openai-llm-cookbook
+- **[Xuchen-Li/llm-arxiv-daily](https://github.com/Xuchen-Li/llm-arxiv-daily)** (Score: -65.5)
+  - License: none | Stars: 109 | Forks: 6
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: Automatically update arXiv papers about LLM Reasoning, LLM Evaluation, LLM & MLLM and Video Understanding using Github Actions.
+- **[monologg/nlp-arxiv-daily](https://github.com/monologg/nlp-arxiv-daily)** (Score: -65.7)
+  - License: none | Stars: 100 | Forks: 20
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: Automatically Update NLP Papers Daily using Github Actions (ref: https://github.com/Vincentqyw/cv-arxiv-daily)
+- **[yangsc4063/rino](https://github.com/yangsc4063/rino)** (Score: -78.87)
+  - License: none | Stars: 67 | Forks: 9
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 13 days ago
+  - Description: [T-ASE 2025] This is the official implementation of RINO: Accurate, Robust Radar-Inertial Odometry with Non-Iterative Estimation.
+- **[KirillMouraviev/PRISM-TopoMap](https://github.com/KirillMouraviev/PRISM-TopoMap)** (Score: -88.17)
+  - License: none | Stars: 38 | Forks: 1
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - Description: The PRISM-TopoMap - online topological mapping method with place recognition and scan matching
+- **[Xuchen-Li/cv-arxiv-daily](https://github.com/Xuchen-Li/cv-arxiv-daily)** (Score: -88.4)
+  - License: none | Stars: 35 | Forks: 4
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: Automatically update arXiv papers about SOT & VLT,  Multi-modal Learning, LLM and Video Understanding using Github Actions.
+- **[chanmuzi/NLP-Paper-News](https://github.com/chanmuzi/NLP-Paper-News)** (Score: -89.8)
+  - License: none | Stars: 31 | Forks: 0
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 0 days ago
+  - Description: The list of NLP paper and news I've checked. There might be short description of them (abstract) in Korean.
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
+  - License: none | Stars: 29 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
+- **[KumarRobotics/kr_param_map](https://github.com/KumarRobotics/kr_param_map)** (Score: -90.5)
+  - License: BSD-3-Clause | Stars: 28 | Forks: 6
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 15 days ago
+  - Description: A parameterized map generator for planning evaluations and benchmarking (ROS1 & ROS2 compatible)
+- **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -91.0)
+  - License: NOASSERTION | Stars: 28 | Forks: 0
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: 🚀 Daily AI Research Digest: Tracking breakthroughs in AI/NLP/CV/Robotics with dynamic updates and paper navigation.
+
+## FHIR & Interoperability
+- **[inorbit-ai/ros_amr_interop](https://github.com/inorbit-ai/ros_amr_interop)** (Score: -63.57)
+  - License: BSD-3-Clause | Stars: 95 | Forks: 32
+  - PRs open: 2 | Discussions: No | Contributors: 12 | Last push: 16 days ago
+
+## Data Platforms & ETL
+- **[MIT-SPARK/Clio](https://github.com/MIT-SPARK/Clio)** (Score: -38.3)
+  - License: BSD-2-Clause | Stars: 197 | Forks: 13
+  - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 6 days ago
+- **[MIT-SPARK/Hydra-ROS](https://github.com/MIT-SPARK/Hydra-ROS)** (Score: -76.5)
+  - License: BSD-2-Clause | Stars: 59 | Forks: 25
+  - PRs open: 0 | Discussions: No | Contributors: 7 | Last push: 15 days ago
+  - Description: Hydra ROS Interface
+
+## Robotics & Surgical Systems
+- **[eProsima/Fast-DDS](https://github.com/eProsima/Fast-DDS)** (Score: 1002.02)
+  - License: Apache-2.0 | Stars: 2552 | Forks: 857
+  - PRs open: 47 | Discussions: Yes | Contributors: 50 | Last push: 2 days ago
+  - Description: The most complete DDS - Proven: Plenty of success cases. Looking for commercial support? Contact info@eprosima.com
+- **[RoboTwin-Platform/RoboTwin](https://github.com/RoboTwin-Platform/RoboTwin)** (Score: 521.8)
+  - License: MIT | Stars: 1455 | Forks: 176
+  - PRs open: 0 | Discussions: No | Contributors: 10 | Last push: 0 days ago
+  - Description: RoboTwin 2.0 Offical Repo
+- **[ros-controls/ros2_control_demos](https://github.com/ros-controls/ros2_control_demos)** (Score: 297.6)
+  - License: Apache-2.0 | Stars: 617 | Forks: 241
+  - PRs open: 8 | Discussions: No | Contributors: 50 | Last push: 6 days ago
+  - Description: This repository aims at providing examples to illustrate ros2_control and ros2_controllers
+- **[hanruihua/NeuPAN](https://github.com/hanruihua/NeuPAN)** (Score: 234.2)
+  - License: GPL-3.0 | Stars: 645 | Forks: 60
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 9 days ago
+  - Description: [TRO 2025] NeuPAN: Direct Point Robot Navigation with End-to-End Model-based Learning.
+- **[PRBonn/PIN_SLAM](https://github.com/PRBonn/PIN_SLAM)** (Score: 223.37)
+  - License: MIT | Stars: 535 | Forks: 65
+  - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 20 days ago
+  - Description: 📍PIN-SLAM: LiDAR SLAM Using a Point-Based Implicit Neural Representation for Achieving Global Map Consistency [TRO' 24]
+- **[locusrobotics/fuse](https://github.com/locusrobotics/fuse)** (Score: 173.5)
+  - License: NOASSERTION | Stars: 815 | Forks: 129
+  - PRs open: 19 | Discussions: No | Contributors: 15 | Last push: 9 days ago
+  - Description: The fuse stack provides a general architecture for performing sensor fusion live on a robot. Some possible applications include state estimation, localization, mapping, and calibration.
+- **[hongbo-miao/hongbomiao.com](https://github.com/hongbo-miao/hongbomiao.com)** (Score: 135.55)
+  - License: MIT | Stars: 247 | Forks: 42
+  - PRs open: 4 | Discussions: Yes | Contributors: 11 | Last push: 0 days ago
+  - Description: A personal research and development (R&D) lab that facilitates the sharing of knowledge.
+- **[Extelligence-ai/bagel](https://github.com/Extelligence-ai/bagel)** (Score: 135.0)
+  - License: Apache-2.0 | Stars: 269 | Forks: 20
+  - PRs open: 0 | Discussions: No | Contributors: 5 | Last push: 3 days ago
+  - Description: ChatGPT for Physical AI. Troubleshoot your robots and drones with natural language. No fuss.
+- **[orbbec/OrbbecSDK_ROS2](https://github.com/orbbec/OrbbecSDK_ROS2)** (Score: 120.7)
+  - License: Apache-2.0 | Stars: 191 | Forks: 98
+  - PRs open: 5 | Discussions: No | Contributors: 8 | Last push: 6 days ago
+  - Description: OrbbecSDK ROS2 wrapper
+- **[dfki-ric/better_launch](https://github.com/dfki-ric/better_launch)** (Score: 107.53)
+  - License: MIT | Stars: 186 | Forks: 3
+  - PRs open: 0 | Discussions: No | Contributors: 5 | Last push: 4 days ago
+  - Description: A better replacement for the ROS2 launch system: intuitive, simple, memorable.
+- **[sjtuyinjie/M3DGR](https://github.com/sjtuyinjie/M3DGR)** (Score: 106.65)
+  - License: MIT | Stars: 180 | Forks: 9
+  - PRs open: 0 | Discussions: Yes | Contributors: 4 | Last push: 0 days ago
+  - Description: M3DGR: A Multi-sensor, Multi-scenario and Massive-baseline SLAM Dataset for Ground Robots(IROS2025)
+- **[uleroboticsgroup/yasmin](https://github.com/uleroboticsgroup/yasmin)** (Score: 102.7)
+  - License: GPL-3.0 | Stars: 199 | Forks: 40
+  - PRs open: 0 | Discussions: No | Contributors: 18 | Last push: 3 days ago
+  - Description: YASMIN (Yet Another State MachINe)
+- **[TJU-Aerial-Robotics/YOPO](https://github.com/TJU-Aerial-Robotics/YOPO)** (Score: 95.4)
+  - License: NOASSERTION | Stars: 612 | Forks: 69
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 9 days ago
+  - Description: You Only Plan Once: A Learning Based Quadrotor Planner
+- **[ika-rwth-aachen/ros2_calib](https://github.com/ika-rwth-aachen/ros2_calib)** (Score: 87.4)
+  - License: MIT | Stars: 115 | Forks: 13
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: LiDAR-Camera Calibration using ROS2 mcap recordings. A vibe coding project.
+- **[Seeed-Projects/reComputer-Jetson-for-Beginners](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners)** (Score: 87.0)
+  - License: MIT | Stars: 111 | Forks: 19
+  - PRs open: 2 | Discussions: No | Contributors: 5 | Last push: 27 days ago
+  - Description: Beginner's Guide to reComputer Jetson
+- **[kimtth/software-architect-mindmap](https://github.com/kimtth/software-architect-mindmap)** (Score: 79.97)
+  - License: MIT | Stars: 87 | Forks: 25
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 26 days ago
+  - Description: 🧠Mindmap of 🗺️Software Architecture, Software engineering: An Overview of Software Terminologies and Concepts.
+- **[AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization](https://github.com/AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization)** (Score: 79.13)
+  - License: Apache-2.0 | Stars: 87 | Forks: 19
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 16 days ago
+  - Description: Autonomous Mobile Robot developed and programmed in the online course named "Self-Driving and ROS 2 - Learn By Doing! Map & Localization"
+- **[ika-rwth-aachen/ros2_unbag](https://github.com/ika-rwth-aachen/ros2_unbag)** (Score: 73.67)
+  - License: MIT | Stars: 75 | Forks: 5
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 5 days ago
+  - Description: A ROS 2 tool for exporting bags to human readable files. Supports pluggable export routines to handle any message type.
+- **[robotraconteur/robotraconteur](https://github.com/robotraconteur/robotraconteur)** (Score: 73.55)
+  - License: Apache-2.0 | Stars: 72 | Forks: 11
+  - PRs open: 3 | Discussions: Yes | Contributors: 3 | Last push: 6 days ago
+  - Description: A communication framework for robotics and the Internet of Things, developed by Wason Technology, LLC
+- **[olympus-robotics/hephaestus](https://github.com/olympus-robotics/hephaestus)** (Score: 66.57)
+  - License: MIT | Stars: 46 | Forks: 11
+  - PRs open: 4 | Discussions: No | Contributors: 13 | Last push: 2 days ago
+  - Description: Hephaestus is a C++ framework designed to facilitate robotics development by providing commonly needed functionality and abstractions.
+- **[SciML/ModelingToolkitCourse](https://github.com/SciML/ModelingToolkitCourse)** (Score: 64.97)
+  - License: MIT | Stars: 45 | Forks: 6
+  - PRs open: 2 | Discussions: No | Contributors: 6 | Last push: 26 days ago
+  - Description: A course on composable system modeling, differential-algebraic equations, acausal modeling, compilers for simulation, and building digital twins of real-world devices
+- **[AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Plan-Navigation](https://github.com/AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Plan-Navigation)** (Score: 60.83)
+  - License: Apache-2.0 | Stars: 30 | Forks: 13
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 16 days ago
+  - Description: Autonomous Mobile Robot developed and programmed in the online course named "Self-Driving and ROS 2 - Learn By Doing! Plan & Navigation"
+- **[automatika-robotics/embodied-agents](https://github.com/automatika-robotics/embodied-agents)** (Score: 60.45)
+  - License: MIT | Stars: 31 | Forks: 3
+  - PRs open: 0 | Discussions: Yes | Contributors: 2 | Last push: 3 days ago
+  - Description: EmbodiedAgents is a fully-loaded ROS2 based framework for creating interactive physical agents that can understand, remember, and act upon contextual information from their environment.
+- **[analogdevicesinc/imu_ros2](https://github.com/analogdevicesinc/imu_ros2)** (Score: 59.6)
+  - License: Apache-2.0 | Stars: 24 | Forks: 6
+  - PRs open: 0 | Discussions: No | Contributors: 5 | Last push: 3 days ago
+  - Description: A C++ ROS2 node that read sensor data from ADI IMU and publishes message to topic.
+- **[ROBOTIS-GIT/dynamixel_hardware_interface](https://github.com/ROBOTIS-GIT/dynamixel_hardware_interface)** (Score: 58.8)
+  - License: Apache-2.0 | Stars: 19 | Forks: 9
+  - PRs open: 0 | Discussions: No | Contributors: 6 | Last push: 3 days ago
+  - Description: ROS 2 package providing a hardware interface for controlling Dynamixel motors via the ros2_control framework. This repository includes the dynamixel_hardware_interface plugin for seamless integration with ROS 2.
+- **[sd-robotics/int-ball2_isaac_sim](https://github.com/sd-robotics/int-ball2_isaac_sim)** (Score: 58.3)
+  - License: Apache-2.0 | Stars: 21 | Forks: 5
+  - PRs open: 1 | Discussions: No | Contributors: 3 | Last push: 0 days ago
+  - Description: Int-Ball2 Simulator (Isaac Sim)
+- **[automatika-robotics/kompass](https://github.com/automatika-robotics/kompass)** (Score: 58.07)
+  - License: MIT | Stars: 26 | Forks: 0
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 5 days ago
+  - Description: Kompass is an event-driven navigation stack designed with an easy-to-use Python API. It implements highly optimized, GPU powered, versions of the most cutting edge algorithms for all parts of the navigation stack.
+- **[laoxue888/DockerRos2Car](https://github.com/laoxue888/DockerRos2Car)** (Score: 57.8)
+  - License: MIT | Stars: 23 | Forks: 5
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 6 days ago
+  - Description: DockerRos2UnityCar
+- **[eigendude/OASIS](https://github.com/eigendude/OASIS)** (Score: 56.83)
+  - License: Apache-2.0 | Stars: 21 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1 days ago
+  - Description: OASIS, a smart home operating system based on ROS 2
+- **[Bart-van-Ingen/telegraf_resource_monitor](https://github.com/Bart-van-Ingen/telegraf_resource_monitor)** (Score: 55.77)
+  - License: Apache-2.0 | Stars: 18 | Forks: 1
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2 days ago
+  - Description: ROS 2 package that integrates Telegraf with ROS 2 to monitor system resources and publish them as ROS messages.
+- **[kimtth/awesome-azure-openai-llm](https://github.com/kimtth/awesome-azure-openai-llm)** (Score: 23.07)
+  - License: none | Stars: 377 | Forks: 47
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 2 days ago
+  - Description: A curated list of 🌌 Azure OpenAI, 🦙 Large Language Models (incl. RAG, Agent), and references. [code] https://github.com/kimtth/azure-openai-llm-cookbook
+- **[bdaiinstitute/spot_ros2](https://github.com/bdaiinstitute/spot_ros2)** (Score: 4.42)
+  - License: NOASSERTION | Stars: 236 | Forks: 94
+  - PRs open: 12 | Discussions: Yes | Contributors: 50 | Last push: 2 days ago
+  - Description: ROS 2 driver package for Boston Dynamics' Spot
+- **[basler/pylon-ros-camera](https://github.com/basler/pylon-ros-camera)** (Score: -11.9)
+  - License: NOASSERTION | Stars: 172 | Forks: 162
+  - PRs open: 2 | Discussions: No | Contributors: 23 | Last push: 6 days ago
+  - Description: The official pylon ROS driver for Basler GigE Vision and USB3 Vision cameras:
+- **[xArm-Developer/xarm_ros2](https://github.com/xArm-Developer/xarm_ros2)** (Score: -27.13)
+  - License: BSD-3-Clause | Stars: 176 | Forks: 127
+  - PRs open: 7 | Discussions: No | Contributors: 6 | Last push: 20 days ago
+  - Description: ROS2 developer packages for robotic products from UFACTORY
+- **[robotology/idyntree](https://github.com/robotology/idyntree)** (Score: -29.87)
+  - License: BSD-3-Clause | Stars: 207 | Forks: 71
+  - PRs open: 3 | Discussions: No | Contributors: 45 | Last push: 4 days ago
+  - Description: Multibody Dynamics Library designed for Free Floating Robots
+- **[TheNoobInventor/lidarbot](https://github.com/TheNoobInventor/lidarbot)** (Score: -44.13)
+  - License: BSD-3-Clause | Stars: 167 | Forks: 32
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 14 days ago
+  - Description: A differential drive robot is controlled using ROS2 Humble running on a Raspberry Pi 4 (running Ubuntu server 22.04). The vehicle is equipped with a raspberry pi camera for visual feedback and an RPlidar A1 sensor used for Simultaneous Localization and Mapping (SLAM), autonomous navigation and obstacle avoidance.
+- **[inorbit-ai/ros_amr_interop](https://github.com/inorbit-ai/ros_amr_interop)** (Score: -63.57)
+  - License: BSD-3-Clause | Stars: 95 | Forks: 32
+  - PRs open: 2 | Discussions: No | Contributors: 12 | Last push: 16 days ago
+- **[vybhav-ibr/genesis_ros](https://github.com/vybhav-ibr/genesis_ros)** (Score: -64.53)
+  - License: none | Stars: 115 | Forks: 8
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 14 days ago
+  - Description: A light-weight, pythhonic ros2 package to connect the genesis simulator and ROS2
+- **[MetroRobots/ros_command](https://github.com/MetroRobots/ros_command)** (Score: -75.63)
+  - License: BSD-2-Clause | Stars: 74 | Forks: 7
+  - PRs open: 0 | Discussions: No | Contributors: 5 | Last push: 2 days ago
+  - Description: Unifying the ROS command line tools
+- **[MIT-SPARK/Hydra-ROS](https://github.com/MIT-SPARK/Hydra-ROS)** (Score: -76.5)
+  - License: BSD-2-Clause | Stars: 59 | Forks: 25
+  - PRs open: 0 | Discussions: No | Contributors: 7 | Last push: 15 days ago
+  - Description: Hydra ROS Interface
+- **[LongchaoDa/AwesomeSim2Real](https://github.com/LongchaoDa/AwesomeSim2Real)** (Score: -78.43)
+  - License: none | Stars: 69 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 2 days ago
+  - Description: AwesomeSim2Real - An update-to-date Sim-to-Real repo of "Survey of Sim-to-Real Methods in RL: Progress, Prospects and Challenges with Foundation Models"
+- **[D-Robotics/hobot_stereonet](https://github.com/D-Robotics/hobot_stereonet)** (Score: -89.83)
+  - License: none | Stars: 24 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 9 | Last push: 2 days ago
+- **[KumarRobotics/kr_param_map](https://github.com/KumarRobotics/kr_param_map)** (Score: -90.5)
+  - License: BSD-3-Clause | Stars: 28 | Forks: 6
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 15 days ago
+  - Description: A parameterized map generator for planning evaluations and benchmarking (ROS1 & ROS2 compatible)
+- **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -91.0)
+  - License: NOASSERTION | Stars: 28 | Forks: 0
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: 🚀 Daily AI Research Digest: Tracking breakthroughs in AI/NLP/CV/Robotics with dynamic updates and paper navigation.
+- **[ctu-vras/ros-utils](https://github.com/ctu-vras/ros-utils)** (Score: -93.03)
+  - License: none | Stars: 19 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 5 days ago
+  - Description: Useful utilities for working with ROS
+- **[AgRoboticsResearch/Lerobot_ros2](https://github.com/AgRoboticsResearch/Lerobot_ros2)** (Score: -93.1)
+  - License: none | Stars: 20 | Forks: 3
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 3 days ago
+  - Description: ros2 humble support for lerobot
+- **[danielrosehill/System-Prompt-Library](https://github.com/danielrosehill/System-Prompt-Library)** (Score: -93.67)
+  - License: none | Stars: 21 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 10 days ago
+  - Description: System prompts for AI agents and assistants (automatically populated); periodic point in time exports are releases
+- **[THA-Embedded-Systems-Lab/soar_ros](https://github.com/THA-Embedded-Systems-Lab/soar_ros)** (Score: -94.03)
+  - License: NOASSERTION | Stars: 16 | Forks: 4
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 2 days ago
+  - Description: A ROS 2 package integrating the Soar cognitive architecture into the ROS ecosystem.
+
+## Privacy & Synthetic Data
+- **[youngfish42/Awesome-FL](https://github.com/youngfish42/Awesome-FL)** (Score: 487.45)
+  - License: CC-BY-SA-4.0 | Stars: 1810 | Forks: 203
+  - PRs open: 0 | Discussions: Yes | Contributors: 15 | Last push: 12 days ago
+  - Description: Comprehensive and timely academic information on federated learning (papers, frameworks, datasets, tutorials, workshops)
+
+## Digital Twins & Simulation
+- **[acados/acados](https://github.com/acados/acados)** (Score: 295.17)
+  - License: NOASSERTION | Stars: 1083 | Forks: 291
+  - PRs open: 12 | Discussions: No | Contributors: 50 | Last push: 2 days ago
+  - Description: Fast and embedded solvers for nonlinear optimal control and nonlinear model predictive control
+- **[SciML/ModelingToolkitCourse](https://github.com/SciML/ModelingToolkitCourse)** (Score: 64.97)
+  - License: MIT | Stars: 45 | Forks: 6
+  - PRs open: 2 | Discussions: No | Contributors: 6 | Last push: 26 days ago
+  - Description: A course on composable system modeling, differential-algebraic equations, acausal modeling, compilers for simulation, and building digital twins of real-world devices
+- **[unitreerobotics/unitree_sim_isaaclab](https://github.com/unitreerobotics/unitree_sim_isaaclab)** (Score: -59.63)
+  - License: NOASSERTION | Stars: 124 | Forks: 18
+  - PRs open: 0 | Discussions: No | Contributors: 0 | Last push: 2 days ago
+  - Description: The Unitree simulation environment built based on Isaac Lab
+
+## AR/VR & Training
+- **[josephmisiti/awesome-machine-learning](https://github.com/josephmisiti/awesome-machine-learning)** (Score: 23809.43)
+  - License: NOASSERTION | Stars: 69600 | Forks: 15077
+  - PRs open: 7 | Discussions: No | Contributors: 50 | Last push: 25 days ago
+  - Description: A curated list of awesome Machine Learning frameworks, libraries and software.
+- **[aliasrobotics/cai](https://github.com/aliasrobotics/cai)** (Score: 1096.43)
+  - License: NOASSERTION | Stars: 3617 | Forks: 494
+  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - Description: Cybersecurity AI (CAI), the framework for AI Security
+- **[eProsima/Fast-DDS](https://github.com/eProsima/Fast-DDS)** (Score: 1002.02)
+  - License: Apache-2.0 | Stars: 2552 | Forks: 857
+  - PRs open: 47 | Discussions: Yes | Contributors: 50 | Last push: 2 days ago
+  - Description: The most complete DDS - Proven: Plenty of success cases. Looking for commercial support? Contact info@eprosima.com
+- **[RoboTwin-Platform/RoboTwin](https://github.com/RoboTwin-Platform/RoboTwin)** (Score: 521.8)
+  - License: MIT | Stars: 1455 | Forks: 176
+  - PRs open: 0 | Discussions: No | Contributors: 10 | Last push: 0 days ago
+  - Description: RoboTwin 2.0 Offical Repo
+- **[castorini/anserini](https://github.com/castorini/anserini)** (Score: 488.15)
+  - License: Apache-2.0 | Stars: 1072 | Forks: 515
+  - PRs open: 9 | Discussions: Yes | Contributors: 50 | Last push: 0 days ago
+  - Description: Anserini is a Lucene toolkit for reproducible information retrieval research
+- **[youngfish42/Awesome-FL](https://github.com/youngfish42/Awesome-FL)** (Score: 487.45)
+  - License: CC-BY-SA-4.0 | Stars: 1810 | Forks: 203
+  - PRs open: 0 | Discussions: Yes | Contributors: 15 | Last push: 12 days ago
+  - Description: Comprehensive and timely academic information on federated learning (papers, frameworks, datasets, tutorials, workshops)
+- **[acados/acados](https://github.com/acados/acados)** (Score: 295.17)
+  - License: NOASSERTION | Stars: 1083 | Forks: 291
+  - PRs open: 12 | Discussions: No | Contributors: 50 | Last push: 2 days ago
+  - Description: Fast and embedded solvers for nonlinear optimal control and nonlinear model predictive control
+- **[hanruihua/NeuPAN](https://github.com/hanruihua/NeuPAN)** (Score: 234.2)
+  - License: GPL-3.0 | Stars: 645 | Forks: 60
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 9 days ago
+  - Description: [TRO 2025] NeuPAN: Direct Point Robot Navigation with End-to-End Model-based Learning.
+- **[PRBonn/PIN_SLAM](https://github.com/PRBonn/PIN_SLAM)** (Score: 223.37)
+  - License: MIT | Stars: 535 | Forks: 65
+  - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 20 days ago
+  - Description: 📍PIN-SLAM: LiDAR SLAM Using a Point-Based Implicit Neural Representation for Achieving Global Map Consistency [TRO' 24]
+- **[locusrobotics/fuse](https://github.com/locusrobotics/fuse)** (Score: 173.5)
+  - License: NOASSERTION | Stars: 815 | Forks: 129
+  - PRs open: 19 | Discussions: No | Contributors: 15 | Last push: 9 days ago
+  - Description: The fuse stack provides a general architecture for performing sensor fusion live on a robot. Some possible applications include state estimation, localization, mapping, and calibration.
+- **[hongbo-miao/hongbomiao.com](https://github.com/hongbo-miao/hongbomiao.com)** (Score: 135.55)
+  - License: MIT | Stars: 247 | Forks: 42
+  - PRs open: 4 | Discussions: Yes | Contributors: 11 | Last push: 0 days ago
+  - Description: A personal research and development (R&D) lab that facilitates the sharing of knowledge.
+- **[gabrielchua/daily-ai-papers](https://github.com/gabrielchua/daily-ai-papers)** (Score: 111.47)
+  - License: MIT | Stars: 196 | Forks: 12
+  - PRs open: 1 | Discussions: No | Contributors: 2 | Last push: 2 days ago
+  - Description: All credits go to HuggingFace's Daily AI papers (https://huggingface.co/papers) and the research community. 🔉Audio summaries here (https://t.me/daily_ai_papers).
+- **[sjtuyinjie/M3DGR](https://github.com/sjtuyinjie/M3DGR)** (Score: 106.65)
+  - License: MIT | Stars: 180 | Forks: 9
+  - PRs open: 0 | Discussions: Yes | Contributors: 4 | Last push: 0 days ago
+  - Description: M3DGR: A Multi-sensor, Multi-scenario and Massive-baseline SLAM Dataset for Ground Robots(IROS2025)
+- **[TJU-Aerial-Robotics/YOPO](https://github.com/TJU-Aerial-Robotics/YOPO)** (Score: 95.4)
+  - License: NOASSERTION | Stars: 612 | Forks: 69
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 9 days ago
+  - Description: You Only Plan Once: A Learning Based Quadrotor Planner
+- **[ika-rwth-aachen/ros2_calib](https://github.com/ika-rwth-aachen/ros2_calib)** (Score: 87.4)
+  - License: MIT | Stars: 115 | Forks: 13
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: LiDAR-Camera Calibration using ROS2 mcap recordings. A vibe coding project.
+- **[isLinXu/paper-list](https://github.com/isLinXu/paper-list)** (Score: 80.3)
+  - License: Apache-2.0 | Stars: 93 | Forks: 11
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: autoupdate paper list
+- **[kimtth/software-architect-mindmap](https://github.com/kimtth/software-architect-mindmap)** (Score: 79.97)
+  - License: MIT | Stars: 87 | Forks: 25
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 26 days ago
+  - Description: 🧠Mindmap of 🗺️Software Architecture, Software engineering: An Overview of Software Terminologies and Concepts.
+- **[AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization](https://github.com/AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Map-Localization)** (Score: 79.13)
+  - License: Apache-2.0 | Stars: 87 | Forks: 19
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 16 days ago
+  - Description: Autonomous Mobile Robot developed and programmed in the online course named "Self-Driving and ROS 2 - Learn By Doing! Map & Localization"
+- **[joylarkin/Awesome-AI-Market-Maps](https://github.com/joylarkin/Awesome-AI-Market-Maps)** (Score: 67.7)
+  - License: MIT | Stars: 55 | Forks: 3
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: An Awesome List of 275+ AI Market Maps from 2025 and 2024.
+- **[zhao62/Deep-Residual-Shrinkage-Networks](https://github.com/zhao62/Deep-Residual-Shrinkage-Networks)** (Score: 66.13)
+  - License: none | Stars: 483 | Forks: 107
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 7 days ago
+  - Description: The deep residual shrinkage network is a variant of deep residual networks.
+- **[paragon-intelligence/agentle](https://github.com/paragon-intelligence/agentle)** (Score: 66.05)
+  - License: MIT | Stars: 46 | Forks: 9
+  - PRs open: 0 | Discussions: Yes | Contributors: 1 | Last push: 0 days ago
+  - Description: Build production-ready AI agents in days, not months. Python 3.13+. Save development time with minimal code, deploy anywhere with confidence, and scale from simple assistants to complex multi-agent systems without the headaches.
+- **[shenyizg/NewAdversarialAttackPaper](https://github.com/shenyizg/NewAdversarialAttackPaper)** (Score: 63.47)
+  - License: Apache-2.0 | Stars: 43 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2 days ago
+  - Description: A list of recent adversarial attack and defense papers (including those on large language models)
+- **[harpreetsahota204/gui_agent_research_landscape](https://github.com/harpreetsahota204/gui_agent_research_landscape)** (Score: 62.37)
+  - License: Apache-2.0 | Stars: 41 | Forks: 4
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 20 days ago
+  - Description: An awesome repository that maps the current landscape of GUI/OS Agent research
+- **[agtonomy/trellis](https://github.com/agtonomy/trellis)** (Score: 61.47)
+  - License: Apache-2.0 | Stars: 26 | Forks: 5
+  - PRs open: 1 | Discussions: No | Contributors: 9 | Last push: 2 days ago
+  - Description: General purpose middleware framework for distributed applications
+- **[hoangsonww/Agentic-AI-Pipeline](https://github.com/hoangsonww/Agentic-AI-Pipeline)** (Score: 61.18)
+  - License: Apache-2.0 | Stars: 23 | Forks: 20
+  - PRs open: 0 | Discussions: Yes | Contributors: 1 | Last push: 1 days ago
+  - Description: 🦾 A production‑ready research outreach AI agent that plans, discovers, reasons, uses tools, auto‑builds cited briefings, and drafts tailored emails with tool‑chaining, memory, tests, and turnkey Docker, AWS, Ansible & Terraform deploys. Bonus: An Agentic RAG system (FAISS + Google CSE) with multistep planning, self-critique, and autonomous agents.
+- **[AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Plan-Navigation](https://github.com/AntoBrandi/Self-Driving-and-ROS-2-Learn-by-Doing-Plan-Navigation)** (Score: 60.83)
+  - License: Apache-2.0 | Stars: 30 | Forks: 13
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 16 days ago
+  - Description: Autonomous Mobile Robot developed and programmed in the online course named "Self-Driving and ROS 2 - Learn By Doing! Plan & Navigation"
+- **[automatika-robotics/embodied-agents](https://github.com/automatika-robotics/embodied-agents)** (Score: 60.45)
+  - License: MIT | Stars: 31 | Forks: 3
+  - PRs open: 0 | Discussions: Yes | Contributors: 2 | Last push: 3 days ago
+  - Description: EmbodiedAgents is a fully-loaded ROS2 based framework for creating interactive physical agents that can understand, remember, and act upon contextual information from their environment.
+- **[ROBOTIS-GIT/dynamixel_hardware_interface](https://github.com/ROBOTIS-GIT/dynamixel_hardware_interface)** (Score: 58.8)
+  - License: Apache-2.0 | Stars: 19 | Forks: 9
+  - PRs open: 0 | Discussions: No | Contributors: 6 | Last push: 3 days ago
+  - Description: ROS 2 package providing a hardware interface for controlling Dynamixel motors via the ros2_control framework. This repository includes the dynamixel_hardware_interface plugin for seamless integration with ROS 2.
+- **[sd-robotics/int-ball2_isaac_sim](https://github.com/sd-robotics/int-ball2_isaac_sim)** (Score: 58.3)
+  - License: Apache-2.0 | Stars: 21 | Forks: 5
+  - PRs open: 1 | Discussions: No | Contributors: 3 | Last push: 0 days ago
+  - Description: Int-Ball2 Simulator (Isaac Sim)
+- **[automatika-robotics/kompass](https://github.com/automatika-robotics/kompass)** (Score: 58.07)
+  - License: MIT | Stars: 26 | Forks: 0
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 5 days ago
+  - Description: Kompass is an event-driven navigation stack designed with an easy-to-use Python API. It implements highly optimized, GPU powered, versions of the most cutting edge algorithms for all parts of the navigation stack.
+- **[laoxue888/DockerRos2Car](https://github.com/laoxue888/DockerRos2Car)** (Score: 57.8)
+  - License: MIT | Stars: 23 | Forks: 5
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 6 days ago
+  - Description: DockerRos2UnityCar
+- **[airas-org/airas](https://github.com/airas-org/airas)** (Score: 57.35)
+  - License: MIT | Stars: 18 | Forks: 0
+  - PRs open: 10 | Discussions: Yes | Contributors: 7 | Last push: 0 days ago
+  - Description: AIRAS - an open-source project for research automation
+- **[eigendude/OASIS](https://github.com/eigendude/OASIS)** (Score: 56.83)
+  - License: Apache-2.0 | Stars: 21 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1 days ago
+  - Description: OASIS, a smart home operating system based on ROS 2
+- **[Bart-van-Ingen/telegraf_resource_monitor](https://github.com/Bart-van-Ingen/telegraf_resource_monitor)** (Score: 55.77)
+  - License: Apache-2.0 | Stars: 18 | Forks: 1
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2 days ago
+  - Description: ROS 2 package that integrates Telegraf with ROS 2 to monitor system resources and publish them as ROS messages.
+- **[superxslam/SuperOdom](https://github.com/superxslam/SuperOdom)** (Score: 29.57)
+  - License: none | Stars: 402 | Forks: 42
+  - PRs open: 4 | Discussions: No | Contributors: 4 | Last push: 8 days ago
+  - Description: A highly robust and accurate LiDAR-inertial odometry  package
+- **[kimtth/awesome-azure-openai-llm](https://github.com/kimtth/awesome-azure-openai-llm)** (Score: 23.07)
+  - License: none | Stars: 377 | Forks: 47
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 2 days ago
+  - Description: A curated list of 🌌 Azure OpenAI, 🦙 Large Language Models (incl. RAG, Agent), and references. [code] https://github.com/kimtth/azure-openai-llm-cookbook
+- **[zezhishao/DailyArXiv](https://github.com/zezhishao/DailyArXiv)** (Score: -20.05)
+  - License: none | Stars: 341 | Forks: 72
+  - PRs open: 0 | Discussions: Yes | Contributors: 1 | Last push: 0 days ago
+  - Description: Daily ArXiv Papers.
+- **[xArm-Developer/xarm_ros2](https://github.com/xArm-Developer/xarm_ros2)** (Score: -27.13)
+  - License: BSD-3-Clause | Stars: 176 | Forks: 127
+  - PRs open: 7 | Discussions: No | Contributors: 6 | Last push: 20 days ago
+  - Description: ROS2 developer packages for robotic products from UFACTORY
+- **[robotology/idyntree](https://github.com/robotology/idyntree)** (Score: -29.87)
+  - License: BSD-3-Clause | Stars: 207 | Forks: 71
+  - PRs open: 3 | Discussions: No | Contributors: 45 | Last push: 4 days ago
+  - Description: Multibody Dynamics Library designed for Free Floating Robots
+- **[leggedrobotics/fdm](https://github.com/leggedrobotics/fdm)** (Score: -35.4)
+  - License: NOASSERTION | Stars: 215 | Forks: 8
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 27 days ago
+  - Description: Learned Perceptive Forward Dynamics Model
+- **[MIT-SPARK/Clio](https://github.com/MIT-SPARK/Clio)** (Score: -38.3)
+  - License: BSD-2-Clause | Stars: 197 | Forks: 13
+  - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 6 days ago
+- **[TheNoobInventor/lidarbot](https://github.com/TheNoobInventor/lidarbot)** (Score: -44.13)
+  - License: BSD-3-Clause | Stars: 167 | Forks: 32
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 14 days ago
+  - Description: A differential drive robot is controlled using ROS2 Humble running on a Raspberry Pi 4 (running Ubuntu server 22.04). The vehicle is equipped with a raspberry pi camera for visual feedback and an RPlidar A1 sensor used for Simultaneous Localization and Mapping (SLAM), autonomous navigation and obstacle avoidance.
+- **[qhduan/cn-chat-arxiv](https://github.com/qhduan/cn-chat-arxiv)** (Score: -46.2)
+  - License: none | Stars: 168 | Forks: 16
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -58.5)
+  - License: none | Stars: 126 | Forks: 16
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: This repository tracks the latest advancements in 3D Gaussian Splatting from Arxiv, with daily automated updates. Stay up-to-date with cutting-edge research in this exciting field!
+- **[vybhav-ibr/genesis_ros](https://github.com/vybhav-ibr/genesis_ros)** (Score: -64.53)
+  - License: none | Stars: 115 | Forks: 8
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 14 days ago
+  - Description: A light-weight, pythhonic ros2 package to connect the genesis simulator and ROS2
+- **[Xuchen-Li/llm-arxiv-daily](https://github.com/Xuchen-Li/llm-arxiv-daily)** (Score: -65.5)
+  - License: none | Stars: 109 | Forks: 6
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: Automatically update arXiv papers about LLM Reasoning, LLM Evaluation, LLM & MLLM and Video Understanding using Github Actions.
+- **[monologg/nlp-arxiv-daily](https://github.com/monologg/nlp-arxiv-daily)** (Score: -65.7)
+  - License: none | Stars: 100 | Forks: 20
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: Automatically Update NLP Papers Daily using Github Actions (ref: https://github.com/Vincentqyw/cv-arxiv-daily)
+- **[DWCTOD/cv-arxiv-daily](https://github.com/DWCTOD/cv-arxiv-daily)** (Score: -75.2)
+  - License: none | Stars: 65 | Forks: 25
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+- **[MIT-SPARK/Hydra-ROS](https://github.com/MIT-SPARK/Hydra-ROS)** (Score: -76.5)
+  - License: BSD-2-Clause | Stars: 59 | Forks: 25
+  - PRs open: 0 | Discussions: No | Contributors: 7 | Last push: 15 days ago
+  - Description: Hydra ROS Interface
+- **[yangsc4063/rino](https://github.com/yangsc4063/rino)** (Score: -78.87)
+  - License: none | Stars: 67 | Forks: 9
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 13 days ago
+  - Description: [T-ASE 2025] This is the official implementation of RINO: Accurate, Robust Radar-Inertial Odometry with Non-Iterative Estimation.
+- **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.47)
+  - License: NOASSERTION | Stars: 16 | Forks: 3
+  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - Description: A curated list of awesome Python frameworks, libraries, software and resources.  With repository stars⭐ and forks🍴
+- **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.77)
+  - License: NOASSERTION | Stars: 16 | Forks: 2
+  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - Description: A curated list of awesome Machine Learning frameworks, libraries and software. With repository stars⭐ and forks🍴
+- **[Xuchen-Li/cv-arxiv-daily](https://github.com/Xuchen-Li/cv-arxiv-daily)** (Score: -88.4)
+  - License: none | Stars: 35 | Forks: 4
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: Automatically update arXiv papers about SOT & VLT,  Multi-modal Learning, LLM and Video Understanding using Github Actions.
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
+  - License: none | Stars: 29 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
+- **[KumarRobotics/kr_param_map](https://github.com/KumarRobotics/kr_param_map)** (Score: -90.5)
+  - License: BSD-3-Clause | Stars: 28 | Forks: 6
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 15 days ago
+  - Description: A parameterized map generator for planning evaluations and benchmarking (ROS1 & ROS2 compatible)
+- **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -91.0)
+  - License: NOASSERTION | Stars: 28 | Forks: 0
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: 🚀 Daily AI Research Digest: Tracking breakthroughs in AI/NLP/CV/Robotics with dynamic updates and paper navigation.
+- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.2)
+  - License: CC0-1.0 | Stars: 26 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: This is a curated list of my GitHub stars but converted into an Awesome List! Updated automagically ever 12 hours! :D
+- **[ctu-vras/ros-utils](https://github.com/ctu-vras/ros-utils)** (Score: -93.03)
+  - License: none | Stars: 19 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 5 days ago
+  - Description: Useful utilities for working with ROS
+- **[AgRoboticsResearch/Lerobot_ros2](https://github.com/AgRoboticsResearch/Lerobot_ros2)** (Score: -93.1)
+  - License: none | Stars: 20 | Forks: 3
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 3 days ago
+  - Description: ros2 humble support for lerobot
+- **[danielrosehill/System-Prompt-Library](https://github.com/danielrosehill/System-Prompt-Library)** (Score: -93.67)
+  - License: none | Stars: 21 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 10 days ago
+  - Description: System prompts for AI agents and assistants (automatically populated); periodic point in time exports are releases
+- **[THA-Embedded-Systems-Lab/soar_ros](https://github.com/THA-Embedded-Systems-Lab/soar_ros)** (Score: -94.03)
+  - License: NOASSERTION | Stars: 16 | Forks: 4
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 2 days ago
+  - Description: A ROS 2 package integrating the Soar cognitive architecture into the ROS ecosystem.
+- **[aben1188/my-star-repos](https://github.com/aben1188/my-star-repos)** (Score: -94.27)
+  - License: none | Stars: 17 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1 days ago
+- **[luohongk/Embodied-AI-Daily](https://github.com/luohongk/Embodied-AI-Daily)** (Score: -104.9)
+  - License: none | Stars: 84 | Forks: 5
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - Description: 📚这个仓库是在arxiv上收集的有关VLN，VLA, SLAM，Gaussian Splatting,非线性优化等相关论文。每天都会自动更新！issue区域是最新10篇论文
+- **[tangwen-qian/DailyArXiv](https://github.com/tangwen-qian/DailyArXiv)** (Score: -124.1)
+  - License: none | Stars: 34 | Forks: 7
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+
+## Uncategorized
+- **[aws/aws-sdk-net](https://github.com/aws/aws-sdk-net)** (Score: 236.32)
+  - License: Apache-2.0 | Stars: 22 | Forks: 866
+  - PRs open: 10 | Discussions: Yes | Contributors: 50 | Last push: 2 days ago
+  - Description: The official AWS SDK for .NET. For more information on the AWS SDK for .NET, see our web site:
+- **[open-rmf/rmf_demos](https://github.com/open-rmf/rmf_demos)** (Score: 207.48)
+  - License: Apache-2.0 | Stars: 419 | Forks: 129
+  - PRs open: 9 | Discussions: Yes | Contributors: 30 | Last push: 10 days ago
+  - Description: Demonstrations of Open-RMF
+- **[unitreerobotics/unitree_mujoco](https://github.com/unitreerobotics/unitree_mujoco)** (Score: 92.03)
+  - License: BSD-3-Clause | Stars: 555 | Forks: 148
+  - PRs open: 8 | Discussions: No | Contributors: 5 | Last push: 13 days ago
+- **[TongjiSuperPower/sp_vision_25](https://github.com/TongjiSuperPower/sp_vision_25)** (Score: 76.5)
+  - License: MIT | Stars: 78 | Forks: 11
+  - PRs open: 0 | Discussions: No | Contributors: 7 | Last push: 18 days ago
+  - Description: 同济大学SuperPower战队25赛季视觉框架
+- **[osrf/nexus](https://github.com/osrf/nexus)** (Score: 70.22)
+  - License: Apache-2.0 | Stars: 52 | Forks: 15
+  - PRs open: 8 | Discussions: Yes | Contributors: 10 | Last push: 5 days ago
+  - Description: A framework for orchestration
+- **[johe123qwe/github-trending](https://github.com/johe123qwe/github-trending)** (Score: 64.8)
+  - License: MIT | Stars: 42 | Forks: 8
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: 定时抓取 Github Trending
+- **[emqx/blog](https://github.com/emqx/blog)** (Score: -67.13)
+  - License: none | Stars: 39 | Forks: 73
+  - PRs open: 0 | Discussions: No | Contributors: 27 | Last push: 2 days ago
+  - Description: EMQ Blog
+- **[lolo8304/coding-challenge](https://github.com/lolo8304/coding-challenge)** (Score: -83.2)
+  - License: none | Stars: 54 | Forks: 10
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 24 days ago
+  - Description: my coding challenge implementations from the official https://codingchallenges.fyi/
