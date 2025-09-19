@@ -45,9 +45,9 @@
   - License: Apache-2.0 | Stars: 209 | Forks: 58
   - PRs open: 2 | Discussions: No | Contributors: 5 | Last push: 9 days ago
   - Description: Nav2 Compatible Complete Cover Task Server, Navigator, & BT Utils
-- **[gabrielchua/daily-ai-papers](https://github.com/gabrielchua/daily-ai-papers)** (Score: 111.6)
+- **[gabrielchua/daily-ai-papers](https://github.com/gabrielchua/daily-ai-papers)** (Score: 111.53)
   - License: MIT | Stars: 196 | Forks: 12
-  - PRs open: 1 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - PRs open: 1 | Discussions: No | Contributors: 2 | Last push: 1 days ago
   - Description: All credits go to HuggingFace's Daily AI papers (https://huggingface.co/papers) and the research community. 🔉Audio summaries here (https://t.me/daily_ai_papers).
 - **[TempleRAIL/drl_vo_nav](https://github.com/TempleRAIL/drl_vo_nav)** (Score: 104.23)
   - License: GPL-3.0 | Stars: 236 | Forks: 17
@@ -117,8 +117,8 @@
   - License: BSD-3-Clause | Stars: 167 | Forks: 32
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 20 days ago
   - Description: A differential drive robot is controlled using ROS2 Humble running on a Raspberry Pi 4 (running Ubuntu server 22.04). The vehicle is equipped with a raspberry pi camera for visual feedback and an RPlidar A1 sensor used for Simultaneous Localization and Mapping (SLAM), autonomous navigation and obstacle avoidance.
-- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -58.5)
-  - License: none | Stars: 126 | Forks: 16
+- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -58.8)
+  - License: none | Stars: 125 | Forks: 16
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This repository tracks the latest advancements in 3D Gaussian Splatting from Arxiv, with daily automated updates. Stay up-to-date with cutting-edge research in this exciting field!
 - **[inorbit-ai/ros_amr_interop](https://github.com/inorbit-ai/ros_amr_interop)** (Score: -63.97)
@@ -196,8 +196,8 @@
   - License: none | Stars: 343 | Forks: 72
   - PRs open: 0 | Discussions: Yes | Contributors: 1 | Last push: 2 days ago
   - Description: Daily ArXiv Papers.
-- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -58.5)
-  - License: none | Stars: 126 | Forks: 16
+- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -58.8)
+  - License: none | Stars: 125 | Forks: 16
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This repository tracks the latest advancements in 3D Gaussian Splatting from Arxiv, with daily automated updates. Stay up-to-date with cutting-edge research in this exciting field!
 - **[yangsc4063/rino](https://github.com/yangsc4063/rino)** (Score: -79.27)
@@ -272,7 +272,7 @@
   - Description: autoupdate paper list
 - **[olympus-robotics/hephaestus](https://github.com/olympus-robotics/hephaestus)** (Score: 66.63)
   - License: MIT | Stars: 46 | Forks: 11
-  - PRs open: 4 | Discussions: No | Contributors: 13 | Last push: 0 days ago
+  - PRs open: 4 | Discussions: No | Contributors: 13 | Last push: 1 days ago
   - Description: Hephaestus is a C++ framework designed to facilitate robotics development by providing commonly needed functionality and abstractions.
 - **[paragon-intelligence/agentle](https://github.com/paragon-intelligence/agentle)** (Score: 65.98)
   - License: MIT | Stars: 46 | Forks: 9
@@ -306,8 +306,8 @@
   - License: BSD-3-Clause | Stars: 155 | Forks: 13
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 3 days ago
   - Description: Offical code release for DynoSAM: Dynamic Object Smoothing And Mapping [Submitted TRO Visual SLAM SI]. A visual SLAM framework and pipeline for Dynamic environements, estimating for the motion/pose of objects and their structure, as well as the camera odometry and static map.
-- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -58.5)
-  - License: none | Stars: 126 | Forks: 16
+- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -58.8)
+  - License: none | Stars: 125 | Forks: 16
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This repository tracks the latest advancements in 3D Gaussian Splatting from Arxiv, with daily automated updates. Stay up-to-date with cutting-edge research in this exciting field!
 - **[vybhav-ibr/genesis_ros](https://github.com/vybhav-ibr/genesis_ros)** (Score: -58.83)
@@ -495,10 +495,6 @@
   - License: BSD-2-Clause | Stars: 59 | Forks: 26
   - PRs open: 1 | Discussions: No | Contributors: 7 | Last push: 0 days ago
   - Description: Hydra ROS Interface
-- **[Temasek-Dynamics/gestelt](https://github.com/Temasek-Dynamics/gestelt)** (Score: -93.87)
-  - License: none | Stars: 21 | Forks: 4
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 22 days ago
-  - Description: A simple path planning framework for swarm robots
 
 ## Robotics & Surgical Systems
 - **[eProsima/Fast-DDS](https://github.com/eProsima/Fast-DDS)** (Score: 1005.88)
@@ -587,7 +583,7 @@
   - Description: A ROS 2 tool for exporting bags to human readable files. Supports pluggable export routines to handle any message type.
 - **[olympus-robotics/hephaestus](https://github.com/olympus-robotics/hephaestus)** (Score: 66.63)
   - License: MIT | Stars: 46 | Forks: 11
-  - PRs open: 4 | Discussions: No | Contributors: 13 | Last push: 0 days ago
+  - PRs open: 4 | Discussions: No | Contributors: 13 | Last push: 1 days ago
   - Description: Hephaestus is a C++ framework designed to facilitate robotics development by providing commonly needed functionality and abstractions.
 - **[automatika-robotics/embodied-agents](https://github.com/automatika-robotics/embodied-agents)** (Score: 60.05)
   - License: MIT | Stars: 31 | Forks: 3
@@ -767,7 +763,7 @@
   - Description: Robust and efficient coverage paths for autonomous agricultural vehicles.  A modular and extensible Coverage Path Planning library
 - **[gabrielchua/daily-ai-papers](https://github.com/gabrielchua/daily-ai-papers)** (Score: 111.53)
   - License: MIT | Stars: 196 | Forks: 12
-  - PRs open: 1 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - PRs open: 1 | Discussions: No | Contributors: 2 | Last push: 1 days ago
   - Description: All credits go to HuggingFace's Daily AI papers (https://huggingface.co/papers) and the research community. 🔉Audio summaries here (https://t.me/daily_ai_papers).
 - **[sjtuyinjie/M3DGR](https://github.com/sjtuyinjie/M3DGR)** (Score: 106.52)
   - License: MIT | Stars: 181 | Forks: 9
@@ -883,8 +879,8 @@
 - **[qhduan/cn-chat-arxiv](https://github.com/qhduan/cn-chat-arxiv)** (Score: -46.5)
   - License: none | Stars: 167 | Forks: 16
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
-- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -58.5)
-  - License: none | Stars: 126 | Forks: 16
+- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -58.8)
+  - License: none | Stars: 125 | Forks: 16
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This repository tracks the latest advancements in 3D Gaussian Splatting from Arxiv, with daily automated updates. Stay up-to-date with cutting-edge research in this exciting field!
 - **[vybhav-ibr/genesis_ros](https://github.com/vybhav-ibr/genesis_ros)** (Score: -58.83)
