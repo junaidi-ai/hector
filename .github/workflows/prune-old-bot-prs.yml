@@ -1,0 +1,46 @@
+name: Prune older bot PRs
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+  schedule:
+    - cron: '30 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  prune:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close older PRs from bot, keep the newest open one
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { owner, repo } = context.repo;
+            const { data: pulls } = await github.pulls.list({ owner, repo, state: 'open', per_page: 100 });
+            const botPRs = pulls
+              .filter(pr => pr.user?.login === 'github-actions[bot]' && pr.head?.repo?.full_name === `${owner}/${repo}`)
+              .sort((a, b) => b.number - a.number); // newest first
+
+            if (botPRs.length <= 1) {
+              core.info('Zero or one bot PRs open; nothing to prune.');
+              return;
+            }
+
+            // Keep the newest; close the rest
+            const [keep, ...older] = botPRs;
+            core.info(`Keeping PR #${keep.number}. Closing ${older.length} older bot PR(s).`);
+
+            for (const pr of older) {
+              try {
+                await github.issues.update({ owner, repo, issue_number: pr.number, state: 'closed' });
+                core.info(`Closed PR #${pr.number}`);
+              } catch (e) {
+                core.warning(`Failed to close PR #${pr.number}: ${e.message}`);
+              }
+            }
