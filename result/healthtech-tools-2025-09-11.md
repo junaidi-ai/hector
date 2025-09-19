@@ -141,11 +141,11 @@
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
 - **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.7)
   - License: NOASSERTION | Stars: 16 | Forks: 2
-  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Machine Learning frameworks, libraries and software. With repository stars⭐ and forks🍴
-- **[KirillMouraviev/PRISM-TopoMap](https://github.com/KirillMouraviev/PRISM-TopoMap)** (Score: -88.3)
+- **[KirillMouraviev/PRISM-TopoMap](https://github.com/KirillMouraviev/PRISM-TopoMap)** (Score: -88.1)
   - License: none | Stars: 38 | Forks: 1
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 3 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: The PRISM-TopoMap - online topological mapping method with place recognition and scan matching
 - **[Xuchen-Li/cv-arxiv-daily](https://github.com/Xuchen-Li/cv-arxiv-daily)** (Score: -88.4)
   - License: none | Stars: 35 | Forks: 4
@@ -171,17 +171,14 @@
   - License: none | Stars: 21 | Forks: 3
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1 days ago
   - Description: System prompts for AI agents and assistants (automatically populated); periodic point in time exports are releases
-- **[THA-Embedded-Systems-Lab/soar_ros](https://github.com/THA-Embedded-Systems-Lab/soar_ros)** (Score: -93.9)
+- **[THA-Embedded-Systems-Lab/soar_ros](https://github.com/THA-Embedded-Systems-Lab/soar_ros)** (Score: -93.97)
   - License: NOASSERTION | Stars: 16 | Forks: 4
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
   - Description: A ROS 2 package integrating the Soar cognitive architecture into the ROS ecosystem.
 - **[luohongk/Embodied-AI-Daily](https://github.com/luohongk/Embodied-AI-Daily)** (Score: -105.0)
   - License: none | Stars: 85 | Forks: 5
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
   - Description: 📚这个仓库是在arxiv上收集的有关VLN，VLA, SLAM，Gaussian Splatting,非线性优化等相关论文。每天都会自动更新！issue区域是最新10篇论文
-- **[tangwen-qian/DailyArXiv](https://github.com/tangwen-qian/DailyArXiv)** (Score: -124.2)
-  - License: none | Stars: 34 | Forks: 7
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
 
 ## EHR & Clinical Systems
 - **[ros-controls/ros2_control_demos](https://github.com/ros-controls/ros2_control_demos)** (Score: 298.93)
@@ -208,9 +205,9 @@
   - License: none | Stars: 67 | Forks: 9
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 16 days ago
   - Description: [T-ASE 2025] This is the official implementation of RINO: Accurate, Robust Radar-Inertial Odometry with Non-Iterative Estimation.
-- **[KirillMouraviev/PRISM-TopoMap](https://github.com/KirillMouraviev/PRISM-TopoMap)** (Score: -88.3)
+- **[KirillMouraviev/PRISM-TopoMap](https://github.com/KirillMouraviev/PRISM-TopoMap)** (Score: -88.1)
   - License: none | Stars: 38 | Forks: 1
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 3 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: The PRISM-TopoMap - online topological mapping method with place recognition and scan matching
 - **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.27)
   - License: CC0-1.0 | Stars: 26 | Forks: 2
@@ -321,17 +318,17 @@
   - License: none | Stars: 71 | Forks: 2
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 5 days ago
   - Description: AwesomeSim2Real - An update-to-date Sim-to-Real repo of "Survey of Sim-to-Real Methods in RL: Progress, Prospects and Challenges with Foundation Models"
-- **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.47)
+- **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.4)
   - License: NOASSERTION | Stars: 16 | Forks: 3
-  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Python frameworks, libraries, software and resources.  With repository stars⭐ and forks🍴
 - **[Xuchen-Li/cv-arxiv-daily](https://github.com/Xuchen-Li/cv-arxiv-daily)** (Score: -88.4)
   - License: none | Stars: 35 | Forks: 4
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
   - Description: Automatically update arXiv papers about SOT & VLT,  Multi-modal Learning, LLM and Video Understanding using Github Actions.
-- **[chanmuzi/NLP-Paper-News](https://github.com/chanmuzi/NLP-Paper-News)** (Score: -89.8)
+- **[chanmuzi/NLP-Paper-News](https://github.com/chanmuzi/NLP-Paper-News)** (Score: -89.87)
   - License: none | Stars: 31 | Forks: 0
-  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 0 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 1 days ago
   - Description: The list of NLP paper and news I've checked. There might be short description of them (abstract) in Korean.
 - **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
   - License: none | Stars: 29 | Forks: 2
@@ -343,7 +340,7 @@
   - Description: Useful utilities for working with ROS
 - **[THA-Embedded-Systems-Lab/soar_ros](https://github.com/THA-Embedded-Systems-Lab/soar_ros)** (Score: -93.97)
   - License: NOASSERTION | Stars: 16 | Forks: 4
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
   - Description: A ROS 2 package integrating the Soar cognitive architecture into the ROS ecosystem.
 
 ## Genomics & Precision Medicine
@@ -441,17 +438,17 @@
   - License: none | Stars: 67 | Forks: 9
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 16 days ago
   - Description: [T-ASE 2025] This is the official implementation of RINO: Accurate, Robust Radar-Inertial Odometry with Non-Iterative Estimation.
-- **[KirillMouraviev/PRISM-TopoMap](https://github.com/KirillMouraviev/PRISM-TopoMap)** (Score: -88.3)
+- **[KirillMouraviev/PRISM-TopoMap](https://github.com/KirillMouraviev/PRISM-TopoMap)** (Score: -88.1)
   - License: none | Stars: 38 | Forks: 1
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 3 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: The PRISM-TopoMap - online topological mapping method with place recognition and scan matching
 - **[Xuchen-Li/cv-arxiv-daily](https://github.com/Xuchen-Li/cv-arxiv-daily)** (Score: -88.4)
   - License: none | Stars: 35 | Forks: 4
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
   - Description: Automatically update arXiv papers about SOT & VLT,  Multi-modal Learning, LLM and Video Understanding using Github Actions.
-- **[chanmuzi/NLP-Paper-News](https://github.com/chanmuzi/NLP-Paper-News)** (Score: -89.8)
+- **[chanmuzi/NLP-Paper-News](https://github.com/chanmuzi/NLP-Paper-News)** (Score: -89.87)
   - License: none | Stars: 31 | Forks: 0
-  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 0 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 1 days ago
   - Description: The list of NLP paper and news I've checked. There might be short description of them (abstract) in Korean.
 - **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
   - License: none | Stars: 29 | Forks: 2
@@ -673,7 +670,7 @@
   - Description: Useful utilities for working with ROS
 - **[THA-Embedded-Systems-Lab/soar_ros](https://github.com/THA-Embedded-Systems-Lab/soar_ros)** (Score: -93.97)
   - License: NOASSERTION | Stars: 16 | Forks: 4
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
   - Description: A ROS 2 package integrating the Soar cognitive architecture into the ROS ecosystem.
 
 ## Privacy & Synthetic Data
@@ -902,13 +899,13 @@
   - License: none | Stars: 67 | Forks: 9
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 16 days ago
   - Description: [T-ASE 2025] This is the official implementation of RINO: Accurate, Robust Radar-Inertial Odometry with Non-Iterative Estimation.
-- **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.47)
+- **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.4)
   - License: NOASSERTION | Stars: 16 | Forks: 3
-  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Python frameworks, libraries, software and resources.  With repository stars⭐ and forks🍴
-- **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.77)
+- **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.7)
   - License: NOASSERTION | Stars: 16 | Forks: 2
-  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Machine Learning frameworks, libraries and software. With repository stars⭐ and forks🍴
 - **[MINT-SJTU/LeRobot-Anything-U-Arm](https://github.com/MINT-SJTU/LeRobot-Anything-U-Arm)** (Score: -88.3)
   - License: none | Stars: 34 | Forks: 2
@@ -957,9 +954,6 @@
   - License: none | Stars: 85 | Forks: 5
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
   - Description: 📚这个仓库是在arxiv上收集的有关VLN，VLA, SLAM，Gaussian Splatting,非线性优化等相关论文。每天都会自动更新！issue区域是最新10篇论文
-- **[tangwen-qian/DailyArXiv](https://github.com/tangwen-qian/DailyArXiv)** (Score: -124.2)
-  - License: none | Stars: 34 | Forks: 7
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
 
 ## Uncategorized
 - **[aws/aws-sdk-net](https://github.com/aws/aws-sdk-net)** (Score: 236.85)
