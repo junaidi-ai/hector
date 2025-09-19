@@ -151,9 +151,9 @@
   - License: MPL-2.0 | Stars: 31 | Forks: 1
   - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 12 days ago
   - Description: Roboto Python SDK and CLI
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.37)
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
   - License: none | Stars: 29 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
 - **[ethz-asl/terrain-navigation2](https://github.com/ethz-asl/terrain-navigation2)** (Score: -90.67)
   - License: BSD-3-Clause | Stars: 23 | Forks: 3
@@ -163,7 +163,7 @@
   - License: NOASSERTION | Stars: 29 | Forks: 0
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: 🚀 Daily AI Research Digest: Tracking breakthroughs in AI/NLP/CV/Robotics with dynamic updates and paper navigation.
-- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.27)
+- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.2)
   - License: CC0-1.0 | Stars: 26 | Forks: 2
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This is a curated list of my GitHub stars but converted into an Awesome List! Updated automagically ever 12 hours! :D
@@ -204,9 +204,9 @@
   - License: none | Stars: 39 | Forks: 1
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 7 days ago
   - Description: The PRISM-TopoMap - online topological mapping method with place recognition and scan matching
-- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.27)
+- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.2)
   - License: CC0-1.0 | Stars: 26 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This is a curated list of my GitHub stars but converted into an Awesome List! Updated automagically ever 12 hours! :D
 
 ## Imaging & Radiology
@@ -341,13 +341,13 @@
   - License: none | Stars: 31 | Forks: 0
   - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 0 days ago
   - Description: The list of NLP paper and news I've checked. There might be short description of them (abstract) in Korean.
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.37)
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
   - License: none | Stars: 29 | Forks: 2
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
-- **[ctu-vras/ros-utils](https://github.com/ctu-vras/ros-utils)** (Score: -92.9)
+- **[ctu-vras/ros-utils](https://github.com/ctu-vras/ros-utils)** (Score: -92.97)
   - License: none | Stars: 19 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 3 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 4 days ago
   - Description: Useful utilities for working with ROS
 - **[THA-Embedded-Systems-Lab/soar_ros](https://github.com/THA-Embedded-Systems-Lab/soar_ros)** (Score: -94.43)
   - License: NOASSERTION | Stars: 16 | Forks: 4
@@ -453,9 +453,9 @@
   - License: none | Stars: 31 | Forks: 0
   - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 0 days ago
   - Description: The list of NLP paper and news I've checked. There might be short description of them (abstract) in Korean.
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.37)
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
   - License: none | Stars: 29 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
 - **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -90.7)
   - License: NOASSERTION | Stars: 29 | Forks: 0
@@ -898,15 +898,15 @@
   - License: none | Stars: 36 | Forks: 4
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
   - Description: Automatically update arXiv papers about SOT & VLT,  Multi-modal Learning, LLM and Video Understanding using Github Actions.
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.37)
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
   - License: none | Stars: 29 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
 - **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -90.7)
   - License: NOASSERTION | Stars: 29 | Forks: 0
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: 🚀 Daily AI Research Digest: Tracking breakthroughs in AI/NLP/CV/Robotics with dynamic updates and paper navigation.
-- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.27)
+- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.2)
   - License: CC0-1.0 | Stars: 26 | Forks: 2
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This is a curated list of my GitHub stars but converted into an Awesome List! Updated automagically ever 12 hours! :D
