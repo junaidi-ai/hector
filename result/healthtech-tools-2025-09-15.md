@@ -117,8 +117,8 @@
   - License: BSD-3-Clause | Stars: 167 | Forks: 32
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 21 days ago
   - Description: A differential drive robot is controlled using ROS2 Humble running on a Raspberry Pi 4 (running Ubuntu server 22.04). The vehicle is equipped with a raspberry pi camera for visual feedback and an RPlidar A1 sensor used for Simultaneous Localization and Mapping (SLAM), autonomous navigation and obstacle avoidance.
-- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -58.5)
-  - License: none | Stars: 126 | Forks: 16
+- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -58.8)
+  - License: none | Stars: 125 | Forks: 16
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This repository tracks the latest advancements in 3D Gaussian Splatting from Arxiv, with daily automated updates. Stay up-to-date with cutting-edge research in this exciting field!
 - **[inorbit-ai/ros_amr_interop](https://github.com/inorbit-ai/ros_amr_interop)** (Score: -64.03)
@@ -151,15 +151,15 @@
   - License: MPL-2.0 | Stars: 30 | Forks: 1
   - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 9 days ago
   - Description: Roboto Python SDK and CLI
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.37)
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
   - License: none | Stars: 29 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
 - **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -90.7)
   - License: NOASSERTION | Stars: 29 | Forks: 0
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: 🚀 Daily AI Research Digest: Tracking breakthroughs in AI/NLP/CV/Robotics with dynamic updates and paper navigation.
-- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.27)
+- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.2)
   - License: CC0-1.0 | Stars: 26 | Forks: 2
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This is a curated list of my GitHub stars but converted into an Awesome List! Updated automagically ever 12 hours! :D
@@ -196,8 +196,8 @@
   - License: none | Stars: 343 | Forks: 72
   - PRs open: 0 | Discussions: Yes | Contributors: 1 | Last push: 0 days ago
   - Description: Daily ArXiv Papers.
-- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -58.5)
-  - License: none | Stars: 126 | Forks: 16
+- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -58.8)
+  - License: none | Stars: 125 | Forks: 16
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This repository tracks the latest advancements in 3D Gaussian Splatting from Arxiv, with daily automated updates. Stay up-to-date with cutting-edge research in this exciting field!
 - **[yangsc4063/rino](https://github.com/yangsc4063/rino)** (Score: -79.33)
@@ -208,9 +208,9 @@
   - License: none | Stars: 38 | Forks: 1
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 4 days ago
   - Description: The PRISM-TopoMap - online topological mapping method with place recognition and scan matching
-- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.27)
+- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.2)
   - License: CC0-1.0 | Stars: 26 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This is a curated list of my GitHub stars but converted into an Awesome List! Updated automagically ever 12 hours! :D
 
 ## Imaging & Radiology
@@ -341,7 +341,7 @@
   - License: none | Stars: 31 | Forks: 0
   - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 0 days ago
   - Description: The list of NLP paper and news I've checked. There might be short description of them (abstract) in Korean.
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.37)
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
   - License: none | Stars: 29 | Forks: 2
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
@@ -469,9 +469,9 @@
   - License: none | Stars: 31 | Forks: 0
   - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 0 days ago
   - Description: The list of NLP paper and news I've checked. There might be short description of them (abstract) in Korean.
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.37)
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
   - License: none | Stars: 29 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
 - **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -90.7)
   - License: NOASSERTION | Stars: 29 | Forks: 0
@@ -495,10 +495,6 @@
   - License: BSD-2-Clause | Stars: 59 | Forks: 26
   - PRs open: 1 | Discussions: No | Contributors: 7 | Last push: 1 days ago
   - Description: Hydra ROS Interface
-- **[Temasek-Dynamics/gestelt](https://github.com/Temasek-Dynamics/gestelt)** (Score: -93.87)
-  - License: none | Stars: 21 | Forks: 4
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 22 days ago
-  - Description: A simple path planning framework for swarm robots
 
 ## Robotics & Surgical Systems
 - **[eProsima/Fast-DDS](https://github.com/eProsima/Fast-DDS)** (Score: 1006.02)
@@ -595,7 +591,7 @@
   - Description: EmbodiedAgents is a fully-loaded ROS2 based framework for creating interactive physical agents that can understand, remember, and act upon contextual information from their environment.
 - **[analogdevicesinc/imu_ros2](https://github.com/analogdevicesinc/imu_ros2)** (Score: 59.67)
   - License: Apache-2.0 | Stars: 24 | Forks: 6
-  - PRs open: 0 | Discussions: No | Contributors: 5 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 5 | Last push: 2 days ago
   - Description: A C++ ROS2 node that read sensor data from ADI IMU and publishes message to topic.
 - **[Bart-van-Ingen/telegraf_resource_monitor](https://github.com/Bart-van-Ingen/telegraf_resource_monitor)** (Score: 58.9)
   - License: Apache-2.0 | Stars: 28 | Forks: 4
@@ -930,9 +926,9 @@
   - License: none | Stars: 35 | Forks: 4
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
   - Description: Automatically update arXiv papers about SOT & VLT,  Multi-modal Learning, LLM and Video Understanding using Github Actions.
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.37)
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
   - License: none | Stars: 29 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
 - **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -90.7)
   - License: NOASSERTION | Stars: 29 | Forks: 0
