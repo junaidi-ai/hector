@@ -87,7 +87,7 @@
   - Description: 🦾 A production‑ready research outreach AI agent that plans, discovers, reasons, uses tools, auto‑builds cited briefings, and drafts tailored emails with tool‑chaining, memory, tests, and turnkey Docker, AWS, Ansible & Terraform deploys. Bonus: An Agentic RAG system & Coding Pipeline with multistep planning, self-critique, and autonomous agents.
 - **[automatika-robotics/embodied-agents](https://github.com/automatika-robotics/embodied-agents)** (Score: 60.52)
   - License: MIT | Stars: 31 | Forks: 3
-  - PRs open: 0 | Discussions: Yes | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: Yes | Contributors: 2 | Last push: 2 days ago
   - Description: EmbodiedAgents is a fully-loaded ROS2 based framework for creating interactive physical agents that can understand, remember, and act upon contextual information from their environment.
 - **[airas-org/airas](https://github.com/airas-org/airas)** (Score: 57.45)
   - License: MIT | Stars: 18 | Forks: 0
@@ -137,7 +137,7 @@
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
 - **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.7)
   - License: NOASSERTION | Stars: 16 | Forks: 2
-  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Machine Learning frameworks, libraries and software. With repository stars⭐ and forks🍴
 - **[wise-vision/mcp_server_ros_2](https://github.com/wise-vision/mcp_server_ros_2)** (Score: -87.67)
   - License: MPL-2.0 | Stars: 37 | Forks: 3
@@ -155,9 +155,9 @@
   - License: MPL-2.0 | Stars: 31 | Forks: 1
   - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 13 days ago
   - Description: Roboto Python SDK and CLI
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.37)
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
   - License: none | Stars: 29 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
 - **[ethz-asl/terrain-navigation2](https://github.com/ethz-asl/terrain-navigation2)** (Score: -90.43)
   - License: BSD-3-Clause | Stars: 24 | Forks: 3
@@ -167,7 +167,7 @@
   - License: NOASSERTION | Stars: 29 | Forks: 0
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: 🚀 Daily AI Research Digest: Tracking breakthroughs in AI/NLP/CV/Robotics with dynamic updates and paper navigation.
-- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.27)
+- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.2)
   - License: CC0-1.0 | Stars: 26 | Forks: 2
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This is a curated list of my GitHub stars but converted into an Awesome List! Updated automagically ever 12 hours! :D
@@ -212,9 +212,9 @@
   - License: none | Stars: 39 | Forks: 1
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 8 days ago
   - Description: The PRISM-TopoMap - online topological mapping method with place recognition and scan matching
-- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.27)
+- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.2)
   - License: CC0-1.0 | Stars: 26 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This is a curated list of my GitHub stars but converted into an Awesome List! Updated automagically ever 12 hours! :D
 
 ## Imaging & Radiology
@@ -292,9 +292,9 @@
   - Description: 🦾 A production‑ready research outreach AI agent that plans, discovers, reasons, uses tools, auto‑builds cited briefings, and drafts tailored emails with tool‑chaining, memory, tests, and turnkey Docker, AWS, Ansible & Terraform deploys. Bonus: An Agentic RAG system & Coding Pipeline with multistep planning, self-critique, and autonomous agents.
 - **[automatika-robotics/embodied-agents](https://github.com/automatika-robotics/embodied-agents)** (Score: 60.52)
   - License: MIT | Stars: 31 | Forks: 3
-  - PRs open: 0 | Discussions: Yes | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: Yes | Contributors: 2 | Last push: 2 days ago
   - Description: EmbodiedAgents is a fully-loaded ROS2 based framework for creating interactive physical agents that can understand, remember, and act upon contextual information from their environment.
-- **[airas-org/airas](https://github.com/airas-org/airas)** (Score: 57.55)
+- **[airas-org/airas](https://github.com/airas-org/airas)** (Score: 57.45)
   - License: MIT | Stars: 18 | Forks: 0
   - PRs open: 11 | Discussions: Yes | Contributors: 7 | Last push: 0 days ago
   - Description: AIRAS - an open-source project for research automation
@@ -333,9 +333,9 @@
   - License: none | Stars: 72 | Forks: 2
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 13 days ago
   - Description: AwesomeSim2Real - An update-to-date Sim-to-Real repo of "Survey of Sim-to-Real Methods in RL: Progress, Prospects and Challenges with Foundation Models"
-- **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.47)
+- **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.4)
   - License: NOASSERTION | Stars: 16 | Forks: 3
-  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Python frameworks, libraries, software and resources.  With repository stars⭐ and forks🍴
 - **[Xuchen-Li/cv-arxiv-daily](https://github.com/Xuchen-Li/cv-arxiv-daily)** (Score: -88.1)
   - License: none | Stars: 36 | Forks: 4
@@ -345,7 +345,7 @@
   - License: none | Stars: 31 | Forks: 0
   - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 0 days ago
   - Description: The list of NLP paper and news I've checked. There might be short description of them (abstract) in Korean.
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.37)
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
   - License: none | Stars: 29 | Forks: 2
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
@@ -411,11 +411,11 @@
   - Description: autoupdate paper list
 - **[agtonomy/trellis](https://github.com/agtonomy/trellis)** (Score: 61.53)
   - License: Apache-2.0 | Stars: 26 | Forks: 5
-  - PRs open: 1 | Discussions: No | Contributors: 9 | Last push: 0 days ago
+  - PRs open: 1 | Discussions: No | Contributors: 9 | Last push: 1 days ago
   - Description: General purpose middleware framework for distributed applications
-- **[automatika-robotics/embodied-agents](https://github.com/automatika-robotics/embodied-agents)** (Score: 60.58)
+- **[automatika-robotics/embodied-agents](https://github.com/automatika-robotics/embodied-agents)** (Score: 60.52)
   - License: MIT | Stars: 31 | Forks: 3
-  - PRs open: 0 | Discussions: Yes | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: Yes | Contributors: 2 | Last push: 2 days ago
   - Description: EmbodiedAgents is a fully-loaded ROS2 based framework for creating interactive physical agents that can understand, remember, and act upon contextual information from their environment.
 - **[OSU-NLP-Group/GUI-Agents-Paper-List](https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List)** (Score: 58.2)
   - License: none | Stars: 497 | Forks: 28
@@ -457,9 +457,9 @@
   - License: none | Stars: 31 | Forks: 0
   - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 0 days ago
   - Description: The list of NLP paper and news I've checked. There might be short description of them (abstract) in Korean.
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.37)
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
   - License: none | Stars: 29 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
 - **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -90.7)
   - License: NOASSERTION | Stars: 29 | Forks: 0
@@ -791,7 +791,7 @@
   - Description: General purpose middleware framework for distributed applications
 - **[automatika-robotics/embodied-agents](https://github.com/automatika-robotics/embodied-agents)** (Score: 60.52)
   - License: MIT | Stars: 31 | Forks: 3
-  - PRs open: 0 | Discussions: Yes | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: Yes | Contributors: 2 | Last push: 2 days ago
   - Description: EmbodiedAgents is a fully-loaded ROS2 based framework for creating interactive physical agents that can understand, remember, and act upon contextual information from their environment.
 - **[ROBOTIS-GIT/dynamixel_hardware_interface](https://github.com/ROBOTIS-GIT/dynamixel_hardware_interface)** (Score: 59.2)
   - License: Apache-2.0 | Stars: 20 | Forks: 9
@@ -844,8 +844,8 @@
   - License: BSD-3-Clause | Stars: 170 | Forks: 32
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 25 days ago
   - Description: A differential drive robot is controlled using ROS2 Humble running on a Raspberry Pi 4 (running Ubuntu server 22.04). The vehicle is equipped with a raspberry pi camera for visual feedback and an RPlidar A1 sensor used for Simultaneous Localization and Mapping (SLAM), autonomous navigation and obstacle avoidance.
-- **[qhduan/cn-chat-arxiv](https://github.com/qhduan/cn-chat-arxiv)** (Score: -46.5)
-  - License: none | Stars: 167 | Forks: 16
+- **[qhduan/cn-chat-arxiv](https://github.com/qhduan/cn-chat-arxiv)** (Score: -46.2)
+  - License: none | Stars: 168 | Forks: 16
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
 - **[OmniLRS/OmniLRS](https://github.com/OmniLRS/OmniLRS)** (Score: -56.53)
   - License: NOASSERTION | Stars: 123 | Forks: 27
@@ -884,11 +884,11 @@
   - Description: [T-ASE 2025] This is the official implementation of RINO: Accurate, Robust Radar-Inertial Odometry with Non-Iterative Estimation.
 - **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.4)
   - License: NOASSERTION | Stars: 16 | Forks: 3
-  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Python frameworks, libraries, software and resources.  With repository stars⭐ and forks🍴
-- **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.77)
+- **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.7)
   - License: NOASSERTION | Stars: 16 | Forks: 2
-  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Machine Learning frameworks, libraries and software. With repository stars⭐ and forks🍴
 - **[MINT-SJTU/LeRobot-Anything-U-Arm](https://github.com/MINT-SJTU/LeRobot-Anything-U-Arm)** (Score: -85.6)
   - License: none | Stars: 41 | Forks: 3
@@ -898,15 +898,15 @@
   - License: none | Stars: 36 | Forks: 4
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
   - Description: Automatically update arXiv papers about SOT & VLT,  Multi-modal Learning, LLM and Video Understanding using Github Actions.
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.37)
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
   - License: none | Stars: 29 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
 - **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -90.7)
   - License: NOASSERTION | Stars: 29 | Forks: 0
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: 🚀 Daily AI Research Digest: Tracking breakthroughs in AI/NLP/CV/Robotics with dynamic updates and paper navigation.
-- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.27)
+- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.2)
   - License: CC0-1.0 | Stars: 26 | Forks: 2
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This is a curated list of my GitHub stars but converted into an Awesome List! Updated automagically ever 12 hours! :D
