@@ -159,7 +159,7 @@
   - License: NOASSERTION | Stars: 29 | Forks: 0
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: 🚀 Daily AI Research Digest: Tracking breakthroughs in AI/NLP/CV/Robotics with dynamic updates and paper navigation.
-- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.27)
+- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.2)
   - License: CC0-1.0 | Stars: 26 | Forks: 2
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This is a curated list of my GitHub stars but converted into an Awesome List! Updated automagically ever 12 hours! :D
@@ -208,9 +208,9 @@
   - License: none | Stars: 38 | Forks: 1
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
   - Description: The PRISM-TopoMap - online topological mapping method with place recognition and scan matching
-- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.27)
+- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.2)
   - License: CC0-1.0 | Stars: 26 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This is a curated list of my GitHub stars but converted into an Awesome List! Updated automagically ever 12 hours! :D
 
 ## Imaging & Radiology
@@ -317,9 +317,9 @@
   - License: none | Stars: 71 | Forks: 2
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 6 days ago
   - Description: AwesomeSim2Real - An update-to-date Sim-to-Real repo of "Survey of Sim-to-Real Methods in RL: Progress, Prospects and Challenges with Foundation Models"
-- **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.47)
+- **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.4)
   - License: NOASSERTION | Stars: 16 | Forks: 3
-  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Python frameworks, libraries, software and resources.  With repository stars⭐ and forks🍴
 - **[Xuchen-Li/cv-arxiv-daily](https://github.com/Xuchen-Li/cv-arxiv-daily)** (Score: -88.4)
   - License: none | Stars: 35 | Forks: 4
@@ -753,10 +753,6 @@
   - License: MIT | Stars: 118 | Forks: 13
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 4 days ago
   - Description: LiDAR-Camera Calibration using ROS2 mcap recordings. A vibe coding project.
-- **[kimtth/software-architect-mindmap](https://github.com/kimtth/software-architect-mindmap)** (Score: 80.37)
-  - License: MIT | Stars: 89 | Forks: 25
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 29 days ago
-  - Description: 🧠Mindmap of 🗺️Software Architecture, Software engineering: An Overview of Software Terminologies and Concepts.
 - **[isLinXu/paper-list](https://github.com/isLinXu/paper-list)** (Score: 80.3)
   - License: Apache-2.0 | Stars: 93 | Forks: 11
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
@@ -890,9 +886,9 @@
   - License: none | Stars: 67 | Forks: 9
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 17 days ago
   - Description: [T-ASE 2025] This is the official implementation of RINO: Accurate, Robust Radar-Inertial Odometry with Non-Iterative Estimation.
-- **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.47)
+- **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.4)
   - License: NOASSERTION | Stars: 16 | Forks: 3
-  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Python frameworks, libraries, software and resources.  With repository stars⭐ and forks🍴
 - **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.77)
   - License: NOASSERTION | Stars: 16 | Forks: 2
@@ -920,7 +916,7 @@
   - Description: A parameterized map generator for planning evaluations and benchmarking (ROS1 & ROS2 compatible)
 - **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.2)
   - License: CC0-1.0 | Stars: 26 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This is a curated list of my GitHub stars but converted into an Awesome List! Updated automagically ever 12 hours! :D
 - **[danielrosehill/System-Prompt-Library](https://github.com/danielrosehill/System-Prompt-Library)** (Score: -92.63)
   - License: none | Stars: 22 | Forks: 3
