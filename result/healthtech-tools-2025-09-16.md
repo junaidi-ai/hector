@@ -155,9 +155,9 @@
   - License: MPL-2.0 | Stars: 30 | Forks: 1
   - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 10 days ago
   - Description: Roboto Python SDK and CLI
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.37)
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
   - License: none | Stars: 29 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
 - **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -90.7)
   - License: NOASSERTION | Stars: 29 | Forks: 0
@@ -341,7 +341,7 @@
   - License: none | Stars: 31 | Forks: 0
   - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 0 days ago
   - Description: The list of NLP paper and news I've checked. There might be short description of them (abstract) in Korean.
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.37)
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
   - License: none | Stars: 29 | Forks: 2
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
@@ -457,9 +457,9 @@
   - License: none | Stars: 31 | Forks: 0
   - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 0 days ago
   - Description: The list of NLP paper and news I've checked. There might be short description of them (abstract) in Korean.
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.37)
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
   - License: none | Stars: 29 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
 - **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -90.7)
   - License: NOASSERTION | Stars: 29 | Forks: 0
@@ -906,9 +906,9 @@
   - License: none | Stars: 36 | Forks: 4
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
   - Description: Automatically update arXiv papers about SOT & VLT,  Multi-modal Learning, LLM and Video Understanding using Github Actions.
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.37)
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
   - License: none | Stars: 29 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
 - **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -90.7)
   - License: NOASSERTION | Stars: 29 | Forks: 0
