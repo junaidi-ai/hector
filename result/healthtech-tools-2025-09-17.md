@@ -145,7 +145,7 @@
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
 - **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.7)
   - License: NOASSERTION | Stars: 16 | Forks: 2
-  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 3 days ago
+  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Machine Learning frameworks, libraries and software. With repository stars⭐ and forks🍴
 - **[Xuchen-Li/cv-arxiv-daily](https://github.com/Xuchen-Li/cv-arxiv-daily)** (Score: -88.1)
   - License: none | Stars: 36 | Forks: 4
@@ -159,15 +159,15 @@
   - License: MPL-2.0 | Stars: 31 | Forks: 1
   - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 11 days ago
   - Description: Roboto Python SDK and CLI
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.37)
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
   - License: none | Stars: 29 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
 - **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -90.7)
   - License: NOASSERTION | Stars: 29 | Forks: 0
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: 🚀 Daily AI Research Digest: Tracking breakthroughs in AI/NLP/CV/Robotics with dynamic updates and paper navigation.
-- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.27)
+- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.2)
   - License: CC0-1.0 | Stars: 26 | Forks: 2
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This is a curated list of my GitHub stars but converted into an Awesome List! Updated automagically ever 12 hours! :D
@@ -212,9 +212,9 @@
   - License: none | Stars: 38 | Forks: 1
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 6 days ago
   - Description: The PRISM-TopoMap - online topological mapping method with place recognition and scan matching
-- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.27)
+- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.2)
   - License: CC0-1.0 | Stars: 26 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This is a curated list of my GitHub stars but converted into an Awesome List! Updated automagically ever 12 hours! :D
 
 ## Imaging & Radiology
@@ -280,7 +280,7 @@
   - Description: autoupdate paper list
 - **[olympus-robotics/hephaestus](https://github.com/olympus-robotics/hephaestus)** (Score: 66.63)
   - License: MIT | Stars: 46 | Forks: 11
-  - PRs open: 4 | Discussions: No | Contributors: 13 | Last push: 0 days ago
+  - PRs open: 4 | Discussions: No | Contributors: 13 | Last push: 1 days ago
   - Description: Hephaestus is a C++ framework designed to facilitate robotics development by providing commonly needed functionality and abstractions.
 - **[paragon-intelligence/agentle](https://github.com/paragon-intelligence/agentle)** (Score: 65.98)
   - License: MIT | Stars: 46 | Forks: 9
@@ -337,9 +337,9 @@
   - License: none | Stars: 72 | Forks: 2
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 11 days ago
   - Description: AwesomeSim2Real - An update-to-date Sim-to-Real repo of "Survey of Sim-to-Real Methods in RL: Progress, Prospects and Challenges with Foundation Models"
-- **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.67)
+- **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.4)
   - License: NOASSERTION | Stars: 16 | Forks: 3
-  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 4 days ago
+  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Python frameworks, libraries, software and resources.  With repository stars⭐ and forks🍴
 - **[Xuchen-Li/cv-arxiv-daily](https://github.com/Xuchen-Li/cv-arxiv-daily)** (Score: -88.1)
   - License: none | Stars: 36 | Forks: 4
@@ -349,7 +349,7 @@
   - License: none | Stars: 31 | Forks: 0
   - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 0 days ago
   - Description: The list of NLP paper and news I've checked. There might be short description of them (abstract) in Korean.
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.37)
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
   - License: none | Stars: 29 | Forks: 2
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
@@ -461,9 +461,9 @@
   - License: none | Stars: 31 | Forks: 0
   - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 0 days ago
   - Description: The list of NLP paper and news I've checked. There might be short description of them (abstract) in Korean.
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.37)
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
   - License: none | Stars: 29 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
 - **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -90.7)
   - License: NOASSERTION | Stars: 29 | Forks: 0
@@ -571,7 +571,7 @@
   - Description: Source code of the book Mastering ROS 2 for Robotics Programming
 - **[olympus-robotics/hephaestus](https://github.com/olympus-robotics/hephaestus)** (Score: 66.63)
   - License: MIT | Stars: 46 | Forks: 11
-  - PRs open: 4 | Discussions: No | Contributors: 13 | Last push: 0 days ago
+  - PRs open: 4 | Discussions: No | Contributors: 13 | Last push: 1 days ago
   - Description: Hephaestus is a C++ framework designed to facilitate robotics development by providing commonly needed functionality and abstractions.
 - **[automatika-robotics/embodied-agents](https://github.com/automatika-robotics/embodied-agents)** (Score: 60.65)
   - License: MIT | Stars: 31 | Forks: 3
@@ -904,11 +904,11 @@
   - Description: Hydra ROS Interface
 - **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.4)
   - License: NOASSERTION | Stars: 16 | Forks: 3
-  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 4 days ago
+  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Python frameworks, libraries, software and resources.  With repository stars⭐ and forks🍴
-- **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.9)
+- **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.7)
   - License: NOASSERTION | Stars: 16 | Forks: 2
-  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 3 days ago
+  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Machine Learning frameworks, libraries and software. With repository stars⭐ and forks🍴
 - **[MINT-SJTU/LeRobot-Anything-U-Arm](https://github.com/MINT-SJTU/LeRobot-Anything-U-Arm)** (Score: -86.47)
   - License: none | Stars: 40 | Forks: 3
@@ -918,15 +918,15 @@
   - License: none | Stars: 36 | Forks: 4
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
   - Description: Automatically update arXiv papers about SOT & VLT,  Multi-modal Learning, LLM and Video Understanding using Github Actions.
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.37)
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
   - License: none | Stars: 29 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
 - **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -90.7)
   - License: NOASSERTION | Stars: 29 | Forks: 0
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: 🚀 Daily AI Research Digest: Tracking breakthroughs in AI/NLP/CV/Robotics with dynamic updates and paper navigation.
-- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.27)
+- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.2)
   - License: CC0-1.0 | Stars: 26 | Forks: 2
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This is a curated list of my GitHub stars but converted into an Awesome List! Updated automagically ever 12 hours! :D
