@@ -1,0 +1,70 @@
+name: Auto-merge bot PRs
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * *'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  automerge:
+    # Only act on PRs created by the repo's own GitHub Actions bot
+    if: |
+      github.actor == 'github-actions[bot]' &&
+      github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enable auto-merge (squash)
+        uses: peter-evans/enable-pull-request-automerge@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          merge-method: squash
+
+      - name: Attempt immediate merge (squash)
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { owner, repo } = context.repo;
+            const prNumber = context.payload.pull_request.number;
+            try {
+              await github.pulls.merge({
+                owner,
+                repo,
+                pull_number: prNumber,
+                merge_method: 'squash',
+              });
+              core.info(`Merged PR #${prNumber}`);
+            } catch (e) {
+              core.info(`Could not merge PR #${prNumber} immediately. Auto-merge has been enabled and GitHub will merge when possible. Reason: ${e.message}`);
+            }
+
+  backfill:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Process existing bot PRs
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { owner, repo } = context.repo;
+            const pulls = await github.pulls.list({ owner, repo, state: 'open', per_page: 100 });
+            for (const pr of pulls.data) {
+              if (
+                pr.user?.login === 'github-actions[bot]' &&
+                pr.head?.repo?.full_name === `${owner}/${repo}`
+              ) {
+                try {
+                  await github.pulls.merge({ owner, repo, pull_number: pr.number, merge_method: 'squash' });
+                  core.info(`Merged PR #${pr.number}`);
+                } catch (e) {
+                  core.info(`Skip PR #${pr.number} (not mergeable yet): ${e.message}`);
+                }
+              }
+            }
