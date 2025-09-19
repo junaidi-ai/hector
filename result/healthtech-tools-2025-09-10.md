@@ -175,9 +175,6 @@
   - License: none | Stars: 85 | Forks: 5
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
   - Description: 📚这个仓库是在arxiv上收集的有关VLN，VLA, SLAM，Gaussian Splatting,非线性优化等相关论文。每天都会自动更新！issue区域是最新10篇论文
-- **[tangwen-qian/DailyArXiv](https://github.com/tangwen-qian/DailyArXiv)** (Score: -124.2)
-  - License: none | Stars: 34 | Forks: 7
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
 
 ## EHR & Clinical Systems
 - **[ros-controls/ros2_control_demos](https://github.com/ros-controls/ros2_control_demos)** (Score: 298.5)
@@ -949,9 +946,6 @@
   - License: none | Stars: 85 | Forks: 5
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
   - Description: 📚这个仓库是在arxiv上收集的有关VLN，VLA, SLAM，Gaussian Splatting,非线性优化等相关论文。每天都会自动更新！issue区域是最新10篇论文
-- **[tangwen-qian/DailyArXiv](https://github.com/tangwen-qian/DailyArXiv)** (Score: -124.2)
-  - License: none | Stars: 34 | Forks: 7
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
 
 ## Uncategorized
 - **[aws/aws-sdk-net](https://github.com/aws/aws-sdk-net)** (Score: 237.05)
