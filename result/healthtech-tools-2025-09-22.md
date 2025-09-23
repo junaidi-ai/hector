@@ -125,8 +125,8 @@
   - License: BSD-3-Clause | Stars: 170 | Forks: 32
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 28 days ago
   - Description: A differential drive robot is controlled using ROS2 Humble running on a Raspberry Pi 4 (running Ubuntu server 22.04). The vehicle is equipped with a raspberry pi camera for visual feedback and an RPlidar A1 sensor used for Simultaneous Localization and Mapping (SLAM), autonomous navigation and obstacle avoidance.
-- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -57.6)
-  - License: none | Stars: 129 | Forks: 16
+- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -57.9)
+  - License: none | Stars: 128 | Forks: 16
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This repository tracks the latest advancements in 3D Gaussian Splatting from Arxiv, with daily automated updates. Stay up-to-date with cutting-edge research in this exciting field!
 - **[Xuchen-Li/llm-arxiv-daily](https://github.com/Xuchen-Li/llm-arxiv-daily)** (Score: -64.1)
@@ -137,12 +137,12 @@
   - License: none | Stars: 100 | Forks: 20
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
   - Description: Automatically Update NLP Papers Daily using Github Actions (ref: https://github.com/Vincentqyw/cv-arxiv-daily)
-- **[DWCTOD/cv-arxiv-daily](https://github.com/DWCTOD/cv-arxiv-daily)** (Score: -74.9)
-  - License: none | Stars: 66 | Forks: 25
+- **[DWCTOD/cv-arxiv-daily](https://github.com/DWCTOD/cv-arxiv-daily)** (Score: -75.2)
+  - License: none | Stars: 65 | Forks: 25
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
 - **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.77)
   - License: NOASSERTION | Stars: 16 | Forks: 2
-  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 0 days ago
+  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 1 days ago
   - Description: A curated list of awesome Machine Learning frameworks, libraries and software. With repository stars⭐ and forks🍴
 - **[wise-vision/mcp_server_ros_2](https://github.com/wise-vision/mcp_server_ros_2)** (Score: -87.57)
   - License: MPL-2.0 | Stars: 38 | Forks: 3
@@ -221,9 +221,9 @@
   - License: none | Stars: 39 | Forks: 1
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 11 days ago
   - Description: The PRISM-TopoMap - online topological mapping method with place recognition and scan matching
-- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.2)
+- **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.27)
   - License: CC0-1.0 | Stars: 26 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
   - Description: This is a curated list of my GitHub stars but converted into an Awesome List! Updated automagically ever 12 hours! :D
 
 ## Imaging & Radiology
@@ -319,12 +319,8 @@
   - License: BSD-3-Clause | Stars: 154 | Forks: 13
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 3 days ago
   - Description: Offical code release for DynoSAM: Dynamic Object Smoothing And Mapping [Submitted TRO Visual SLAM SI]. A visual SLAM framework and pipeline for Dynamic environements, estimating for the motion/pose of objects and their structure, as well as the camera odometry and static map.
-- **[vybhav-ibr/genesis_ros](https://github.com/vybhav-ibr/genesis_ros)** (Score: -57.43)
-  - License: none | Stars: 138 | Forks: 14
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 29 days ago
-  - Description: A light-weight, pythhonic ros2 package to connect the genesis simulator and ROS2
-- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -57.6)
-  - License: none | Stars: 129 | Forks: 16
+- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -57.9)
+  - License: none | Stars: 128 | Forks: 16
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This repository tracks the latest advancements in 3D Gaussian Splatting from Arxiv, with daily automated updates. Stay up-to-date with cutting-edge research in this exciting field!
 - **[vybhav-ibr/genesis_ros](https://github.com/vybhav-ibr/genesis_ros)** (Score: -58.57)
@@ -339,23 +335,23 @@
   - License: none | Stars: 100 | Forks: 20
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
   - Description: Automatically Update NLP Papers Daily using Github Actions (ref: https://github.com/Vincentqyw/cv-arxiv-daily)
-- **[DWCTOD/cv-arxiv-daily](https://github.com/DWCTOD/cv-arxiv-daily)** (Score: -74.9)
-  - License: none | Stars: 66 | Forks: 25
+- **[DWCTOD/cv-arxiv-daily](https://github.com/DWCTOD/cv-arxiv-daily)** (Score: -75.2)
+  - License: none | Stars: 65 | Forks: 25
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
 - **[LongchaoDa/AwesomeSim2Real](https://github.com/LongchaoDa/AwesomeSim2Real)** (Score: -78.47)
   - License: none | Stars: 72 | Forks: 2
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 16 days ago
   - Description: AwesomeSim2Real - An update-to-date Sim-to-Real repo of "Survey of Sim-to-Real Methods in RL: Progress, Prospects and Challenges with Foundation Models"
-- **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.4)
+- **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.47)
   - License: NOASSERTION | Stars: 16 | Forks: 3
-  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 0 days ago
+  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 1 days ago
   - Description: A curated list of awesome Python frameworks, libraries, software and resources.  With repository stars⭐ and forks🍴
 - **[Xuchen-Li/cv-arxiv-daily](https://github.com/Xuchen-Li/cv-arxiv-daily)** (Score: -88.1)
   - License: none | Stars: 36 | Forks: 4
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
   - Description: Automatically update arXiv papers about SOT & VLT,  Multi-modal Learning, LLM and Video Understanding using Github Actions.
-- **[chanmuzi/NLP-Paper-News](https://github.com/chanmuzi/NLP-Paper-News)** (Score: -89.5)
-  - License: none | Stars: 32 | Forks: 0
+- **[chanmuzi/NLP-Paper-News](https://github.com/chanmuzi/NLP-Paper-News)** (Score: -89.8)
+  - License: none | Stars: 31 | Forks: 0
   - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 0 days ago
   - Description: The list of NLP paper and news I've checked. There might be short description of them (abstract) in Korean.
 - **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
@@ -466,8 +462,8 @@
   - License: none | Stars: 39 | Forks: 1
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 11 days ago
   - Description: The PRISM-TopoMap - online topological mapping method with place recognition and scan matching
-- **[chanmuzi/NLP-Paper-News](https://github.com/chanmuzi/NLP-Paper-News)** (Score: -89.5)
-  - License: none | Stars: 32 | Forks: 0
+- **[chanmuzi/NLP-Paper-News](https://github.com/chanmuzi/NLP-Paper-News)** (Score: -89.8)
+  - License: none | Stars: 31 | Forks: 0
   - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 0 days ago
   - Description: The list of NLP paper and news I've checked. There might be short description of them (abstract) in Korean.
 - **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -90.2)
@@ -597,9 +593,9 @@
   - License: MIT | Stars: 26 | Forks: 0
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 19 days ago
   - Description: Kompass is an event-driven navigation stack designed with an easy-to-use Python API. It implements highly optimized, GPU powered, versions of the most cutting edge algorithms for all parts of the navigation stack.
-- **[eigendude/OASIS](https://github.com/eigendude/OASIS)** (Score: 56.9)
+- **[eigendude/OASIS](https://github.com/eigendude/OASIS)** (Score: 56.83)
   - License: Apache-2.0 | Stars: 21 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1 days ago
   - Description: OASIS, a smart home operating system based on ROS 2
 - **[kimtth/awesome-azure-openai-llm](https://github.com/kimtth/awesome-azure-openai-llm)** (Score: 23.23)
   - License: none | Stars: 378 | Forks: 47
@@ -822,7 +818,7 @@
   - License: MIT | Stars: 26 | Forks: 0
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 19 days ago
   - Description: Kompass is an event-driven navigation stack designed with an easy-to-use Python API. It implements highly optimized, GPU powered, versions of the most cutting edge algorithms for all parts of the navigation stack.
-- **[eigendude/OASIS](https://github.com/eigendude/OASIS)** (Score: 56.9)
+- **[eigendude/OASIS](https://github.com/eigendude/OASIS)** (Score: 56.83)
   - License: Apache-2.0 | Stars: 21 | Forks: 2
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1 days ago
   - Description: OASIS, a smart home operating system based on ROS 2
@@ -864,12 +860,8 @@
   - License: NOASSERTION | Stars: 123 | Forks: 27
   - PRs open: 7 | Discussions: No | Contributors: 8 | Last push: 17 days ago
   - Description: Omniverse Lunar Robotics Simulator
-- **[vybhav-ibr/genesis_ros](https://github.com/vybhav-ibr/genesis_ros)** (Score: -57.43)
-  - License: none | Stars: 138 | Forks: 14
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 29 days ago
-  - Description: A light-weight, pythhonic ros2 package to connect the genesis simulator and ROS2
-- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -57.6)
-  - License: none | Stars: 129 | Forks: 16
+- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -57.9)
+  - License: none | Stars: 128 | Forks: 16
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This repository tracks the latest advancements in 3D Gaussian Splatting from Arxiv, with daily automated updates. Stay up-to-date with cutting-edge research in this exciting field!
 - **[vybhav-ibr/genesis_ros](https://github.com/vybhav-ibr/genesis_ros)** (Score: -58.57)
@@ -901,11 +893,11 @@
   - Description: [T-ASE 2025] This is the official implementation of RINO: Accurate, Robust Radar-Inertial Odometry with Non-Iterative Estimation.
 - **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.47)
   - License: NOASSERTION | Stars: 16 | Forks: 3
-  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 0 days ago
+  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 1 days ago
   - Description: A curated list of awesome Python frameworks, libraries, software and resources.  With repository stars⭐ and forks🍴
-- **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.7)
+- **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.77)
   - License: NOASSERTION | Stars: 16 | Forks: 2
-  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 0 days ago
+  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 1 days ago
   - Description: A curated list of awesome Machine Learning frameworks, libraries and software. With repository stars⭐ and forks🍴
 - **[MINT-SJTU/LeRobot-Anything-U-Arm](https://github.com/MINT-SJTU/LeRobot-Anything-U-Arm)** (Score: -84.6)
   - License: none | Stars: 45 | Forks: 3
@@ -935,11 +927,7 @@
   - License: none | Stars: 23 | Forks: 3
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 17 days ago
   - Description: ros2 humble support for lerobot
-- **[ctu-vras/ros-utils](https://github.com/ctu-vras/ros-utils)** (Score: -93.3)
-  - License: none | Stars: 19 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 9 days ago
-  - Description: Useful utilities for working with ROS
-- **[aben1188/my-star-repos](https://github.com/aben1188/my-star-repos)** (Score: -93.97)
+- **[aben1188/my-star-repos](https://github.com/aben1188/my-star-repos)** (Score: -93.9)
   - License: none | Stars: 18 | Forks: 2
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
 - **[THA-Embedded-Systems-Lab/soar_ros](https://github.com/THA-Embedded-Systems-Lab/soar_ros)** (Score: -94.7)
