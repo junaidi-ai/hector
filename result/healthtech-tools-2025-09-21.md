@@ -77,8 +77,8 @@
   - License: MIT | Stars: 64 | Forks: 4
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: An Awesome List of 275+ AI Market Maps from 2025 and 2024.
-- **[paragon-intelligence/agentle](https://github.com/paragon-intelligence/agentle)** (Score: 67.05)
-  - License: MIT | Stars: 48 | Forks: 11
+- **[paragon-intelligence/agentle](https://github.com/paragon-intelligence/agentle)** (Score: 66.05)
+  - License: MIT | Stars: 46 | Forks: 9
   - PRs open: 0 | Discussions: Yes | Contributors: 1 | Last push: 0 days ago
   - Description: Build production-ready AI agents in days, not months. Python 3.13+. Save development time with minimal code, deploy anywhere with confidence, and scale from simple assistants to complex multi-agent systems without the headaches.
 - **[hoangsonww/Agentic-AI-Pipeline](https://github.com/hoangsonww/Agentic-AI-Pipeline)** (Score: 62.38)
@@ -117,8 +117,8 @@
   - License: BSD-3-Clause | Stars: 170 | Forks: 32
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 27 days ago
   - Description: A differential drive robot is controlled using ROS2 Humble running on a Raspberry Pi 4 (running Ubuntu server 22.04). The vehicle is equipped with a raspberry pi camera for visual feedback and an RPlidar A1 sensor used for Simultaneous Localization and Mapping (SLAM), autonomous navigation and obstacle avoidance.
-- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -57.6)
-  - License: none | Stars: 129 | Forks: 16
+- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -57.9)
+  - License: none | Stars: 128 | Forks: 16
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This repository tracks the latest advancements in 3D Gaussian Splatting from Arxiv, with daily automated updates. Stay up-to-date with cutting-edge research in this exciting field!
 - **[Xuchen-Li/llm-arxiv-daily](https://github.com/Xuchen-Li/llm-arxiv-daily)** (Score: -64.1)
@@ -169,7 +169,7 @@
   - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
 - **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.2)
   - License: CC0-1.0 | Stars: 26 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This is a curated list of my GitHub stars but converted into an Awesome List! Updated automagically ever 12 hours! :D
 - **[danielrosehill/System-Prompt-Library](https://github.com/danielrosehill/System-Prompt-Library)** (Score: -91.87)
   - License: none | Stars: 25 | Forks: 3
@@ -200,10 +200,6 @@
   - License: Apache-2.0 | Stars: 20 | Forks: 9
   - PRs open: 0 | Discussions: No | Contributors: 6 | Last push: 2 days ago
   - Description: ROS 2 package providing a hardware interface for controlling Dynamixel motors via the ros2_control framework. This repository includes the dynamixel_hardware_interface plugin for seamless integration with ROS 2.
-- **[zezhishao/DailyArXiv](https://github.com/zezhishao/DailyArXiv)** (Score: -19.85)
-  - License: none | Stars: 345 | Forks: 72
-  - PRs open: 0 | Discussions: Yes | Contributors: 1 | Last push: 0 days ago
-  - Description: Daily ArXiv Papers.
 - **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -57.9)
   - License: none | Stars: 128 | Forks: 16
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
@@ -314,12 +310,8 @@
   - License: BSD-3-Clause | Stars: 154 | Forks: 13
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 2 days ago
   - Description: Offical code release for DynoSAM: Dynamic Object Smoothing And Mapping [Submitted TRO Visual SLAM SI]. A visual SLAM framework and pipeline for Dynamic environements, estimating for the motion/pose of objects and their structure, as well as the camera odometry and static map.
-- **[vybhav-ibr/genesis_ros](https://github.com/vybhav-ibr/genesis_ros)** (Score: -57.43)
-  - License: none | Stars: 138 | Forks: 14
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 29 days ago
-  - Description: A light-weight, pythhonic ros2 package to connect the genesis simulator and ROS2
-- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -57.6)
-  - License: none | Stars: 129 | Forks: 16
+- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -57.9)
+  - License: none | Stars: 128 | Forks: 16
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This repository tracks the latest advancements in 3D Gaussian Splatting from Arxiv, with daily automated updates. Stay up-to-date with cutting-edge research in this exciting field!
 - **[vybhav-ibr/genesis_ros](https://github.com/vybhav-ibr/genesis_ros)** (Score: -58.5)
@@ -349,11 +341,11 @@
   - License: none | Stars: 36 | Forks: 4
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
   - Description: Automatically update arXiv papers about SOT & VLT,  Multi-modal Learning, LLM and Video Understanding using Github Actions.
-- **[chanmuzi/NLP-Paper-News](https://github.com/chanmuzi/NLP-Paper-News)** (Score: -89.5)
-  - License: none | Stars: 32 | Forks: 0
+- **[chanmuzi/NLP-Paper-News](https://github.com/chanmuzi/NLP-Paper-News)** (Score: -89.8)
+  - License: none | Stars: 31 | Forks: 0
   - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 0 days ago
   - Description: The list of NLP paper and news I've checked. There might be short description of them (abstract) in Korean.
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.37)
   - License: none | Stars: 29 | Forks: 2
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
   - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
@@ -465,8 +457,8 @@
   - License: none | Stars: 39 | Forks: 1
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 10 days ago
   - Description: The PRISM-TopoMap - online topological mapping method with place recognition and scan matching
-- **[chanmuzi/NLP-Paper-News](https://github.com/chanmuzi/NLP-Paper-News)** (Score: -89.5)
-  - License: none | Stars: 32 | Forks: 0
+- **[chanmuzi/NLP-Paper-News](https://github.com/chanmuzi/NLP-Paper-News)** (Score: -89.8)
+  - License: none | Stars: 31 | Forks: 0
   - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 0 days ago
   - Description: The list of NLP paper and news I've checked. There might be short description of them (abstract) in Korean.
 - **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -90.2)
@@ -789,8 +781,8 @@
   - License: MIT | Stars: 64 | Forks: 4
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: An Awesome List of 275+ AI Market Maps from 2025 and 2024.
-- **[paragon-intelligence/agentle](https://github.com/paragon-intelligence/agentle)** (Score: 67.05)
-  - License: MIT | Stars: 48 | Forks: 11
+- **[paragon-intelligence/agentle](https://github.com/paragon-intelligence/agentle)** (Score: 66.05)
+  - License: MIT | Stars: 46 | Forks: 9
   - PRs open: 0 | Discussions: Yes | Contributors: 1 | Last push: 0 days ago
   - Description: Build production-ready AI agents in days, not months. Python 3.13+. Save development time with minimal code, deploy anywhere with confidence, and scale from simple assistants to complex multi-agent systems without the headaches.
 - **[zhao62/Deep-Residual-Shrinkage-Networks](https://github.com/zhao62/Deep-Residual-Shrinkage-Networks)** (Score: 64.97)
@@ -867,12 +859,8 @@
   - License: NOASSERTION | Stars: 123 | Forks: 27
   - PRs open: 7 | Discussions: No | Contributors: 8 | Last push: 16 days ago
   - Description: Omniverse Lunar Robotics Simulator
-- **[vybhav-ibr/genesis_ros](https://github.com/vybhav-ibr/genesis_ros)** (Score: -57.43)
-  - License: none | Stars: 138 | Forks: 14
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 29 days ago
-  - Description: A light-weight, pythhonic ros2 package to connect the genesis simulator and ROS2
-- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -57.6)
-  - License: none | Stars: 129 | Forks: 16
+- **[longxiang-ai/awesome-gaussians](https://github.com/longxiang-ai/awesome-gaussians)** (Score: -57.9)
+  - License: none | Stars: 128 | Forks: 16
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This repository tracks the latest advancements in 3D Gaussian Splatting from Arxiv, with daily automated updates. Stay up-to-date with cutting-edge research in this exciting field!
 - **[vybhav-ibr/genesis_ros](https://github.com/vybhav-ibr/genesis_ros)** (Score: -58.5)
@@ -902,7 +890,7 @@
   - License: none | Stars: 67 | Forks: 9
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2 days ago
   - Description: [T-ASE 2025] This is the official implementation of RINO: Accurate, Robust Radar-Inertial Odometry with Non-Iterative Estimation.
-- **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.47)
+- **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.4)
   - License: NOASSERTION | Stars: 16 | Forks: 3
   - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Python frameworks, libraries, software and resources.  With repository stars⭐ and forks🍴
@@ -928,7 +916,7 @@
   - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
 - **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.2)
   - License: CC0-1.0 | Stars: 26 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: This is a curated list of my GitHub stars but converted into an Awesome List! Updated automagically ever 12 hours! :D
 - **[danielrosehill/System-Prompt-Library](https://github.com/danielrosehill/System-Prompt-Library)** (Score: -91.87)
   - License: none | Stars: 25 | Forks: 3
@@ -973,9 +961,9 @@
   - License: Apache-2.0 | Stars: 53 | Forks: 15
   - PRs open: 8 | Discussions: Yes | Contributors: 10 | Last push: 18 days ago
   - Description: A framework for orchestration
-- **[johe123qwe/github-trending](https://github.com/johe123qwe/github-trending)** (Score: 64.73)
+- **[johe123qwe/github-trending](https://github.com/johe123qwe/github-trending)** (Score: 64.8)
   - License: MIT | Stars: 42 | Forks: 8
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: 定时抓取 Github Trending
 - **[eclipse-cyclonedds/cyclonedds-cxx](https://github.com/eclipse-cyclonedds/cyclonedds-cxx)** (Score: -44.93)
   - License: NOASSERTION | Stars: 118 | Forks: 81
