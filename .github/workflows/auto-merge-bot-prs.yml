@@ -44,6 +44,30 @@ jobs:
               core.info(`Could not merge PR #${prNumber} immediately. Auto-merge has been enabled and GitHub will merge when possible. Reason: ${e.message}`);
             }
 
+      - name: Delete source branch after merge
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { owner, repo } = context.repo;
+            const pr = context.payload.pull_request;
+            if (!pr) {
+              core.info('No pull_request payload; skipping branch deletion.');
+              return;
+            }
+            const ref = pr.head.ref;
+            try {
+              if (pr.head.repo?.full_name === `${owner}/${repo}`) {
+                await github.git.deleteRef({ owner, repo, ref: `heads/${ref}` });
+                core.info(`Deleted branch heads/${ref}`);
+              } else {
+                core.info('PR branch is from a fork; not deleting.');
+              }
+            } catch (e) {
+              core.info(`Could not delete branch heads/${ref}: ${e.message}`);
+            }
+
   backfill:
     if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
