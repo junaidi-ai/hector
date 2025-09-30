@@ -129,7 +129,7 @@
   - Description: Range sensor-based 2.5D gridded height mapping (Digital Elevation Model) for urban terrain navigation of mobile robots
 - **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.7)
   - License: NOASSERTION | Stars: 16 | Forks: 2
-  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Machine Learning frameworks, libraries and software. With repository stars⭐ and forks🍴
 - **[wise-vision/mcp_server_ros_2](https://github.com/wise-vision/mcp_server_ros_2)** (Score: -87.0)
   - License: MPL-2.0 | Stars: 39 | Forks: 3
@@ -321,9 +321,9 @@
   - License: none | Stars: 80 | Forks: 2
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 23 days ago
   - Description: AwesomeSim2Real - An update-to-date Sim-to-Real repo of "Survey of Sim-to-Real Methods in RL: Progress, Prospects and Challenges with Foundation Models"
-- **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.47)
+- **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.4)
   - License: NOASSERTION | Stars: 16 | Forks: 3
-  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Python frameworks, libraries, software and resources.  With repository stars⭐ and forks🍴
 - **[Xuchen-Li/cv-arxiv-daily](https://github.com/Xuchen-Li/cv-arxiv-daily)** (Score: -88.1)
   - License: none | Stars: 36 | Forks: 4
@@ -843,11 +843,11 @@
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
 - **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.4)
   - License: NOASSERTION | Stars: 16 | Forks: 3
-  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Python frameworks, libraries, software and resources.  With repository stars⭐ and forks🍴
-- **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.77)
+- **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.7)
   - License: NOASSERTION | Stars: 16 | Forks: 2
-  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Machine Learning frameworks, libraries and software. With repository stars⭐ and forks🍴
 - **[MINT-SJTU/LeRobot-Anything-U-Arm](https://github.com/MINT-SJTU/LeRobot-Anything-U-Arm)** (Score: -83.27)
   - License: none | Stars: 49 | Forks: 3
