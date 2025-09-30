@@ -135,15 +135,7 @@
 - **[DWCTOD/cv-arxiv-daily](https://github.com/DWCTOD/cv-arxiv-daily)** (Score: -74.9)
   - License: none | Stars: 66 | Forks: 25
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
-  - Description: Automatically Update NLP Papers Daily using Github Actions (ref: https://github.com/Vincentqyw/cv-arxiv-daily)
-- **[DWCTOD/cv-arxiv-daily](https://github.com/DWCTOD/cv-arxiv-daily)** (Score: -74.9)
-  - License: none | Stars: 66 | Forks: 25
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
-- **[Ikhyeon-Cho/height_mapping](https://github.com/Ikhyeon-Cho/height_mapping)** (Score: -76.73)
-  - License: none | Stars: 71 | Forks: 10
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2 days ago
-  - Description: Range sensor-based 2.5D gridded height mapping (Digital Elevation Model) for urban terrain navigation of mobile robots
-- **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.7)
+- **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.77)
   - License: NOASSERTION | Stars: 16 | Forks: 2
   - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 1 days ago
   - Description: A curated list of awesome Machine Learning frameworks, libraries and software. With repository stars⭐ and forks🍴
@@ -151,10 +143,6 @@
   - License: MPL-2.0 | Stars: 38 | Forks: 3
   - PRs open: 3 | Discussions: No | Contributors: 3 | Last push: 0 days ago
   - Description: Advanced MCP Server ROS 2 bridging AI agents straight into robotics
-- **[hmbdc-dev/hmbdc](https://github.com/hmbdc-dev/hmbdc)** (Score: -87.43)
-  - License: none | Stars: 35 | Forks: 8
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 2 days ago
-  - Description: A headers only high performance C++ middleware framework/lib. See README for details.
 - **[Xuchen-Li/cv-arxiv-daily](https://github.com/Xuchen-Li/cv-arxiv-daily)** (Score: -88.1)
   - License: none | Stars: 36 | Forks: 4
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
@@ -167,26 +155,18 @@
   - License: MPL-2.0 | Stars: 32 | Forks: 2
   - PRs open: 0 | Discussions: No | Contributors: 4 | Last push: 3 days ago
   - Description: Roboto Python SDK and CLI
-- **[KirillMouraviev/PRISM-TopoMap](https://github.com/KirillMouraviev/PRISM-TopoMap)** (Score: -89.3)
-  - License: none | Stars: 38 | Forks: 1
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 18 days ago
-  - Description: The PRISM-TopoMap - online topological mapping method with place recognition and scan matching
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.1)
-  - License: none | Stars: 29 | Forks: 3
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
-  - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
+- **[ethz-asl/terrain-navigation2](https://github.com/ethz-asl/terrain-navigation2)** (Score: -89.9)
+  - License: BSD-3-Clause | Stars: 24 | Forks: 5
+  - PRs open: 0 | Discussions: No | Contributors: 7 | Last push: 0 days ago
+  - Description: Implementation for safe low altitude navigation in steep terrain for fixed-wing Aerial Vehicles
 - **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -90.2)
   - License: NOASSERTION | Stars: 30 | Forks: 1
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: 🚀 Daily AI Research Digest: Tracking breakthroughs in AI/NLP/CV/Robotics with dynamic updates and paper navigation.
-- **[ethz-asl/terrain-navigation2](https://github.com/ethz-asl/terrain-navigation2)** (Score: -90.23)
-  - License: BSD-3-Clause | Stars: 24 | Forks: 5
-  - PRs open: 0 | Discussions: No | Contributors: 7 | Last push: 5 days ago
-  - Description: Implementation for safe low altitude navigation in steep terrain for fixed-wing Aerial Vehicles
-- **[danielrosehill/System-Prompt-Library](https://github.com/danielrosehill/System-Prompt-Library)** (Score: -91.1)
-  - License: none | Stars: 26 | Forks: 4
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
-  - Description: System prompts for AI agents and assistants (automatically populated); periodic point in time exports are releases
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
+  - License: none | Stars: 29 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
 - **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.2)
   - License: CC0-1.0 | Stars: 26 | Forks: 2
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
@@ -391,9 +371,9 @@
   - License: none | Stars: 483 | Forks: 107
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 23 days ago
   - Description: The deep residual shrinkage network is a variant of deep residual networks.
-- **[hoangsonww/Agentic-AI-Pipeline](https://github.com/hoangsonww/Agentic-AI-Pipeline)** (Score: 62.62)
-  - License: Apache-2.0 | Stars: 27 | Forks: 21
-  - PRs open: 2 | Discussions: Yes | Contributors: 1 | Last push: 2 days ago
+- **[hoangsonww/Agentic-AI-Pipeline](https://github.com/hoangsonww/Agentic-AI-Pipeline)** (Score: 62.45)
+  - License: Apache-2.0 | Stars: 26 | Forks: 21
+  - PRs open: 2 | Discussions: Yes | Contributors: 1 | Last push: 0 days ago
   - Description: 🦾 A production‑ready research outreach AI agent that plans, discovers, reasons, uses tools, auto‑builds cited briefings, and drafts tailored emails with tool‑chaining, memory, tests, and turnkey Docker, AWS, Ansible & Terraform deploys. Bonus: An Agentic RAG system & Coding Pipeline with multistep planning, self-critique, and autonomous agents.
 - **[ACFR-RPG/DynOSAM](https://github.com/ACFR-RPG/DynOSAM)** (Score: -50.8)
   - License: BSD-3-Clause | Stars: 155 | Forks: 13
@@ -489,10 +469,6 @@
   - License: none | Stars: 32 | Forks: 0
   - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 0 days ago
   - Description: The list of NLP paper and news I've checked. There might be short description of them (abstract) in Korean.
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.1)
-  - License: none | Stars: 29 | Forks: 3
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
-  - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
 - **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -90.2)
   - License: NOASSERTION | Stars: 30 | Forks: 1
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
@@ -622,7 +598,7 @@
   - Description: Kompass is an event-driven navigation stack designed with an easy-to-use Python API. It implements highly optimized, GPU powered, versions of the most cutting edge algorithms for all parts of the navigation stack.
 - **[eigendude/OASIS](https://github.com/eigendude/OASIS)** (Score: 56.9)
   - License: Apache-2.0 | Stars: 21 | Forks: 2
-  - PRs open: 1 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
   - Description: OASIS, a smart home operating system based on ROS 2
 - **[kimtth/awesome-azure-openai-llm](https://github.com/kimtth/awesome-azure-openai-llm)** (Score: 23.1)
   - License: none | Stars: 378 | Forks: 47
@@ -801,9 +777,9 @@
   - License: none | Stars: 483 | Forks: 107
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 23 days ago
   - Description: The deep residual shrinkage network is a variant of deep residual networks.
-- **[hoangsonww/Agentic-AI-Pipeline](https://github.com/hoangsonww/Agentic-AI-Pipeline)** (Score: 62.62)
-  - License: Apache-2.0 | Stars: 27 | Forks: 21
-  - PRs open: 2 | Discussions: Yes | Contributors: 1 | Last push: 2 days ago
+- **[hoangsonww/Agentic-AI-Pipeline](https://github.com/hoangsonww/Agentic-AI-Pipeline)** (Score: 62.45)
+  - License: Apache-2.0 | Stars: 26 | Forks: 21
+  - PRs open: 2 | Discussions: Yes | Contributors: 1 | Last push: 0 days ago
   - Description: 🦾 A production‑ready research outreach AI agent that plans, discovers, reasons, uses tools, auto‑builds cited briefings, and drafts tailored emails with tool‑chaining, memory, tests, and turnkey Docker, AWS, Ansible & Terraform deploys. Bonus: An Agentic RAG system & Coding Pipeline with multistep planning, self-critique, and autonomous agents.
 - **[agtonomy/trellis](https://github.com/agtonomy/trellis)** (Score: 61.2)
   - License: Apache-2.0 | Stars: 26 | Forks: 5
@@ -835,7 +811,7 @@
   - Description: Kompass is an event-driven navigation stack designed with an easy-to-use Python API. It implements highly optimized, GPU powered, versions of the most cutting edge algorithms for all parts of the navigation stack.
 - **[eigendude/OASIS](https://github.com/eigendude/OASIS)** (Score: 56.9)
   - License: Apache-2.0 | Stars: 21 | Forks: 2
-  - PRs open: 1 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
   - Description: OASIS, a smart home operating system based on ROS 2
 - **[airas-org/airas](https://github.com/airas-org/airas)** (Score: 56.45)
   - License: MIT | Stars: 18 | Forks: 0
@@ -918,26 +894,18 @@
   - License: none | Stars: 45 | Forks: 3
   - PRs open: 0 | Discussions: No | Contributors: 5 | Last push: 5 days ago
   - Description: U-Arm: Lerobot-Everything-Cross-Embodiment-Teleoperation
-- **[hmbdc-dev/hmbdc](https://github.com/hmbdc-dev/hmbdc)** (Score: -87.43)
-  - License: none | Stars: 35 | Forks: 8
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 2 days ago
-  - Description: A headers only high performance C++ middleware framework/lib. See README for details.
 - **[Xuchen-Li/cv-arxiv-daily](https://github.com/Xuchen-Li/cv-arxiv-daily)** (Score: -88.1)
   - License: none | Stars: 36 | Forks: 4
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
   - Description: Automatically update arXiv papers about SOT & VLT,  Multi-modal Learning, LLM and Video Understanding using Github Actions.
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.1)
-  - License: none | Stars: 29 | Forks: 3
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
-  - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
 - **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -90.2)
   - License: NOASSERTION | Stars: 30 | Forks: 1
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: 🚀 Daily AI Research Digest: Tracking breakthroughs in AI/NLP/CV/Robotics with dynamic updates and paper navigation.
-- **[danielrosehill/System-Prompt-Library](https://github.com/danielrosehill/System-Prompt-Library)** (Score: -91.1)
-  - License: none | Stars: 26 | Forks: 4
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
-  - Description: System prompts for AI agents and assistants (automatically populated); periodic point in time exports are releases
+- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
+  - License: none | Stars: 29 | Forks: 2
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
 - **[rainmana/awesome-rainmana](https://github.com/rainmana/awesome-rainmana)** (Score: -91.2)
   - License: CC0-1.0 | Stars: 26 | Forks: 2
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
@@ -983,7 +951,7 @@
   - PRs open: 7 | Discussions: No | Contributors: 5 | Last push: 13 days ago
 - **[johe123qwe/github-trending](https://github.com/johe123qwe/github-trending)** (Score: 64.73)
   - License: MIT | Stars: 42 | Forks: 8
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
   - Description: 定时抓取 Github Trending
 - **[eclipse-cyclonedds/cyclonedds-cxx](https://github.com/eclipse-cyclonedds/cyclonedds-cxx)** (Score: -44.53)
   - License: NOASSERTION | Stars: 120 | Forks: 81
@@ -992,6 +960,3 @@
   - License: none | Stars: 39 | Forks: 75
   - PRs open: 0 | Discussions: No | Contributors: 28 | Last push: 5 days ago
   - Description: EMQ Blog
-- **[HIAS-VPD-LAB/Omni-LIVO](https://github.com/HIAS-VPD-LAB/Omni-LIVO)** (Score: -93.4)
-  - License: none | Stars: 19 | Forks: 3
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
