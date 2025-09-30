@@ -94,7 +94,7 @@
   - Description: Classes and methods for Geometric Deep Learning to support Substack, LinkedIn newsletters and tutorials
 - **[Lyz103/LLM-Agent-Paper-daily](https://github.com/Lyz103/LLM-Agent-Paper-daily)** (Score: 55.9)
   - License: Apache-2.0 | Stars: 18 | Forks: 1
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
   - Description: Automatically Update LLM-Agent Papers Daily using Github Actions (Update Every 12th hours)
 - **[kimtth/awesome-azure-openai-llm](https://github.com/kimtth/awesome-azure-openai-llm)** (Score: 22.9)
   - License: none | Stars: 378 | Forks: 47
@@ -133,7 +133,7 @@
   - Description: Range sensor-based 2.5D gridded height mapping (Digital Elevation Model) for urban terrain navigation of mobile robots
 - **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.7)
   - License: NOASSERTION | Stars: 16 | Forks: 2
-  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Machine Learning frameworks, libraries and software. With repository stars⭐ and forks🍴
 - **[wise-vision/mcp_server_ros_2](https://github.com/wise-vision/mcp_server_ros_2)** (Score: -86.87)
   - License: MPL-2.0 | Stars: 39 | Forks: 3
@@ -145,7 +145,7 @@
   - Description: A headers only high performance C++ middleware framework/lib. See README for details.
 - **[Xuchen-Li/cv-arxiv-daily](https://github.com/Xuchen-Li/cv-arxiv-daily)** (Score: -88.1)
   - License: none | Stars: 36 | Forks: 4
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
   - Description: Automatically update arXiv papers about SOT & VLT,  Multi-modal Learning, LLM and Video Understanding using Github Actions.
 - **[roboto-ai/roboto-python-sdk](https://github.com/roboto-ai/roboto-python-sdk)** (Score: -88.87)
   - License: MPL-2.0 | Stars: 32 | Forks: 2
@@ -185,7 +185,7 @@
   - Description: 📚这个仓库是在arxiv上收集的有关VLN，VLA, SLAM，Gaussian Splatting,非线性优化等相关论文。每天都会自动更新！issue区域是最新10篇论文
 - **[tangwen-qian/DailyArXiv](https://github.com/tangwen-qian/DailyArXiv)** (Score: -124.97)
   - License: none | Stars: 36 | Forks: 7
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1 days ago
 
 ## EHR & Clinical Systems
 - **[ros-controls/ros2_control_demos](https://github.com/ros-controls/ros2_control_demos)** (Score: 303.2)
@@ -274,9 +274,9 @@
   - License: MIT | Stars: 113 | Forks: 19
   - PRs open: 1 | Discussions: No | Contributors: 7 | Last push: 1 days ago
   - Description: Beginner's Guide to reComputer Jetson
-- **[isLinXu/paper-list](https://github.com/isLinXu/paper-list)** (Score: 80.53)
+- **[isLinXu/paper-list](https://github.com/isLinXu/paper-list)** (Score: 80.6)
   - License: Apache-2.0 | Stars: 94 | Forks: 11
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
   - Description: autoupdate paper list
 - **[olympus-robotics/hephaestus](https://github.com/olympus-robotics/hephaestus)** (Score: 67.63)
   - License: MIT | Stars: 49 | Forks: 11
@@ -302,9 +302,9 @@
   - License: MIT | Stars: 18 | Forks: 0
   - PRs open: 6 | Discussions: Yes | Contributors: 7 | Last push: 0 days ago
   - Description: AIRAS - an open-source project for research automation
-- **[Lyz103/LLM-Agent-Paper-daily](https://github.com/Lyz103/LLM-Agent-Paper-daily)** (Score: 55.83)
+- **[Lyz103/LLM-Agent-Paper-daily](https://github.com/Lyz103/LLM-Agent-Paper-daily)** (Score: 55.9)
   - License: Apache-2.0 | Stars: 18 | Forks: 1
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
   - Description: Automatically Update LLM-Agent Papers Daily using Github Actions (Update Every 12th hours)
 - **[superxslam/SuperOdom](https://github.com/superxslam/SuperOdom)** (Score: 33.47)
   - License: none | Stars: 414 | Forks: 43
@@ -333,17 +333,17 @@
   - License: none | Stars: 80 | Forks: 2
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 21 days ago
   - Description: AwesomeSim2Real - An update-to-date Sim-to-Real repo of "Survey of Sim-to-Real Methods in RL: Progress, Prospects and Challenges with Foundation Models"
-- **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.47)
+- **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.4)
   - License: NOASSERTION | Stars: 16 | Forks: 3
-  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Python frameworks, libraries, software and resources.  With repository stars⭐ and forks🍴
-- **[Xuchen-Li/cv-arxiv-daily](https://github.com/Xuchen-Li/cv-arxiv-daily)** (Score: -88.17)
+- **[Xuchen-Li/cv-arxiv-daily](https://github.com/Xuchen-Li/cv-arxiv-daily)** (Score: -88.1)
   - License: none | Stars: 36 | Forks: 4
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
   - Description: Automatically update arXiv papers about SOT & VLT,  Multi-modal Learning, LLM and Video Understanding using Github Actions.
-- **[chanmuzi/NLP-Paper-News](https://github.com/chanmuzi/NLP-Paper-News)** (Score: -89.57)
+- **[chanmuzi/NLP-Paper-News](https://github.com/chanmuzi/NLP-Paper-News)** (Score: -89.5)
   - License: none | Stars: 32 | Forks: 0
-  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 0 days ago
   - Description: The list of NLP paper and news I've checked. There might be short description of them (abstract) in Korean.
 - **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.3)
   - License: none | Stars: 29 | Forks: 2
@@ -389,13 +389,13 @@
   - License: MIT | Stars: 113 | Forks: 19
   - PRs open: 1 | Discussions: No | Contributors: 7 | Last push: 1 days ago
   - Description: Beginner's Guide to reComputer Jetson
-- **[isLinXu/paper-list](https://github.com/isLinXu/paper-list)** (Score: 80.53)
+- **[isLinXu/paper-list](https://github.com/isLinXu/paper-list)** (Score: 80.6)
   - License: Apache-2.0 | Stars: 94 | Forks: 11
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
   - Description: autoupdate paper list
-- **[agtonomy/trellis](https://github.com/agtonomy/trellis)** (Score: 61.53)
+- **[agtonomy/trellis](https://github.com/agtonomy/trellis)** (Score: 61.47)
   - License: Apache-2.0 | Stars: 26 | Forks: 5
-  - PRs open: 1 | Discussions: No | Contributors: 9 | Last push: 1 days ago
+  - PRs open: 1 | Discussions: No | Contributors: 9 | Last push: 2 days ago
   - Description: General purpose middleware framework for distributed applications
 - **[OSU-NLP-Group/GUI-Agents-Paper-List](https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List)** (Score: 61.47)
   - License: none | Stars: 509 | Forks: 28
@@ -407,7 +407,7 @@
   - Description: EmbodiedAgents is a fully-loaded ROS2 based framework for creating interactive physical agents that can understand, remember, and act upon contextual information from their environment.
 - **[Lyz103/LLM-Agent-Paper-daily](https://github.com/Lyz103/LLM-Agent-Paper-daily)** (Score: 55.9)
   - License: Apache-2.0 | Stars: 18 | Forks: 1
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
   - Description: Automatically Update LLM-Agent Papers Daily using Github Actions (Update Every 12th hours)
 - **[CPerezRuiz335/LIMOncello](https://github.com/CPerezRuiz335/LIMOncello)** (Score: 42.37)
   - License: GPL-3.0 | Stars: 37 | Forks: 5
@@ -440,27 +440,15 @@
 - **[Xuchen-Li/cv-arxiv-daily](https://github.com/Xuchen-Li/cv-arxiv-daily)** (Score: -88.1)
   - License: none | Stars: 36 | Forks: 4
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
-  - Description: Automatically Update NLP Papers Daily using Github Actions (ref: https://github.com/Vincentqyw/cv-arxiv-daily)
-- **[yangsc4063/rino](https://github.com/yangsc4063/rino)** (Score: -78.17)
-  - License: none | Stars: 68 | Forks: 9
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 7 days ago
-  - Description: [T-ASE 2025] This is the official implementation of RINO: Accurate, Robust Radar-Inertial Odometry with Non-Iterative Estimation.
-- **[Xuchen-Li/cv-arxiv-daily](https://github.com/Xuchen-Li/cv-arxiv-daily)** (Score: -88.17)
-  - License: none | Stars: 36 | Forks: 4
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1 days ago
   - Description: Automatically update arXiv papers about SOT & VLT,  Multi-modal Learning, LLM and Video Understanding using Github Actions.
 - **[KirillMouraviev/PRISM-TopoMap](https://github.com/KirillMouraviev/PRISM-TopoMap)** (Score: -89.17)
   - License: none | Stars: 38 | Forks: 1
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 16 days ago
   - Description: The PRISM-TopoMap - online topological mapping method with place recognition and scan matching
-- **[chanmuzi/NLP-Paper-News](https://github.com/chanmuzi/NLP-Paper-News)** (Score: -89.57)
+- **[chanmuzi/NLP-Paper-News](https://github.com/chanmuzi/NLP-Paper-News)** (Score: -89.5)
   - License: none | Stars: 32 | Forks: 0
-  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 0 days ago
   - Description: The list of NLP paper and news I've checked. There might be short description of them (abstract) in Korean.
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.1)
-  - License: none | Stars: 29 | Forks: 3
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
-  - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
 - **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -90.2)
   - License: NOASSERTION | Stars: 30 | Forks: 1
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
@@ -768,9 +756,9 @@
   - License: Apache-2.0 | Stars: 27 | Forks: 21
   - PRs open: 2 | Discussions: Yes | Contributors: 1 | Last push: 0 days ago
   - Description: 🦾 A production‑ready research outreach AI agent that plans, discovers, reasons, uses tools, auto‑builds cited briefings, and drafts tailored emails with tool‑chaining, memory, tests, and turnkey Docker, AWS, Ansible & Terraform deploys. Bonus: An Agentic RAG system & Coding Pipeline with multistep planning, self-critique, and autonomous agents.
-- **[agtonomy/trellis](https://github.com/agtonomy/trellis)** (Score: 61.53)
+- **[agtonomy/trellis](https://github.com/agtonomy/trellis)** (Score: 61.47)
   - License: Apache-2.0 | Stars: 26 | Forks: 5
-  - PRs open: 1 | Discussions: No | Contributors: 9 | Last push: 1 days ago
+  - PRs open: 1 | Discussions: No | Contributors: 9 | Last push: 2 days ago
   - Description: General purpose middleware framework for distributed applications
 - **[automatika-robotics/embodied-agents](https://github.com/automatika-robotics/embodied-agents)** (Score: 59.98)
   - License: MIT | Stars: 31 | Forks: 3
@@ -875,11 +863,11 @@
   - Description: [T-ASE 2025] This is the official implementation of RINO: Accurate, Robust Radar-Inertial Odometry with Non-Iterative Estimation.
 - **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.4)
   - License: NOASSERTION | Stars: 16 | Forks: 3
-  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Python frameworks, libraries, software and resources.  With repository stars⭐ and forks🍴
-- **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.77)
+- **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.7)
   - License: NOASSERTION | Stars: 16 | Forks: 2
-  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Machine Learning frameworks, libraries and software. With repository stars⭐ and forks🍴
 - **[MINT-SJTU/LeRobot-Anything-U-Arm](https://github.com/MINT-SJTU/LeRobot-Anything-U-Arm)** (Score: -84.03)
   - License: none | Stars: 48 | Forks: 3
@@ -891,12 +879,8 @@
   - Description: A headers only high performance C++ middleware framework/lib. See README for details.
 - **[Xuchen-Li/cv-arxiv-daily](https://github.com/Xuchen-Li/cv-arxiv-daily)** (Score: -88.1)
   - License: none | Stars: 36 | Forks: 4
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
   - Description: Automatically update arXiv papers about SOT & VLT,  Multi-modal Learning, LLM and Video Understanding using Github Actions.
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.1)
-  - License: none | Stars: 29 | Forks: 3
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
-  - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
 - **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -90.2)
   - License: NOASSERTION | Stars: 30 | Forks: 1
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
@@ -926,7 +910,7 @@
   - Description: 📚这个仓库是在arxiv上收集的有关VLN，VLA, SLAM，Gaussian Splatting,非线性优化等相关论文。每天都会自动更新！issue区域是最新10篇论文
 - **[tangwen-qian/DailyArXiv](https://github.com/tangwen-qian/DailyArXiv)** (Score: -124.97)
   - License: none | Stars: 36 | Forks: 7
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1 days ago
 
 ## Uncategorized
 - **[hellerve/programming-talks](https://github.com/hellerve/programming-talks)** (Score: 2212.1)
@@ -952,6 +936,3 @@
   - License: none | Stars: 40 | Forks: 75
   - PRs open: 0 | Discussions: No | Contributors: 28 | Last push: 1 days ago
   - Description: EMQ Blog
-- **[HIAS-VPD-LAB/Omni-LIVO](https://github.com/HIAS-VPD-LAB/Omni-LIVO)** (Score: -93.4)
-  - License: none | Stars: 19 | Forks: 3
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
