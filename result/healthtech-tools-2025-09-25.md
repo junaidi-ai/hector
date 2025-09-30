@@ -130,7 +130,7 @@
   - Description: Official repository for the paper "Vision Transformers for End-to-End Vision-Based Quadrotor Obstacle  Avoidance"  by Bhattacharya, et al. (2024) from GRASP, Penn.
 - **[Xuchen-Li/llm-arxiv-daily](https://github.com/Xuchen-Li/llm-arxiv-daily)** (Score: -64.17)
   - License: none | Stars: 113 | Forks: 7
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
   - Description: Automatically update arXiv papers about LLM Reasoning, LLM Evaluation, LLM & MLLM and Video Understanding using Github Actions.
 - **[monologg/nlp-arxiv-daily](https://github.com/monologg/nlp-arxiv-daily)** (Score: -65.47)
   - License: none | Stars: 101 | Forks: 20
@@ -141,7 +141,7 @@
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
 - **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.7)
   - License: NOASSERTION | Stars: 16 | Forks: 2
-  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Machine Learning frameworks, libraries and software. With repository stars⭐ and forks🍴
 - **[wise-vision/mcp_server_ros_2](https://github.com/wise-vision/mcp_server_ros_2)** (Score: -87.17)
   - License: MPL-2.0 | Stars: 38 | Forks: 3
@@ -332,7 +332,7 @@
   - Description: This repository tracks the latest advancements in 3D Gaussian Splatting from Arxiv, with daily automated updates. Stay up-to-date with cutting-edge research in this exciting field!
 - **[Xuchen-Li/llm-arxiv-daily](https://github.com/Xuchen-Li/llm-arxiv-daily)** (Score: -64.17)
   - License: none | Stars: 113 | Forks: 7
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
   - Description: Automatically update arXiv papers about LLM Reasoning, LLM Evaluation, LLM & MLLM and Video Understanding using Github Actions.
 - **[monologg/nlp-arxiv-daily](https://github.com/monologg/nlp-arxiv-daily)** (Score: -65.47)
   - License: none | Stars: 101 | Forks: 20
@@ -345,9 +345,9 @@
   - License: none | Stars: 78 | Forks: 2
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 19 days ago
   - Description: AwesomeSim2Real - An update-to-date Sim-to-Real repo of "Survey of Sim-to-Real Methods in RL: Progress, Prospects and Challenges with Foundation Models"
-- **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.47)
+- **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.4)
   - License: NOASSERTION | Stars: 16 | Forks: 3
-  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Python frameworks, libraries, software and resources.  With repository stars⭐ and forks🍴
 - **[Xuchen-Li/cv-arxiv-daily](https://github.com/Xuchen-Li/cv-arxiv-daily)** (Score: -88.17)
   - License: none | Stars: 36 | Forks: 4
@@ -375,9 +375,9 @@
   - License: none | Stars: 484 | Forks: 107
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 24 days ago
   - Description: The deep residual shrinkage network is a variant of deep residual networks.
-- **[hoangsonww/Agentic-AI-Pipeline](https://github.com/hoangsonww/Agentic-AI-Pipeline)** (Score: 62.62)
-  - License: Apache-2.0 | Stars: 27 | Forks: 21
-  - PRs open: 2 | Discussions: Yes | Contributors: 1 | Last push: 2 days ago
+- **[hoangsonww/Agentic-AI-Pipeline](https://github.com/hoangsonww/Agentic-AI-Pipeline)** (Score: 62.45)
+  - License: Apache-2.0 | Stars: 26 | Forks: 21
+  - PRs open: 2 | Discussions: Yes | Contributors: 1 | Last push: 0 days ago
   - Description: 🦾 A production‑ready research outreach AI agent that plans, discovers, reasons, uses tools, auto‑builds cited briefings, and drafts tailored emails with tool‑chaining, memory, tests, and turnkey Docker, AWS, Ansible & Terraform deploys. Bonus: An Agentic RAG system & Coding Pipeline with multistep planning, self-critique, and autonomous agents.
 - **[ACFR-RPG/DynOSAM](https://github.com/ACFR-RPG/DynOSAM)** (Score: -50.8)
   - License: BSD-3-Clause | Stars: 155 | Forks: 13
@@ -451,7 +451,7 @@
   - Description: Official repository for the paper "Vision Transformers for End-to-End Vision-Based Quadrotor Obstacle  Avoidance"  by Bhattacharya, et al. (2024) from GRASP, Penn.
 - **[Xuchen-Li/llm-arxiv-daily](https://github.com/Xuchen-Li/llm-arxiv-daily)** (Score: -64.17)
   - License: none | Stars: 113 | Forks: 7
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
   - Description: Automatically update arXiv papers about LLM Reasoning, LLM Evaluation, LLM & MLLM and Video Understanding using Github Actions.
 - **[monologg/nlp-arxiv-daily](https://github.com/monologg/nlp-arxiv-daily)** (Score: -65.47)
   - License: none | Stars: 101 | Forks: 20
@@ -473,10 +473,6 @@
   - License: none | Stars: 32 | Forks: 0
   - PRs open: 0 | Discussions: No | Contributors: 3 | Last push: 1 days ago
   - Description: The list of NLP paper and news I've checked. There might be short description of them (abstract) in Korean.
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.1)
-  - License: none | Stars: 29 | Forks: 3
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
-  - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
 - **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -90.2)
   - License: NOASSERTION | Stars: 30 | Forks: 1
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
@@ -789,9 +785,9 @@
   - License: none | Stars: 484 | Forks: 107
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 24 days ago
   - Description: The deep residual shrinkage network is a variant of deep residual networks.
-- **[hoangsonww/Agentic-AI-Pipeline](https://github.com/hoangsonww/Agentic-AI-Pipeline)** (Score: 62.62)
-  - License: Apache-2.0 | Stars: 27 | Forks: 21
-  - PRs open: 2 | Discussions: Yes | Contributors: 1 | Last push: 2 days ago
+- **[hoangsonww/Agentic-AI-Pipeline](https://github.com/hoangsonww/Agentic-AI-Pipeline)** (Score: 62.45)
+  - License: Apache-2.0 | Stars: 26 | Forks: 21
+  - PRs open: 2 | Discussions: Yes | Contributors: 1 | Last push: 0 days ago
   - Description: 🦾 A production‑ready research outreach AI agent that plans, discovers, reasons, uses tools, auto‑builds cited briefings, and drafts tailored emails with tool‑chaining, memory, tests, and turnkey Docker, AWS, Ansible & Terraform deploys. Bonus: An Agentic RAG system & Coding Pipeline with multistep planning, self-critique, and autonomous agents.
 - **[agtonomy/trellis](https://github.com/agtonomy/trellis)** (Score: 61.6)
   - License: Apache-2.0 | Stars: 26 | Forks: 5
@@ -869,7 +865,7 @@
   - Description: Official repository for the paper "Vision Transformers for End-to-End Vision-Based Quadrotor Obstacle  Avoidance"  by Bhattacharya, et al. (2024) from GRASP, Penn.
 - **[Xuchen-Li/llm-arxiv-daily](https://github.com/Xuchen-Li/llm-arxiv-daily)** (Score: -64.17)
   - License: none | Stars: 113 | Forks: 7
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
   - Description: Automatically update arXiv papers about LLM Reasoning, LLM Evaluation, LLM & MLLM and Video Understanding using Github Actions.
 - **[monologg/nlp-arxiv-daily](https://github.com/monologg/nlp-arxiv-daily)** (Score: -65.47)
   - License: none | Stars: 101 | Forks: 20
@@ -892,11 +888,11 @@
   - Description: [T-ASE 2025] This is the official implementation of RINO: Accurate, Robust Radar-Inertial Odometry with Non-Iterative Estimation.
 - **[Correia-jpv/fucking-awesome-python](https://github.com/Correia-jpv/fucking-awesome-python)** (Score: -79.4)
   - License: NOASSERTION | Stars: 16 | Forks: 3
-  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - PRs open: 2 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Python frameworks, libraries, software and resources.  With repository stars⭐ and forks🍴
-- **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.77)
+- **[Correia-jpv/fucking-awesome-machine-learning](https://github.com/Correia-jpv/fucking-awesome-machine-learning)** (Score: -79.7)
   - License: NOASSERTION | Stars: 16 | Forks: 2
-  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 1 days ago
+  - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Machine Learning frameworks, libraries and software. With repository stars⭐ and forks🍴
 - **[MINT-SJTU/LeRobot-Anything-U-Arm](https://github.com/MINT-SJTU/LeRobot-Anything-U-Arm)** (Score: -84.5)
   - License: none | Stars: 46 | Forks: 3
@@ -906,10 +902,6 @@
   - License: none | Stars: 36 | Forks: 4
   - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1 days ago
   - Description: Automatically update arXiv papers about SOT & VLT,  Multi-modal Learning, LLM and Video Understanding using Github Actions.
-- **[XuzhaoLi/ro-arxiv-daily](https://github.com/XuzhaoLi/ro-arxiv-daily)** (Score: -90.1)
-  - License: none | Stars: 29 | Forks: 3
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
-  - Description: Automatically Update Arxiv Papers about Path Planning, LLM and Autonomous Driving using Github Actions since 2024.2.
 - **[Tavish9/awesome-daily-AI-arxiv](https://github.com/Tavish9/awesome-daily-AI-arxiv)** (Score: -90.2)
   - License: NOASSERTION | Stars: 30 | Forks: 1
   - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
@@ -969,6 +961,3 @@
   - License: none | Stars: 39 | Forks: 75
   - PRs open: 1 | Discussions: No | Contributors: 28 | Last push: 0 days ago
   - Description: EMQ Blog
-- **[HIAS-VPD-LAB/Omni-LIVO](https://github.com/HIAS-VPD-LAB/Omni-LIVO)** (Score: -93.4)
-  - License: none | Stars: 19 | Forks: 3
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 0 days ago
