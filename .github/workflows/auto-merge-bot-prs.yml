@@ -5,7 +5,7 @@ on:
     types: [opened, synchronize, reopened, ready_for_review]
   workflow_dispatch:
   schedule:
-    - cron: '0 2 * * *'
+    - cron: '0 * * * *'
 
 permissions:
   contents: write
@@ -13,9 +13,10 @@ permissions:
 
 jobs:
   automerge:
-    # Only act on PRs created by the repo's own GitHub Actions bot
+    # Only act on PR events created by the repo's own GitHub Actions bot
     if: |
-      github.actor == 'github-actions[bot]' &&
+      github.event_name == 'pull_request' &&
+      github.event.pull_request.user.login == 'github-actions[bot]' &&
       github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     steps:
@@ -69,7 +70,8 @@ jobs:
             }
 
   backfill:
-    if: github.event_name == 'workflow_dispatch'
+    # Run when not a PR trigger (i.e., schedule or manual dispatch)
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - name: Process existing bot PRs (oldest to newest)
