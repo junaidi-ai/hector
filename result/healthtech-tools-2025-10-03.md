@@ -106,7 +106,7 @@
   - Description: This repository tracks the latest advancements in 3D Gaussian Splatting from Arxiv, with daily automated updates. Stay up-to-date with cutting-edge research in this exciting field!
 - **[Xuchen-Li/llm-arxiv-daily](https://github.com/Xuchen-Li/llm-arxiv-daily)** (Score: -63.8)
   - License: none | Stars: 114 | Forks: 7
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
   - Description: Automatically update arXiv papers about LLM Reasoning, LLM Evaluation, LLM & MLLM and Video Understanding using Github Actions.
 - **[monologg/nlp-arxiv-daily](https://github.com/monologg/nlp-arxiv-daily)** (Score: -65.4)
   - License: none | Stars: 101 | Forks: 20
