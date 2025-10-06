@@ -5,9 +5,9 @@
   - License: NOASSERTION | Stars: 4606 | Forks: 634
   - PRs open: 4 | Discussions: No | Contributors: 50 | Last push: 5 days ago
   - Description: Cybersecurity AI (CAI), the framework for AI Security
-- **[ANYbotics/grid_map](https://github.com/ANYbotics/grid_map)** (Score: 958.6)
-  - License: BSD-3-Clause | Stars: 2950 | Forks: 842
-  - PRs open: 43 | Discussions: No | Contributors: 39 | Last push: 3 days ago
+- **[ANYbotics/grid_map](https://github.com/ANYbotics/grid_map)** (Score: 957.93)
+  - License: BSD-3-Clause | Stars: 2948 | Forks: 842
+  - PRs open: 43 | Discussions: No | Contributors: 39 | Last push: 4 days ago
   - Description: Universal grid map library for mobile robotic mapping
 - **[RoboTwin-Platform/RoboTwin](https://github.com/RoboTwin-Platform/RoboTwin)** (Score: 543.03)
   - License: MIT | Stars: 1519 | Forks: 187
@@ -120,9 +120,9 @@
   - License: NOASSERTION | Stars: 16 | Forks: 2
   - PRs open: 1 | Discussions: No | Contributors: 50 | Last push: 0 days ago
   - Description: A curated list of awesome Machine Learning frameworks, libraries and software. With repository stars⭐ and forks🍴
-- **[wise-vision/mcp_server_ros_2](https://github.com/wise-vision/mcp_server_ros_2)** (Score: -86.87)
+- **[wise-vision/mcp_server_ros_2](https://github.com/wise-vision/mcp_server_ros_2)** (Score: -86.93)
   - License: MPL-2.0 | Stars: 39 | Forks: 3
-  - PRs open: 3 | Discussions: No | Contributors: 3 | Last push: 1 days ago
+  - PRs open: 3 | Discussions: No | Contributors: 3 | Last push: 2 days ago
   - Description: Advanced MCP Server ROS 2 bridging AI agents straight into robotics
 - **[hmbdc-dev/hmbdc](https://github.com/hmbdc-dev/hmbdc)** (Score: -87.83)
   - License: none | Stars: 35 | Forks: 8
@@ -174,7 +174,7 @@
   - Description: 📚这个仓库是在arxiv上收集的有关VLN，VLA, SLAM，Gaussian Splatting,非线性优化等相关论文。每天都会自动更新！issue区域是最新10篇论文
 - **[tangwen-qian/DailyArXiv](https://github.com/tangwen-qian/DailyArXiv)** (Score: -125.53)
   - License: none | Stars: 36 | Forks: 7
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2 days ago
 
 ## EHR & Clinical Systems
 - **[ros-controls/ros2_control_demos](https://github.com/ros-controls/ros2_control_demos)** (Score: 305.07)
@@ -207,9 +207,9 @@
   - License: Apache-2.0 | Stars: 2578 | Forks: 865
   - PRs open: 39 | Discussions: Yes | Contributors: 50 | Last push: 1 days ago
   - Description: The most complete DDS - Proven: Plenty of success cases. Looking for commercial support? Contact info@eprosima.com
-- **[ANYbotics/grid_map](https://github.com/ANYbotics/grid_map)** (Score: 958.6)
-  - License: BSD-3-Clause | Stars: 2950 | Forks: 842
-  - PRs open: 43 | Discussions: No | Contributors: 39 | Last push: 3 days ago
+- **[ANYbotics/grid_map](https://github.com/ANYbotics/grid_map)** (Score: 957.93)
+  - License: BSD-3-Clause | Stars: 2948 | Forks: 842
+  - PRs open: 43 | Discussions: No | Contributors: 39 | Last push: 4 days ago
   - Description: Universal grid map library for mobile robotic mapping
 - **[mustbeperfect/definitive-opensource](https://github.com/mustbeperfect/definitive-opensource)** (Score: 438.95)
   - License: MIT | Stars: 1265 | Forks: 39
@@ -438,9 +438,9 @@
   - License: Apache-2.0 | Stars: 2578 | Forks: 865
   - PRs open: 39 | Discussions: Yes | Contributors: 50 | Last push: 1 days ago
   - Description: The most complete DDS - Proven: Plenty of success cases. Looking for commercial support? Contact info@eprosima.com
-- **[ANYbotics/grid_map](https://github.com/ANYbotics/grid_map)** (Score: 958.6)
-  - License: BSD-3-Clause | Stars: 2950 | Forks: 842
-  - PRs open: 43 | Discussions: No | Contributors: 39 | Last push: 3 days ago
+- **[ANYbotics/grid_map](https://github.com/ANYbotics/grid_map)** (Score: 957.93)
+  - License: BSD-3-Clause | Stars: 2948 | Forks: 842
+  - PRs open: 43 | Discussions: No | Contributors: 39 | Last push: 4 days ago
   - Description: Universal grid map library for mobile robotic mapping
 - **[RoboTwin-Platform/RoboTwin](https://github.com/RoboTwin-Platform/RoboTwin)** (Score: 543.03)
   - License: MIT | Stars: 1519 | Forks: 187
@@ -582,9 +582,9 @@
   - License: none | Stars: 49 | Forks: 3
   - PRs open: 0 | Discussions: No | Contributors: 5 | Last push: 7 days ago
   - Description: U-Arm: Lerobot-Everything-Cross-Embodiment-Teleoperation
-- **[wise-vision/mcp_server_ros_2](https://github.com/wise-vision/mcp_server_ros_2)** (Score: -86.87)
+- **[wise-vision/mcp_server_ros_2](https://github.com/wise-vision/mcp_server_ros_2)** (Score: -86.93)
   - License: MPL-2.0 | Stars: 39 | Forks: 3
-  - PRs open: 3 | Discussions: No | Contributors: 3 | Last push: 1 days ago
+  - PRs open: 3 | Discussions: No | Contributors: 3 | Last push: 2 days ago
   - Description: Advanced MCP Server ROS 2 bridging AI agents straight into robotics
 - **[Robo-Dude/ROS2_ORB-SLAM3_Odometry](https://github.com/Robo-Dude/ROS2_ORB-SLAM3_Odometry)** (Score: -88.87)
   - License: none | Stars: 33 | Forks: 7
@@ -638,9 +638,9 @@
   - License: Apache-2.0 | Stars: 2578 | Forks: 865
   - PRs open: 39 | Discussions: Yes | Contributors: 50 | Last push: 1 days ago
   - Description: The most complete DDS - Proven: Plenty of success cases. Looking for commercial support? Contact info@eprosima.com
-- **[ANYbotics/grid_map](https://github.com/ANYbotics/grid_map)** (Score: 958.6)
-  - License: BSD-3-Clause | Stars: 2950 | Forks: 842
-  - PRs open: 43 | Discussions: No | Contributors: 39 | Last push: 3 days ago
+- **[ANYbotics/grid_map](https://github.com/ANYbotics/grid_map)** (Score: 957.93)
+  - License: BSD-3-Clause | Stars: 2948 | Forks: 842
+  - PRs open: 43 | Discussions: No | Contributors: 39 | Last push: 4 days ago
   - Description: Universal grid map library for mobile robotic mapping
 - **[RoboTwin-Platform/RoboTwin](https://github.com/RoboTwin-Platform/RoboTwin)** (Score: 543.03)
   - License: MIT | Stars: 1519 | Forks: 187
@@ -873,7 +873,7 @@
   - Description: 📚这个仓库是在arxiv上收集的有关VLN，VLA, SLAM，Gaussian Splatting,非线性优化等相关论文。每天都会自动更新！issue区域是最新10篇论文
 - **[tangwen-qian/DailyArXiv](https://github.com/tangwen-qian/DailyArXiv)** (Score: -125.53)
   - License: none | Stars: 36 | Forks: 7
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 1 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 2 days ago
 
 ## Uncategorized
 - **[hellerve/programming-talks](https://github.com/hellerve/programming-talks)** (Score: 2211.87)
