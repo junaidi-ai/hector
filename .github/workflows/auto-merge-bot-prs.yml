@@ -34,7 +34,7 @@ jobs:
             const { owner, repo } = context.repo;
             const prNumber = context.payload.pull_request.number;
             try {
-              await github.pulls.merge({
+              await github.rest.pulls.merge({
                 owner,
                 repo,
                 pull_number: prNumber,
@@ -60,7 +60,7 @@ jobs:
             const ref = pr.head.ref;
             try {
               if (pr.head.repo?.full_name === `${owner}/${repo}`) {
-                await github.git.deleteRef({ owner, repo, ref: `heads/${ref}` });
+                await github.rest.git.deleteRef({ owner, repo, ref: `heads/${ref}` });
                 core.info(`Deleted branch heads/${ref}`);
               } else {
                 core.info('PR branch is from a fork; not deleting.');
@@ -80,13 +80,13 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const { owner, repo } = context.repo;
-            const pulls = await github.pulls.list({ owner, repo, state: 'open', per_page: 100 });
+            const pulls = await github.rest.pulls.list({ owner, repo, state: 'open', per_page: 100 });
             const prs = pulls.data
               .filter(pr => pr.user?.login === 'github-actions[bot]' && pr.head?.repo?.full_name === `${owner}/${repo}`)
               .sort((a, b) => a.number - b.number);
             for (const pr of prs) {
               try {
-                await github.pulls.merge({ owner, repo, pull_number: pr.number, merge_method: 'squash' });
+                await github.rest.pulls.merge({ owner, repo, pull_number: pr.number, merge_method: 'squash' });
                 core.info(`Merged PR #${pr.number}`);
               } catch (e) {
                 core.info(`Skip PR #${pr.number} (not mergeable yet): ${e.message}`);
