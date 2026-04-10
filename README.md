@@ -66,7 +66,8 @@ Hector is an automated bot that discovers, scores, and curates open‑source hea
 ### Prerequisites
 
 - GitHub account and a Personal Access Token (PAT) with repo/read access.
-- Python 3.8+ (recommended 3.10+).
+- Python 3.10+.
+- [uv](https://docs.astral.sh/uv/) installed (`curl -LsSf https://astral.sh/uv/install.sh | sh`).
 - GitHub Actions enabled (for automation).
 
 ### Installation
@@ -74,13 +75,13 @@ Hector is an automated bot that discovers, scores, and curates open‑source hea
 ```bash
 # Clone your fork/repo
 git clone https://github.com/your-username/hector.git
+cd hector
 
-# (Optional) create and activate a virtual environment
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\\Scripts\\activate
+# Create virtual environment and install dependencies
+uv sync
 
-# Install dependencies
-pip install PyGithub
+# Or install with dev dependencies (pytest, pre-commit)
+uv sync --extra dev
 ```
 
 ### Authentication

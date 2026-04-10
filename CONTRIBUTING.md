@@ -4,9 +4,11 @@ Thanks for your interest in contributing! This project curates open‑source hea
 
 ## Getting Started
 - Fork the repo and create a feature branch: `git checkout -b feature/your-idea`.
-- Install Python (3.10+ recommended) and dependencies from `requirements.txt`.
-- Configure `config.yaml` and run locally with `python scan_and_curate.py`.
-- Run tests: `pytest -q`.
+- Install [uv](https://docs.astral.sh/uv/) if you haven't already.
+- Create virtual environment and install dependencies: `uv sync --extra dev`
+- Install pre-commit hooks: `uv run pre-commit install`
+- Configure `config.yaml` and run locally with `uv run python scan_and_curate.py`.
+- Run tests: `uv run pytest -q`.
 
 ## Pull Requests
 - Keep PRs focused and small. Include before/after examples if changing output.

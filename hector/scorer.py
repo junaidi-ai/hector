@@ -1,4 +1,4 @@
-from typing import Any, Dict, Optional
+from typing import Any
 
 
 def _get(repo: Any, attr: str, default: float = 0.0) -> float:
@@ -18,7 +18,9 @@ def _license_id(repo: Any) -> str:
     return "none"
 
 
-def score_repository(repo: Any, weights: Dict[str, Any], metrics: Optional[Dict[str, Any]] = None) -> float:
+def score_repository(
+    repo: Any, weights: dict[str, Any], metrics: dict[str, Any] | None = None
+) -> float:
     """Compute a score for a repository based on weights config."""
     stars_w = float(weights.get("stars", 0))
     forks_w = float(weights.get("forks", 0))

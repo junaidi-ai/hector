@@ -1,17 +1,17 @@
 import os
-from typing import Any, Dict
+from typing import Any
 
 import yaml
 
 REQUIRED_TOP_LEVEL_KEYS = ["search", "weights", "output"]
 
 
-def load_config(path: str = "config.yaml") -> Dict[str, Any]:
+def load_config(path: str = "config.yaml") -> dict[str, Any]:
     """Load YAML config, inject env overrides, and validate."""
     if not os.path.exists(path):
         raise FileNotFoundError(f"Config file not found: {path}")
 
-    with open(path, "r", encoding="utf-8") as f:
+    with open(path, encoding="utf-8") as f:
         cfg = yaml.safe_load(f) or {}
 
     # Inject environment variables (e.g., GitHub token)
@@ -24,7 +24,7 @@ def load_config(path: str = "config.yaml") -> Dict[str, Any]:
     return cfg
 
 
-def validate_config(cfg: Dict[str, Any]) -> None:
+def validate_config(cfg: dict[str, Any]) -> None:
     missing = [k for k in REQUIRED_TOP_LEVEL_KEYS if k not in cfg]
     if missing:
         raise ValueError(f"Missing required top-level keys in config: {missing}")

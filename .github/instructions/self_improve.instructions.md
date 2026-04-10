@@ -37,7 +37,7 @@ applyTo: "**/*"
     select: { id: true, email: true },
     where: { status: 'ACTIVE' }
   });
-  
+
   // Consider adding to [prisma.instructions.md](.github/instructions/prisma.instructions.md):
   // - Standard select fields
   // - Common where conditions

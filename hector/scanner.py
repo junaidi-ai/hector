@@ -1,7 +1,7 @@
-import os
-from datetime import datetime, timezone, timedelta
-from typing import Any, Dict, List, Optional
 import logging
+import os
+from datetime import datetime, timedelta, timezone
+from typing import Any
 
 try:  # Optional dependency guard for dry-run mode
     from github import Github
@@ -9,7 +9,7 @@ except Exception:  # pragma: no cover - import-time guard
     Github = None  # type: ignore
 
 
-def _build_query(search_cfg: Dict[str, Any]) -> str:
+def _build_query(search_cfg: dict[str, Any]) -> str:
     """Build the base search query with topics and common exclusions."""
     q = (search_cfg.get("query") or "").strip()
     topics = [str(t).strip() for t in (search_cfg.get("topics") or []) if str(t).strip()]
@@ -28,7 +28,7 @@ def _build_query(search_cfg: Dict[str, Any]) -> str:
     return q.strip()
 
 
-def _apply_date_bounds(q: str, use: Optional[str], search_cfg: Dict[str, Any]) -> str:
+def _apply_date_bounds(q: str, use: str | None, search_cfg: dict[str, Any]) -> str:
     """Append created:/pushed: qualifiers based on window settings."""
     now = datetime.utcnow()
     if use == "pushed_within_days":
@@ -44,7 +44,7 @@ def _apply_date_bounds(q: str, use: Optional[str], search_cfg: Dict[str, Any]) -
     return q
 
 
-def _iter_strategies(search_cfg: Dict[str, Any]) -> List[Dict[str, Any]]:
+def _iter_strategies(search_cfg: dict[str, Any]) -> list[dict[str, Any]]:
     """Yield effective search strategies. Backward compatible.
 
     If search_cfg["strategies"] exists, use it. Otherwise, synthesize a single
@@ -53,7 +53,7 @@ def _iter_strategies(search_cfg: Dict[str, Any]) -> List[Dict[str, Any]]:
     strategies = search_cfg.get("strategies") or []
     if strategies:
         # Normalize each entry with defaults from top-level
-        norm: List[Dict[str, Any]] = []
+        norm: list[dict[str, Any]] = []
         for s in strategies:
             s = dict(s or {})
             s.setdefault("sort", search_cfg.get("sort"))
@@ -71,15 +71,19 @@ def _iter_strategies(search_cfg: Dict[str, Any]) -> List[Dict[str, Any]]:
             "use": (
                 "pushed_within_days"
                 if int(search_cfg.get("pushed_within_days", 0) or 0) > 0
-                else ("created_within_days" if int(search_cfg.get("created_within_days", 0) or 0) > 0 else None)
+                else (
+                    "created_within_days"
+                    if int(search_cfg.get("created_within_days", 0) or 0) > 0
+                    else None
+                )
             ),
             "query_extra": search_cfg.get("query_extra", ""),
         }
     ]
 
 
-def _fetch_pagewise(results, remaining: int) -> List[Any]:
-    repos: List[Any] = []
+def _fetch_pagewise(results, remaining: int) -> list[Any]:
+    repos: list[Any] = []
     page = 0
     while remaining > 0:
         try:
@@ -96,7 +100,8 @@ def _fetch_pagewise(results, remaining: int) -> List[Any]:
         page += 1
     return repos
 
-def search_repositories(cfg: Dict[str, Any], limit: int = 50):
+
+def search_repositories(cfg: dict[str, Any], limit: int = 50):
     """Search GitHub repositories using the provided config with pagination.
 
     Returns a list of PyGithub Repository objects. If in dry_run mode or no token,
@@ -109,7 +114,9 @@ def search_repositories(cfg: Dict[str, Any], limit: int = 50):
         return []
 
     if Github is None:
-        raise ImportError("PyGithub is required for live scans. Install with 'pip install PyGithub'.")
+        raise ImportError(
+            "PyGithub is required for live scans. Install with 'pip install PyGithub'."
+        )
 
     gh = Github(token, per_page=50)
     search_cfg = cfg.get("search", {})
@@ -117,7 +124,7 @@ def search_repositories(cfg: Dict[str, Any], limit: int = 50):
     languages = search_cfg.get("languages") or []
     orgs = [str(x).strip() for x in (search_cfg.get("orgs") or []) if str(x).strip()]
     users = [str(x).strip() for x in (search_cfg.get("users") or []) if str(x).strip()]
-    topics: List[str] = [str(t).strip() for t in (search_cfg.get("topics") or []) if str(t).strip()]
+    topics: list[str] = [str(t).strip() for t in (search_cfg.get("topics") or []) if str(t).strip()]
     # Build a base query that excludes topics to enable per-topic batching when needed
     search_cfg_no_topics = dict(search_cfg)
     if "topics" in search_cfg_no_topics:
@@ -125,7 +132,7 @@ def search_repositories(cfg: Dict[str, Any], limit: int = 50):
     base_q_no_topics = _build_query(search_cfg_no_topics)
 
     remaining = max(1, int(limit))
-    all_repos: List[Any] = []
+    all_repos: list[Any] = []
     seen_ids = set()
     log = logging.getLogger("hector")
 
@@ -153,7 +160,7 @@ def search_repositories(cfg: Dict[str, Any], limit: int = 50):
 
         # Decide whether to batch topics
         use_topic_batching = len(topics) > 8  # threshold to avoid long OR clauses
-        topic_iter: List[List[str]]
+        topic_iter: list[list[str]]
         if use_topic_batching and topics:
             # Per-topic batches (size=1) to keep queries small and robust
             topic_iter = [[t] for t in topics]
@@ -190,7 +197,12 @@ def search_repositories(cfg: Dict[str, Any], limit: int = 50):
                     try:
                         results = gh.search_repositories(q_lang, sort=sort, order=order)
                     except Exception as e:
-                        log.info("Search failed (lang batch). strategy=%s topics=%s error=%s", strat.get("name", "default"), ",".join(t_batch) if t_batch else "-", e)
+                        log.info(
+                            "Search failed (lang batch). strategy=%s topics=%s error=%s",
+                            strat.get("name", "default"),
+                            ",".join(t_batch) if t_batch else "-",
+                            e,
+                        )
                         continue
                     for r in _fetch_pagewise(results, remaining):
                         if not _add_repo(r):
@@ -205,7 +217,12 @@ def search_repositories(cfg: Dict[str, Any], limit: int = 50):
                 try:
                     results = gh.search_repositories(q_effective, sort=sort, order=order)
                 except Exception as e:
-                    log.info("Search failed (no-lang). strategy=%s topics=%s error=%s", strat.get("name", "default"), ",".join(t_batch) if t_batch else "-", e)
+                    log.info(
+                        "Search failed (no-lang). strategy=%s topics=%s error=%s",
+                        strat.get("name", "default"),
+                        ",".join(t_batch) if t_batch else "-",
+                        e,
+                    )
                     results = None
                 if results is not None:
                     for r in _fetch_pagewise(results, remaining):
@@ -266,12 +283,12 @@ def search_repositories(cfg: Dict[str, Any], limit: int = 50):
     return all_repos
 
 
-def get_repo_metrics(repo: Any) -> Dict[str, Any]:
+def get_repo_metrics(repo: Any) -> dict[str, Any]:
     """Collect richer metrics for a repository, best-effort and lightweight.
 
     Returns keys: prs_open, has_discussions, contributors_count, days_since_push
     """
-    metrics: Dict[str, Any] = {
+    metrics: dict[str, Any] = {
         "prs_open": 0,
         "has_discussions": False,
         "contributors_count": 0,
@@ -298,11 +315,9 @@ def get_repo_metrics(repo: Any) -> Dict[str, Any]:
     except Exception:
         pass
 
-    # Contributors count (soft cap to avoid heavy calls)
+    # Contributors count (first page only, max 30)
     try:
         contribs = repo.get_contributors()
-        # Try to quickly count up to a cap
-        cap = 100
         c = 0
         first_page = []
         try:

@@ -4,25 +4,30 @@ import logging
 import os
 import sys
 from datetime import datetime
-from typing import Dict, List, Optional, Tuple
 
-from hector.config import load_config
 from hector import scanner
-from hector.scorer import score_repository
 from hector.categorizer import categorize_repository
+from hector.config import load_config
 from hector.renderer import render_markdown
+from hector.scorer import score_repository
 
 
-def parse_args(argv: List[str]) -> argparse.Namespace:
+def parse_args(argv: list[str]) -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Hector HealthTech Tools Scanner")
     p.add_argument("--config", default="config.yaml", help="Path to config.yaml")
     p.add_argument("--limit", type=int, default=50, help="Max repositories to process")
     group = p.add_mutually_exclusive_group()
-    group.add_argument("--dry-run", dest="dry_run", action="store_true", help="Validate config only")
-    group.add_argument("--live", dest="dry_run", action="store_false", help="Run live with GitHub API")
+    group.add_argument(
+        "--dry-run", dest="dry_run", action="store_true", help="Validate config only"
+    )
+    group.add_argument(
+        "--live", dest="dry_run", action="store_false", help="Run live with GitHub API"
+    )
     p.set_defaults(dry_run=None)
     p.add_argument("--output", help="Override output markdown file path")
-    p.add_argument("--log-level", default="INFO", help="Logging level (DEBUG, INFO, WARNING, ERROR)")
+    p.add_argument(
+        "--log-level", default="INFO", help="Logging level (DEBUG, INFO, WARNING, ERROR)"
+    )
     return p.parse_args(argv)
 
 
@@ -34,7 +39,7 @@ def setup_logging(level: str) -> None:
     )
 
 
-def _resolve_output_paths(cfg: Dict, cli_output: Optional[str]) -> Tuple[str, Optional[str]]:
+def _resolve_output_paths(cfg: dict, cli_output: str | None) -> tuple[str, str | None]:
     """Resolve the output markdown path and optional 'latest' path.
 
     Supports {date} placeholder in config's output.file. If cli_output is provided,
@@ -52,7 +57,7 @@ def _resolve_output_paths(cfg: Dict, cli_output: Optional[str]) -> Tuple[str, Op
     return out_file, latest_path
 
 
-def main(argv: List[str]) -> int:
+def main(argv: list[str]) -> int:
     args = parse_args(argv)
     setup_logging(args.log_level)
     log = logging.getLogger("hector")
@@ -73,9 +78,12 @@ def main(argv: List[str]) -> int:
     log.info("Searching repositories... limit=%s", limit)
     repos = scanner.search_repositories(cfg, limit=limit)
 
-    weights: Dict = cfg.get("weights", {})
-    cats_config: List[str] = cfg.get("output", {}).get("categories", [])
-    cat_keywords: Dict = cfg.get("category_keywords") or cfg.get("output", {}).get("category_keywords", {})
+    weights: dict = cfg.get("weights", {})
+    cats_config: list[str] = cfg.get("output", {}).get("categories", [])
+    cat_keywords: dict = cfg.get("category_keywords") or cfg.get("output", {}).get(
+        "category_keywords", {}
+    )
+    require_health_context: bool = cfg.get("categorizer", {}).get("require_health_context", True)
 
     items = []
     for r in repos:
@@ -84,7 +92,7 @@ def main(argv: List[str]) -> int:
             url = getattr(r, "html_url", "")
             desc = getattr(r, "description", "") or ""
             # Best-effort: include repo topics to improve categorization recall
-            repo_topics: List[str] = []
+            repo_topics: list[str] = []
             try:
                 get_topics = getattr(r, "get_topics", None)
                 if callable(get_topics):
@@ -94,7 +102,9 @@ def main(argv: List[str]) -> int:
             desc_for_cat = (desc + " " + " ".join(repo_topics)).strip()
             metrics = scanner.get_repo_metrics(r)
             score = score_repository(r, weights, metrics)
-            cats = categorize_repository(name, desc_for_cat, cats_config, cat_keywords)
+            cats = categorize_repository(
+                name, desc_for_cat, cats_config, cat_keywords, require_health_context
+            )
             lic = getattr(getattr(r, "license", None), "spdx_id", None) or "none"
             stars = int(getattr(r, "stargazers_count", 0) or 0)
             forks = int(getattr(r, "forks_count", 0) or 0)

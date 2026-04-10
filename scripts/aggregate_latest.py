@@ -33,10 +33,15 @@ Aggregate the most recent dated markdown into the latest file.
 By default, writes result/healthtech-tools.md from the newest result/healthtech-tools-YYYY-MM-DD.md.
 """
 
+
 def main():
     ap = argparse.ArgumentParser(description="Aggregate latest dated results into latest index")
     ap.add_argument("--dir", default="result", help="Directory containing dated result files")
-    ap.add_argument("--output", default=None, help="Path to write the latest index (default: <dir>/healthtech-tools.md)")
+    ap.add_argument(
+        "--output",
+        default=None,
+        help="Path to write the latest index (default: <dir>/healthtech-tools.md)",
+    )
     args = ap.parse_args()
 
     target_dir = args.dir
@@ -52,7 +57,7 @@ def main():
         print(f"No dated files found in {target_dir}. Wrote empty stub to {output_path}")
         return
 
-    with open(latest_file, "r", encoding="utf-8") as src:
+    with open(latest_file, encoding="utf-8") as src:
         content = src.read()
     with open(output_path, "w", encoding="utf-8") as dst:
         dst.write(content)

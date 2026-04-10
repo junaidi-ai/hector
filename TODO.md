@@ -22,19 +22,19 @@
   - `"robotic"` / `"robotics"` (if user-configured) matches ROS2 industrial/drone repos
   - `"ct"` is a 2-letter token that can false-positive on common words
 - Subtasks:
-  - [ ] Replace `"imaging"` → `"medical imaging"`, `"clinical imaging"`
-  - [ ] Replace `"nlp"` → `"clinical nlp"`, `"medical nlp"`, `"clinical text mining"`
-  - [ ] Replace `"ct"` → `"ct scan"`, `"computed tomography"`
-  - [ ] Add negative-context guard: if description/name contains `"ros2"`, `"ros "`, `"autonomous driving"`, `"drone"`, `"navigation stack"` → skip category assignment for that repo entirely (or assign "Uncategorized")
-  - [ ] Enforce minimum keyword length of 3 characters in `_phrase_in_text()` for non-phrase (no-space) tokens
+  - [x] Replace `"imaging"` → `"medical imaging"`, `"clinical imaging"`
+  - [x] Replace `"nlp"` → `"clinical nlp"`, `"medical nlp"`, `"clinical text mining"`
+  - [x] Replace `"ct"` → `"ct scan"`, `"computed tomography"`
+  - [x] Add negative-context guard: if description/name contains `"ros2"`, `"ros "`, `"autonomous driving"`, `"drone"`, `"navigation stack"` → skip category assignment for that repo entirely (or assign "Uncategorized")
+  - [x] Enforce minimum keyword length of 3 characters in `_phrase_in_text()` for non-phrase (no-space) tokens
 
 ### Task 3 — Add a healthcare relevance pre-filter in `categorize_repository()`
 - **File**: `hector/categorizer.py`
 - **Problem**: Repos with zero healthcare context are being categorized.
 - Subtasks:
-  - [ ] Implement `_is_healthcare_relevant(text: str) -> bool` using a strict allowlist of health domain anchors (see Task 1 list)
-  - [ ] Call it at the top of `categorize_repository()`; if `False`, return `["Uncategorized"]` immediately, skipping all keyword passes
-  - [ ] Expose a config toggle `categorizer.require_health_context: true/false` (default `true`) so power users can opt out
+  - [x] Implement `_is_healthcare_relevant(text: str) -> bool` using a strict allowlist of health domain anchors (see Task 1 list)
+  - [x] Call it at the top of `categorize_repository()`; if `False`, return `["Uncategorized"]` immediately, skipping all keyword passes
+  - [x] Expose a config toggle `categorizer.require_health_context: true/false` (default `true`) so power users can opt out
 
 ---
 

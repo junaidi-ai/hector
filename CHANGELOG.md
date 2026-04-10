@@ -13,4 +13,3 @@ The format is loosely based on Keep a Changelog, and this project adheres to tag
 ## Unreleased
 - Initial setup for automated releases and changelog generation via GitHub Actions.
 - Daily scheduled curation with PR automation.
-

@@ -3,7 +3,7 @@
 Describe the change and its motivation.
 
 ## Changes
-- 
+-
 
 ## Testing
 - [ ] Ran `pytest`

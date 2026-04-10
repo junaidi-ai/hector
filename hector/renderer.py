@@ -1,25 +1,25 @@
 from collections import defaultdict
-from typing import Dict, Iterable, List
+from collections.abc import Iterable
 
 
-def render_markdown(items: List[Dict], output_file: str, categories: Iterable[str]) -> None:
+def render_markdown(items: list[dict], output_file: str, categories: Iterable[str]) -> None:
     """Render a simple categorized Markdown file from scored items.
 
     Expected item keys: name, url, score, description, categories (list[str]), license, stars, forks
     """
-    by_cat: Dict[str, List[Dict]] = defaultdict(list)
+    by_cat: dict[str, list[dict]] = defaultdict(list)
     for it in items:
         cats = it.get("categories") or ["Uncategorized"]
         for c in cats:
             by_cat[c].append(it)
 
     # Ensure declared categories appear first, in order
-    ordered_sections: List[str] = [str(c) for c in categories]
+    ordered_sections: list[str] = [str(c) for c in categories]
     for c in by_cat.keys():
         if c not in ordered_sections:
             ordered_sections.append(c)
 
-    lines: List[str] = ["# Curated Healthcare Technology Tools", ""]
+    lines: list[str] = ["# Curated Healthcare Technology Tools", ""]
     for cat in ordered_sections:
         sect = by_cat.get(cat, [])
         if not sect:
@@ -36,11 +36,13 @@ def render_markdown(items: List[Dict], output_file: str, categories: Iterable[st
             lines.append(f"- **[{name}]({url})** (Score: {score})")
             lines.append(f"  - License: {lic} | Stars: {stars} | Forks: {forks}")
             # Optional richer metrics
-            extra_parts: List[str] = []
+            extra_parts: list[str] = []
             if it.get("prs_open") is not None:
                 extra_parts.append(f"PRs open: {int(it.get('prs_open') or 0)}")
             if it.get("has_discussions") is not None:
-                extra_parts.append("Discussions: Yes" if it.get("has_discussions") else "Discussions: No")
+                extra_parts.append(
+                    "Discussions: Yes" if it.get("has_discussions") else "Discussions: No"
+                )
             if it.get("contributors_count") is not None:
                 extra_parts.append(f"Contributors: {int(it.get('contributors_count') or 0)}")
             if it.get("days_since_push") is not None:

@@ -12,10 +12,8 @@ Shields schema: https://shields.io/endpoint
 from __future__ import annotations
 
 import json
-import os
 import re
 from pathlib import Path
-from typing import Dict, List, Tuple
 from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -58,8 +56,8 @@ def _slug_from_url(url: str) -> str | None:
         return None
 
 
-def parse_results(md_path: Path) -> List[Tuple[str, str, float]]:
-    items: List[Tuple[str, str, float]] = []
+def parse_results(md_path: Path) -> list[tuple[str, str, float]]:
+    items: list[tuple[str, str, float]] = []
     if not md_path.exists():
         return items
     for line in md_path.read_text(encoding="utf-8", errors="ignore").splitlines():

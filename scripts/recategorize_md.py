@@ -1,21 +1,24 @@
 #!/usr/bin/env python3
 import argparse
 import re
-from typing import Dict, List, Optional, Tuple
 
-from hector.config import load_config
 from hector.categorizer import categorize_repository
+from hector.config import load_config
 from hector.renderer import render_markdown
 
-HEADER_RE = re.compile(r"^- \*\*\[(?P<name>.+?)\]\((?P<url>.+?)\)\*\* \(Score: (?P<score>[-\d\.]+)\)")
-LICENSE_RE = re.compile(r"^\s*- License: (?P<license>[^|]+)\| Stars: (?P<stars>\d+) \| Forks: (?P<forks>\d+)")
+HEADER_RE = re.compile(
+    r"^- \*\*\[(?P<name>.+?)\]\((?P<url>.+?)\)\*\* \(Score: (?P<score>[-\d\.]+)\)"
+)
+LICENSE_RE = re.compile(
+    r"^\s*- License: (?P<license>[^|]+)\| Stars: (?P<stars>\d+) \| Forks: (?P<forks>\d+)"
+)
 EXTRA_RE = re.compile(r"^\s*- (?P<parts>.+)$")
 DESC_RE = re.compile(r"^\s*- Description: (?P<desc>.+)$")
 
 
-def parse_items(lines: List[str]) -> List[Dict]:
-    items: List[Dict] = []
-    current: Optional[Dict] = None
+def parse_items(lines: list[str]) -> list[dict]:
+    items: list[dict] = []
+    current: dict | None = None
 
     def commit():
         nonlocal current
@@ -88,8 +91,8 @@ def parse_items(lines: List[str]) -> List[Dict]:
     return items
 
 
-def recategorize_file(path: str, cats_config: List[str], cat_keywords: Dict) -> Tuple[int, int]:
-    with open(path, "r", encoding="utf-8") as f:
+def recategorize_file(path: str, cats_config: list[str], cat_keywords: dict) -> tuple[int, int]:
+    with open(path, encoding="utf-8") as f:
         lines = f.readlines()
 
     items = parse_items(lines)
@@ -108,14 +111,18 @@ def recategorize_file(path: str, cats_config: List[str], cat_keywords: Dict) -> 
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Re-categorize existing curated markdown files in-place")
+    ap = argparse.ArgumentParser(
+        description="Re-categorize existing curated markdown files in-place"
+    )
     ap.add_argument("files", nargs="+", help="Paths to markdown files to recategorize")
     ap.add_argument("--config", default="config.yaml", help="Path to config.yaml")
     args = ap.parse_args()
 
     cfg = load_config(args.config)
-    cats_config: List[str] = cfg.get("output", {}).get("categories", [])
-    cat_keywords: Dict = cfg.get("category_keywords") or cfg.get("output", {}).get("category_keywords", {})
+    cats_config: list[str] = cfg.get("output", {}).get("categories", [])
+    cat_keywords: dict = cfg.get("category_keywords") or cfg.get("output", {}).get(
+        "category_keywords", {}
+    )
 
     for p in args.files:
         before, after = recategorize_file(p, cats_config, cat_keywords)
