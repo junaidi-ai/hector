@@ -11,8 +11,8 @@
 - **File**: `hector/categorizer.py` → `categorize_repository()`
 - **Problem**: The `ai_indicators` fallback at the end of the function matches any AI/ML repo (ROS2, robotics, arxiv trackers, autonomous driving) and dumps it into "AI Diagnostics".
 - Subtasks:
-  - [ ] Remove the fallback entirely, OR gate it behind an explicit healthcare-context check (repo must also match ≥1 health keyword from a strict allowlist: "health", "medical", "clinical", "patient", "hospital", "diagnostic", "therapeutic", "pharma", "biomedical")
-  - [ ] If repo matches no category after keyword pass and passes no healthcare gate → assign "Uncategorized" only, do not force-assign "AI Diagnostics"
+  - [x] Remove the fallback entirely, OR gate it behind an explicit healthcare-context check (repo must also match ≥1 health keyword from a strict allowlist: "health", "medical", "clinical", "patient", "hospital", "diagnostic", "therapeutic", "pharma", "biomedical")
+  - [x] If repo matches no category after keyword pass and passes no healthcare gate → assign "Uncategorized" only, do not force-assign "AI Diagnostics"
 
 ### Task 2 — Tighten keyword lists in `DEFAULT_KEYWORDS`
 - **File**: `hector/categorizer.py` → `DEFAULT_KEYWORDS`

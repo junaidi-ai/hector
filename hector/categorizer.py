@@ -129,6 +129,31 @@ DEFAULT_KEYWORDS: Dict[str, List[str]] = {
 }
 
 
+# Strict healthcare context keywords for the AI fallback gate (Task 1)
+_HEALTHCARE_ANCHORS: List[str] = [
+    "health",
+    "medical",
+    "clinical",
+    "patient",
+    "hospital",
+    "diagnostic",
+    "therapeutic",
+    "pharma",
+    "biomedical",
+    "healthcare",
+    "medicine",
+    "physician",
+    "nurse",
+    "care",
+]
+
+
+def _is_healthcare_relevant(text: str) -> bool:
+    """Check if text contains healthcare domain anchors (strict allowlist)."""
+    normalized = _normalize(text)
+    return any(anchor in normalized for anchor in _HEALTHCARE_ANCHORS)
+
+
 def categorize_repository(
     name: str,
     description: str,
@@ -139,6 +164,7 @@ def categorize_repository(
 
     - Direct phrase match against the category name (case-insensitive, word-bounded)
     - Fallback to synonyms defined in DEFAULT_KEYWORDS and optional overrides from config
+    - AI-related fallback only applies if healthcare context is detected
     """
     text = _normalize(f"{name} {description}")
     matched: List[str] = []
@@ -169,8 +195,9 @@ def categorize_repository(
                 matched.append(norm_cat)
                 break
 
-    # Fallback: if nothing matched but text is clearly AI-related, map to AI Diagnostics
-    if not matched:
+    # Fallback: if nothing matched but text is clearly AI-related AND has healthcare context,
+    # map to AI Diagnostics. Without healthcare context, repos get "Uncategorized".
+    if not matched and _is_healthcare_relevant(text):
         ai_indicators = [
             "ai",
             "artificial intelligence",
