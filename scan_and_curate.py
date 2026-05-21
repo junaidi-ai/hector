@@ -18,14 +18,28 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Hector HealthTech Tools Scanner")
     p.add_argument("--config", default="config.yaml", help="Path to config.yaml")
     p.add_argument("--limit", type=int, default=50, help="Max repositories to process")
-    group = p.add_mutually_exclusive_group()
-    group.add_argument(
-        "--dry-run", dest="dry_run", action="store_true", help="Validate config only"
+
+    mode_group = p.add_mutually_exclusive_group()
+    mode_group.add_argument(
+        "--dry-run",
+        dest="dry_run",
+        action="store_true",
+        help="Skip GitHub API: use fixture data, run categorization/scoring, write output",
     )
-    group.add_argument(
-        "--live", dest="dry_run", action="store_false", help="Run live with GitHub API"
+    mode_group.add_argument(
+        "--categories-only",
+        dest="categories_only",
+        metavar="PATH",
+        help="Re-categorize repos from existing markdown file (e.g., result/healthtech-tools.md)",
     )
-    p.set_defaults(dry_run=None)
+    mode_group.add_argument(
+        "--live",
+        dest="dry_run",
+        action="store_false",
+        help="Run live with GitHub API (default)",
+    )
+    p.set_defaults(dry_run=None, categories_only=None)
+
     p.add_argument("--output", help="Override output markdown file path")
     p.add_argument(
         "--log-level", default="INFO", help="Logging level (DEBUG, INFO, WARNING, ERROR)"
@@ -57,6 +71,91 @@ def _resolve_output_paths(cfg: dict, cli_output: str | None) -> tuple[str, str |
     today = datetime.utcnow().strftime("%Y-%m-%d")
     out_file = str(file_tmpl).replace("{date}", today)
     return out_file, latest_path
+
+
+def _load_fixture_repos(fixture_path: str = "tests/fixtures/sample-repos.json") -> list:
+    """Load sample repository data from a JSON fixture file for dry-run mode.
+
+    Args:
+        fixture_path: Path to JSON fixture file with repo data
+
+    Returns:
+        List of repo-like objects (SimpleNamespace) with required attributes
+    """
+    from types import SimpleNamespace
+
+    if not os.path.exists(fixture_path):
+        # Return empty list if fixture doesn't exist (user can create one)
+        return []
+
+    try:
+        with open(fixture_path) as f:
+            repos_data = json.load(f)
+        # Convert dicts to SimpleNamespace objects
+        repos = []
+        for repo_data in repos_data:
+            # Reconstruct license object if present
+            if "license" in repo_data and repo_data["license"]:
+                repo_data["license"] = SimpleNamespace(**repo_data["license"])
+            repos.append(SimpleNamespace(**repo_data))
+        return repos
+    except Exception as e:
+        raise ValueError(f"Failed to load fixture from {fixture_path}: {e}") from e
+
+
+def _load_repos_from_markdown(md_path: str) -> list[dict]:
+    """Parse repositories from an existing curated markdown file.
+
+    Extracts repo information from markdown format like:
+    - **[repo-name](https://github.com/user/repo)** (Score: 85)
+      - License: MIT | Stars: 1.2k | Forks: 300
+      - Description: ...
+
+    Args:
+        md_path: Path to markdown file
+
+    Returns:
+        List of repo dicts with name, url, description, license, stars, forks
+    """
+    import re
+
+    if not os.path.exists(md_path):
+        raise FileNotFoundError(f"Markdown file not found: {md_path}")
+
+    repos: list[dict] = []
+    with open(md_path) as f:
+        content = f.read()
+
+    # Pattern: - **[name](url)** (Score: number)
+    pattern = r"-\s+\*\*\[([^\]]+)\]\(([^)]+)\)\*\*\s+\(Score:\s*([\d.]+)\)"
+    for match in re.finditer(pattern, content):
+        repo_name = match.group(1)
+        repo_url = match.group(2)
+        # Extract owner/repo from GitHub URL
+        if "github.com" in repo_url:
+            parts = repo_url.rstrip("/").split("/")
+            if len(parts) >= 2:
+                full_name = f"{parts[-2]}/{parts[-1]}"
+            else:
+                full_name = repo_name
+        else:
+            full_name = repo_name
+
+        repos.append(
+            {
+                "name": repo_name,
+                "full_name": full_name,
+                "url": repo_url,
+                "score": float(match.group(3)),
+                "description": "",  # Not extracted from markdown for simplicity
+                "categories": [],
+                "license": "none",
+                "stars": 0,
+                "forks": 0,
+            }
+        )
+
+    return repos
 
 
 def _write_run_summary(summary_path: str, stats: dict, items: list, log: logging.Logger) -> None:
@@ -133,13 +232,70 @@ def main(argv: list[str]) -> int:
     if args.output:
         cfg.setdefault("output", {})["file"] = args.output
 
-    if cfg.get("dry_run", False):
-        log.info("Dry-run: configuration validated. Set --live or dry_run: false to run live.")
-        return 0
+    # Handle --categories-only mode (Task 13): re-categorize existing markdown
+    if args.categories_only:
+        log.info("Categories-only mode: re-categorizing repos from %s", args.categories_only)
+        try:
+            repos_data = _load_repos_from_markdown(args.categories_only)
+            if not repos_data:
+                log.warning("No repositories found in %s", args.categories_only)
+                return 0
 
-    limit = int(args.limit)
-    log.info("Searching repositories... limit=%s", limit)
-    repos = scanner.search_repositories(cfg, limit=limit)
+            log.info("Loaded %d repos from %s", len(repos_data), args.categories_only)
+
+            # Re-categorize without re-scoring (no need to fetch weights for categories-only)
+            cat_categories: list[str] = cfg.get("output", {}).get("categories", [])
+            cat_kw: dict = cfg.get("category_keywords") or cfg.get("output", {}).get(
+                "category_keywords", {}
+            )
+            cat_require_health: bool = cfg.get("categorizer", {}).get(
+                "require_health_context", True
+            )
+
+            items = []
+            for repo_info in repos_data:
+                cats = categorize_repository(
+                    repo_info["full_name"],
+                    repo_info.get("description", ""),
+                    cat_categories,
+                    cat_kw,
+                    cat_require_health,
+                )
+                repo_info["categories"] = cats or ["Uncategorized"]
+                items.append(repo_info)
+
+            log.info("Re-categorized %d repos", len(items))
+
+            output_file, latest_file = _resolve_output_paths(cfg, args.output)
+            if latest_file:
+                render_markdown(items, latest_file, cat_categories)
+                log.info("Updated canonical index at %s", latest_file)
+
+            log.info("Done.")
+            return 0
+        except Exception as e:
+            log.error("Failed to process categories-only mode: %s", e)
+            return 1
+
+    # Handle --dry-run mode (Task 13): use fixture data instead of GitHub API
+    if args.dry_run:
+        log.info("Dry-run mode: using fixture data instead of GitHub API")
+        try:
+            repos = _load_fixture_repos()
+            if not repos:
+                log.info("No fixture data found at tests/fixtures/sample-repos.json")
+                log.info(
+                    "Dry-run: configuration validated. Create fixture file to test categorization."
+                )
+                return 0
+            log.info("Loaded %d repos from fixture", len(repos))
+        except Exception as e:
+            log.error("Failed to load fixture: %s", e)
+            return 1
+    else:
+        limit = int(args.limit)
+        log.info("Searching repositories... limit=%s", limit)
+        repos = scanner.search_repositories(cfg, limit=limit)
 
     # Track statistics for run summary (Task 12)
     stats: dict = {"total_scanned": len(repos)}

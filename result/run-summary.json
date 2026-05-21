@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-05-21T03:39:29.815363",
+  "stats": {
+    "total_scanned": 5,
+    "after_min_stars": 5,
+    "after_relevance_filter": 5,
+    "after_score_filter": 5,
+    "min_score_threshold": 0.0
+  },
+  "categories": {
+    "AI Diagnostics": 1,
+    "EHR & Clinical Systems": 2,
+    "Telemedicine": 1,
+    "Imaging & Radiology": 1,
+    "NLP & Clinical Text": 1
+  },
+  "uncategorized_count": 0,
+  "total_in_output": 5
+}

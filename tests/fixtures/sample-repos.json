@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "name": "clinical-ai-repo",
+    "full_name": "healthtech/clinical-ai",
+    "description": "AI-powered clinical decision support system",
+    "html_url": "https://github.com/healthtech/clinical-ai",
+    "stargazers_count": 150,
+    "forks_count": 45,
+    "open_issues_count": 12,
+    "license": {
+      "spdx_id": "MIT"
+    }
+  },
+  {
+    "id": 2,
+    "name": "telemedicine-platform",
+    "full_name": "medtech/telehealth",
+    "description": "Open-source telemedicine and remote patient monitoring platform",
+    "html_url": "https://github.com/medtech/telehealth",
+    "stargazers_count": 320,
+    "forks_count": 95,
+    "open_issues_count": 28,
+    "license": {
+      "spdx_id": "Apache-2.0"
+    }
+  },
+  {
+    "id": 3,
+    "name": "dicom-viewer",
+    "full_name": "imaging/dicom-pro",
+    "description": "Medical DICOM image viewer and analysis toolkit",
+    "html_url": "https://github.com/imaging/dicom-pro",
+    "stargazers_count": 85,
+    "forks_count": 30,
+    "open_issues_count": 8,
+    "license": {
+      "spdx_id": "GPL-3.0"
+    }
+  },
+  {
+    "id": 4,
+    "name": "ehr-system",
+    "full_name": "healthsystems/epic-oss",
+    "description": "Lightweight electronic health record system",
+    "html_url": "https://github.com/healthsystems/epic-oss",
+    "stargazers_count": 200,
+    "forks_count": 60,
+    "open_issues_count": 15,
+    "license": {
+      "spdx_id": "MIT"
+    }
+  },
+  {
+    "id": 5,
+    "name": "nlp-clinical",
+    "full_name": "nlphealth/clinical-nlp",
+    "description": "Natural language processing for clinical text and medical notes",
+    "html_url": "https://github.com/nlphealth/clinical-nlp",
+    "stargazers_count": 110,
+    "forks_count": 35,
+    "open_issues_count": 10,
+    "license": {
+      "spdx_id": "Apache-2.0"
+    }
+  }
+]

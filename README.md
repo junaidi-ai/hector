@@ -165,13 +165,41 @@ When configuring the search query, be aware of false positives from generic keyw
 
 ## Run Locally
 
-Run your scanner script (example filename):
+### Standard Mode (Live)
+
+Run your scanner script to scan GitHub and update the curated list:
 
 ```bash
-python scan_and_curate.py
+python scan_and_curate.py --live --limit 100
 ```
 
 This will generate/update `healthtech-tools.md` with a ranked list according to `config.yaml`.
+
+### Dry-Run Mode
+
+Test categorization and scoring without hitting the GitHub API:
+
+```bash
+python scan_and_curate.py --dry-run
+```
+
+This uses sample fixture data from `tests/fixtures/sample-repos.json` to run the full pipeline (categorization, scoring, rendering) without making GitHub API calls. Useful for:
+- Testing categorizer changes without burning API quota
+- Verifying configuration changes
+- Offline development and testing
+
+### Categories-Only Mode
+
+Re-categorize an existing curated list without re-scanning GitHub:
+
+```bash
+python scan_and_curate.py --categories-only result/healthtech-tools.md
+```
+
+This loads repositories from an existing markdown file and re-categorizes them based on current keyword configurations. Useful for:
+- Updating categories when keyword definitions change
+- Batch re-processing without GitHub API calls
+- Quick iteration on category keywords
 
 ## Automate with GitHub Actions
 

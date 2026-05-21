@@ -134,11 +134,11 @@
   - [x] After rendering, print/log: total scanned, total passed relevance filter, total above min_score, count per category, count "Uncategorized"
   - [x] Write summary as a brief `result/run-summary.json` (overwrite each run) for CI artifact inspection
 
-### Task 13 — Add `--dry-run` and `--categories-only` CLI flags
+### Task 13 — Add `--dry-run` and `--categories-only` CLI flags ✅
 - **File**: `scan_and_curate.py`
 - Subtasks:
-  - [ ] `--dry-run`: skip GitHub API calls, load fixture data if present, run scoring/categorization, write output — useful for testing categorizer changes without burning API quota
-  - [ ] `--categories-only path/to/existing.md`: re-categorize an existing result file without re-scanning
+  - [x] `--dry-run`: skip GitHub API calls, load fixture data if present, run scoring/categorization, write output — useful for testing categorizer changes without burning API quota
+  - [x] `--categories-only path/to/existing.md`: re-categorize an existing result file without re-scanning
 
 ---
 
