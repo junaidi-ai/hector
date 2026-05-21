@@ -50,3 +50,6 @@ CLAUDE.md
 Plans.md
 out/
 hooks/
+
+# Result directory state (harness artifacts)
+result/.claude/
