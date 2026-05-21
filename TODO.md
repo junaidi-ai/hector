@@ -8,6 +8,7 @@
 ## P0 — Correctness: Wrong Categorization
 
 ### Task 1 — Remove/restrict the AI-indicator fallback in `categorizer.py`
+
 - **File**: `hector/categorizer.py` → `categorize_repository()`
 - **Problem**: The `ai_indicators` fallback at the end of the function matches any AI/ML repo (ROS2, robotics, arxiv trackers, autonomous driving) and dumps it into "AI Diagnostics".
 - Subtasks:
@@ -15,6 +16,7 @@
   - [x] If repo matches no category after keyword pass and passes no healthcare gate → assign "Uncategorized" only, do not force-assign "AI Diagnostics"
 
 ### Task 2 — Tighten keyword lists in `DEFAULT_KEYWORDS`
+
 - **File**: `hector/categorizer.py` → `DEFAULT_KEYWORDS`
 - **Problem**: Keywords are too broad:
   - `"imaging"` matches camera/sensor repos (RealSense, Gazebo, reComputer)
@@ -29,6 +31,7 @@
   - [x] Enforce minimum keyword length of 3 characters in `_phrase_in_text()` for non-phrase (no-space) tokens
 
 ### Task 3 — Add a healthcare relevance pre-filter in `categorize_repository()`
+
 - **File**: `hector/categorizer.py`
 - **Problem**: Repos with zero healthcare context are being categorized.
 - Subtasks:
@@ -41,6 +44,7 @@
 ## P0 — Correctness: Scanner Pulling Non-Healthcare Repos
 
 ### Task 4 — Strengthen the scanner query in `config.yaml` ✅
+
 - **File**: `config.yaml` (user's config, document the requirement in README)
 - **Problem**: Current query/topics are too permissive; pulling in robotics, arxiv trackers, autonomous driving.
 - Subtasks:
@@ -50,6 +54,7 @@
   - [x] Add a `scanner.min_stars` config option (default: `10`) and filter repos below threshold before scoring
 
 ### Task 5 — Add post-scan relevance filter in `scanner.py` or pipeline entry point ✅
+
 - **File**: `hector/scanner.py` or `scan_and_curate.py`
 - **Problem**: Even with a better query, marginal repos slip through.
 - Subtasks:
@@ -62,6 +67,7 @@
 ## P0 — Correctness: Negative-Score Repos Included in Output
 
 ### Task 6 — Add score floor filter before rendering ✅
+
 - **File**: `hector/renderer.py` or pipeline entry point
 - **Problem**: Many repos with scores < 0 (e.g., -132, -95) appear in the output.
 - Subtasks:
@@ -74,6 +80,7 @@
 ## P1 — Quality: Result File Hygiene
 
 ### Task 7 — Enforce single canonical result file; purge dated duplicates ✅
+
 - **File**: `result/` directory, `hector/renderer.py`, CI workflow
 - **Problem**: Dated files (e.g., `healthtech-tools-2025-01-15.md`) accumulate alongside the canonical `healthtech-tools.md`. Only the canonical file should be kept per project policy.
 - Subtasks:
@@ -87,6 +94,7 @@
 ## P1 — Quality: Scorer Improvements
 
 ### Task 8 — Add healthcare-domain relevance boost to scoring ✅
+
 - **File**: `hector/scorer.py`
 - **Problem**: Score is purely GitHub popularity metrics; a highly-starred ROS2 repo outscores a niche but directly relevant clinical tool.
 - Subtasks:
@@ -95,6 +103,7 @@
   - [x] This allows operators to dial up domain relevance vs. raw popularity
 
 ### Task 9 — Cap contributor count at first-page limit in `get_repo_metrics()` ✅
+
 - **File**: `hector/scanner.py` → `get_repo_metrics()`
 - **Problem**: Current code fetches only page 0 but stores `len(first_page)` which is at most 30, distorting contributor weight for large projects.
 - Subtasks:
@@ -107,6 +116,7 @@
 ## P1 — Quality: Categorizer Robustness
 
 ### Task 10 — Add unit tests for `categorizer.py` ✅
+
 - **File**: `tests/test_categorizer.py` (new)
 - Subtasks:
   - [x] Test: known-good healthcare repos → correctly categorized
@@ -117,6 +127,7 @@
   - [x] Test: `_is_healthcare_relevant` allowlist (Task 3)
 
 ### Task 11 — Add unit tests for `scorer.py` ✅
+
 - **File**: `tests/test_scorer.py` (expanded)
 - Subtasks:
   - [x] Test: all-zero weights → score equals license bonus only
@@ -129,12 +140,14 @@
 ## P2 — Enhancement: Observability
 
 ### Task 12 — Add run summary output ✅
+
 - **File**: pipeline entry point (`scan_and_curate.py`)
 - Subtasks:
   - [x] After rendering, print/log: total scanned, total passed relevance filter, total above min_score, count per category, count "Uncategorized"
   - [x] Write summary as a brief `result/run-summary.json` (overwrite each run) for CI artifact inspection
 
 ### Task 13 — Add `--dry-run` and `--categories-only` CLI flags ✅
+
 - **File**: `scan_and_curate.py`
 - Subtasks:
   - [x] `--dry-run`: skip GitHub API calls, load fixture data if present, run scoring/categorization, write output — useful for testing categorizer changes without burning API quota
@@ -144,8 +157,8 @@
 
 ## Versioning
 
-| Task group | Target version |
-|---|---|
-| P0 (Tasks 1–7) | v0.2.0 |
-| P1 (Tasks 8–11) | v0.2.0 |
-| P2 (Tasks 12–13) | v0.3.0 |
+| Task group       | Target version |
+| ---------------- | -------------- |
+| P0 (Tasks 1–7)   | v0.2.0         |
+| P1 (Tasks 8–11)  | v0.2.0         |
+| P2 (Tasks 12–13) | v0.3.0         |

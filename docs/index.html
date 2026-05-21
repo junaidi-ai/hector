@@ -3,89 +3,75 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hector • Healthtech Tools</title>
+  <title>Hector • Healthtech Tools (6 projects)</title>
   <style>
     :root {
       color-scheme: light dark;
       --bg: #0b0b0c;
       --text: #e7e7ea;
       --muted: #9aa0a6;
-      --card-bg: rgb(255 255 255 / 0.08);
-      --border: rgb(255 255 255 / 0.12);
-      --link: #7dd3fc; /* sky-300 */
-      --link-hover: #38bdf8; /* sky-400 */
+      --card-bg: rgb(255 255 255 / 0.06);
+      --card-border: rgb(255 255 255 / 0.10);
+      --link: #7dd3fc;
+      --link-hover: #38bdf8;
+      --pill-bg: rgb(255 255 255 / 0.08);
+      --pill-active-bg: #0ea5e9;
+      --pill-active-text: #fff;
+      --stats-bg: rgb(255 255 255 / 0.04);
     }
     @media (prefers-color-scheme: light) {
       :root {
-        --bg: #f7fafc;
-        --text: #0f172a;
-        --muted: #475569;
-        --card-bg: #ffffff;
-        --border: rgb(0 0 0 / 0.08);
-        --link: #0ea5e9; /* sky-500 */
-        --link-hover: #0284c7; /* sky-600 */
+        --bg: #f7fafc; --text: #0f172a; --muted: #475569;
+        --card-bg: #ffffff; --card-border: rgb(0 0 0 / 0.08);
+        --link: #0ea5e9; --link-hover: #0284c7;
+        --pill-bg: #e2e8f0; --stats-bg: #eef2f7;
       }
     }
     [data-theme="light"] {
-      --bg: #f7fafc;
-      --text: #0f172a;
-      --muted: #475569;
-      --card-bg: #ffffff;
-      --border: rgb(0 0 0 / 0.08);
-      --link: #0ea5e9;
-      --link-hover: #0284c7;
+      --bg: #f7fafc; --text: #0f172a; --muted: #475569;
+      --card-bg: #ffffff; --card-border: rgb(0 0 0 / 0.08);
+      --link: #0ea5e9; --link-hover: #0284c7;
+      --pill-bg: #e2e8f0; --stats-bg: #eef2f7;
     }
     [data-theme="dark"] {
-      --bg: #0b0b0c;
-      --text: #e7e7ea;
-      --muted: #9aa0a6;
-      --card-bg: rgb(255 255 255 / 0.08);
-      --border: rgb(255 255 255 / 0.12);
-      --link: #7dd3fc;
-      --link-hover: #38bdf8;
+      --bg: #0b0b0c; --text: #e7e7ea; --muted: #9aa0a6;
+      --card-bg: rgb(255 255 255 / 0.06); --card-border: rgb(255 255 255 / 0.10);
+      --link: #7dd3fc; --link-hover: #38bdf8;
+      --pill-bg: rgb(255 255 255 / 0.08); --stats-bg: rgb(255 255 255 / 0.04);
     }
-
-    body {
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-    }
-    header {
-      position: relative;
-      padding: 40px 20px;
-      text-align: center;
-      background: linear-gradient(135deg,#0ea5e9 0%, #22c55e 100%);
-      color: white;
-    }
-    .theme-select {
-      position: absolute;
-      top: 14px;
-      right: 14px;
-      background: rgb(255 255 255 / 0.95);
-      color: #0f172a;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      padding: 6px 10px;
-      font-size: 14px;
-    }
-    [data-theme="dark"] .theme-select { background: rgb(0 0 0 / 0.6); color: #e7e7ea; }
-
-    main { max-width: 880px; margin: 24px auto; padding: 0 16px 48px; }
-    .card {
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 20px;
-      margin: 16px 0;
-      background: var(--card-bg);
-      box-shadow: 0 1px 2px rgb(0 0 0 / 0.06);
-    }
-    a { color: var(--link); text-decoration: none; }
-    a:hover { text-decoration: underline; color: var(--link-hover); }
-    code { background: rgb(0 0 0 / 0.06); padding: 0 6px; border-radius: 6px; }
-    [data-theme="dark"] code { background: rgb(255 255 255 / 0.08); }
-    footer { text-align: center; color: var(--muted); padding: 24px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 0; background: var(--bg); color: var(--text); }
+    header { position: relative; padding: 40px 20px 32px; text-align: center; background: linear-gradient(135deg,#0ea5e9 0%,#22c55e 100%); color: #fff; }
+    header h1 { margin: 0 0 6px; font-size: 2rem; }
+    header p { margin: 0; opacity: .85; font-size: 1rem; }
+    .theme-select { position: absolute; top: 14px; right: 14px; background: rgb(255 255 255 / 0.92); color: #0f172a; border: none; border-radius: 999px; padding: 6px 12px; font-size: 13px; cursor: pointer; }
+    .stats-bar { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; padding: 10px 20px; background: var(--stats-bg); border-bottom: 1px solid var(--card-border); font-size: 14px; color: var(--muted); justify-content: center; }
+    .stats-bar .sep { opacity: .4; }
+    main { max-width: 960px; margin: 0 auto; padding: 20px 16px 60px; }
+    .search-wrap { margin: 0 0 16px; }
+    #search { width: 100%; padding: 10px 16px; border-radius: 10px; border: 1px solid var(--card-border); background: var(--card-bg); color: var(--text); font-size: 15px; outline: none; }
+    #search:focus { border-color: #0ea5e9; }
+    .pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 24px; }
+    .pill { padding: 6px 14px; border-radius: 999px; border: none; background: var(--pill-bg); color: var(--text); font-size: 13px; cursor: pointer; transition: background .15s; }
+    .pill:hover { background: var(--pill-active-bg); color: var(--pill-active-text); }
+    .pill.active { background: var(--pill-active-bg); color: var(--pill-active-text); }
+    .pill-count { opacity: .7; font-size: 11px; }
+    .cat-section { margin-bottom: 40px; }
+    .cat-heading { font-size: 1.2rem; font-weight: 700; margin: 0 0 14px; padding-bottom: 8px; border-bottom: 1px solid var(--card-border); display: flex; align-items: center; gap: 10px; }
+    .cat-count { font-size: 12px; font-weight: 500; background: var(--pill-bg); padding: 2px 8px; border-radius: 999px; color: var(--muted); }
+    .repo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+    .repo-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 12px; padding: 16px; transition: border-color .15s; }
+    .repo-card:hover { border-color: #0ea5e9; }
+    .repo-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; margin-bottom: 8px; }
+    .repo-name { color: var(--link); font-weight: 600; font-size: 14px; text-decoration: none; flex: 1; min-width: 0; word-break: break-word; }
+    .repo-name:hover { color: var(--link-hover); text-decoration: underline; }
+    .score-chip { flex-shrink: 0; font-size: 11px; font-weight: 700; color: #000; padding: 3px 8px; border-radius: 999px; white-space: nowrap; }
+    .repo-meta { font-size: 12px; color: var(--muted); margin-bottom: 6px; }
+    .badge { background: var(--pill-bg); padding: 1px 6px; border-radius: 4px; font-size: 11px; margin-right: 4px; }
+    .repo-desc { margin: 0; font-size: 13px; color: var(--muted); line-height: 1.5; }
+    .hidden { display: none !important; }
+    #no-results { display: none; text-align: center; color: var(--muted); padding: 48px 0; font-size: 15px; }
+    footer { text-align: center; color: var(--muted); font-size: 13px; padding: 24px; }
   </style>
 </head>
 <body>
@@ -97,76 +83,174 @@
       <option value="dark">Dark</option>
     </select>
     <h1>Hector</h1>
-    <p>Curated Healthtech tools and daily scans</p>
+    <p>Curated open-source Healthtech tools &mdash; 6 projects tracked</p>
   </header>
+
+
+    <div class="stats-bar" id="stats-bar">
+      <span>📊 <strong>5</strong> repos curated</span>
+      <span class="sep">·</span>
+      <span><strong>5</strong> scanned</span>
+      <span class="sep">·</span><span>Last run: 2026-05-21</span>
+    </div>
+
   <main>
-    <section class="grid">
-      <div class="card">
-        <h2>Latest Badge</h2>
-        <p>Machine-readable summary at <code>/badge.json</code>.</p>
-        <p>
-          <a href="./badge.json">View badge.json</a>
-        </p>
+    <div class="search-wrap">
+      <input type="search" id="search" placeholder="Search repos by name or description…" autocomplete="off" />
+    </div>
+
+    <div class="pills" id="cat-pills">
+      <button class="pill active" data-filter="all">All</button>
+      <button class="pill" data-filter="ai-diagnostics">AI Diagnostics <span class="pill-count">2</span></button>
+      <button class="pill" data-filter="telemedicine">Telemedicine <span class="pill-count">1</span></button>
+      <button class="pill" data-filter="uncategorized">Uncategorized <span class="pill-count">3</span></button>
+    </div>
+
+    <div id="no-results">No repos match your search.</div>
+
+
+    <section class="cat-section" id="cat-ai-diagnostics" data-category="ai-diagnostics">
+      <h2 class="cat-heading">
+        AI Diagnostics
+        <span class="cat-count">2</span>
+      </h2>
+      <div class="repo-grid">
+
+      <div class="repo-card" data-name="healthtech/clinical-ai" data-desc="">
+        <div class="repo-header">
+          <a class="repo-name" href="https://github.com/healthtech/clinical-ai" target="_blank" rel="noopener">healthtech/clinical-ai</a>
+          <span class="score-chip" style="background:#a3e635">Score 102.8</span>
+        </div>
+        <div class="repo-meta"> </div>
+
       </div>
-      <div class="card">
-        <h2>All Badges</h2>
-        <p>Per-model badges under <code>/badges/</code>.</p>
-        <p><a href="./badges/">Open badges directory</a></p>
+
+      <div class="repo-card" data-name="healthtech/clinical-ai" data-desc="">
+        <div class="repo-header">
+          <a class="repo-name" href="https://github.com/healthtech/clinical-ai" target="_blank" rel="noopener">healthtech/clinical-ai</a>
+          <span class="score-chip" style="background:#a3e635">Score 102.8</span>
+        </div>
+        <div class="repo-meta"> </div>
+
       </div>
-      <div class="card">
-        <h2>Project</h2>
-        <p>
-          View the repository for docs and usage.
-        </p>
-        <p><a href="https://github.com/junaidi-ai/hector" target="_blank" rel="noopener">GitHub Repo</a></p>
+      </div>
+    </section>
+
+    <section class="cat-section" id="cat-telemedicine" data-category="telemedicine">
+      <h2 class="cat-heading">
+        Telemedicine
+        <span class="cat-count">1</span>
+      </h2>
+      <div class="repo-grid">
+
+      <div class="repo-card" data-name="medtech/telehealth" data-desc="">
+        <div class="repo-header">
+          <a class="repo-name" href="https://github.com/medtech/telehealth" target="_blank" rel="noopener">medtech/telehealth</a>
+          <span class="score-chip" style="background:#a3e635">Score 162.2</span>
+        </div>
+        <div class="repo-meta"> </div>
+
+      </div>
+      </div>
+    </section>
+
+    <section class="cat-section" id="cat-uncategorized" data-category="uncategorized">
+      <h2 class="cat-heading">
+        Uncategorized
+        <span class="cat-count">3</span>
+      </h2>
+      <div class="repo-grid">
+
+      <div class="repo-card" data-name="healthsystems/epic-oss" data-desc="">
+        <div class="repo-header">
+          <a class="repo-name" href="https://github.com/healthsystems/epic-oss" target="_blank" rel="noopener">healthsystems/epic-oss</a>
+          <span class="score-chip" style="background:#a3e635">Score 120.5</span>
+        </div>
+        <div class="repo-meta"> </div>
+
+      </div>
+
+      <div class="repo-card" data-name="nlphealth/clinical-nlp" data-desc="">
+        <div class="repo-header">
+          <a class="repo-name" href="https://github.com/nlphealth/clinical-nlp" target="_blank" rel="noopener">nlphealth/clinical-nlp</a>
+          <span class="score-chip" style="background:#facc15">Score 89.0</span>
+        </div>
+        <div class="repo-meta"> </div>
+
+      </div>
+
+      <div class="repo-card" data-name="imaging/dicom-pro" data-desc="">
+        <div class="repo-header">
+          <a class="repo-name" href="https://github.com/imaging/dicom-pro" target="_blank" rel="noopener">imaging/dicom-pro</a>
+          <span class="score-chip" style="background:#facc15">Score 60.7</span>
+        </div>
+        <div class="repo-meta"> </div>
+
+      </div>
       </div>
     </section>
   </main>
+
   <footer>
-    <small>Published via GitHub Pages • Updated automatically by CI</small>
+    <small>Published via GitHub Pages &bull; Updated automatically by CI &bull;
+    <a href="https://github.com/junaidi-ai/hector" target="_blank" rel="noopener">Source</a></small>
   </footer>
+
   <script>
+    // ── Theme toggle ──────────────────────────────────────────────────────────
     (function() {
-      const STORAGE_KEY = 'hector:theme';
+      const KEY = 'hector:theme';
       const root = document.documentElement;
-      const select = document.getElementById('theme-select');
+      const sel = document.getElementById('theme-select');
+      function apply(t) { t === 'system' ? root.removeAttribute('data-theme') : root.setAttribute('data-theme', t); }
+      const saved = localStorage.getItem(KEY) || 'system';
+      sel.value = saved; apply(saved);
+      sel.addEventListener('change', e => { localStorage.setItem(KEY, e.target.value); apply(e.target.value); });
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => { if ((localStorage.getItem(KEY) || 'system') === 'system') apply('system'); });
+    })();
 
-      function apply(theme) {
-        if (theme === 'system' || !theme) {
-          root.removeAttribute('data-theme');
-          return;
-        }
-        root.setAttribute('data-theme', theme);
+    // ── Search + category filter ──────────────────────────────────────────────
+    (function() {
+      const searchEl = document.getElementById('search');
+      const pills = document.querySelectorAll('.pill');
+      const sections = document.querySelectorAll('.cat-section');
+      const noResults = document.getElementById('no-results');
+      let activeCat = 'all';
+
+      function filter() {
+        const q = searchEl.value.trim().toLowerCase();
+        let visibleTotal = 0;
+
+        sections.forEach(sec => {
+          const catSlug = sec.dataset.category;
+          const catMatch = activeCat === 'all' || activeCat === catSlug;
+          if (!catMatch) { sec.classList.add('hidden'); return; }
+
+          const cards = sec.querySelectorAll('.repo-card');
+          let visibleInSec = 0;
+          cards.forEach(card => {
+            const nameMatch = !q || card.dataset.name.includes(q);
+            const descMatch = !q || card.dataset.desc.includes(q);
+            if (nameMatch || descMatch) { card.classList.remove('hidden'); visibleInSec++; }
+            else { card.classList.add('hidden'); }
+          });
+          sec.classList.toggle('hidden', visibleInSec === 0);
+          visibleTotal += visibleInSec;
+        });
+
+        noResults.style.display = visibleTotal === 0 ? 'block' : 'none';
       }
 
-      function systemPref() {
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      }
+      searchEl.addEventListener('input', filter);
 
-      function currentTheme() {
-        const saved = localStorage.getItem(STORAGE_KEY);
-        if (saved === 'light' || saved === 'dark' || saved === 'system') return saved;
-        return 'system';
-      }
-
-      function onChange(e) {
-        const value = e.target.value;
-        localStorage.setItem(STORAGE_KEY, value);
-        apply(value);
-      }
-
-      // Init UI and state
-      const saved = currentTheme();
-      select.value = saved;
-      apply(saved);
-
-      // Keep in sync with OS when in system mode
-      const media = window.matchMedia('(prefers-color-scheme: dark)');
-      media.addEventListener('change', () => {
-        if (currentTheme() === 'system') apply('system');
+      pills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          pills.forEach(p => p.classList.remove('active'));
+          pill.classList.add('active');
+          activeCat = pill.dataset.filter;
+          filter();
+        });
       });
-
-      select.addEventListener('change', onChange);
     })();
   </script>
 </body>
