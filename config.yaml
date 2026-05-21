@@ -90,6 +90,8 @@ weights:
 output:
   file: "result/healthtech-tools-{date}.md"
   latest: "result/healthtech-tools.md"
+  # Minimum score to include in output (filter out negative-score repos)
+  min_score: 0
   categories:
     - AI Diagnostics
     - Telemedicine

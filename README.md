@@ -116,6 +116,7 @@ weights:
 output:
   file: "result/healthtech-tools-{date}.md"
   latest: "result/healthtech-tools.md"
+  min_score: 0               # Filter out repos with score below this threshold
   categories: ["AI Diagnostics", "Telemedicine", "Health Data"]
 ```
 
@@ -233,6 +234,12 @@ A generated `healthtech-tools.md` might look like:
   - Commit recency decay (favor recently updated repos).
   - Contributor count and bus‑factor signals.
   - Topic/keyword relevance boosts.
+
+**Score Floor Filtering:**
+- Use `output.min_score` (default: `0`) to exclude low-scoring repos from the output.
+- Repos with negative scores (e.g., from missing licenses or low activity) are often low-quality or abandoned.
+- Set to `0` or higher to filter these out before rendering.
+- Example: `min_score: 10` keeps only repos that score positively overall.
 
 ## Ethical Considerations
 

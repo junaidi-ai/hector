@@ -61,13 +61,13 @@
 
 ## P0 — Correctness: Negative-Score Repos Included in Output
 
-### Task 6 — Add score floor filter before rendering
+### Task 6 — Add score floor filter before rendering ✅
 - **File**: `hector/renderer.py` or pipeline entry point
 - **Problem**: Many repos with scores < 0 (e.g., -132, -95) appear in the output.
 - Subtasks:
-  - [ ] Add `output.min_score` config key (default: `0`)
-  - [ ] Filter `items` in `render_markdown()` (or before calling it) to exclude entries below `min_score`
-  - [ ] Log count of excluded repos at INFO level
+  - [x] Add `output.min_score` config key (default: `0`)
+  - [x] Filter `items` in `render_markdown()` (or before calling it) to exclude entries below `min_score`
+  - [x] Log count of excluded repos at INFO level
 
 ---
 

@@ -157,6 +157,31 @@ def main(argv: list[str]) -> int:
             log.warning("Skipping repository due to error: %s", e)
             continue
 
+    # Apply score floor filter (Task 6)
+    min_score_cfg = cfg.get("output", {}).get("min_score")
+    min_score = float(min_score_cfg) if min_score_cfg is not None else 0.0
+    if min_score != 0 and items:
+        original_count = len(items)
+        filtered_items = []
+        for item in items:
+            score = item.get("score")  # type: ignore[assignment]
+            try:
+                score_val = float(score) if score is not None else 0.0
+                if score_val >= min_score:
+                    filtered_items.append(item)
+            except (ValueError, TypeError):
+                pass
+        items = filtered_items
+        filtered_count = original_count - len(items)
+        if filtered_count > 0:
+            log.info(
+                "Applied min_score=%.1f filter: %d repos → %d repos (filtered %d)",
+                min_score,
+                original_count,
+                len(items),
+                filtered_count,
+            )
+
     output_file, latest_file = _resolve_output_paths(cfg, args.output)
     # Ensure output directories exist
     paths_to_prepare = [output_file]
