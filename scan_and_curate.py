@@ -330,6 +330,24 @@ def main(argv: list[str]) -> int:
             )
     stats["after_relevance_filter"] = len(repos)
 
+    # Merge seed repos (bypass min_stars and relevance filter — always included)
+    seed_list: list[str] = cfg.get("search", {}).get("seed_repos") or []
+    if seed_list and not args.dry_run:
+        seed_repos = scanner.fetch_seed_repos(seed_list, cfg)
+        existing_names = {
+            (getattr(r, "full_name", None) or getattr(r, "name", "") or "").lower() for r in repos
+        }
+        added = 0
+        for r in seed_repos:
+            key = (getattr(r, "full_name", None) or getattr(r, "name", "") or "").lower()
+            if key not in existing_names:
+                repos.append(r)
+                existing_names.add(key)
+                added += 1
+        if added:
+            log.info("seed_repos: added %d new repos (total now %d)", added, len(repos))
+    stats["after_seed_merge"] = len(repos)
+
     weights: dict = cfg.get("weights", {})
     cats_config: list[str] = cfg.get("output", {}).get("categories", [])
     cat_keywords: dict = cfg.get("category_keywords") or cfg.get("output", {}).get(

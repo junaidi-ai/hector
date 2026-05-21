@@ -13,6 +13,18 @@ search:
     - surgical-robot
     - teleoperation
     - exoskeleton
+  # Explicitly pinned repos fetched directly by owner/repo path.
+  # These bypass min_stars and the healthcare relevance filter — always included.
+  # Useful for known high-quality repos that query-based search might miss.
+  seed_repos:
+    - stanfordmlgroup/MedAgentBench   # Virtual EHR environment for benchmarking medical LLM agents
+    - SamuelSchmidgall/AgentClinic    # Simulated doctor agents diagnosing patients via dialogue & imaging
+    - univanxx/3mdbench               # Multimodal doctor-patient conversations with vision-language grounding
+    - MAXNORM8650/MedAgentSim         # Multi-agent hospital simulator for dynamic diagnostic reasoning
+    - mims-harvard/TxAgent            # Therapeutic reasoning agent chaining 200+ biomedical tools
+    - wshi83/EhrAgent                 # LLM agent for structured reasoning over electronic health records
+    - ncbi-nlp/TrialGPT              # Zero-shot clinical trial matching for patients (NIH/NLM)
+
   # Minimum stars to include in results (helps filter marginal/hobby projects)
   min_stars: 10
 

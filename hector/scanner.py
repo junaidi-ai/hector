@@ -283,6 +283,54 @@ def search_repositories(cfg: dict[str, Any], limit: int = 50):
     return all_repos
 
 
+def fetch_seed_repos(seed_list: list[str], cfg: dict[str, Any]) -> list[Any]:
+    """Fetch explicitly pinned repos by owner/repo path, bypassing search queries.
+
+    Seed repos are always included in the pipeline regardless of search results,
+    min_stars threshold, or healthcare relevance filter. They still go through
+    scoring and categorization.
+
+    Args:
+        seed_list: List of "owner/repo" strings from config seed_repos.
+        cfg: Full config dict (used for auth token and dry_run flag).
+
+    Returns:
+        List of PyGithub Repository objects for repos that were fetched successfully.
+    """
+    if not seed_list:
+        return []
+
+    dry = bool(cfg.get("dry_run", False))
+    token = cfg.get("auth", {}).get("GITHUB_TOKEN") or os.getenv("GITHUB_TOKEN")
+
+    if dry or not token:
+        return []
+
+    if Github is None:
+        raise ImportError(
+            "PyGithub is required for live scans. Install with 'pip install PyGithub'."
+        )
+
+    gh = Github(token, per_page=50)
+    log = logging.getLogger("hector")
+    fetched: list[Any] = []
+
+    for path in seed_list:
+        path = str(path).strip()
+        if not path or "/" not in path:
+            log.warning("seed_repos: skipping invalid entry %r (expected 'owner/repo')", path)
+            continue
+        try:
+            repo = gh.get_repo(path)
+            fetched.append(repo)
+            log.debug("seed_repos: fetched %s", path)
+        except Exception as e:
+            log.warning("seed_repos: could not fetch %r — %s", path, e)
+
+    log.info("seed_repos: fetched %d / %d pinned repos", len(fetched), len(seed_list))
+    return fetched
+
+
 def is_repo_healthcare_relevant(repo: Any) -> bool:
     """Check if a repository has healthcare relevance.
 
