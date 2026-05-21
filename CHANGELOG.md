@@ -1,5 +1,359 @@
 # Changelog
 
+## v0.3.0 - 2026-05-21
+
+- chore: prepare v0.3.0 release (8b21a19) by Kresna Sucandra
+- feat: add --dry-run and --categories-only CLI modes (Task 13) (7a44ce6) by Kresna Sucandra
+- chore: mark Task 12 as complete (2d68575) by Kresna Sucandra
+- chore: mark Task 11 as complete in TODO (245255a) by Kresna Sucandra
+- chore: mark Task 10 as complete in TODO.md (35acb9a) by Kresna Sucandra
+- fix: simplify test assertions to pass linting (fbe9eb5) by Kresna Sucandra
+- feat: Task 9 - Cap contributor count at first-page limit (521bf66) by Kresna Sucandra
+- fix: Update GitHub Actions workflow to match Task 7 policy (a70c685) by Kresna Sucandra
+- feat: Task 8 - Add healthcare-domain relevance boost to scoring (644c47f) by Kresna Sucandra
+- chore: Add result/.claude to .gitignore and clean up harness state files (b376462) by Kresna Sucandra
+- feat: Task 7 - Enforce single canonical result file, purge dated duplicates (970c0cf) by Kresna Sucandra
+- feat: Task 6 - Add score floor filter before rendering (917f83b) by Kresna Sucandra
+- feat: Task 5 - Add post-scan healthcare relevance filter (9344daf) by Kresna Sucandra
+- feat: Task 4 - Strengthen scanner query to reduce false positives (2794d9f) by Kresna Sucandra
+- chore: update curated healthtech list (#281) (4877256) by github-actions[bot]
+- chore: update curated healthtech list (#280) (010b4c7) by github-actions[bot]
+- chore: update curated healthtech list (#279) (3f91bcf) by github-actions[bot]
+- chore: update curated healthtech list (#278) (210223e) by github-actions[bot]
+- chore: update curated healthtech list (#277) (b34486c) by github-actions[bot]
+- chore: update curated healthtech list (#276) (fa6b39b) by github-actions[bot]
+- chore: update curated healthtech list (#275) (9040f8a) by github-actions[bot]
+- chore: update curated healthtech list (#274) (c7da89f) by github-actions[bot]
+- chore: update curated healthtech list (#273) (cf02df9) by github-actions[bot]
+- chore: update curated healthtech list (#272) (3e591f5) by github-actions[bot]
+- chore: update curated healthtech list (#271) (0852b80) by github-actions[bot]
+- chore: update curated healthtech list (#270) (097c4bb) by github-actions[bot]
+- chore: update curated healthtech list (#269) (87067a5) by github-actions[bot]
+- chore: update curated healthtech list (#268) (61272b4) by github-actions[bot]
+- chore: update curated healthtech list (#267) (29567a9) by github-actions[bot]
+- chore: update curated healthtech list (#266) (3605586) by github-actions[bot]
+- chore: update curated healthtech list (#265) (9436a8e) by github-actions[bot]
+- chore: update curated healthtech list (#264) (23c624b) by github-actions[bot]
+- chore: update curated healthtech list (#263) (b008d87) by github-actions[bot]
+- chore: update curated healthtech list (#262) (1bb61a4) by github-actions[bot]
+- chore: update curated healthtech list (#261) (3c43ff4) by github-actions[bot]
+- chore: update curated healthtech list (#260) (f6b1ba4) by github-actions[bot]
+- chore: update curated healthtech list (#259) (936f181) by github-actions[bot]
+- chore: update curated healthtech list (#258) (35c805d) by github-actions[bot]
+- chore: update curated healthtech list (#257) (57a7d26) by github-actions[bot]
+- chore: update curated healthtech list (#256) (0a87498) by github-actions[bot]
+- chore: update curated healthtech list (#255) (c43f4e2) by github-actions[bot]
+- chore: update curated healthtech list (#254) (517208c) by github-actions[bot]
+- chore: update curated healthtech list (#253) (cdd4b49) by github-actions[bot]
+- chore: update curated healthtech list (#252) (1cf41a8) by github-actions[bot]
+- chore: update curated healthtech list (#251) (fd6ae85) by github-actions[bot]
+- chore: update curated healthtech list (#250) (217fb21) by github-actions[bot]
+- chore: update curated healthtech list (#249) (89fc557) by github-actions[bot]
+- chore: update curated healthtech list (#248) (95348c7) by github-actions[bot]
+- chore: update curated healthtech list (#247) (6a96519) by github-actions[bot]
+- chore: update curated healthtech list (#246) (44c0637) by github-actions[bot]
+- chore: update curated healthtech list (#245) (f294aa1) by github-actions[bot]
+- chore: update curated healthtech list (#244) (37b9a1d) by github-actions[bot]
+- chore: update curated healthtech list (#243) (b04b238) by github-actions[bot]
+- chore: update curated healthtech list (#242) (cddb34e) by github-actions[bot]
+- fix(categorizer): address review issues from Tasks 1-3 (cadfe9e) by Kresna Sucandra
+- fix(categorizer): gate AI-indicator fallback behind healthcare context check (112b4e3) by Kresna Sucandra
+- chore: remove cursor, windsurf and taskmaster configs; add TODO.md (3cd7c71) by Kresna Sucandra
+- chore: update curated healthtech list (#241) (78fb010) by github-actions[bot]
+- chore: update curated healthtech list (#240) (82c4dfa) by github-actions[bot]
+- chore: update curated healthtech list (#239) (3e243ec) by github-actions[bot]
+- chore: update curated healthtech list (#238) (86b0627) by github-actions[bot]
+- chore: update curated healthtech list (#237) (506eafb) by github-actions[bot]
+- chore: update curated healthtech list (#236) (6296b37) by github-actions[bot]
+- chore: update curated healthtech list (#235) (e09d3ed) by github-actions[bot]
+- chore: update curated healthtech list (#234) (27ae86d) by github-actions[bot]
+- chore: update curated healthtech list (#233) (c8e90ee) by github-actions[bot]
+- chore: update curated healthtech list (#232) (01bb695) by github-actions[bot]
+- chore: update curated healthtech list (#231) (244cb59) by github-actions[bot]
+- chore: update curated healthtech list (#230) (e178f73) by github-actions[bot]
+- chore: update curated healthtech list (#229) (5072288) by github-actions[bot]
+- chore: update curated healthtech list (#228) (7f058c8) by github-actions[bot]
+- chore: update curated healthtech list (#227) (01d02a9) by github-actions[bot]
+- chore: update curated healthtech list (#226) (0704208) by github-actions[bot]
+- chore: update curated healthtech list (#225) (c5dd47a) by github-actions[bot]
+- chore: update curated healthtech list (#224) (75dfc7d) by github-actions[bot]
+- chore: update curated healthtech list (#223) (5cd502f) by github-actions[bot]
+- chore: update curated healthtech list (#222) (e37ba06) by github-actions[bot]
+- chore: update curated healthtech list (#221) (5272739) by github-actions[bot]
+- chore: update curated healthtech list (#220) (438ce4a) by github-actions[bot]
+- chore: update curated healthtech list (#219) (3d2a5fd) by github-actions[bot]
+- chore: update curated healthtech list (#218) (a1dfb3f) by github-actions[bot]
+- chore: update curated healthtech list (#217) (005f7e6) by github-actions[bot]
+- chore: update curated healthtech list (#216) (1b47939) by github-actions[bot]
+- chore: update curated healthtech list (#215) (78e2635) by github-actions[bot]
+- chore: update curated healthtech list (#214) (db6d843) by github-actions[bot]
+- chore: update curated healthtech list (#213) (aeb8d8f) by github-actions[bot]
+- chore: update curated healthtech list (#212) (4adb9b2) by github-actions[bot]
+- chore: update curated healthtech list (#211) (ac5c482) by github-actions[bot]
+- chore: update curated healthtech list (#210) (7655400) by github-actions[bot]
+- chore: update curated healthtech list (#209) (4ab6350) by github-actions[bot]
+- chore: update curated healthtech list (#208) (47f3e43) by github-actions[bot]
+- chore: update curated healthtech list (#207) (f7ce36f) by github-actions[bot]
+- chore: update curated healthtech list (#206) (c7ca7ea) by github-actions[bot]
+- chore: update curated healthtech list (#205) (f652d10) by github-actions[bot]
+- chore: update curated healthtech list (#204) (ce74e04) by github-actions[bot]
+- chore: update curated healthtech list (#203) (ee5aadb) by github-actions[bot]
+- chore: update curated healthtech list (#202) (96d8c02) by github-actions[bot]
+- chore: update curated healthtech list (#201) (fd7e3fc) by github-actions[bot]
+- chore: update curated healthtech list (#200) (367ce0a) by github-actions[bot]
+- chore: update curated healthtech list (#199) (817fcaf) by github-actions[bot]
+- chore: update curated healthtech list (#198) (1ab924d) by github-actions[bot]
+- chore: update curated healthtech list (#197) (1dfb1be) by github-actions[bot]
+- chore: update curated healthtech list (#196) (50f30b1) by github-actions[bot]
+- chore: update curated healthtech list (#195) (32c60a9) by github-actions[bot]
+- chore: update curated healthtech list (#194) (af2df87) by github-actions[bot]
+- chore: update curated healthtech list (#193) (1747f01) by github-actions[bot]
+- chore: update curated healthtech list (#192) (a8920c8) by github-actions[bot]
+- chore: update curated healthtech list (#191) (6fd2595) by github-actions[bot]
+- chore: update curated healthtech list (#190) (41d5713) by github-actions[bot]
+- chore: update curated healthtech list (#189) (4e8fc83) by github-actions[bot]
+- chore: update curated healthtech list (#188) (5a1dd41) by github-actions[bot]
+- chore: update curated healthtech list (#187) (067214f) by github-actions[bot]
+- chore: update curated healthtech list (#186) (7444478) by github-actions[bot]
+- chore: update curated healthtech list (#185) (fa87186) by github-actions[bot]
+- chore: update curated healthtech list (#184) (6a17af1) by github-actions[bot]
+- chore: update curated healthtech list (#183) (8dd6040) by github-actions[bot]
+- chore: update curated healthtech list (#182) (7071e8d) by github-actions[bot]
+- chore: update curated healthtech list (#181) (954dac4) by github-actions[bot]
+- chore: update curated healthtech list (#180) (d4796b0) by github-actions[bot]
+- chore: update curated healthtech list (#179) (22e45ca) by github-actions[bot]
+- chore: update curated healthtech list (#178) (c7aa8dc) by github-actions[bot]
+- chore: update curated healthtech list (#177) (bab5414) by github-actions[bot]
+- chore: update curated healthtech list (#176) (e3ad4ee) by github-actions[bot]
+- chore: update curated healthtech list (#175) (a527845) by github-actions[bot]
+- chore: update curated healthtech list (#174) (022cc1b) by github-actions[bot]
+- chore: update curated healthtech list (#173) (2467d18) by github-actions[bot]
+- chore: update curated healthtech list (#172) (37dc238) by github-actions[bot]
+- chore: update curated healthtech list (#171) (9cc2c53) by github-actions[bot]
+- chore: update curated healthtech list (#170) (daeee67) by github-actions[bot]
+- chore: update curated healthtech list (#169) (df3d8ec) by github-actions[bot]
+- chore: update curated healthtech list (#168) (8094160) by github-actions[bot]
+- chore: update curated healthtech list (#167) (36f5b82) by github-actions[bot]
+- chore: update curated healthtech list (#166) (be5e936) by github-actions[bot]
+- chore: update curated healthtech list (#165) (a75c8af) by github-actions[bot]
+- chore: update curated healthtech list (#164) (4801fd3) by github-actions[bot]
+- chore: update curated healthtech list (#163) (7168cf8) by github-actions[bot]
+- chore: update curated healthtech list (#162) (f8c41d5) by github-actions[bot]
+- chore: update curated healthtech list (#161) (cd51265) by github-actions[bot]
+- chore: update curated healthtech list (#160) (850081e) by github-actions[bot]
+- chore: update curated healthtech list (#159) (dc79e6a) by github-actions[bot]
+- chore: update curated healthtech list (#158) (e727964) by github-actions[bot]
+- chore: update curated healthtech list (#157) (9178576) by github-actions[bot]
+- chore: update curated healthtech list (#156) (8bfa826) by github-actions[bot]
+- chore: update curated healthtech list (#155) (b810a96) by github-actions[bot]
+- chore: update curated healthtech list (#154) (39514ba) by github-actions[bot]
+- chore: update curated healthtech list (#153) (c216b0d) by github-actions[bot]
+- chore: update curated healthtech list (#152) (431fb38) by github-actions[bot]
+- chore: update curated healthtech list (#151) (a0b518a) by github-actions[bot]
+- chore: update curated healthtech list (#150) (6cbeb59) by github-actions[bot]
+- chore: update curated healthtech list (#149) (5b51a72) by github-actions[bot]
+- chore: update curated healthtech list (#148) (5e2cc8f) by github-actions[bot]
+- chore: update curated healthtech list (#147) (db00658) by github-actions[bot]
+- chore: update curated healthtech list (#146) (841580a) by github-actions[bot]
+- chore: update curated healthtech list (#145) (e32ea88) by github-actions[bot]
+- chore: update curated healthtech list (#144) (3158759) by github-actions[bot]
+- chore: update curated healthtech list (#143) (11c1b88) by github-actions[bot]
+- chore: update curated healthtech list (#142) (24f4cb5) by github-actions[bot]
+- chore: update curated healthtech list (#141) (1046cb7) by github-actions[bot]
+- chore: update curated healthtech list (#140) (71919f9) by github-actions[bot]
+- chore: update curated healthtech list (#139) (4e805c8) by github-actions[bot]
+- chore: update curated healthtech list (#138) (ca9aa5f) by github-actions[bot]
+- chore: update curated healthtech list (#137) (a888f9a) by github-actions[bot]
+- chore: update curated healthtech list (#136) (c4b7bb2) by github-actions[bot]
+- chore: update curated healthtech list (#135) (b45b945) by github-actions[bot]
+- chore: update curated healthtech list (#134) (a4161b9) by github-actions[bot]
+- chore: update curated healthtech list (#133) (385768a) by github-actions[bot]
+- chore: update curated healthtech list (#132) (eccc0c0) by github-actions[bot]
+- chore: update curated healthtech list (#131) (c7fac74) by github-actions[bot]
+- chore: update curated healthtech list (#130) (39beb89) by github-actions[bot]
+- chore: update curated healthtech list (#129) (97bdf9f) by github-actions[bot]
+- chore: update curated healthtech list (#128) (30f38c8) by github-actions[bot]
+- chore: update curated healthtech list (#127) (e94ef7e) by github-actions[bot]
+- chore: update curated healthtech list (#126) (d625da9) by github-actions[bot]
+- chore: update curated healthtech list (#125) (c30b22c) by github-actions[bot]
+- chore: update curated healthtech list (#124) (ab50107) by github-actions[bot]
+- chore: update curated healthtech list (#123) (ebf0a5c) by github-actions[bot]
+- chore: update curated healthtech list (#122) (0c3ac48) by github-actions[bot]
+- chore: update curated healthtech list (#121) (8649760) by github-actions[bot]
+- chore: update curated healthtech list (#120) (b6e4077) by github-actions[bot]
+- chore: update curated healthtech list (#119) (ff61481) by github-actions[bot]
+- chore: update curated healthtech list (#118) (5f671e6) by github-actions[bot]
+- chore: update curated healthtech list (#117) (512dbca) by github-actions[bot]
+- chore: update curated healthtech list (#116) (3d1a6c4) by github-actions[bot]
+- chore: update curated healthtech list (#115) (5310059) by github-actions[bot]
+- chore: update curated healthtech list (#114) (9e771a0) by github-actions[bot]
+- chore: update curated healthtech list (#113) (e8fd1d1) by github-actions[bot]
+- chore: update curated healthtech list (#112) (8c2ad34) by github-actions[bot]
+- chore: update curated healthtech list (#111) (566fd7d) by github-actions[bot]
+- chore: update curated healthtech list (#110) (1924c62) by github-actions[bot]
+- chore: update curated healthtech list (#109) (7079071) by github-actions[bot]
+- chore: update curated healthtech list (#108) (b49c6d1) by github-actions[bot]
+- chore: update curated healthtech list (#107) (94df69b) by github-actions[bot]
+- chore: update curated healthtech list (#106) (a849dee) by github-actions[bot]
+- chore: update curated healthtech list (#105) (30821b3) by github-actions[bot]
+- chore: update curated healthtech list (#104) (bc04bf8) by github-actions[bot]
+- chore: update curated healthtech list (#103) (6d80d7f) by github-actions[bot]
+- chore: update curated healthtech list (#102) (a4510c2) by github-actions[bot]
+- Merge pull request #101 from junaidi-ai/hector/update-19556421323 (a0c928d) by Kresna Sucandra
+- chore: update curated healthtech list (3cbe136) by SHA888
+- chore: update curated healthtech list (#100) (d2c2da9) by github-actions[bot]
+- chore: update curated healthtech list (#99) (054a8a2) by github-actions[bot]
+- chore: update curated healthtech list (#98) (a840162) by github-actions[bot]
+- chore: update curated healthtech list (#97) (27e40b8) by github-actions[bot]
+- chore: update curated healthtech list (#96) (ad12c1e) by github-actions[bot]
+- chore: update curated healthtech list (#95) (1cae12a) by github-actions[bot]
+- chore: update curated healthtech list (#94) (bef9658) by github-actions[bot]
+- chore: update curated healthtech list (#93) (3586a65) by github-actions[bot]
+- chore: update curated healthtech list (#92) (253fe34) by github-actions[bot]
+- chore: update curated healthtech list (#91) (6a634ea) by github-actions[bot]
+- chore: update curated healthtech list (#90) (ab5b323) by github-actions[bot]
+- chore: update curated healthtech list (#89) (01f0c63) by github-actions[bot]
+- chore: update curated healthtech list (#88) (d6f83dd) by github-actions[bot]
+- chore: update curated healthtech list (#87) (c41ec01) by github-actions[bot]
+- chore: update curated healthtech list (#86) (3985322) by github-actions[bot]
+- chore: update curated healthtech list (#85) (908d8d3) by github-actions[bot]
+- chore: update curated healthtech list (#84) (72a828c) by github-actions[bot]
+- chore: update curated healthtech list (#83) (2529bf6) by github-actions[bot]
+- chore: update curated healthtech list (#82) (c7f00e4) by github-actions[bot]
+- chore: update curated healthtech list (#81) (6d1c4ca) by github-actions[bot]
+- chore: update curated healthtech list (#80) (0efe7a1) by github-actions[bot]
+- chore: update curated healthtech list (#79) (b23bb7a) by github-actions[bot]
+- chore: update curated healthtech list (#78) (bb547e5) by github-actions[bot]
+- chore: update curated healthtech list (#77) (63711a2) by github-actions[bot]
+- chore: update curated healthtech list (#76) (2a02756) by github-actions[bot]
+- chore: update curated healthtech list (#75) (65c5e88) by github-actions[bot]
+- chore: update curated healthtech list (#74) (7c8cc32) by github-actions[bot]
+- chore: update curated healthtech list (#73) (27ef9ca) by github-actions[bot]
+- chore: update curated healthtech list (#72) (629c948) by github-actions[bot]
+- chore: update curated healthtech list (#71) (89677fc) by github-actions[bot]
+- chore: update curated healthtech list (#70) (27d8fc7) by github-actions[bot]
+- chore: update curated healthtech list (#69) (968626a) by github-actions[bot]
+- chore: update curated healthtech list (#68) (6e40e80) by github-actions[bot]
+- chore: update curated healthtech list (#67) (4f1264d) by github-actions[bot]
+- chore: update curated healthtech list (#66) (4f34c6b) by github-actions[bot]
+- chore: update curated healthtech list (#65) (cec75bc) by github-actions[bot]
+- chore: update curated healthtech list (#64) (3296b1e) by github-actions[bot]
+- chore: update curated healthtech list (#63) (be5ea1b) by github-actions[bot]
+- chore: update curated healthtech list (#62) (1f7c151) by github-actions[bot]
+- chore: update curated healthtech list (#61) (1b0355f) by github-actions[bot]
+- chore: update curated healthtech list (#60) (0d5a7a0) by github-actions[bot]
+- chore: update curated healthtech list (#59) (00dcd22) by github-actions[bot]
+- chore: update curated healthtech list (#58) (ec6b527) by github-actions[bot]
+- chore: update curated healthtech list (#57) (27df0fe) by github-actions[bot]
+- fix(ci): use github.rest.* in github-script v7 for pulls.list/merge and git.deleteRef (0dce65a) by Kresna Sucandra
+- Merge pull request #56 from junaidi-ai/hector/update-18298805500 (9502960) by Kresna Sucandra
+- chore: update curated healthtech list (97b9289) by SHA888
+- chore(ci): harden auto-merge workflow (2c3af5e) by Kresna Sucandra
+- Merge pull request #55 from junaidi-ai/hector/update-18267001616 (c44e1dd) by Kresna Sucandra
+- Merge pull request #54 from junaidi-ai/hector/update-18251857677 (dd5a6ba) by Kresna Sucandra
+- Merge pull request #53 from junaidi-ai/hector/update-18237245747 (90fd0b8) by Kresna Sucandra
+- Merge pull request #52 from junaidi-ai/hector/update-18209752937 (431c84e) by Kresna Sucandra
+- Merge pull request #51 from junaidi-ai/hector/update-18180074488 (8e9e96c) by Kresna Sucandra
+- Merge pull request #50 from junaidi-ai/hector/update-18147945193 (cdf316e) by Kresna Sucandra
+- chore: update curated healthtech list (77ef44f) by SHA888
+- chore: update curated healthtech list (8ee3a0b) by SHA888
+- chore: update curated healthtech list (20df5bd) by SHA888
+- chore: update curated healthtech list (5b9b9da) by SHA888
+- chore: update curated healthtech list (06a402b) by SHA888
+- chore: update curated healthtech list (262c2b1) by SHA888
+- Merge pull request #47 from junaidi-ai/hector/update-18067232289 (938fcba) by Kresna Sucandra
+- Merge pull request #46 from junaidi-ai/hector/update-18052764863 (6be24f0) by Kresna Sucandra
+- Merge pull request #45 from junaidi-ai/hector/update-18024750366 (30b22cd) by Kresna Sucandra
+- Merge pull request #44 from junaidi-ai/hector/update-17993711451 (f36e6f4) by Kresna Sucandra
+- Merge pull request #43 from junaidi-ai/hector/update-17963123435 (fbb3558) by Kresna Sucandra
+- Merge pull request #48 from junaidi-ai/hector/update-18082524098 (9731d9c) by Kresna Sucandra
+- Merge pull request #49 from junaidi-ai/hector/update-18115229392 (c61b00f) by Kresna Sucandra
+- chore: update curated healthtech list (e7b4a6c) by SHA888
+- chore: update curated healthtech list (4260dea) by SHA888
+- chore: update curated healthtech list (dcf727e) by SHA888
+- chore: update curated healthtech list (36b4bb9) by SHA888
+- chore: update curated healthtech list (95d60cf) by SHA888
+- chore: update curated healthtech list (11a8b82) by SHA888
+- chore: update curated healthtech list (71c706a) by SHA888
+- ci(automerge): delete PR source branch after merge (e38c179) by Kresna Sucandra
+- Merge pull request #39 from junaidi-ai/hector/update-17873112283 (6fc2f1d) by Kresna Sucandra
+- Merge pull request #40 from junaidi-ai/hector/update-17887027274 (ce662b1) by Kresna Sucandra
+- Merge pull request #41 from junaidi-ai/hector/update-17901572013 (957e0eb) by Kresna Sucandra
+- Merge pull request #42 from junaidi-ai/hector/update-17932722599 (180e26d) by Kresna Sucandra
+- chore: update curated healthtech list (b1963ed) by SHA888
+- chore: update curated healthtech list (158447c) by SHA888
+- chore: update curated healthtech list (507e72a) by SHA888
+- chore: update curated healthtech list (f96dfdf) by SHA888
+- chore(ci): prune older bot PRs when newer exists (031fa17) by Kresna Sucandra
+- Merge pull request #38 from junaidi-ai/hector/update-17845366215 (2aadb7b) by Kresna Sucandra
+- Merge pull request #37 from junaidi-ai/hector/update-17814743342 (0654d14) by Kresna Sucandra
+- Merge pull request #36 from junaidi-ai/hector/update-17783301690 (e72c142) by Kresna Sucandra
+- Merge pull request #35 from junaidi-ai/hector/update-17751037659 (f121c40) by Kresna Sucandra
+- Merge pull request #34 from junaidi-ai/hector/update-17719249953 (86bebc1) by Kresna Sucandra
+- Merge pull request #33 from junaidi-ai/hector/update-17704362038 (0bf2744) by Kresna Sucandra
+- Merge pull request #32 from junaidi-ai/hector/update-17689398530 (57d6c2d) by Kresna Sucandra
+- Merge pull request #31 from junaidi-ai/hector/update-17661323447 (2b9d5ae) by Kresna Sucandra
+- Merge pull request #30 from junaidi-ai/hector/update-17630827725 (b999839) by Kresna Sucandra
+- Merge pull request #29 from junaidi-ai/hector/update-17599795501 (dce6efd) by Kresna Sucandra
+- Merge pull request #28 from junaidi-ai/hector/update-17568491436 (380bb10) by Kresna Sucandra
+- chore(ci): auto-merge PRs from github-actions bot and backfill support (manual merges in progress) (41731bd) by Kresna Sucandra
+- chore(ci): auto-merge PRs from github-actions bot and backfill support (0ae3b5e) by Kresna Sucandra
+- chore: update curated healthtech list (32eeb3b) by SHA888
+- chore: update curated healthtech list (f73a95e) by SHA888
+- chore: update curated healthtech list (d4fe152) by SHA888
+- chore: update curated healthtech list (70499bc) by SHA888
+- chore: update curated healthtech list (5b6b79a) by SHA888
+- chore: update curated healthtech list (965b6b9) by SHA888
+- chore: update curated healthtech list (08aea4b) by SHA888
+- chore: update curated healthtech list (09f28ec) by SHA888
+- chore: update curated healthtech list (4e6d564) by SHA888
+- chore: update curated healthtech list (cd32ecf) by SHA888
+- chore: update curated healthtech list (77eaddb) by SHA888
+- Merge PR #27: hector/update-17536564091 into main (675908a) by Kresna Sucandra
+- Merge origin/main into pr-27; keep main version of result/healthtech-tools.md (42661a3) by Kresna Sucandra
+- Merge pull request #26 from junaidi-ai/hector/update-17521818103 (c866f70) by Kresna Sucandra
+- chore: update curated healthtech list (58716e6) by SHA888
+- chore: update curated healthtech list (65f07ef) by SHA888
+- Merge pull request #25 from junaidi-ai/hector/update-17507779184 (dcccb40) by Kresna Sucandra
+- chore: update curated healthtech list (86a6008) by SHA888
+- Merge pull request #24 from junaidi-ai/hector/update-17480599594 (c34e11d) by Kresna Sucandra
+- chore: update curated healthtech list (ed1538f) by SHA888
+- Merge pull request #23 from junaidi-ai/hector/update-17450096009 (02889ec) by Kresna Sucandra
+- chore: update curated healthtech list (e6d082d) by SHA888
+- Merge pull request #22 from junaidi-ai/hector/update-17419886342 (5358f1d) by Kresna Sucandra
+- chore: update curated healthtech list (e22bb95) by SHA888
+- Merge pull request #21 from junaidi-ai/hector/update-17390260690 (923ebf3) by Kresna Sucandra
+- chore: update curated healthtech list (6af7d11) by SHA888
+- Merge pull request #20 from junaidi-ai/hector/update-17371540474 (48f0125) by Kresna Sucandra
+- chore: update curated healthtech list (94068dd) by SHA888
+- search: batch topics in GitHub queries to avoid 422/length issues; ci: raise log level to DEBUG for scan step (5dd4a6c) by Kresna Sucandra
+- chore: update categories and keywords; enable live scan config; run live scan and publish results for 2025-09-01 (bbfe350) by Kresna Sucandra
+- Merge pull request #18 from junaidi-ai/hector/update-17364916241 (16e4ad9) by Kresna Sucandra
+- chore: update curated healthtech list (3aa716b) by SHA888
+- Merge pull request #17 from junaidi-ai/hector/update-17350682885 (c2e7d48) by Kresna Sucandra
+- chore: update curated healthtech list (bc8d8c9) by SHA888
+- Merge pull request #16 from junaidi-ai/hector/update-17337298459 (e28034c) by Kresna Sucandra
+- Merge branch 'main' into hector/update-17337298459 (e9794ec) by Kresna Sucandra
+- Merge pull request #15 from junaidi-ai/hector/update-17311732462 (2611ed7) by Kresna Sucandra
+- chore: update curated healthtech list (2870a0e) by SHA888
+- chore: update curated healthtech list (66e572c) by SHA888
+- Merge pull request #14 from junaidi-ai/hector/update-17311557844 (6015a1e) by Kresna Sucandra
+- chore: update curated healthtech list (8f40f66) by SHA888
+- ci: revert to GITHUB_TOKEN for create-pull-request (abaf94a) by Kresna Sucandra
+- ci: use PR_TOKEN fallback and log UTC time in scheduled scan (0d68d44) by Kresna Sucandra
+- Merge pull request #13 from junaidi-ai/hector/update-17254369474 (91275cc) by Kresna Sucandra
+- chore: update curated healthtech list (8027039) by SHA888
+- docs: add System/Light/Dark theme selector and refine accessible colors (1fa2305) by Kresna Sucandra
+- docs: improve color scheme and add light/dark theme toggle with persistence (29bae67) by Kresna Sucandra
+- Merge pull request #12 from junaidi-ai/chore/fix-release-changelog-pr (c83d45b) by Kresna Sucandra
+- docs(pages): add docs/index.html and trigger pages on docs changes (ef72880) by Kresna Sucandra
+- ci: use GITHUB_TOKEN for create-pull-request; remove PR_TOKEN usage (8ed7f45) by Kresna Sucandra
+- Merge pull request #11 from junaidi-ai/chore/fix-release-changelog-pr (51935d6) by Kresna Sucandra
+- ci: matrix & pip cache; pages: nightly schedule; docs: live badge endpoints (3412b99) by Kresna Sucandra
+- fix(release): use correct inputs for create-pull-request and push with PR_TOKEN (40ab5fe) by Kresna Sucandra
+
+
+# Changelog
 All notable changes to this project will be documented in this file.
 
 The format is loosely based on Keep a Changelog, and this project adheres to tags to mark releases (e.g., v0.1.0).
