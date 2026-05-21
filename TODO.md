@@ -106,15 +106,15 @@
 
 ## P1 — Quality: Categorizer Robustness
 
-### Task 10 — Add unit tests for `categorizer.py`
+### Task 10 — Add unit tests for `categorizer.py` ✅
 - **File**: `tests/test_categorizer.py` (new)
 - Subtasks:
-  - [ ] Test: known-good healthcare repos → correctly categorized
-  - [ ] Test: ROS2/robotics repos → "Uncategorized" (not "AI Diagnostics" or "NLP & Clinical Text")
-  - [ ] Test: arxiv paper tracker → "Uncategorized"
-  - [ ] Test: DICOM/PACS tool → "Imaging & Radiology"
-  - [ ] Test: `_phrase_in_text` boundary conditions (short tokens, multi-word phrases)
-  - [ ] Test: `_is_healthcare_relevant` allowlist (Task 3)
+  - [x] Test: known-good healthcare repos → correctly categorized
+  - [x] Test: ROS2/robotics repos → "Uncategorized" (not "AI Diagnostics" or "NLP & Clinical Text")
+  - [x] Test: arxiv paper tracker → "Uncategorized"
+  - [x] Test: DICOM/PACS tool → "Imaging & Radiology"
+  - [x] Test: `_phrase_in_text` boundary conditions (short tokens, multi-word phrases)
+  - [x] Test: `_is_healthcare_relevant` allowlist (Task 3)
 
 ### Task 11 — Add unit tests for `scorer.py`
 - **File**: `tests/test_scorer.py` (new)
