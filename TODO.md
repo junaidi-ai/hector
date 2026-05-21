@@ -116,13 +116,13 @@
   - [x] Test: `_phrase_in_text` boundary conditions (short tokens, multi-word phrases)
   - [x] Test: `_is_healthcare_relevant` allowlist (Task 3)
 
-### Task 11 — Add unit tests for `scorer.py`
-- **File**: `tests/test_scorer.py` (new)
+### Task 11 — Add unit tests for `scorer.py` ✅
+- **File**: `tests/test_scorer.py` (expanded)
 - Subtasks:
-  - [ ] Test: all-zero weights → score equals license bonus only
-  - [ ] Test: negative open_issues weight reduces score
-  - [ ] Test: recency_decay on a 365-day-old repo
-  - [ ] Test: unknown license → falls back to "none" key in license map
+  - [x] Test: all-zero weights → score equals license bonus only
+  - [x] Test: negative open_issues weight reduces score
+  - [x] Test: recency_decay on a 365-day-old repo
+  - [x] Test: unknown license → falls back to "none" key in license map
 
 ---
 
