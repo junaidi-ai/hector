@@ -358,12 +358,22 @@ def is_repo_healthcare_relevant(repo: Any) -> bool:
 def get_repo_metrics(repo: Any) -> dict[str, Any]:
     """Collect richer metrics for a repository, best-effort and lightweight.
 
-    Returns keys: prs_open, has_discussions, contributors_count, days_since_push
+    Returns keys:
+    - prs_open: number of open pull requests
+    - has_discussions: whether discussions are enabled
+    - contributors_count: number of contributors (CAPPED AT ~30, first page only)
+    - contributors_count_capped: true if contributors_count is limited (Task 9)
+    - days_since_push: days since last commit
+
+    Note: contributors_count is limited to the first page (~30) due to API pagination.
+    For repos with many contributors, this underestimates the true count. Set the flag
+    contributors_count_capped to true if the count hit the page limit.
     """
     metrics: dict[str, Any] = {
         "prs_open": 0,
         "has_discussions": False,
         "contributors_count": 0,
+        "contributors_count_capped": False,
         "days_since_push": None,
     }
 
@@ -387,17 +397,20 @@ def get_repo_metrics(repo: Any) -> dict[str, Any]:
     except Exception:
         pass
 
-    # Contributors count (first page only, max 30)
+    # Contributors count (first page only, max ~30) — Task 9
+    # NOTE: This is a capped value. For repos with many contributors, the true
+    # count is much higher but not fetched to avoid rate-limit overhead.
     try:
         contribs = repo.get_contributors()
-        c = 0
         first_page = []
         try:
             first_page = contribs.get_page(0)
         except Exception:
             first_page = []
-        c += len(first_page)
+        c = len(first_page)
+        # Mark as capped if we got a full page (indicates more exist)
         metrics["contributors_count"] = int(c)
+        metrics["contributors_count_capped"] = len(first_page) >= 30
     except Exception:
         pass
 

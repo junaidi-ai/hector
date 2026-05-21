@@ -151,6 +151,7 @@ def main(argv: list[str]) -> int:
                     "prs_open": metrics.get("prs_open"),
                     "has_discussions": metrics.get("has_discussions"),
                     "contributors_count": metrics.get("contributors_count"),
+                    "contributors_count_capped": metrics.get("contributors_count_capped"),
                     "days_since_push": metrics.get("days_since_push"),
                 }
             )

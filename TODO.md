@@ -94,13 +94,13 @@
   - [x] In `score_repository()`, compute a boolean relevance flag using the same anchor check from Task 3 and multiply by the boost weight
   - [x] This allows operators to dial up domain relevance vs. raw popularity
 
-### Task 9 — Cap contributor count at first-page limit in `get_repo_metrics()`
+### Task 9 — Cap contributor count at first-page limit in `get_repo_metrics()` ✅
 - **File**: `hector/scanner.py` → `get_repo_metrics()`
 - **Problem**: Current code fetches only page 0 but stores `len(first_page)` which is at most 30, distorting contributor weight for large projects.
 - Subtasks:
-  - [ ] Document in code that `contributors_count` is "first-page count (≤30), not total"
-  - [ ] Add `contributors_count_capped: true` field in metrics dict so scorer/renderer can note this
-  - [ ] OR: use `repo.get_stats_contributors()` which returns aggregate data but is rate-limit heavier — gate behind `scanner.fetch_contributor_stats: false` (default)
+  - [x] Document in code that `contributors_count` is "first-page count (≤30), not total"
+  - [x] Add `contributors_count_capped: true` field in metrics dict so scorer/renderer can note this
+  - [ ] OR: use `repo.get_stats_contributors()` which returns aggregate data but is rate-limit heavier — gate behind `scanner.fetch_contributor_stats: false` (default) [optional enhancement]
 
 ---
 
