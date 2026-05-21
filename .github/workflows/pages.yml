@@ -27,16 +27,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v4
         with:
+          version: "0.5.x"
           python-version: '3.12'
       - name: Install dependencies
-        run: pip install -e ".[dev]"
+        run: uv sync --extra dev
       - name: Generate badge JSON
-        run: python scripts/generate_badge_json.py
+        run: uv run python scripts/generate_badge_json.py
       - name: Generate Pages HTML
-        run: python scripts/generate_pages_html.py
+        run: uv run python scripts/generate_pages_html.py
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

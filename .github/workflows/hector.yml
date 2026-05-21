@@ -23,12 +23,12 @@ jobs:
           python-version: '3.12'
       - name: Install dependencies
         run: uv sync --extra dev
+      - name: Run unit tests
+        run: uv run pytest -q
       - name: Run Hector
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: uv run python scan_and_curate.py --live --limit 100 --log-level DEBUG
-      - name: Run unit tests
-        run: uv run pytest -q
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
@@ -44,3 +44,4 @@ jobs:
           delete-branch: true
           add-paths: |
             result/healthtech-tools.md
+            result/run-summary.json

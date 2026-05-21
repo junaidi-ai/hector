@@ -1,89 +1,32 @@
 name: Auto-merge bot PRs
 
 on:
-  pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
-  workflow_dispatch:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 1 * * *' # Once daily at 01:00 UTC (1h after the midnight scan)
+  workflow_dispatch:
 
 permissions:
   contents: write
   pull-requests: write
 
 jobs:
-  automerge:
-    # Only act on PR events created by the repo's own GitHub Actions bot
-    if: |
-      github.event_name == 'pull_request' &&
-      github.event.pull_request.user.login == 'github-actions[bot]' &&
-      github.event.pull_request.head.repo.full_name == github.repository
-    runs-on: ubuntu-latest
-    steps:
-      - name: Enable auto-merge (squash)
-        uses: peter-evans/enable-pull-request-automerge@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          merge-method: squash
-
-      - name: Attempt immediate merge (squash)
-        uses: actions/github-script@v7
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            const { owner, repo } = context.repo;
-            const prNumber = context.payload.pull_request.number;
-            try {
-              await github.rest.pulls.merge({
-                owner,
-                repo,
-                pull_number: prNumber,
-                merge_method: 'squash',
-              });
-              core.info(`Merged PR #${prNumber}`);
-            } catch (e) {
-              core.info(`Could not merge PR #${prNumber} immediately. Auto-merge has been enabled and GitHub will merge when possible. Reason: ${e.message}`);
-            }
-
-      - name: Delete source branch after merge
-        if: always()
-        uses: actions/github-script@v7
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            const { owner, repo } = context.repo;
-            const pr = context.payload.pull_request;
-            if (!pr) {
-              core.info('No pull_request payload; skipping branch deletion.');
-              return;
-            }
-            const ref = pr.head.ref;
-            try {
-              if (pr.head.repo?.full_name === `${owner}/${repo}`) {
-                await github.rest.git.deleteRef({ owner, repo, ref: `heads/${ref}` });
-                core.info(`Deleted branch heads/${ref}`);
-              } else {
-                core.info('PR branch is from a fork; not deleting.');
-              }
-            } catch (e) {
-              core.info(`Could not delete branch heads/${ref}: ${e.message}`);
-            }
-
   backfill:
-    # Run when not a PR trigger (i.e., schedule or manual dispatch)
-    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
-      - name: Process existing bot PRs (oldest to newest)
+      - name: Merge open bot PRs (oldest to newest)
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const { owner, repo } = context.repo;
-            const pulls = await github.rest.pulls.list({ owner, repo, state: 'open', per_page: 100 });
-            const prs = pulls.data
+            const { data: pulls } = await github.rest.pulls.list({ owner, repo, state: 'open', per_page: 100 });
+            const prs = pulls
               .filter(pr => pr.user?.login === 'github-actions[bot]' && pr.head?.repo?.full_name === `${owner}/${repo}`)
               .sort((a, b) => a.number - b.number);
+            if (prs.length === 0) {
+              core.info('No open bot PRs to merge.');
+              return;
+            }
             for (const pr of prs) {
               try {
                 await github.rest.pulls.merge({ owner, repo, pull_number: pr.number, merge_method: 'squash' });
