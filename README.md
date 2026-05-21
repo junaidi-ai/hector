@@ -218,6 +218,38 @@ If you want to keep historical dated archives:
 
 This policy prevents result file proliferation while allowing optional archival if needed.
 
+## Run Summary
+
+After each scan, Hector writes a JSON summary file to `result/run-summary.json` with pipeline statistics:
+
+```json
+{
+  "timestamp": "2026-05-21T18:45:30.123456",
+  "stats": {
+    "total_scanned": 150,
+    "after_min_stars": 120,
+    "after_relevance_filter": 95,
+    "after_score_filter": 78,
+    "min_score_threshold": 0
+  },
+  "categories": {
+    "AI Diagnostics": 25,
+    "Telemedicine": 18,
+    "EHR & Clinical Systems": 15,
+    "Imaging & Radiology": 12,
+    "Data Platforms & ETL": 8
+  },
+  "uncategorized_count": 0,
+  "total_in_output": 78
+}
+```
+
+This summary helps you:
+- Monitor filter effectiveness (how many repos pass each stage)
+- Track category distribution in your curated list
+- Verify that min_score filtering is working as expected
+- Inspect runs via CI artifacts (GitHub Actions)
+
 ## Output Example
 
 A generated `healthtech-tools.md` might look like:

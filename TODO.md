@@ -128,11 +128,11 @@
 
 ## P2 — Enhancement: Observability
 
-### Task 12 — Add run summary output
+### Task 12 — Add run summary output ✅
 - **File**: pipeline entry point (`scan_and_curate.py`)
 - Subtasks:
-  - [ ] After rendering, print/log: total scanned, total passed relevance filter, total above min_score, count per category, count "Uncategorized"
-  - [ ] Write summary as a brief `result/run-summary.json` (overwrite each run) for CI artifact inspection
+  - [x] After rendering, print/log: total scanned, total passed relevance filter, total above min_score, count per category, count "Uncategorized"
+  - [x] Write summary as a brief `result/run-summary.json` (overwrite each run) for CI artifact inspection
 
 ### Task 13 — Add `--dry-run` and `--categories-only` CLI flags
 - **File**: `scan_and_curate.py`

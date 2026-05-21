@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import argparse
 import glob
+import json
 import logging
 import os
 import sys
@@ -58,6 +59,67 @@ def _resolve_output_paths(cfg: dict, cli_output: str | None) -> tuple[str, str |
     return out_file, latest_path
 
 
+def _write_run_summary(summary_path: str, stats: dict, items: list, log: logging.Logger) -> None:
+    """Write a run summary JSON file with pipeline statistics.
+
+    Args:
+        summary_path: Path to write result/run-summary.json
+        stats: Dictionary with pipeline statistics
+        items: List of final curated items
+        log: Logger instance
+    """
+    # Count categories
+    category_counts: dict[str, int] = {}
+    uncategorized_count = 0
+    for item in items:
+        cats = item.get("categories", ["Uncategorized"])  # type: ignore[union-attr]
+        if not cats or (len(cats) == 1 and cats[0] == "Uncategorized"):
+            uncategorized_count += 1
+        else:
+            for cat in cats:
+                category_counts[cat] = category_counts.get(cat, 0) + 1
+
+    stats_dict: dict = {
+        "total_scanned": int(stats.get("total_scanned", 0)),
+        "after_min_stars": int(stats.get("after_min_stars", 0)),
+        "after_relevance_filter": int(stats.get("after_relevance_filter", 0)),
+        "after_score_filter": int(stats.get("after_score_filter", 0)),
+        "min_score_threshold": float(stats.get("min_score", 0)),
+    }
+
+    summary: dict = {
+        "timestamp": datetime.utcnow().isoformat(),
+        "stats": stats_dict,
+        "categories": category_counts,
+        "uncategorized_count": uncategorized_count,
+        "total_in_output": len(items),
+    }
+
+    # Ensure output directory exists
+    summary_dir = os.path.dirname(summary_path)
+    if summary_dir:
+        os.makedirs(summary_dir, exist_ok=True)
+
+    with open(summary_path, "w") as f:
+        json.dump(summary, f, indent=2)
+
+    # Log the summary
+    log.info("Run Summary (written to %s):", summary_path)
+    log.info("  Total scanned: %d", stats_dict["total_scanned"])
+    log.info("  After min_stars filter: %d", stats_dict["after_min_stars"])
+    log.info("  After relevance filter: %d", stats_dict["after_relevance_filter"])
+    log.info(
+        "  After score filter (min=%.1f): %d",
+        stats_dict["min_score_threshold"],
+        stats_dict["after_score_filter"],
+    )
+    log.info("  Uncategorized: %d", uncategorized_count)
+    if category_counts:
+        log.info("  Categories:")
+        for cat in sorted(category_counts.keys()):
+            log.info("    %s: %d", cat, category_counts[cat])
+
+
 def main(argv: list[str]) -> int:
     args = parse_args(argv)
     setup_logging(args.log_level)
@@ -79,6 +141,9 @@ def main(argv: list[str]) -> int:
     log.info("Searching repositories... limit=%s", limit)
     repos = scanner.search_repositories(cfg, limit=limit)
 
+    # Track statistics for run summary (Task 12)
+    stats: dict = {"total_scanned": len(repos)}
+
     # Apply min_stars filter
     min_stars = int(cfg.get("search", {}).get("min_stars", 0) or 0)
     if min_stars > 0:
@@ -92,6 +157,7 @@ def main(argv: list[str]) -> int:
             len(repos),
             filtered_count,
         )
+    stats["after_min_stars"] = len(repos)
 
     # Apply healthcare relevance post-scan filter (Task 5)
     apply_relevance_filter = cfg.get("search", {}).get("relevance_filter", True)
@@ -106,6 +172,7 @@ def main(argv: list[str]) -> int:
                 len(repos),
                 filtered_count,
             )
+    stats["after_relevance_filter"] = len(repos)
 
     weights: dict = cfg.get("weights", {})
     cats_config: list[str] = cfg.get("output", {}).get("categories", [])
@@ -183,6 +250,8 @@ def main(argv: list[str]) -> int:
                 len(items),
                 filtered_count,
             )
+    stats["after_score_filter"] = len(items)
+    stats["min_score"] = min_score
 
     output_file, latest_file = _resolve_output_paths(cfg, args.output)
     keep_dated = bool(cfg.get("output", {}).get("keep_dated", False))
@@ -204,6 +273,11 @@ def main(argv: list[str]) -> int:
         if keep_dated:
             render_markdown([], output_file, cats_config)
             log.info("Also updated dated archive at %s", output_file)
+        # Write run summary even with no items (Task 12)
+        stats["after_score_filter"] = 0
+        if latest_file:
+            summary_path = os.path.join(os.path.dirname(latest_file), "run-summary.json")
+            _write_run_summary(summary_path, stats, [], log)
         return 0
 
     log.info("Rendering results...")
@@ -226,6 +300,11 @@ def main(argv: list[str]) -> int:
                     log.debug("Deleted dated result file: %s", dated_file)
                 except OSError as e:
                     log.warning("Failed to delete dated result file %s: %s", dated_file, e)
+
+    # Write run summary (Task 12)
+    if latest_file:
+        summary_path = os.path.join(os.path.dirname(latest_file), "run-summary.json")
+        _write_run_summary(summary_path, stats, items, log)
 
     log.info("Done.")
     return 0
