@@ -86,13 +86,13 @@
 
 ## P1 — Quality: Scorer Improvements
 
-### Task 8 — Add healthcare-domain relevance boost to scoring
+### Task 8 — Add healthcare-domain relevance boost to scoring ✅
 - **File**: `hector/scorer.py`
 - **Problem**: Score is purely GitHub popularity metrics; a highly-starred ROS2 repo outscores a niche but directly relevant clinical tool.
 - Subtasks:
-  - [ ] Add optional `weights.health_relevance_boost` config key (default: `0`)
-  - [ ] In `score_repository()`, compute a boolean relevance flag using the same anchor check from Task 3 and multiply by the boost weight
-  - [ ] This allows operators to dial up domain relevance vs. raw popularity
+  - [x] Add optional `weights.health_relevance_boost` config key (default: `0`)
+  - [x] In `score_repository()`, compute a boolean relevance flag using the same anchor check from Task 3 and multiply by the boost weight
+  - [x] This allows operators to dial up domain relevance vs. raw popularity
 
 ### Task 9 — Cap contributor count at first-page limit in `get_repo_metrics()`
 - **File**: `hector/scanner.py` → `get_repo_metrics()`

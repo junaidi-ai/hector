@@ -246,7 +246,13 @@ A generated `healthtech-tools.md` might look like:
 - You can enrich the model with:
   - Commit recency decay (favor recently updated repos).
   - Contributor count and bus‑factor signals.
-  - Topic/keyword relevance boosts.
+  - Healthcare domain relevance boost (favor healthcare-focused repos).
+
+**Healthcare Domain Relevance Boost:**
+- Use `weights.health_relevance_boost` (default: `0`) to give domain-relevant repos a scoring advantage.
+- Example: set to `20` to add 20 points for any repo with healthcare keywords (health, medical, clinical, patient, etc.).
+- This helps prioritize niche but highly-relevant clinical tools over popular but non-healthcare projects.
+- Trade-off: higher boost values favor domain relevance over raw GitHub popularity metrics.
 
 **Score Floor Filtering:**
 - Use `output.min_score` (default: `0`) to exclude low-scoring repos from the output.

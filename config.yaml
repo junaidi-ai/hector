@@ -86,6 +86,10 @@ weights:
   # Optional additional signals
   contributors: 0.3
   recency_decay: 2.0
+  # Healthcare domain relevance boost (Task 8)
+  # If > 0, repos with healthcare keywords get this bonus added to score
+  # Allows tuning domain relevance vs raw popularity (default: 0, no boost)
+  health_relevance_boost: 0
 
 output:
   file: "result/healthtech-tools-{date}.md"
