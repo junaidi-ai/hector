@@ -78,6 +78,15 @@ def main(argv: list[str]) -> int:
     log.info("Searching repositories... limit=%s", limit)
     repos = scanner.search_repositories(cfg, limit=limit)
 
+    # Apply min_stars filter
+    min_stars = int(cfg.get("search", {}).get("min_stars", 0) or 0)
+    if min_stars > 0:
+        original_count = len(repos)
+        repos = [r for r in repos if int(getattr(r, "stargazers_count", 0) or 0) >= min_stars]
+        filtered_count = original_count - len(repos)
+        log.info("Applied min_stars=%d filter: %d repos → %d repos (filtered %d)",
+                 min_stars, original_count, len(repos), filtered_count)
+
     weights: dict = cfg.get("weights", {})
     cats_config: list[str] = cfg.get("output", {}).get("categories", [])
     cat_keywords: dict = cfg.get("category_keywords") or cfg.get("output", {}).get(

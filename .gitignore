@@ -41,3 +41,12 @@ pip-wheel-metadata/
 
 # OS specific
 .DS_Store
+
+# Agents and memory
+.claude/
+.harness-mem/
+agents
+CLAUDE.md
+Plans.md
+out/
+hooks/

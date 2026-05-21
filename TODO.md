@@ -40,14 +40,14 @@
 
 ## P0 — Correctness: Scanner Pulling Non-Healthcare Repos
 
-### Task 4 — Strengthen the scanner query in `config.yaml`
+### Task 4 — Strengthen the scanner query in `config.yaml` ✅
 - **File**: `config.yaml` (user's config, document the requirement in README)
 - **Problem**: Current query/topics are too permissive; pulling in robotics, arxiv trackers, autonomous driving.
 - Subtasks:
-  - [ ] Add healthcare-specific required terms to the base query (e.g., `healthcare OR medical OR clinical OR "health tech"`) so GitHub's search engine pre-filters
-  - [ ] Remove or scope down generic topics that bleed in non-healthcare repos
-  - [ ] Document recommended query structure in README with a "query hygiene" section
-  - [ ] Add a `scanner.min_stars` config option (default: `10`) and filter repos below threshold before scoring
+  - [x] Add healthcare-specific required terms to the base query (e.g., `healthcare OR medical OR clinical OR "health tech"`) so GitHub's search engine pre-filters
+  - [x] Remove or scope down generic topics that bleed in non-healthcare repos
+  - [x] Document recommended query structure in README with a "query hygiene" section
+  - [x] Add a `scanner.min_stars` config option (default: `10`) and filter repos below threshold before scoring
 
 ### Task 5 — Add post-scan relevance filter in `scanner.py` or pipeline entry point
 - **File**: `hector/scanner.py` or `scan_and_curate.py`

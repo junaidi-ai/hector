@@ -102,6 +102,7 @@ Create a `config.yaml` in the project root to customize search and scoring:
 search:
   query: "healthcare technology is:public stars:>50"
   topics: ["healthtech", "medtech", "telemedicine"]
+  min_stars: 10  # Filter out repos below this star threshold
 
 weights:
   stars: 0.3
@@ -121,6 +122,37 @@ Notes:
 - Increase or decrease weights to reflect your priorities.
 - `license` values act like additive bonuses/penalties.
 - `categories` guide tagging of repositories in the final list.
+- Set `min_stars` to filter out low-star hobby projects (default: 0, recommended: 10+).
+
+### Query Hygiene
+
+When configuring the search query, be aware of false positives from generic keywords:
+
+**Problems:**
+- Keywords like `"robotics"`, `"ros"` pull in industrial/autonomous driving projects (ROS2, navigation stacks)
+- Generic `"ai"`, `"edge-ai"`, `"tinyml"` match non-healthcare ML projects
+- Arxiv paper trackers, computer vision projects can match on `"imaging"` alone
+- These repos pollute the results even if they're technically valid open-source projects
+
+**Best Practices:**
+
+1. **Use healthcare-specific keywords in the base query:**
+   - Include explicit healthcare anchors: `healthcare OR medical OR clinical OR health`
+   - Example: `(health OR healthcare OR medical OR clinical) in:name,description,readme is:public`
+
+2. **Scope topics to healthcare-specific ones:**
+   - ✅ Keep: `digital-therapeutics`, `telemedicine`, `fhir`, `ehr`, `clinical-scribe`
+   - ⚠️ Remove or use sparingly: `robotics`, `ros`, `ai`, `edge-ai` (too generic)
+   - ⚠️ Avoid: `nextflow`, `wdl`, `vr`, `ar` (common in non-health bioinformatics/game dev)
+
+3. **Use `min_stars` to filter marginal projects:**
+   - Set `min_stars: 10` or higher to exclude hobby projects and false positives
+   - Higher threshold (e.g., 50+) gives fewer, higher-quality results
+
+4. **Validate results manually:**
+   - Review high-scoring projects to ensure they're genuinely healthcare-related
+   - Check for outliers (e.g., ROS2 robotics, arxiv trackers) that slipped through
+   - Update topics list as needed based on findings
 
 ## Run Locally
 

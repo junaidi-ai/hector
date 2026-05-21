@@ -1,28 +1,21 @@
 search:
-  query: "(health OR healthcare OR medical OR medicine) in:name,description,readme is:public stars:>15"
+  query: "(health OR healthcare OR medical OR medicine OR clinical) in:name,description,readme is:public stars:>15"
   topics:
-    - robotics
-    - robot
-    - surgical-robot
-    - teleoperation
-    - ros
-    - manipulation
-    - exoskeleton
     - digital-therapeutics
-    - tinyml
-    - on-device
-    - edge-ai
-    - federated-learning
-    - privacy
-    - synthetic-data
     - pocus
     - handheld-ultrasound
     - clinical-scribe
     - digital-twin
-    - nextflow
-    - wdl
-    - vr
-    - ar
+    - fhir
+    - ehr
+    - emr
+    - telemedicine
+    - surgical-robot
+    - teleoperation
+    - exoskeleton
+  # Minimum stars to include in results (helps filter marginal/hobby projects)
+  min_stars: 10
+
   languages:
     - Python
     - R
