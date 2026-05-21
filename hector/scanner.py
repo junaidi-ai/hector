@@ -283,6 +283,78 @@ def search_repositories(cfg: dict[str, Any], limit: int = 50):
     return all_repos
 
 
+def is_repo_healthcare_relevant(repo: Any) -> bool:
+    """Check if a repository has healthcare relevance.
+
+    Examines repo name, description, and topics against a strict healthcare anchor list.
+    Returns True if any of name/description/topics contain a healthcare keyword.
+
+    This is a lightweight post-scan filter (Task 5) to discard marginal repos
+    that passed the query but aren't actually healthcare-related.
+    """
+    import re
+
+    # Healthcare context anchors (same list as in categorizer.py Task 3)
+    healthcare_anchors = [
+        "health",
+        "medical",
+        "clinical",
+        "patient",
+        "hospital",
+        "diagnostic",
+        "therapeutic",
+        "pharma",
+        "biomedical",
+        "healthcare",
+        "medicine",
+        "physician",
+        "nurse",
+        "care",
+    ]
+
+    def _normalize(text: str) -> str:
+        """Lowercase and normalize for matching."""
+        text = text.lower()
+        text = text.replace("&", " and ")
+        text = re.sub(r"[^a-z0-9\s\-]", " ", text)
+        text = re.sub(r"\s+", " ", text).strip()
+        return text
+
+    def _has_anchor(text: str) -> bool:
+        """Check if text contains any healthcare anchor."""
+        normalized = _normalize(text)
+        for anchor in healthcare_anchors:
+            # Short anchors (<=4 chars) need word boundaries
+            if len(anchor) <= 4:
+                pattern = r"(?:^|\b)" + re.escape(anchor) + r"(?:\b|$)"
+                if re.search(pattern, normalized):
+                    return True
+            else:
+                if anchor in normalized:
+                    return True
+        return False
+
+    # Check repo name and description
+    name = getattr(repo, "name", "") or ""
+    description = getattr(repo, "description", "") or ""
+
+    if _has_anchor(name) or _has_anchor(description):
+        return True
+
+    # Check topics if available
+    try:
+        topics = getattr(repo, "get_topics", None)
+        if callable(topics):
+            repo_topics = topics() or []
+            topics_text = " ".join(repo_topics)
+            if _has_anchor(topics_text):
+                return True
+    except Exception:
+        pass
+
+    return False
+
+
 def get_repo_metrics(repo: Any) -> dict[str, Any]:
     """Collect richer metrics for a repository, best-effort and lightweight.
 

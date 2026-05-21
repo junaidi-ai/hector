@@ -16,6 +16,10 @@ search:
   # Minimum stars to include in results (helps filter marginal/hobby projects)
   min_stars: 10
 
+  # Post-scan healthcare relevance filter (Task 5)
+  # If true, discard repos where name/description/topics don't contain healthcare keywords
+  relevance_filter: true
+
   languages:
     - Python
     - R

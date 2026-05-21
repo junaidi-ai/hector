@@ -102,7 +102,8 @@ Create a `config.yaml` in the project root to customize search and scoring:
 search:
   query: "healthcare technology is:public stars:>50"
   topics: ["healthtech", "medtech", "telemedicine"]
-  min_stars: 10  # Filter out repos below this star threshold
+  min_stars: 10              # Filter out repos below this star threshold
+  relevance_filter: true     # Discard repos without healthcare keywords (name/description/topics)
 
 weights:
   stars: 0.3
@@ -149,7 +150,13 @@ When configuring the search query, be aware of false positives from generic keyw
    - Set `min_stars: 10` or higher to exclude hobby projects and false positives
    - Higher threshold (e.g., 50+) gives fewer, higher-quality results
 
-4. **Validate results manually:**
+4. **Enable post-scan relevance filter:**
+   - Set `relevance_filter: true` (default) to automatically discard repos without healthcare keywords
+   - Uses a strict allowlist: "health", "medical", "clinical", "patient", "hospital", "diagnostic", etc.
+   - Checks repo name, description, and GitHub topics
+   - Disable with `relevance_filter: false` for experimental/broader discovery
+
+5. **Validate results manually:**
    - Review high-scoring projects to ensure they're genuinely healthcare-related
    - Check for outliers (e.g., ROS2 robotics, arxiv trackers) that slipped through
    - Update topics list as needed based on findings

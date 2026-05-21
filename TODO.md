@@ -49,13 +49,13 @@
   - [x] Document recommended query structure in README with a "query hygiene" section
   - [x] Add a `scanner.min_stars` config option (default: `10`) and filter repos below threshold before scoring
 
-### Task 5 — Add post-scan relevance filter in `scanner.py` or pipeline entry point
+### Task 5 — Add post-scan relevance filter in `scanner.py` or pipeline entry point ✅
 - **File**: `hector/scanner.py` or `scan_and_curate.py`
 - **Problem**: Even with a better query, marginal repos slip through.
 - Subtasks:
-  - [ ] After `search_repositories()` returns, pass each repo through a lightweight relevance check using the same healthcare anchor list from Task 3
-  - [ ] Check `repo.name`, `repo.description`, and `repo.topics` (GitHub topics list)
-  - [ ] Discard repos where none of name/description/topics contain a healthcare anchor
+  - [x] After `search_repositories()` returns, pass each repo through a lightweight relevance check using the same healthcare anchor list from Task 3
+  - [x] Check `repo.name`, `repo.description`, and `repo.topics` (GitHub topics list)
+  - [x] Discard repos where none of name/description/topics contain a healthcare anchor
 
 ---
 

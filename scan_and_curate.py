@@ -84,8 +84,27 @@ def main(argv: list[str]) -> int:
         original_count = len(repos)
         repos = [r for r in repos if int(getattr(r, "stargazers_count", 0) or 0) >= min_stars]
         filtered_count = original_count - len(repos)
-        log.info("Applied min_stars=%d filter: %d repos → %d repos (filtered %d)",
-                 min_stars, original_count, len(repos), filtered_count)
+        log.info(
+            "Applied min_stars=%d filter: %d repos → %d repos (filtered %d)",
+            min_stars,
+            original_count,
+            len(repos),
+            filtered_count,
+        )
+
+    # Apply healthcare relevance post-scan filter (Task 5)
+    apply_relevance_filter = cfg.get("search", {}).get("relevance_filter", True)
+    if apply_relevance_filter and repos:
+        original_count = len(repos)
+        repos = [r for r in repos if scanner.is_repo_healthcare_relevant(r)]
+        filtered_count = original_count - len(repos)
+        if filtered_count > 0:
+            log.info(
+                "Applied healthcare relevance filter: %d repos → %d repos (filtered %d)",
+                original_count,
+                len(repos),
+                filtered_count,
+            )
 
     weights: dict = cfg.get("weights", {})
     cats_config: list[str] = cfg.get("output", {}).get("categories", [])
