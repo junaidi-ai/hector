@@ -116,6 +116,7 @@ weights:
 output:
   file: "result/healthtech-tools-{date}.md"
   latest: "result/healthtech-tools.md"
+  keep_dated: false          # Keep dated archives (default: false, keep only canonical file)
   min_score: 0               # Filter out repos with score below this threshold
   categories: ["AI Diagnostics", "Telemedicine", "Health Data"]
 ```
@@ -204,6 +205,18 @@ jobs:
         with:
           message: "Update curated healthtech list"
 ```
+
+## Result File Management
+
+By default, Hector maintains a single canonical result file:
+- **`result/healthtech-tools.md`** — the canonical, always-current curated list
+
+If you want to keep historical dated archives:
+- Set `output.keep_dated: true` in your config
+- Files like `result/healthtech-tools-2025-01-15.md` will be retained alongside the canonical file
+- Default behavior (`keep_dated: false`) automatically removes old dated files to keep the result directory clean
+
+This policy prevents result file proliferation while allowing optional archival if needed.
 
 ## Output Example
 

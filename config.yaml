@@ -90,6 +90,9 @@ weights:
 output:
   file: "result/healthtech-tools-{date}.md"
   latest: "result/healthtech-tools.md"
+  # Keep dated result files (e.g., healthtech-tools-2025-01-15.md) in addition to latest
+  # If false (default), only the canonical 'latest' file is kept
+  keep_dated: false
   # Minimum score to include in output (filter out negative-score repos)
   min_score: 0
   categories:

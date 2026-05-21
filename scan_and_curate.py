@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import argparse
+import glob
 import logging
 import os
 import sys
@@ -183,27 +184,48 @@ def main(argv: list[str]) -> int:
             )
 
     output_file, latest_file = _resolve_output_paths(cfg, args.output)
+    keep_dated = bool(cfg.get("output", {}).get("keep_dated", False))
+
     # Ensure output directories exist
-    paths_to_prepare = [output_file]
-    if latest_file:
-        paths_to_prepare.append(latest_file)
+    paths_to_prepare = [latest_file] if latest_file else []
+    if keep_dated:
+        paths_to_prepare.append(output_file)
     for p in paths_to_prepare:
         d = os.path.dirname(p)
         if d:
             os.makedirs(d, exist_ok=True)
+
     if not items:
-        log.info("No repositories processed; writing an empty curated list stub to %s", output_file)
-        render_markdown([], output_file, cats_config)
+        log.info("No repositories processed; writing an empty curated list stub")
         if latest_file:
-            log.info("Also updating latest index at %s", latest_file)
             render_markdown([], latest_file, cats_config)
+            log.info("Updated canonical index at %s", latest_file)
+        if keep_dated:
+            render_markdown([], output_file, cats_config)
+            log.info("Also updated dated archive at %s", output_file)
         return 0
 
-    log.info("Rendering results to %s ...", output_file)
-    render_markdown(items, output_file, cats_config)
+    log.info("Rendering results...")
     if latest_file:
-        log.info("Also updating latest index at %s", latest_file)
         render_markdown(items, latest_file, cats_config)
+        log.info("Updated canonical index at %s", latest_file)
+    if keep_dated:
+        render_markdown(items, output_file, cats_config)
+        log.info("Also updated dated archive at %s", output_file)
+
+    # Clean up old dated files if keep_dated is false (Task 7)
+    if not keep_dated and latest_file:
+        result_dir = os.path.dirname(latest_file)
+        if result_dir:
+            # Find and delete dated files matching the pattern healthtech-tools-YYYY-MM-DD.md
+            pattern = os.path.join(result_dir, "healthtech-tools-????-??-??.md")
+            for dated_file in glob.glob(pattern):
+                try:
+                    os.remove(dated_file)
+                    log.debug("Deleted dated result file: %s", dated_file)
+                except OSError as e:
+                    log.warning("Failed to delete dated result file %s: %s", dated_file, e)
+
     log.info("Done.")
     return 0
 

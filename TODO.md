@@ -73,14 +73,14 @@
 
 ## P1 — Quality: Result File Hygiene
 
-### Task 7 — Enforce single canonical result file; purge dated duplicates
+### Task 7 — Enforce single canonical result file; purge dated duplicates ✅
 - **File**: `result/` directory, `hector/renderer.py`, CI workflow
 - **Problem**: Dated files (e.g., `healthtech-tools-2025-01-15.md`) accumulate alongside the canonical `healthtech-tools.md`. Only the canonical file should be kept per project policy.
 - Subtasks:
-  - [ ] In `render_markdown()` (or pipeline), write only to `output.latest` path (`result/healthtech-tools.md`)
-  - [ ] Remove `output.file` dated-template logic from the default pipeline (keep the config key but do not write it by default; gate it behind `output.keep_dated: true`, default `false`)
-  - [ ] Add a CI step (or post-run script) to delete any `result/healthtech-tools-*.md` files if `keep_dated` is false
-  - [ ] **Immediate one-time cleanup**: delete all existing dated files in `result/`, keep only `result/healthtech-tools.md`
+  - [x] In `render_markdown()` (or pipeline), write only to `output.latest` path (`result/healthtech-tools.md`)
+  - [x] Remove `output.file` dated-template logic from the default pipeline (keep the config key but do not write it by default; gate it behind `output.keep_dated: true`, default `false`)
+  - [x] Add a CI step (or post-run script) to delete any `result/healthtech-tools-*.md` files if `keep_dated` is false
+  - [x] **Immediate one-time cleanup**: delete all existing dated files in `result/`, keep only `result/healthtech-tools.md`
 
 ---
 
