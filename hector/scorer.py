@@ -16,7 +16,6 @@ _HEALTHCARE_ANCHORS: list[str] = [
     "medicine",
     "physician",
     "nurse",
-    "care",
 ]
 
 

@@ -309,7 +309,6 @@ def is_repo_healthcare_relevant(repo: Any) -> bool:
         "medicine",
         "physician",
         "nurse",
-        "care",
     ]
 
     def _normalize(text: str) -> str:

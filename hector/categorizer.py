@@ -14,20 +14,22 @@ def _normalize(text: str) -> str:
 def _phrase_in_text(phrase: str, text: str) -> bool:
     """Check if a phrase exists with word boundaries (allowing whitespace variations)."""
     p = _normalize(phrase)
+    t = _normalize(text)
     if not p:
         return False
-    # For short acronyms or tokens without spaces (e.g., nlp, hl7, fhir, dicom),
-    # allow relaxed substring match to catch cases like "smartonfhir" or "mednlp".
-    # Minimum length: 3 characters (excludes 2-letter tokens like "ct", "ai")
-    if " " not in p and 3 <= len(p) <= 4:
-        return p in text
-    # For single tokens shorter than 3 chars or longer than 4 chars, use word boundaries
-    if " " not in p and (len(p) < 3 or len(p) > 4):
+    # For single tokens without spaces, apply smart matching by length
+    if " " not in p:
+        # 3-8 chars: relaxed substring match for root words and acronyms
+        # Catches: health, medical, clinical, dicom, imaging, healthcare, telemedicine
+        # Also catches acronyms in compounds: smartonfhir, mednlp, smartonfhir
+        if 3 <= len(p) <= 8:
+            return p in t
+        # <3 or >8 chars: use word boundaries to avoid false matches on very short or long tokens
         pattern = r"(?:^|\b)" + re.escape(p) + r"(?:\b|$)"
-        return re.search(pattern, text) is not None
-    # Allow multi-word phrases; respect word boundaries around the whole phrase
+        return re.search(pattern, t) is not None
+    # Multi-word phrases: respect word boundaries around the whole phrase
     pattern = r"(?:^|\b)" + re.escape(p).replace(r"\ ", r"\s+") + r"(?:\b|$)"
-    return re.search(pattern, text) is not None
+    return re.search(pattern, t) is not None
 
 
 # Sensible default synonyms to greatly reduce "Uncategorized" cases.
@@ -163,7 +165,6 @@ _HEALTHCARE_ANCHORS: list[str] = [
     "medicine",
     "physician",
     "nurse",
-    "care",
 ]
 
 
