@@ -6,6 +6,7 @@ on:
     paths:
       - 'result/**'
       - 'scripts/generate_badge_json.py'
+      - 'scripts/generate_pages_html.py'
       - '.github/workflows/pages.yml'
       - 'docs/**'
   schedule:
@@ -30,9 +31,12 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -e ".[dev]"
       - name: Generate badge JSON
-        run: |
-          python scripts/generate_badge_json.py
+        run: python scripts/generate_badge_json.py
+      - name: Generate Pages HTML
+        run: python scripts/generate_pages_html.py
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
