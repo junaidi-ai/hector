@@ -1,87 +1,105 @@
 # Curated Healthcare Technology Tools
 
 ## AI Diagnostics
-- **[FreedomIntelligence/OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills)** (Score: 744.33)
-  - License: none | Stars: 2586 | Forks: 360
-  - PRs open: 2 | Discussions: No | Contributors: 6 | Last push: 67 days ago
-  - Description: The largest open-source medical AI skills library for OpenClaw🦞.
-- **[mims-harvard/TxAgent](https://github.com/mims-harvard/TxAgent)** (Score: 238.9)
-  - License: MIT | Stars: 631 | Forks: 101
-  - PRs open: 7 | Discussions: No | Contributors: 1 | Last push: 306 days ago
+- **[thetahealth/mirobody](https://github.com/thetahealth/mirobody)** (Score: 401.95)
+  - License: Apache-2.0 | Stars: 1043 | Forks: 192
+  - PRs open: 0 | Discussions: Yes | Contributors: 6 | Last push: 0 days ago
+  - Description: Your Data, Your AI — Health, Finance & More. Open Source, Privacy-First.
+- **[mims-harvard/TxAgent](https://github.com/mims-harvard/TxAgent)** (Score: 239.03)
+  - License: MIT | Stars: 631 | Forks: 102
+  - PRs open: 7 | Discussions: No | Contributors: 1 | Last push: 307 days ago
   - Description: TxAgent: An AI Agent for Therapeutic Reasoning Across a Universe of Tools
-- **[cqframework/clinical_quality_language](https://github.com/cqframework/clinical_quality_language)** (Score: 160.03)
+- **[cqframework/clinical_quality_language](https://github.com/cqframework/clinical_quality_language)** (Score: 159.97)
   - License: Apache-2.0 | Stars: 314 | Forks: 143
-  - PRs open: 5 | Discussions: No | Contributors: 40 | Last push: 22 days ago
+  - PRs open: 5 | Discussions: No | Contributors: 40 | Last push: 23 days ago
   - Description: Clinical Quality Language (CQL) is an HL7 specification for the expression of clinical knowledge that can be used within both the Clinical Decision Support (CDS) and Clinical Quality Measurement (CQM) domains. This repository contains complementary tooling in support of that specification.
-- **[stanfordmlgroup/MedAgentBench](https://github.com/stanfordmlgroup/MedAgentBench)** (Score: 132.0)
-  - License: MIT | Stars: 277 | Forks: 58
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 192 days ago
+- **[stanfordmlgroup/MedAgentBench](https://github.com/stanfordmlgroup/MedAgentBench)** (Score: 132.53)
+  - License: MIT | Stars: 279 | Forks: 58
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 193 days ago
   - Description: MedAgentBench: A Realistic Virtual EHR Environment to Benchmark Medical LLM Agents
-- **[SamuelSchmidgall/AgentClinic](https://github.com/SamuelSchmidgall/AgentClinic)** (Score: 120.83)
-  - License: MIT | Stars: 316 | Forks: 51
-  - PRs open: 1 | Discussions: No | Contributors: 2 | Last push: 517 days ago
+- **[SamuelSchmidgall/AgentClinic](https://github.com/SamuelSchmidgall/AgentClinic)** (Score: 121.37)
+  - License: MIT | Stars: 318 | Forks: 51
+  - PRs open: 1 | Discussions: No | Contributors: 2 | Last push: 518 days ago
   - Description: Agent benchmark for medical diagnosis
-- **[univanxx/3mdbench](https://github.com/univanxx/3mdbench)** (Score: 40.57)
+- **[univanxx/3mdbench](https://github.com/univanxx/3mdbench)** (Score: 40.5)
   - License: MIT | Stars: 22 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 251 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 252 days ago
   - Description: 3MDBench: Medical Multimodal Multi-agent Dialogue Benchmark
-- **[MAXNORM8650/MedAgentSim](https://github.com/MAXNORM8650/MedAgentSim)** (Score: -47.92)
+- **[MAXNORM8650/MedAgentSim](https://github.com/MAXNORM8650/MedAgentSim)** (Score: -47.98)
   - License: NOASSERTION | Stars: 169 | Forks: 20
-  - PRs open: 0 | Discussions: Yes | Contributors: 3 | Last push: 55 days ago
+  - PRs open: 0 | Discussions: Yes | Contributors: 3 | Last push: 56 days ago
   - Description: MedAgentSim: Self-Evolving Multi-Agent Simulations for Realistic Clinical Interactions, MICCAI 2025 (oral and early accepted)
-- **[wshi83/EhrAgent](https://github.com/wshi83/EhrAgent)** (Score: -89.9)
+- **[Aperivue/medsci-skills](https://github.com/Aperivue/medsci-skills)** (Score: -54.55)
+  - License: NOASSERTION | Stars: 129 | Forks: 35
+  - PRs open: 0 | Discussions: Yes | Contributors: 1 | Last push: 0 days ago
+  - Description: Claude Code skills for medical research — literature search, reporting guidelines, statistical analysis, publication figures. Built by a physician-researcher, tested on real publications. MIT licensed.
+- **[wshi83/EhrAgent](https://github.com/wshi83/EhrAgent)** (Score: -89.97)
   - License: none | Stars: 136 | Forks: 21
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 522 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 523 days ago
   - Description: [EMNLP'24] EHRAgent: Code Empowers Large Language Models for Complex Tabular Reasoning on Electronic Health Records
 
 ## EHR & Clinical Systems
-- **[cqframework/clinical_quality_language](https://github.com/cqframework/clinical_quality_language)** (Score: 160.03)
+- **[cqframework/clinical_quality_language](https://github.com/cqframework/clinical_quality_language)** (Score: 159.97)
   - License: Apache-2.0 | Stars: 314 | Forks: 143
-  - PRs open: 5 | Discussions: No | Contributors: 40 | Last push: 22 days ago
+  - PRs open: 5 | Discussions: No | Contributors: 40 | Last push: 23 days ago
   - Description: Clinical Quality Language (CQL) is an HL7 specification for the expression of clinical knowledge that can be used within both the Clinical Decision Support (CDS) and Clinical Quality Measurement (CQM) domains. This repository contains complementary tooling in support of that specification.
-- **[stanfordmlgroup/MedAgentBench](https://github.com/stanfordmlgroup/MedAgentBench)** (Score: 132.0)
-  - License: MIT | Stars: 277 | Forks: 58
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 192 days ago
+- **[stanfordmlgroup/MedAgentBench](https://github.com/stanfordmlgroup/MedAgentBench)** (Score: 132.53)
+  - License: MIT | Stars: 279 | Forks: 58
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 193 days ago
   - Description: MedAgentBench: A Realistic Virtual EHR Environment to Benchmark Medical LLM Agents
-- **[wshi83/EhrAgent](https://github.com/wshi83/EhrAgent)** (Score: -89.9)
+- **[Aperivue/medsci-skills](https://github.com/Aperivue/medsci-skills)** (Score: -54.55)
+  - License: NOASSERTION | Stars: 129 | Forks: 35
+  - PRs open: 0 | Discussions: Yes | Contributors: 1 | Last push: 0 days ago
+  - Description: Claude Code skills for medical research — literature search, reporting guidelines, statistical analysis, publication figures. Built by a physician-researcher, tested on real publications. MIT licensed.
+- **[wshi83/EhrAgent](https://github.com/wshi83/EhrAgent)** (Score: -89.97)
   - License: none | Stars: 136 | Forks: 21
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 522 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 523 days ago
   - Description: [EMNLP'24] EHRAgent: Code Empowers Large Language Models for Complex Tabular Reasoning on Electronic Health Records
-- **[carriedaymont/growthcleanr](https://github.com/carriedaymont/growthcleanr)** (Score: -92.53)
+- **[carriedaymont/growthcleanr](https://github.com/carriedaymont/growthcleanr)** (Score: -92.6)
   - License: NOASSERTION | Stars: 19 | Forks: 8
-  - PRs open: 0 | Discussions: No | Contributors: 9 | Last push: 5 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 9 | Last push: 6 days ago
   - Description: R package for cleaning anthropometric (height and weight) data from electronic health record systems.
 
+## Imaging & Radiology
+- **[Aperivue/medsci-skills](https://github.com/Aperivue/medsci-skills)** (Score: -54.55)
+  - License: NOASSERTION | Stars: 129 | Forks: 35
+  - PRs open: 0 | Discussions: Yes | Contributors: 1 | Last push: 0 days ago
+  - Description: Claude Code skills for medical research — literature search, reporting guidelines, statistical analysis, publication figures. Built by a physician-researcher, tested on real publications. MIT licensed.
+
 ## Genomics & Precision Medicine
-- **[SamuelSchmidgall/AgentClinic](https://github.com/SamuelSchmidgall/AgentClinic)** (Score: 120.83)
-  - License: MIT | Stars: 316 | Forks: 51
-  - PRs open: 1 | Discussions: No | Contributors: 2 | Last push: 517 days ago
+- **[SamuelSchmidgall/AgentClinic](https://github.com/SamuelSchmidgall/AgentClinic)** (Score: 121.37)
+  - License: MIT | Stars: 318 | Forks: 51
+  - PRs open: 1 | Discussions: No | Contributors: 2 | Last push: 518 days ago
   - Description: Agent benchmark for medical diagnosis
 
 ## NLP & Clinical Text
-- **[stanfordmlgroup/MedAgentBench](https://github.com/stanfordmlgroup/MedAgentBench)** (Score: 132.0)
-  - License: MIT | Stars: 277 | Forks: 58
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 192 days ago
+- **[stanfordmlgroup/MedAgentBench](https://github.com/stanfordmlgroup/MedAgentBench)** (Score: 132.53)
+  - License: MIT | Stars: 279 | Forks: 58
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 193 days ago
   - Description: MedAgentBench: A Realistic Virtual EHR Environment to Benchmark Medical LLM Agents
-- **[wshi83/EhrAgent](https://github.com/wshi83/EhrAgent)** (Score: -89.9)
+- **[wshi83/EhrAgent](https://github.com/wshi83/EhrAgent)** (Score: -89.97)
   - License: none | Stars: 136 | Forks: 21
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 522 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 523 days ago
   - Description: [EMNLP'24] EHRAgent: Code Empowers Large Language Models for Complex Tabular Reasoning on Electronic Health Records
 
 ## FHIR & Interoperability
-- **[cqframework/clinical_quality_language](https://github.com/cqframework/clinical_quality_language)** (Score: 160.03)
+- **[thetahealth/mirobody](https://github.com/thetahealth/mirobody)** (Score: 401.95)
+  - License: Apache-2.0 | Stars: 1043 | Forks: 192
+  - PRs open: 0 | Discussions: Yes | Contributors: 6 | Last push: 0 days ago
+  - Description: Your Data, Your AI — Health, Finance & More. Open Source, Privacy-First.
+- **[cqframework/clinical_quality_language](https://github.com/cqframework/clinical_quality_language)** (Score: 159.97)
   - License: Apache-2.0 | Stars: 314 | Forks: 143
-  - PRs open: 5 | Discussions: No | Contributors: 40 | Last push: 22 days ago
+  - PRs open: 5 | Discussions: No | Contributors: 40 | Last push: 23 days ago
   - Description: Clinical Quality Language (CQL) is an HL7 specification for the expression of clinical knowledge that can be used within both the Clinical Decision Support (CDS) and Clinical Quality Measurement (CQM) domains. This repository contains complementary tooling in support of that specification.
 
 ## Robotics & Surgical Systems
-- **[mims-harvard/TxAgent](https://github.com/mims-harvard/TxAgent)** (Score: 238.9)
-  - License: MIT | Stars: 631 | Forks: 101
-  - PRs open: 7 | Discussions: No | Contributors: 1 | Last push: 306 days ago
+- **[mims-harvard/TxAgent](https://github.com/mims-harvard/TxAgent)** (Score: 239.03)
+  - License: MIT | Stars: 631 | Forks: 102
+  - PRs open: 7 | Discussions: No | Contributors: 1 | Last push: 307 days ago
   - Description: TxAgent: An AI Agent for Therapeutic Reasoning Across a Universe of Tools
 
 ## Uncategorized
-- **[ncbi-nlp/TrialGPT](https://github.com/ncbi-nlp/TrialGPT)** (Score: -70.27)
+- **[ncbi-nlp/TrialGPT](https://github.com/ncbi-nlp/TrialGPT)** (Score: -70.33)
   - License: NOASSERTION | Stars: 159 | Forks: 73
-  - PRs open: 2 | Discussions: No | Contributors: 2 | Last push: 493 days ago
+  - PRs open: 2 | Discussions: No | Contributors: 2 | Last push: 494 days ago
   - Description: Code and data for TrialGPT.
