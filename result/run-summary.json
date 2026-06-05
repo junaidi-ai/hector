@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-04T03:08:16.025171",
+  "timestamp": "2026-06-05T02:56:21.947015",
   "stats": {
     "total_scanned": 100,
     "after_min_stars": 100,
@@ -8,13 +8,13 @@
     "min_score_threshold": 0.0
   },
   "categories": {
-    "AI Diagnostics": 8,
+    "AI Diagnostics": 7,
     "EHR & Clinical Systems": 4,
-    "FHIR & Interoperability": 2,
+    "FHIR & Interoperability": 1,
     "NLP & Clinical Text": 2,
     "Genomics & Precision Medicine": 1,
     "Robotics & Surgical Systems": 1
   },
-  "uncategorized_count": 1,
+  "uncategorized_count": 2,
   "total_in_output": 10
 }
