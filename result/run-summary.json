@@ -1,21 +1,21 @@
 {
-  "timestamp": "2026-06-13T02:54:39.896057",
+  "timestamp": "2026-06-14T03:06:45.125456",
   "stats": {
     "total_scanned": 100,
     "after_min_stars": 100,
-    "after_relevance_filter": 6,
-    "after_score_filter": 13,
+    "after_relevance_filter": 5,
+    "after_score_filter": 12,
     "min_score_threshold": 0.0
   },
   "categories": {
-    "AI Diagnostics": 11,
+    "AI Diagnostics": 10,
     "Genomics & Precision Medicine": 2,
-    "NLP & Clinical Text": 4,
-    "FHIR & Interoperability": 3,
-    "Robotics & Surgical Systems": 2,
-    "EHR & Clinical Systems": 3,
-    "Data Platforms & ETL": 1
+    "NLP & Clinical Text": 5,
+    "FHIR & Interoperability": 2,
+    "Robotics & Surgical Systems": 3,
+    "Data Platforms & ETL": 2,
+    "EHR & Clinical Systems": 3
   },
   "uncategorized_count": 1,
-  "total_in_output": 13
+  "total_in_output": 12
 }
