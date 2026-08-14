@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-13T01:26:29.961475",
+  "timestamp": "2026-08-14T01:27:55.471005",
   "stats": {
     "total_scanned": 100,
     "after_min_stars": 100,
@@ -11,10 +11,10 @@
     "AI Diagnostics": 14,
     "Genomics & Precision Medicine": 3,
     "FHIR & Interoperability": 6,
-    "Imaging & Radiology": 1,
     "EHR & Clinical Systems": 6,
     "NLP & Clinical Text": 4,
     "Data Platforms & ETL": 1,
+    "Imaging & Radiology": 1,
     "Robotics & Surgical Systems": 2
   },
   "uncategorized_count": 1,
