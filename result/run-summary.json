@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-08-18T00:59:13.384940",
+  "timestamp": "2026-08-19T00:56:44.905003",
   "stats": {
     "total_scanned": 100,
     "after_min_stars": 100,
@@ -9,14 +9,14 @@
   },
   "categories": {
     "AI Diagnostics": 13,
+    "Wearables & Remote Monitoring": 1,
+    "Genomics & Precision Medicine": 3,
+    "FHIR & Interoperability": 7,
     "EHR & Clinical Systems": 5,
     "NLP & Clinical Text": 4,
-    "FHIR & Interoperability": 7,
     "Data Platforms & ETL": 1,
     "Robotics & Surgical Systems": 2,
-    "Imaging & Radiology": 1,
-    "Wearables & Remote Monitoring": 1,
-    "Genomics & Precision Medicine": 3
+    "Imaging & Radiology": 1
   },
   "uncategorized_count": 1,
   "total_in_output": 17
