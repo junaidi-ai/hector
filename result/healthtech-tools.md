@@ -1,163 +1,175 @@
 # Curated Healthcare Technology Tools
 
 ## AI Diagnostics
-- **[mims-harvard/TxAgent](https://github.com/mims-harvard/TxAgent)** (Score: 240.2)
+- **[mims-harvard/TxAgent](https://github.com/mims-harvard/TxAgent)** (Score: 240.13)
   - License: MIT | Stars: 653 | Forks: 104
-  - PRs open: 10 | Discussions: No | Contributors: 1 | Last push: 399 days ago
+  - PRs open: 10 | Discussions: No | Contributors: 1 | Last push: 400 days ago
   - Description: TxAgent: An AI Agent for Therapeutic Reasoning Across a Universe of Tools
-- **[cqframework/clinical_quality_language](https://github.com/cqframework/clinical_quality_language)** (Score: 167.6)
-  - License: Apache-2.0 | Stars: 330 | Forks: 145
-  - PRs open: 11 | Discussions: No | Contributors: 41 | Last push: 0 days ago
+- **[cqframework/clinical_quality_language](https://github.com/cqframework/clinical_quality_language)** (Score: 168.1)
+  - License: Apache-2.0 | Stars: 331 | Forks: 145
+  - PRs open: 13 | Discussions: No | Contributors: 41 | Last push: 0 days ago
   - Description: Clinical Quality Language (CQL) is an HL7 specification for the expression of clinical knowledge that can be used within both the Clinical Decision Support (CDS) and Clinical Quality Measurement (CQM) domains. This repository contains complementary tooling in support of that specification.
-- **[stanfordmlgroup/MedAgentBench](https://github.com/stanfordmlgroup/MedAgentBench)** (Score: 139.7)
-  - License: MIT | Stars: 319 | Forks: 66
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 285 days ago
+- **[stanfordmlgroup/MedAgentBench](https://github.com/stanfordmlgroup/MedAgentBench)** (Score: 140.23)
+  - License: MIT | Stars: 321 | Forks: 66
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 286 days ago
   - Description: MedAgentBench: A Realistic Virtual EHR Environment to Benchmark Medical LLM Agents
-- **[SamuelSchmidgall/AgentClinic](https://github.com/SamuelSchmidgall/AgentClinic)** (Score: 126.73)
+- **[SamuelSchmidgall/AgentClinic](https://github.com/SamuelSchmidgall/AgentClinic)** (Score: 126.67)
   - License: MIT | Stars: 352 | Forks: 59
-  - PRs open: 1 | Discussions: No | Contributors: 2 | Last push: 610 days ago
+  - PRs open: 1 | Discussions: No | Contributors: 2 | Last push: 611 days ago
   - Description: Agent benchmark for medical diagnosis
-- **[aks129/HealthClawGuardrails](https://github.com/aks129/HealthClawGuardrails)** (Score: 54.65)
+- **[aks129/HealthClawGuardrails](https://github.com/aks129/HealthClawGuardrails)** (Score: 55.25)
   - License: MIT | Stars: 30 | Forks: 9
-  - PRs open: 9 | Discussions: Yes | Contributors: 6 | Last push: 0 days ago
+  - PRs open: 31 | Discussions: Yes | Contributors: 6 | Last push: 0 days ago
   - Description: Open-source guardrails between AI agents and FHIR clinical data — PHI redaction, immutable audit, step-up auth, tenant isolation. MCP server + OpenAI/Gemini adapters. A healthclaw.io project.
-- **[univanxx/3mdbench](https://github.com/univanxx/3mdbench)** (Score: 34.97)
+- **[univanxx/3mdbench](https://github.com/univanxx/3mdbench)** (Score: 34.9)
   - License: MIT | Stars: 24 | Forks: 2
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 344 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 345 days ago
   - Description: 3MDBench: Medical Multimodal Multi-agent Dialogue Benchmark
-- **[MAXNORM8650/MedAgentSim](https://github.com/MAXNORM8650/MedAgentSim)** (Score: -51.02)
+- **[MAXNORM8650/MedAgentSim](https://github.com/MAXNORM8650/MedAgentSim)** (Score: -51.08)
   - License: NOASSERTION | Stars: 178 | Forks: 22
-  - PRs open: 0 | Discussions: Yes | Contributors: 3 | Last push: 148 days ago
+  - PRs open: 0 | Discussions: Yes | Contributors: 3 | Last push: 149 days ago
   - Description: MedAgentSim: Self-Evolving Multi-Agent Simulations for Realistic Clinical Interactions, MICCAI 2025 (oral and early accepted)
-- **[pavanbadempet/AI-Healthcare-System](https://github.com/pavanbadempet/AI-Healthcare-System)** (Score: -80.28)
+- **[pavanbadempet/AI-Healthcare-System](https://github.com/pavanbadempet/AI-Healthcare-System)** (Score: -80.35)
   - License: AGPL-3.0 | Stars: 44 | Forks: 15
-  - PRs open: 23 | Discussions: Yes | Contributors: 4 | Last push: 2 days ago
+  - PRs open: 23 | Discussions: Yes | Contributors: 4 | Last push: 3 days ago
   - Description: AI Data Engineering Healthcare Platform: PySpark Medallion Lakehouse, Airflow DAGs, 5 ML Models, Local LLM RAG, and FastAPI Clinical Architecture.
-- **[cbib/TrialMatchAI](https://github.com/cbib/TrialMatchAI)** (Score: -84.98)
+- **[cbib/TrialMatchAI](https://github.com/cbib/TrialMatchAI)** (Score: -85.05)
   - License: NOASSERTION | Stars: 37 | Forks: 16
-  - PRs open: 1 | Discussions: Yes | Contributors: 2 | Last push: 2 days ago
+  - PRs open: 1 | Discussions: Yes | Contributors: 2 | Last push: 3 days ago
   - Description: TrialMatchAI leverages large language models to streamline clinical trial matching by evaluating patient-specific clinical characteristics against trial eligibility criteria and generating relevant, ranked trial recommendations.
-- **[Nanboy-Ronan/awesome-medical-imaging-agents](https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents)** (Score: -85.3)
-  - License: NOASSERTION | Stars: 45 | Forks: 3
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+- **[Nanboy-Ronan/awesome-medical-imaging-agents](https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents)** (Score: -85.07)
+  - License: NOASSERTION | Stars: 46 | Forks: 3
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
   - Description: Awesome list for medical imaging agents: radiology agents, pathology agents, segmentation agents, medical VLM agents, self-evolving agents, benchmarks, datasets, tools, and papers.
-- **[awslabs/hcls-agent-skills](https://github.com/awslabs/hcls-agent-skills)** (Score: -89.53)
+- **[awslabs/hcls-agent-skills](https://github.com/awslabs/hcls-agent-skills)** (Score: -89.6)
   - License: MIT-0 | Stars: 26 | Forks: 8
-  - PRs open: 1 | Discussions: No | Contributors: 4 | Last push: 2 days ago
+  - PRs open: 1 | Discussions: No | Contributors: 4 | Last push: 3 days ago
   - Description: Agent skills for healthcare and life sciences: genomics, imaging, claims, drug discovery, and more. Works with Amazon Quick, Kiro, Amazon AgentCore, AWS Strands SDK, Claude Code, Codex, and any Agent Skills-compatible platform.
-- **[wshi83/EhrAgent](https://github.com/wshi83/EhrAgent)** (Score: -94.6)
+- **[bloo-berries/Endometriosis-Adenomyosis-Resources](https://github.com/bloo-berries/Endometriosis-Adenomyosis-Resources)** (Score: -93.55)
+  - License: CC0-1.0 | Stars: 16 | Forks: 3
+  - PRs open: 1 | Discussions: Yes | Contributors: 3 | Last push: 0 days ago
+  - Description: Comprehensively and confidently navigating Endometriosis and Adenomyosis and their comorbidities.
+- **[wshi83/EhrAgent](https://github.com/wshi83/EhrAgent)** (Score: -94.67)
   - License: none | Stars: 141 | Forks: 21
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 615 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 616 days ago
   - Description: [EMNLP'24] EHRAgent: Code Empowers Large Language Models for Complex Tabular Reasoning on Electronic Health Records
 
 ## EHR & Clinical Systems
-- **[cqframework/clinical_quality_language](https://github.com/cqframework/clinical_quality_language)** (Score: 167.6)
-  - License: Apache-2.0 | Stars: 330 | Forks: 145
-  - PRs open: 11 | Discussions: No | Contributors: 41 | Last push: 0 days ago
+- **[cqframework/clinical_quality_language](https://github.com/cqframework/clinical_quality_language)** (Score: 168.1)
+  - License: Apache-2.0 | Stars: 331 | Forks: 145
+  - PRs open: 13 | Discussions: No | Contributors: 41 | Last push: 0 days ago
   - Description: Clinical Quality Language (CQL) is an HL7 specification for the expression of clinical knowledge that can be used within both the Clinical Decision Support (CDS) and Clinical Quality Measurement (CQM) domains. This repository contains complementary tooling in support of that specification.
-- **[stanfordmlgroup/MedAgentBench](https://github.com/stanfordmlgroup/MedAgentBench)** (Score: 139.7)
-  - License: MIT | Stars: 319 | Forks: 66
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 285 days ago
+- **[stanfordmlgroup/MedAgentBench](https://github.com/stanfordmlgroup/MedAgentBench)** (Score: 140.23)
+  - License: MIT | Stars: 321 | Forks: 66
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 286 days ago
   - Description: MedAgentBench: A Realistic Virtual EHR Environment to Benchmark Medical LLM Agents
-- **[pavanbadempet/AI-Healthcare-System](https://github.com/pavanbadempet/AI-Healthcare-System)** (Score: -80.28)
+- **[ajk77/SimpleEMRSystem](https://github.com/ajk77/SimpleEMRSystem)** (Score: 39.35)
+  - License: GPL-3.0 | Stars: 20 | Forks: 13
+  - PRs open: 0 | Discussions: Yes | Contributors: 2 | Last push: 0 days ago
+  - Description: The Simple EMR System is a rapidly deployable and readily customizable electronic medical record (EMR) user interface for supporting laboratory-based research studies of EMR design and usability.
+- **[pavanbadempet/AI-Healthcare-System](https://github.com/pavanbadempet/AI-Healthcare-System)** (Score: -80.35)
   - License: AGPL-3.0 | Stars: 44 | Forks: 15
-  - PRs open: 23 | Discussions: Yes | Contributors: 4 | Last push: 2 days ago
+  - PRs open: 23 | Discussions: Yes | Contributors: 4 | Last push: 3 days ago
   - Description: AI Data Engineering Healthcare Platform: PySpark Medallion Lakehouse, Airflow DAGs, 5 ML Models, Local LLM RAG, and FastAPI Clinical Architecture.
-- **[cbib/TrialMatchAI](https://github.com/cbib/TrialMatchAI)** (Score: -84.98)
+- **[cbib/TrialMatchAI](https://github.com/cbib/TrialMatchAI)** (Score: -85.05)
   - License: NOASSERTION | Stars: 37 | Forks: 16
-  - PRs open: 1 | Discussions: Yes | Contributors: 2 | Last push: 2 days ago
+  - PRs open: 1 | Discussions: Yes | Contributors: 2 | Last push: 3 days ago
   - Description: TrialMatchAI leverages large language models to streamline clinical trial matching by evaluating patient-specific clinical characteristics against trial eligibility criteria and generating relevant, ranked trial recommendations.
-- **[awslabs/hcls-agent-skills](https://github.com/awslabs/hcls-agent-skills)** (Score: -89.53)
+- **[awslabs/hcls-agent-skills](https://github.com/awslabs/hcls-agent-skills)** (Score: -89.6)
   - License: MIT-0 | Stars: 26 | Forks: 8
-  - PRs open: 1 | Discussions: No | Contributors: 4 | Last push: 2 days ago
+  - PRs open: 1 | Discussions: No | Contributors: 4 | Last push: 3 days ago
   - Description: Agent skills for healthcare and life sciences: genomics, imaging, claims, drug discovery, and more. Works with Amazon Quick, Kiro, Amazon AgentCore, AWS Strands SDK, Claude Code, Codex, and any Agent Skills-compatible platform.
-- **[wshi83/EhrAgent](https://github.com/wshi83/EhrAgent)** (Score: -94.6)
+- **[wshi83/EhrAgent](https://github.com/wshi83/EhrAgent)** (Score: -94.67)
   - License: none | Stars: 141 | Forks: 21
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 615 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 616 days ago
   - Description: [EMNLP'24] EHRAgent: Code Empowers Large Language Models for Complex Tabular Reasoning on Electronic Health Records
 
 ## Imaging & Radiology
-- **[Nanboy-Ronan/awesome-medical-imaging-agents](https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents)** (Score: -85.3)
-  - License: NOASSERTION | Stars: 45 | Forks: 3
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 0 days ago
+- **[Nanboy-Ronan/awesome-medical-imaging-agents](https://github.com/Nanboy-Ronan/awesome-medical-imaging-agents)** (Score: -85.07)
+  - License: NOASSERTION | Stars: 46 | Forks: 3
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 1 days ago
   - Description: Awesome list for medical imaging agents: radiology agents, pathology agents, segmentation agents, medical VLM agents, self-evolving agents, benchmarks, datasets, tools, and papers.
 
 ## Genomics & Precision Medicine
-- **[SamuelSchmidgall/AgentClinic](https://github.com/SamuelSchmidgall/AgentClinic)** (Score: 126.73)
+- **[SamuelSchmidgall/AgentClinic](https://github.com/SamuelSchmidgall/AgentClinic)** (Score: 126.67)
   - License: MIT | Stars: 352 | Forks: 59
-  - PRs open: 1 | Discussions: No | Contributors: 2 | Last push: 610 days ago
+  - PRs open: 1 | Discussions: No | Contributors: 2 | Last push: 611 days ago
   - Description: Agent benchmark for medical diagnosis
-- **[cbib/TrialMatchAI](https://github.com/cbib/TrialMatchAI)** (Score: -84.98)
+- **[cbib/TrialMatchAI](https://github.com/cbib/TrialMatchAI)** (Score: -85.05)
   - License: NOASSERTION | Stars: 37 | Forks: 16
-  - PRs open: 1 | Discussions: Yes | Contributors: 2 | Last push: 2 days ago
+  - PRs open: 1 | Discussions: Yes | Contributors: 2 | Last push: 3 days ago
   - Description: TrialMatchAI leverages large language models to streamline clinical trial matching by evaluating patient-specific clinical characteristics against trial eligibility criteria and generating relevant, ranked trial recommendations.
-- **[awslabs/hcls-agent-skills](https://github.com/awslabs/hcls-agent-skills)** (Score: -89.53)
+- **[awslabs/hcls-agent-skills](https://github.com/awslabs/hcls-agent-skills)** (Score: -89.6)
   - License: MIT-0 | Stars: 26 | Forks: 8
-  - PRs open: 1 | Discussions: No | Contributors: 4 | Last push: 2 days ago
+  - PRs open: 1 | Discussions: No | Contributors: 4 | Last push: 3 days ago
   - Description: Agent skills for healthcare and life sciences: genomics, imaging, claims, drug discovery, and more. Works with Amazon Quick, Kiro, Amazon AgentCore, AWS Strands SDK, Claude Code, Codex, and any Agent Skills-compatible platform.
+- **[bloo-berries/Endometriosis-Adenomyosis-Resources](https://github.com/bloo-berries/Endometriosis-Adenomyosis-Resources)** (Score: -93.55)
+  - License: CC0-1.0 | Stars: 16 | Forks: 3
+  - PRs open: 1 | Discussions: Yes | Contributors: 3 | Last push: 0 days ago
+  - Description: Comprehensively and confidently navigating Endometriosis and Adenomyosis and their comorbidities.
 
 ## NLP & Clinical Text
-- **[stanfordmlgroup/MedAgentBench](https://github.com/stanfordmlgroup/MedAgentBench)** (Score: 139.7)
-  - License: MIT | Stars: 319 | Forks: 66
-  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 285 days ago
+- **[stanfordmlgroup/MedAgentBench](https://github.com/stanfordmlgroup/MedAgentBench)** (Score: 140.23)
+  - License: MIT | Stars: 321 | Forks: 66
+  - PRs open: 0 | Discussions: No | Contributors: 1 | Last push: 286 days ago
   - Description: MedAgentBench: A Realistic Virtual EHR Environment to Benchmark Medical LLM Agents
-- **[pavanbadempet/AI-Healthcare-System](https://github.com/pavanbadempet/AI-Healthcare-System)** (Score: -80.28)
+- **[pavanbadempet/AI-Healthcare-System](https://github.com/pavanbadempet/AI-Healthcare-System)** (Score: -80.35)
   - License: AGPL-3.0 | Stars: 44 | Forks: 15
-  - PRs open: 23 | Discussions: Yes | Contributors: 4 | Last push: 2 days ago
+  - PRs open: 23 | Discussions: Yes | Contributors: 4 | Last push: 3 days ago
   - Description: AI Data Engineering Healthcare Platform: PySpark Medallion Lakehouse, Airflow DAGs, 5 ML Models, Local LLM RAG, and FastAPI Clinical Architecture.
-- **[cbib/TrialMatchAI](https://github.com/cbib/TrialMatchAI)** (Score: -84.98)
+- **[cbib/TrialMatchAI](https://github.com/cbib/TrialMatchAI)** (Score: -85.05)
   - License: NOASSERTION | Stars: 37 | Forks: 16
-  - PRs open: 1 | Discussions: Yes | Contributors: 2 | Last push: 2 days ago
+  - PRs open: 1 | Discussions: Yes | Contributors: 2 | Last push: 3 days ago
   - Description: TrialMatchAI leverages large language models to streamline clinical trial matching by evaluating patient-specific clinical characteristics against trial eligibility criteria and generating relevant, ranked trial recommendations.
-- **[wshi83/EhrAgent](https://github.com/wshi83/EhrAgent)** (Score: -94.6)
+- **[wshi83/EhrAgent](https://github.com/wshi83/EhrAgent)** (Score: -94.67)
   - License: none | Stars: 141 | Forks: 21
-  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 615 days ago
+  - PRs open: 0 | Discussions: No | Contributors: 2 | Last push: 616 days ago
   - Description: [EMNLP'24] EHRAgent: Code Empowers Large Language Models for Complex Tabular Reasoning on Electronic Health Records
 
 ## FHIR & Interoperability
-- **[cqframework/clinical_quality_language](https://github.com/cqframework/clinical_quality_language)** (Score: 167.6)
-  - License: Apache-2.0 | Stars: 330 | Forks: 145
-  - PRs open: 11 | Discussions: No | Contributors: 41 | Last push: 0 days ago
+- **[cqframework/clinical_quality_language](https://github.com/cqframework/clinical_quality_language)** (Score: 168.1)
+  - License: Apache-2.0 | Stars: 331 | Forks: 145
+  - PRs open: 13 | Discussions: No | Contributors: 41 | Last push: 0 days ago
   - Description: Clinical Quality Language (CQL) is an HL7 specification for the expression of clinical knowledge that can be used within both the Clinical Decision Support (CDS) and Clinical Quality Measurement (CQM) domains. This repository contains complementary tooling in support of that specification.
-- **[miracum/fhir-pseudonymizer](https://github.com/miracum/fhir-pseudonymizer)** (Score: 60.05)
+- **[miracum/fhir-pseudonymizer](https://github.com/miracum/fhir-pseudonymizer)** (Score: 59.88)
   - License: MIT | Stars: 20 | Forks: 4
-  - PRs open: 4 | Discussions: Yes | Contributors: 10 | Last push: 0 days ago
+  - PRs open: 4 | Discussions: Yes | Contributors: 10 | Last push: 1 days ago
   - Description: A REST service to pseudonymize and anonymize FHIR® resources.
-- **[aks129/HealthClawGuardrails](https://github.com/aks129/HealthClawGuardrails)** (Score: 54.65)
+- **[aks129/HealthClawGuardrails](https://github.com/aks129/HealthClawGuardrails)** (Score: 55.25)
   - License: MIT | Stars: 30 | Forks: 9
-  - PRs open: 9 | Discussions: Yes | Contributors: 6 | Last push: 0 days ago
+  - PRs open: 31 | Discussions: Yes | Contributors: 6 | Last push: 0 days ago
   - Description: Open-source guardrails between AI agents and FHIR clinical data — PHI redaction, immutable audit, step-up auth, tenant isolation. MCP server + OpenAI/Gemini adapters. A healthclaw.io project.
-- **[srdc/repofyr](https://github.com/srdc/repofyr)** (Score: 49.8)
+- **[srdc/repofyr](https://github.com/srdc/repofyr)** (Score: 49.73)
   - License: GPL-3.0 | Stars: 48 | Forks: 14
-  - PRs open: 6 | Discussions: No | Contributors: 11 | Last push: 0 days ago
+  - PRs open: 6 | Discussions: No | Contributors: 11 | Last push: 1 days ago
   - Description: HL7 FHIR Based Secure Data Repository
-- **[GeiserX/awesome-europe](https://github.com/GeiserX/awesome-europe)** (Score: -56.53)
-  - License: CC0-1.0 | Stars: 126 | Forks: 18
-  - PRs open: 3 | Discussions: No | Contributors: 7 | Last push: 5 days ago
+- **[GeiserX/awesome-europe](https://github.com/GeiserX/awesome-europe)** (Score: -56.3)
+  - License: CC0-1.0 | Stars: 127 | Forks: 18
+  - PRs open: 3 | Discussions: No | Contributors: 7 | Last push: 6 days ago
   - Description: A curated list of open source software for Europe — institutions, regulations, standards, and cross-border infrastructure
-- **[pavanbadempet/AI-Healthcare-System](https://github.com/pavanbadempet/AI-Healthcare-System)** (Score: -80.28)
+- **[pavanbadempet/AI-Healthcare-System](https://github.com/pavanbadempet/AI-Healthcare-System)** (Score: -80.35)
   - License: AGPL-3.0 | Stars: 44 | Forks: 15
-  - PRs open: 23 | Discussions: Yes | Contributors: 4 | Last push: 2 days ago
+  - PRs open: 23 | Discussions: Yes | Contributors: 4 | Last push: 3 days ago
   - Description: AI Data Engineering Healthcare Platform: PySpark Medallion Lakehouse, Airflow DAGs, 5 ML Models, Local LLM RAG, and FastAPI Clinical Architecture.
 
 ## Data Platforms & ETL
-- **[pavanbadempet/AI-Healthcare-System](https://github.com/pavanbadempet/AI-Healthcare-System)** (Score: -80.28)
+- **[pavanbadempet/AI-Healthcare-System](https://github.com/pavanbadempet/AI-Healthcare-System)** (Score: -80.35)
   - License: AGPL-3.0 | Stars: 44 | Forks: 15
-  - PRs open: 23 | Discussions: Yes | Contributors: 4 | Last push: 2 days ago
+  - PRs open: 23 | Discussions: Yes | Contributors: 4 | Last push: 3 days ago
   - Description: AI Data Engineering Healthcare Platform: PySpark Medallion Lakehouse, Airflow DAGs, 5 ML Models, Local LLM RAG, and FastAPI Clinical Architecture.
 
 ## Robotics & Surgical Systems
-- **[mims-harvard/TxAgent](https://github.com/mims-harvard/TxAgent)** (Score: 240.2)
+- **[mims-harvard/TxAgent](https://github.com/mims-harvard/TxAgent)** (Score: 240.13)
   - License: MIT | Stars: 653 | Forks: 104
-  - PRs open: 10 | Discussions: No | Contributors: 1 | Last push: 399 days ago
+  - PRs open: 10 | Discussions: No | Contributors: 1 | Last push: 400 days ago
   - Description: TxAgent: An AI Agent for Therapeutic Reasoning Across a Universe of Tools
-- **[GeiserX/awesome-europe](https://github.com/GeiserX/awesome-europe)** (Score: -56.53)
-  - License: CC0-1.0 | Stars: 126 | Forks: 18
-  - PRs open: 3 | Discussions: No | Contributors: 7 | Last push: 5 days ago
+- **[GeiserX/awesome-europe](https://github.com/GeiserX/awesome-europe)** (Score: -56.3)
+  - License: CC0-1.0 | Stars: 127 | Forks: 18
+  - PRs open: 3 | Discussions: No | Contributors: 7 | Last push: 6 days ago
   - Description: A curated list of open source software for Europe — institutions, regulations, standards, and cross-border infrastructure
 
 ## Uncategorized
-- **[ncbi-nlp/TrialGPT](https://github.com/ncbi-nlp/TrialGPT)** (Score: -72.67)
+- **[ncbi-nlp/TrialGPT](https://github.com/ncbi-nlp/TrialGPT)** (Score: -72.73)
   - License: NOASSERTION | Stars: 171 | Forks: 74
-  - PRs open: 2 | Discussions: No | Contributors: 2 | Last push: 586 days ago
+  - PRs open: 2 | Discussions: No | Contributors: 2 | Last push: 587 days ago
   - Description: Code and data for TrialGPT.
