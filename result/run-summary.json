@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-15T02:56:30.227909",
+  "timestamp": "2026-09-16T02:51:40.447341",
   "stats": {
     "total_scanned": 100,
     "after_min_stars": 100,
@@ -12,13 +12,13 @@
     "Genomics & Precision Medicine": 6,
     "NLP & Clinical Text": 4,
     "Robotics & Surgical Systems": 3,
+    "Imaging & Radiology": 1,
     "FHIR & Interoperability": 6,
     "EHR & Clinical Systems": 7,
     "Patient Engagement & Scheduling": 1,
     "Data Platforms & ETL": 1,
     "Digital Twins & Simulation": 1,
-    "AR/VR & Training": 1,
-    "Imaging & Radiology": 1
+    "AR/VR & Training": 1
   },
   "uncategorized_count": 1,
   "total_in_output": 20
