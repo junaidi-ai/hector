@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-17T02:56:34.769902",
+  "timestamp": "2026-09-18T02:45:19.235853",
   "stats": {
     "total_scanned": 100,
     "after_min_stars": 100,
@@ -13,9 +13,9 @@
     "NLP & Clinical Text": 4,
     "Robotics & Surgical Systems": 4,
     "Imaging & Radiology": 1,
-    "FHIR & Interoperability": 6,
     "EHR & Clinical Systems": 7,
     "Patient Engagement & Scheduling": 1,
+    "FHIR & Interoperability": 6,
     "Data Platforms & ETL": 1,
     "Digital Twins & Simulation": 1,
     "AR/VR & Training": 1
