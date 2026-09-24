@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-23T02:52:50.187946",
+  "timestamp": "2026-09-24T02:42:32.308484",
   "stats": {
     "total_scanned": 100,
     "after_min_stars": 100,
@@ -12,11 +12,11 @@
     "Genomics & Precision Medicine": 6,
     "NLP & Clinical Text": 5,
     "Robotics & Surgical Systems": 4,
+    "FHIR & Interoperability": 4,
+    "Imaging & Radiology": 1,
     "Privacy & Synthetic Data": 1,
     "Digital Twins & Simulation": 1,
-    "EHR & Clinical Systems": 6,
-    "Imaging & Radiology": 1,
-    "FHIR & Interoperability": 4
+    "EHR & Clinical Systems": 6
   },
   "uncategorized_count": 1,
   "total_in_output": 19
