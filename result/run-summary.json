@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-08T03:51:35.297962",
+  "timestamp": "2026-11-09T04:03:02.651100",
   "stats": {
     "total_scanned": 100,
     "after_min_stars": 100,
@@ -9,10 +9,11 @@
   },
   "categories": {
     "AI Diagnostics": 9,
+    "Imaging & Radiology": 1,
     "Genomics & Precision Medicine": 2,
-    "Robotics & Surgical Systems": 2,
     "EHR & Clinical Systems": 2,
-    "NLP & Clinical Text": 2
+    "NLP & Clinical Text": 2,
+    "Robotics & Surgical Systems": 1
   },
   "uncategorized_count": 1,
   "total_in_output": 11
