@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-11-19T05:29:17.923060",
+  "timestamp": "2026-11-20T05:15:56.968324",
   "stats": {
     "total_scanned": 100,
     "after_min_stars": 100,
-    "after_relevance_filter": 4,
-    "after_score_filter": 11,
+    "after_relevance_filter": 5,
+    "after_score_filter": 12,
     "min_score_threshold": 0.0
   },
   "categories": {
-    "AI Diagnostics": 9,
+    "AI Diagnostics": 10,
     "Genomics & Precision Medicine": 3,
     "Imaging & Radiology": 1,
     "EHR & Clinical Systems": 2,
@@ -16,5 +16,5 @@
     "Robotics & Surgical Systems": 1
   },
   "uncategorized_count": 1,
-  "total_in_output": 11
+  "total_in_output": 12
 }
